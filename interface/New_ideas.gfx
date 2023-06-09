@@ -1,0 +1,53 @@
+spriteTypes={
+	spriteType = {
+		name = "GFX_Lenin_ideas"
+		texturefile = "gfx/interface/ideas/Lenin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DEI_idea_secure_foodsystem"
+		texturefile = "gfx/interface/ideas/DEI_idea_secure_foodsystem.png"
+	}
+	spriteType = {
+		name = "GFX_idea_DEI_idea_secure_foodsystem2"
+		texturefile = "gfx/interface/ideas/DEI_idea_secure_foodsystem2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_new_economic_policy"
+		texturefile = "gfx/interface/ideas/FRA_new_economic_policy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRE_heavy_industry"
+		texturefile = "gfx/interface/ideas/IRE_heavy_industry.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_cult_tukhachevsky"
+		texturefile = "gfx/interface/ideas/SOV_cult_tukhachevsky.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_cult_zhukov"
+		texturefile = "gfx/interface/ideas/SOV_cult_zhukov.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_cultural"
+		texturefile = "gfx/interface/ideas/SOV_cultural.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_cultural_revolution"
+		texturefile = "gfx/interface/ideas/SOV_cultural_revolution.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_decentralized_soviet"
+		texturefile = "gfx/interface/ideas/SOV_decentralized_soviet.png"
+	}
+    spriteType = {
+	    name="GFX_idea_ger_rebuild_the_nation"
+		texturefile="gfx/interface/ideas/idea_ger_rebuild_the_nation.dds"
+	}
+	spriteType = {
+	    name="GFX_idea_KR_focus_KMT_democracy"
+		texturefile="gfx/interface/ideas/idea_KR_focus_KMT_democracy.png"
+    }
+	spriteType = {
+	    name="GFX_idea_FRA_spirit"
+		texturefile="gfx/interface/ideas/FRA_spirit.png"
+    }

@@ -1,0 +1,13 @@
+﻿recruit_character = SIC_liu_xiang
+add_ideas = {
+	closed_economy
+	extensive_conscription
+	partial_economic_mobilisation
+}
+set_politics = {
+	ruling_party = neutrality
+}
+set_popularities = {
+	neutrality=100
+}
+oob = "SIC_1936"

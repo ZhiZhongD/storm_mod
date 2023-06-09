@@ -1,0 +1,51 @@
+
+
+
+stalinist_help = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_stalinist
+		check_variable = { stalinist_help>50 }
+	}
+}
+stalinist_help_a = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_stalinist_a
+		check_variable = { stalinist_help>75 }
+	}
+}
+trotzkyist_help = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_trotzkyist
+		check_variable = { trotzkyist_help>50 }
+	}
+}
+trotzkyist_help_a = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_trotzkyist_a
+		check_variable = { trotzkyist_help>75 }
+	}
+}
+bukharinist_help = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_bukharinist
+		check_variable = { bukharinist_help>50 }
+	}
+}
+bukharinist_help_a = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_bukharinist_a
+		check_variable = { bukharinist_help>75 }
+	}
+}
+unionist_help = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_unionist
+		check_variable = { unionist_help>50 }
+	}
+}
+unionist_help_a = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_unionist_a
+		check_variable = { unionist_help>75 }
+	}
+}

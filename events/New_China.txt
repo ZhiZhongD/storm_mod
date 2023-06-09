@@ -1,0 +1,188 @@
+add_namespace = new_china
+add_namespace = new_china_news
+
+country_event={
+	id = new_china.1
+	title = new_china.1.t
+	desc = new_china.1.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+
+	#trigger={
+	#	tag=CHI
+	#	date>1936.7.1
+	#}
+
+
+	option = {
+		name = new_china.1.a
+		325 = { set_border_war = yes }
+	    
+    }
+}
+country_event={
+	id = new_china.2
+	title = new_china.2.t
+	desc = new_china.2.d
+	is_triggered_only = yes
+
+
+	option = {
+		name = new_china.1.a
+		add_political_power=15
+		country_event={id = new_china.3 days = 10  } 
+    }
+}
+country_event={
+	id = new_china.3
+	title = new_china.3.t
+	desc = new_china.3.d
+	is_triggered_only = yes
+
+
+	option = {
+		name = new_china.3.a
+		complete_national_focus = PRC_peoples_revolutionary_army
+		country_event={id = new_china.4 days = 10  } 
+    }
+}
+country_event={
+	id = new_china.4
+	title = new_china.4.t
+	desc = new_china.4.d
+	is_triggered_only = yes
+
+
+	option = {
+		name = new_china.4.a
+		complete_national_focus = PRC_chairman_mao
+		country_event={id = new_china.5 days = 10  } 
+    }
+	option = {
+		name = new_china.4.b
+		complete_national_focus = PRC_chairman_song
+		country_event={id = new_china.5 days = 10  } 
+    }
+}
+country_event={
+	id = new_china.5
+	title = new_china.5.t
+	desc = new_china.5.d
+	is_triggered_only = yes
+
+
+	option = {
+		name = new_china.5.a
+		set_country_flag = PRC_rev
+		country_event={id = new_china.6 days = 10  } 
+    }
+	option = {
+		name = new_china.5.b
+		set_country_flag = PRC_continue
+		country_event={id = new_china.6 days = 10  } 
+    }
+}
+country_event={
+	id = new_china.6
+	title = new_china.6.t
+	desc = new_china.6.d
+	is_triggered_only = yes
+
+
+	option = {
+		name = new_china.6.a
+		complete_national_focus = PRC_civil_eco_commitee
+		complete_national_focus = PRC_planner
+		country_event={id = new_china.7 days = 10  } 
+    }
+	option = {
+		name = new_china.6.a
+		complete_national_focus = PRC_civil_eco_commitee
+		complete_national_focus = PRC_marketism
+		country_event={id = new_china.7 days = 10  } 
+    }
+}
+country_event={
+	id = new_china.7
+	title = new_china.7.t
+	desc = new_china.7.d
+	is_triggered_only = yes
+
+
+	option = {
+		name = new_china.7.a
+		add_political_power=15
+    }
+}
+country_event={
+	id = new_china.8
+	title = new_china.8.t
+	desc = new_china.8.d
+	fire_only_once = yes
+	trigger={
+		tag = CHI
+		date>1936.12.1
+	}
+
+
+	option = {
+		name = new_china.8.a
+		declare_war_on = { target = PRC type = annex_everything }
+    }
+}
+country_event={
+	id = new_china.9
+	title = new_china.9.t
+	desc = new_china.9.d
+	fire_only_once = yes
+	trigger={
+		tag = PRC
+		CHI={surrender_progress>0.3}
+		CHI={has_war_with = PRC}
+	}
+
+	option = {
+		name = new_china.9.a
+		CHI={country_event=new_china.11}
+    }
+}
+country_event={
+	id = new_china.11
+	title = new_china.11.t
+	desc = new_china.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.11.a
+		PRC={ country_event=new_china.12 }
+    }
+}
+country_event={
+	id = new_china.12
+	title = new_china.12.t
+	desc = new_china.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.12.a
+		PRC={white_peace = CHI}
+		PRC = { transfer_state = 600 }
+    }
+}
+country_event={
+	id = new_china.10
+	title = new_china.10.t
+	desc = new_china.10.d
+	fire_only_once = yes
+	trigger={
+		tag=PRC
+		NOT={country_exists = GXC}
+	}
+
+	option = {
+		name = new_china.10.a
+		remove_ideas=PRC_attack_GXC
+    }
+}

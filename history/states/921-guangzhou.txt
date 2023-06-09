@@ -1,0 +1,34 @@
+state={
+	id=921
+	name="STATE_921"
+	provinces={
+		1047 
+	}
+	history={
+		owner = PRC
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 3
+			1047 = {
+				naval_base = 5
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+
+		}
+		victory_points = {
+			1047 20 
+		}
+
+	}
+	manpower=2500000
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

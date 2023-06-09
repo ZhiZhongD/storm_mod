@@ -1,0 +1,18 @@
+state={
+	id=911
+	name="STATE_911"
+	provinces={
+		2133 8134 12912 12926 
+	}
+	history = {
+		owner = AST
+		add_core_of = AST
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=42213
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	local_supplies=0.000
+}

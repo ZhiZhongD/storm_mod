@@ -1,0 +1,67 @@
+SOV_factional_struggle={
+	SOV_educate_stalinist = {
+		ai_will_do={factor=10}
+		visible = {
+			tag=SOV
+			has_completed_focus=SOV_special_meeting
+		}
+		icon = GFX_generic_political_discourse
+		modifier = {
+			political_power_gain = -0.3
+		}
+        remove_effect={
+			custom_effect_tooltip=SOV_tooltip_stalinist_tall
+			add_to_variable = { stalinist_help = 5 }
+		}
+		days_remove = 40
+	}
+	SOV_educate_trotzkyist = {
+		ai_will_do={factor=10}
+		visible = {
+			tag=SOV
+			has_completed_focus=SOV_special_meeting
+		}
+		icon = GFX_generic_political_discourse
+		modifier = {
+			political_power_gain = -0.3
+		}
+        remove_effect={
+			custom_effect_tooltip=SOV_tooltip_trotzkyist_tall
+			add_to_variable = { trotzkyist_help = 5 }
+		}
+		days_remove = 40
+	}
+	SOV_educate_bukharinist = {
+		ai_will_do={factor=10}
+		visible = {
+			tag=SOV
+			has_completed_focus=SOV_special_meeting
+		}
+		icon = GFX_generic_political_discourse
+		modifier = {
+			political_power_gain = -0.3
+		}
+        remove_effect={
+			custom_effect_tooltip=SOV_tooltip_bukharinist_tall
+			add_to_variable = { bukharinist_help = 5 }
+		}
+		days_remove = 40
+	}
+	SOV_help_unionist = {
+		ai_will_do={factor=10}
+		visible = {
+			tag=SOV
+			has_completed_focus=SOV_special_meeting
+		}
+		icon = GFX_generic_political_discourse
+		modifier = {
+			consumer_goods_factor = 0.02
+		}
+        remove_effect={
+			custom_effect_tooltip=SOV_tooltip_unionist_tall
+			add_to_variable = { unionist_help = 5 }
+			add_stability=0.005
+		}
+		days_remove = 40
+	}
+}

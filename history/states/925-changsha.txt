@@ -1,0 +1,36 @@
+state={
+	id=925
+	name="STATE_925"
+	provinces={
+		7097 
+	}
+	history={
+		owner = HNA
+		add_core_of = CHI
+		add_core_of = HNA
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+				infrastructure = 3
+				air_base = 1
+				arms_factory = 1
+
+			}
+		}
+		victory_points = {
+			7097 10 
+		}
+
+	}
+	manpower=500000
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

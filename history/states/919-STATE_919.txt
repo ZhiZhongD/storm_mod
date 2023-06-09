@@ -1,0 +1,21 @@
+
+state={
+	id=919
+	name="STATE_919"
+	provinces={
+		13281 13283 13284 13285 13286 13288 13290 13291 13293 13296 13297 13298 13299 13301 13305 
+	}
+	history = {
+		owner = NZL
+		add_core_of = NZL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=867211
+	buildings_max_level_factor=1.000
+	state_category = city
+	local_supplies=0.000
+}

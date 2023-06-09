@@ -1,0 +1,13 @@
+SOV_congress = {
+
+	icon = GFX_idea_SOV_soviet_railways
+
+
+	scripted_gui = soviet_congress_ui
+
+
+}
+SOV_factional_struggle={
+	icon = GFX_idea_SOV_soviet_railways
+	scripted_gui = soviet_factional_struggle_ui
+}

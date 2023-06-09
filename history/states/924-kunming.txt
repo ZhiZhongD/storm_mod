@@ -1,0 +1,27 @@
+state={
+	id=924
+	name="STATE_924"
+	provinces={
+		1319 
+	}
+	history={
+		owner = YUN
+		add_core_of = YUN
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			1319 10 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+
+		}
+
+	}
+	manpower=500000
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

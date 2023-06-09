@@ -1,0 +1,31 @@
+state={
+	id=939
+	name="STATE_939"
+	provinces={
+		1519 
+	}
+	history={
+		owner = SHX
+		add_core_of = SHX
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			1519 10 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+		1938.10.25 = {
+			owner = PRC
+			controller = JAP
+		}
+
+	}
+	manpower=500000
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

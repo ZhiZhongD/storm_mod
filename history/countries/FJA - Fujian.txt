@@ -1,0 +1,17 @@
+﻿recruit_character = FJA_li_jisheng
+add_ideas = {
+	closed_economy
+	extensive_conscription
+	partial_economic_mobilisation
+}
+set_politics = {
+	ruling_party = social_democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	social_democratic=90
+	communism=10
+}
+oob = "FJA_1936"

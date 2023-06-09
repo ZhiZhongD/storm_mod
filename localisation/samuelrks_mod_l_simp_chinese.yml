@@ -1,0 +1,52 @@
+﻿l_simp_chinese:
+  samuelrks_mod:0 "特殊决议"
+  samuelrks_mod_desc:0 "这是mod的新增决议，原版游戏是没有这些的"
+
+  # AI不消耗补给
+  AI_logistics:0 "AI盟友不消耗补给"
+  AI_logistics_no_more:0 "AI盟友会消耗补给"
+  AI_logistics_no_more_desc:0 "AI盟友又会消耗补给了"
+  AI_logistics_desc:0 "让AI盟友不消耗补给，这样就不会跟玩家抢补给了，但是会破坏游戏机制。"
+  AI_logistics_add:0 "AI不消耗补给"
+  AI_logistics_remove:0 "AI消耗补给"
+
+  # 解锁苏联1939年步枪 新疆苏联AI
+  unlock_SOV_improved_infantry:0 "苏联解锁1939年步枪"
+  unlock_SOV_improved_infantry_desc:0 "傻逼P社让苏联不研究39年步枪，导致41年苏德开战，苏联步兵战斗力远低于德国，你做你妈的平衡呢？"
+
+  # 弃用 解锁另一条学说线
+  samuel.1.t:0 "陆军理论遭遇瓶颈"
+  samuel.1.d:0 "换一种新的思路吧"
+  samuel.1.a:0 "尝试从机动作战学说中取得突破"
+  samuel.1.b:0 "尝试从优势火力学说中取得突破"
+  samuel.1.c:0 "尝试从决战计划学说中取得突破"
+  samuel.1.e:0 "尝试从人海突击学说中取得突破"
+
+  samuel.2.t:0 "空军理论遭遇瓶颈"
+  samuel.2.d:0 "换一种新的思路吧"
+  samuel.2.a:0 "尝试从战略破坏学说中取得突破"
+  samuel.2.b:0 "尝试从战场支援学说中取得突破"
+  samuel.2.c:0 "尝试从连续作战学说中取得突破"
+
+  samuel.3.t:0 "海军理论遭遇瓶颈"
+  samuel.3.d:0 "换一种新的思路吧"
+  samuel.3.a:0 "尝试从存在舰队学说中取得突破"
+  samuel.3.b:0 "尝试从贸易阻断学说中取得突破"
+  samuel.3.c:0 "尝试从基地打击学说中取得突破"
+
+  # 和平时期禁用广泛征兵以上级别的法案
+  samuel.4.t:0 "征兵法案修改"
+  samuel.4.title:0 "征兵法案修改"
+  samuel.4.d:0 "本mod在和平时期禁用广泛征兵以上级别的法案"
+  samuel.4.desc:0 "本mod在和平时期禁用广泛征兵以上级别的法案"
+  samuel.4.a:0 "好的"
+
+  # AI最少一个师
+  AI_has_one_army:0 "AI最少一个师"
+
+  # 魔幻开局
+  unite_gran_colombia:0 "魔幻开局：统一玻利瓦尔"
+  unite_north_eu:0 "魔幻开局：统一维京"
+  create_mars_soldier:0 "召唤火星兵"
+
+  USA_Enter_war:0 "美国参战"

@@ -1,0 +1,14 @@
+spriteTypes={
+	spriteType = {
+		name = "GFX_ideology_social_democratic_group"
+		texturefile = "gfx/interface/ideologies/social_democratic_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_unionism_group"
+		texturefile = "gfx/interface/ideologies/unionism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_liberal_socialism_group"
+		texturefile = "gfx/interface/ideologies/liberal_socialism_group.dds"
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=758
+	name="STATE_758"
+
+	history={
+		owner = TIB
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = TIB
+		add_core_of = PRC
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		1961 5042 5094 8029 10802 12784 12801 13574 13575 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

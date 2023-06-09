@@ -1,0 +1,131 @@
+﻿division_template = {
+	name = "人民卫队"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
+	division_names_group = PRC_INF_01
+									#	PRC divisions were well-trained in guerilla mountain tactics.
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "人民革命军"				# Represents three-column local militia groups (Triangular Corps); poorly-equipped, lowest experience
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	##### Eighth Route Army (CO: Mao Zedong, Zhu De) #####
+	division = {
+		name = "人民革命军第1师"
+		location = 1047
+		division_template = "人民革命军"
+
+	}
+	division = {
+		name = "人民革命军第2师"
+		location = 1087
+		division_template = "人民革命军"
+
+	}
+	division = {
+		name = "人民革命军第3师"
+		location = 1162
+		division_template = "人民革命军"
+
+	}
+	division = {
+		name = "人民革命军第4师"
+		location = 1078
+		division_template = "人民革命军"
+
+	}
+	division = {
+		name = "人民革命军第5师"
+		location = 10080
+		division_template = "人民革命军"
+
+	}
+	division = {
+		name = "人民革命军共产党师"
+		location = 11941
+		division_template = "人民革命军"
+
+	}
+	division = {
+		name = "人民革命军国民师"
+		location = 1131
+		division_template = "人民革命军"
+
+	}
+	division = {
+		name = "人民卫队"
+		location = 12014
+		division_template = "人民卫队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "人民卫队"
+		location = 7039
+		division_template = "人民卫队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "人民卫队"
+		location = 4092
+		division_template = "人民卫队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "人民卫队"
+		location = 4092
+		division_template = "人民卫队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "人民卫队"
+		location = 9997
+		division_template = "人民卫队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+}
+
+##### STARTING PRODUCTION #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRC"
+		}
+		requested_factories = 2
+		progress = 0.33
+		efficiency = 100
+	}
+}

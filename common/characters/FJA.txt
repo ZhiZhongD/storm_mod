@@ -1,0 +1,35 @@
+characters={
+	FJA_li_jisheng={
+		name=FJA_li_jisheng
+		portraits={
+			army={
+				large="gfx\leaders\FJA\Portrait_CHI_Li_Jishen.dds"
+			}
+			civilian={
+				large="gfx\leaders\FJA\Portrait_CHI_Li_Jishen.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		field_marshal={
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=social_democraticism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
+

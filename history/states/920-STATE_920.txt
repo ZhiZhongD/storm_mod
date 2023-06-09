@@ -1,0 +1,20 @@
+state={
+	id=920
+	name="STATE_920"
+	provinces={
+		1263 4268 10160 12132 13424 13428 13429 13430 13431 13433 13434 13436 13438 13440 13441 13443 13444 13445 13449 13451 13452 13454 13456 13459 13460 13463 13471 13474 13475 13477 13484 13486 
+	}
+	history = {
+		owner = FRA
+		add_core_of = TAH
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	
+	manpower=91876
+	buildings_max_level_factor=1.000
+	state_category = rural
+	local_supplies=0.000
+}

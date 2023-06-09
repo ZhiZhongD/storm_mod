@@ -1,0 +1,38 @@
+state={
+	id=930
+	name="STATE_930"
+	provinces={
+		4196 
+	}
+	history={
+		owner = FJA
+		add_core_of = CHI
+		add_core_of = FJA
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
+			4196 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+
+		}
+		victory_points = {
+			4196 10
+		}
+		1938.10.25 = {
+			JAP = {
+				set_province_controller = 4196
+			}
+
+		}
+
+	}
+	manpower=500000
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,27 @@
+﻿recruit_character = RAU_eileen_gu
+add_ideas = {
+	closed_economy
+	extensive_conscription
+	partial_economic_mobilisation
+}
+set_politics = {
+	ruling_party = radical_socialism
+}
+set_popularities = {
+	unionism=20
+	communism=10
+	radical_socialism=60
+	anarchism=10
+}
+declare_war_on = {
+	target = AST
+	type = annex_everything
+}
+oob = "RAU_1936"
+capital = 285
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+set_stability = 0.6
+set_war_support = 0.7

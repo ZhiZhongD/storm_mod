@@ -1,0 +1,27 @@
+characters={
+	RAU_eileen_gu={
+		name=RAU_eileen_gu
+		portraits={
+			army={
+				large="gfx\leaders\RAU\Eileen_Gu.dds"
+			}
+			civilian={
+				large="gfx\leaders\RAU\Eileen_Gu.dds"
+			}
+		}
+		field_marshal={
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=liberal_socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
+

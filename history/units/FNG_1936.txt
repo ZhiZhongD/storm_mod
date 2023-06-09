@@ -1,0 +1,261 @@
+﻿
+division_template = {
+	name = "奉军步兵师"
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "奉军炮兵师"
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "东北抗日联军"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
+	division_names_group = PRC_INF_01
+									#	PRC divisions were well-trained in guerilla mountain tactics.
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+units = {
+	division = {
+		name = "奉军第1师"
+		location = 3944
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第2师"
+		location = 9897
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第3师"
+		location = 944
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第4师"
+		location = 3929
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第5师"
+		location = 861
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第6师"
+		location = 800
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第7师"
+		location = 11781
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第8师"
+		location = 9803
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第9师"
+		location = 3949
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第10师"
+		location = 9848
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第11师"
+		location = 945
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第12师"
+		location = 6868
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第13师"
+		location = 887
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第14师"
+		location = 916
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "广州人民志愿师"
+		location = 6868
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "福建人民志愿师"
+		location = 6837
+		division_template = "奉军步兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第15师"
+		location = 9831
+		division_template = "奉军炮兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "奉军第16师"
+		location = 6893
+		division_template = "奉军炮兵师"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "外籍志愿师"
+		location = 6893
+		division_template = "奉军炮兵师"
+	}
+	division = {
+		name = "东北抗日联军第1旅"
+		location = 9927
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "东北抗日联军第5旅"
+		location = 9927
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "东北抗日联军第2旅"
+		location = 3934
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "东北抗日联军第6旅"
+		location = 3934
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "东北抗日联军第3旅"
+		location = 934
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "东北抗日联军第7旅"
+		location = 934
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "东北抗日联军第4旅"
+		location = 6837
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "东北抗日联军第8旅"
+		location = 6837
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "东北抗日联军第9旅"
+		location = 945
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "东北抗日联军第10旅"
+		location = 6837
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "东北抗日联军第11旅"
+		location = 9848
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "东北抗日联军第12旅"
+		location = 6852
+		division_template = "东北抗日联军"
+		start_equipment_factor = 0.8
+	}
+}
+##### STARTING PRODUCTION #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "FNG"
+		}
+		requested_factories = 5
+		progress = 0.33
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "FNG" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+}

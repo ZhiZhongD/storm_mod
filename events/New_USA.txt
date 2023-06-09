@@ -1,0 +1,131 @@
+add_namespace = wfa
+add_namespace = wfa_news
+
+country_event={
+	id = wfa.1
+	title = wfa.1.t
+	desc = wfa.1.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+
+
+	trigger = {
+		tag = USA
+	}
+
+	option = {
+		name = wfa.1.a
+		
+		ai_will_do={factor=10}
+
+		
+		
+		
+		hidden_effect={
+		WFA={
+			set_politics = { 
+				ruling_party = communism election_frequency = 48 elections_allowed = yes
+			}
+			create_country_leader = {
+				name = "约翰·里德"
+				picture = "gfx/leaders/USA/Portrait_USA_Jack_Reed.png"
+				ideology = Leninism
+				traits={popular_president}
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.65
+			}
+			set_capital={state=395}
+			WFA = { transfer_state = 393 }
+			WFA = { transfer_state = 360 }
+			WFA = { transfer_state = 358 }
+			WFA = { transfer_state = 394 }
+			WFA = { transfer_state = 396 }
+			WFA = { transfer_state = 261 }
+			WFA = { transfer_state = 359 }
+			WFA = { transfer_state = 395 }
+			change_tag_from = USA
+		    }
+			
+	    }
+		WFA={
+			division_template = {
+				name = "新大陆军步兵师"
+			
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+				} 
+			}
+		}
+		WFA={country_event = {id = wfa.2 days=3}}
+	}
+	option={
+		name = wfa.1.b
+
+		ai_will_do={factor=1}
+	}
+}
+country_event={
+	id = wfa.2
+	title = wfa.2.t
+	desc = wfa.2.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+
+	option = {
+		name = wfa.2.a
+
+		USA={declare_war_on = { target = WFA type=annex_everything}}
+		news_event = wfa_news.1
+	357={
+		create_unit = {
+			division = "name = \"新大陆军步兵师\" division_template = \"新大陆军步兵师\" start_experience_factor = 0.5"  
+			owner = ROOT
+			count=5
+			allow_spawning_on_enemy_provs = yes 
+		}
+	}
+	361={
+		create_unit = {
+			division = "name = \"新大陆军步兵师\" division_template = \"新大陆军步兵师\" start_experience_factor = 0.5"  
+			owner = ROOT
+			count=2
+			allow_spawning_on_enemy_provs = yes 
+		}
+	}
+	every_state = {
+		create_unit = {
+			division = "name = \"新大陆军步兵师\" division_template = \"新大陆军步兵师\" start_experience_factor = 0.5"  
+			owner = ROOT
+		}
+		create_unit = {
+			division = "name = \"新大陆军步兵师\" division_template = \"新大陆军步兵师\" start_experience_factor = 0.5"  
+			owner = ROOT
+		}
+		create_unit = {
+			division = "name = \"新大陆军步兵师\" division_template = \"新大陆军步兵师\" start_experience_factor = 0.5"  
+			owner = ROOT
+		}
+	}
+		}
+
+		
+	}
+
+news_event = {
+	id = wfa_news.1
+	title = wfa_news.1.t
+	desc = wfa_news.1.d
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = wfa_news.1.a
+	}
+}

@@ -1,0 +1,149 @@
+@SENATE_TEXT_X = 16
+@HOUSE_TEXT_X = 212
+@HEADERS_Y = 67
+@STATUS_Y = 52
+guiTypes = {
+	
+	containerWindowType = {
+		name = "soviet_factional_struggle"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 300 }
+
+		#stalinist
+		iconType = {
+			name = "gui_stalinist_icon"
+			quadTextureSprite ="GFX_focus_fra_loyalty_stalin" #图标采用的图像（动态或多帧）
+			position = { x= 20 y = 50 } #图标位置
+		}
+		instantTextBoxType = {
+			name = "gui_stalinist_title" #窗口名称（最好独一无二）
+			position = { x = 130 y = 70 } #窗口位置
+			size = { width = 100 height= 20 }
+			font = "hoi_18mbs" #文本窗口内部用什么字体
+			text = "gui_stalinist_title_text" #文本内容，用此处来进行本地化
+		}
+		instantTextBoxType = {
+			name = "gui_support_degree_a" #窗口名称（最好独一无二）
+			position = { x = 130 y = 90 } #窗口位置
+			size = { width = 100 height= 20 }
+			font = "hoi_18mbs" #文本窗口内部用什么字体
+			text = "gui_support_degree_s_text" #文本内容，用此处来进行本地化
+		}
+		#trotzkyist
+		iconType = {
+			name = "gui_trotzkyist_icon"
+			quadTextureSprite ="GFX_focus_fra_loyalty_trotzky" #图标采用的图像（动态或多帧）
+			position = { x= 20 y = 175} #图标位置
+		}
+		instantTextBoxType = {
+			name = "gui_trotzkyist_title" #窗口名称（最好独一无二）
+			position = { x = 130 y = 195 } #窗口位置
+			size = { width = 100 height= 20 }
+			font = "hoi_18mbs" #文本窗口内部用什么字体
+			text = "gui_trotzkyist_title_text" #文本内容，用此处来进行本地化
+		}
+		instantTextBoxType = {
+			name = "gui_support_degree_b" #窗口名称（最好独一无二）
+			position = { x = 130 y = 215 } #窗口位置
+			size = { width = 100 height= 20 }
+			font = "hoi_18mbs" #文本窗口内部用什么字体
+			text = "gui_support_degree_t_text" #文本内容，用此处来进行本地化
+		}
+		#bukharinist
+		iconType = {
+			name = "gui_bukharinist_icon"
+			quadTextureSprite ="GFX_focus_SOV_bukharinists" #图标采用的图像（动态或多帧）
+			position = { x= 260 y = 50} #图标位置
+		}
+		instantTextBoxType = {
+			name = "gui_bukharinist_title" #窗口名称（最好独一无二）
+			position = { x = 360 y = 70 } #窗口位置
+			size = { width = 100 height= 20 }
+			font = "hoi_18mbs" #文本窗口内部用什么字体
+			text = "gui_bukharinist_title_text" #文本内容，用此处来进行本地化
+		}
+		instantTextBoxType = {
+			name = "gui_support_degree_c" #窗口名称（最好独一无二）
+			position = { x = 360 y = 90 } #窗口位置
+			size = { width = 100 height= 20 }
+			font = "hoi_18mbs" #文本窗口内部用什么字体
+			text = "gui_support_degree_b_text" #文本内容，用此处来进行本地化
+		}
+		#unionist
+		iconType = {
+			name = "gui_unionist_icon"
+			quadTextureSprite ="GFX_r56_goal_FRA_work_with_the_cgt" #图标采用的图像（动态或多帧）
+			position = { x= 265 y = 175} #图标位置
+		}
+		instantTextBoxType = {
+			name = "gui_unionist_title" #窗口名称（最好独一无二）
+			position = { x = 360 y = 195 } #窗口位置
+			size = { width = 100 height= 20 }
+			font = "hoi_18mbs" #文本窗口内部用什么字体
+			text = "gui_unionist_title_text" #文本内容，用此处来进行本地化
+		}
+		instantTextBoxType = {
+			name = "gui_support_degree_d" #窗口名称（最好独一无二）
+			position = { x = 360 y = 215 } #窗口位置
+			size = { width = 100 height= 20 }
+			font = "hoi_18mbs" #文本窗口内部用什么字体
+			text = "gui_support_degree_u_text" #文本内容，用此处来进行本地化
+		}
+	}
+
+	#containerWindowType = {
+		name = "soviet_congress"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 92 }
+
+		iconType = {
+			name ="senate_icon"
+			spriteType = "GFX_decision_category_usa_congress_senate_ui"
+			position = { x= 70	 y = 5 }
+		}
+
+		instantTextBoxType = {
+			name ="senate_support_header"
+			position = { x = @SENATE_TEXT_X y = @HEADERS_Y }
+			font = "hoi_24header"
+			text = "USA_congress_senate_support_header"
+			format = center
+			maxHeight = 24
+		}
+
+		instantTextBoxType = {
+			name ="status_senate"
+			position = { x = @SENATE_TEXT_X y = @STATUS_Y }
+			font = "hoi_18mbs"
+			text = "USA_congress_senate_support_amount"
+			format = center
+		}
+
+		iconType = {
+			name ="house_icon"
+			spriteType = "GFX_decision_category_usa_congress_house_ui"
+			position = { x= 280 y = -17 }
+		}
+
+		instantTextBoxType = {
+			name ="status_house"
+			position = { x= @HOUSE_TEXT_X y = @STATUS_Y }
+			font = "hoi_18mbs"
+			text = "USA_congress_house_support_amount"
+			format = center
+			fixedsize = yes
+			maxWidth = 280
+		}
+
+		instantTextBoxType = {
+			name ="house_support_header"
+			position = { x= @HOUSE_TEXT_X y = @HEADERS_Y }
+			font = "hoi_24header"
+			text = "USA_congress_house_support_header"
+			format = center
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 280
+		}
+    }
+}

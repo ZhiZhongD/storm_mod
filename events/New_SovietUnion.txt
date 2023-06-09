@@ -1,0 +1,181 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet
+
+# Border Skirmish with the Japanese
+country_event = {
+	id = soviet.1001
+	title = soviet.1001.t
+	desc = soviet.1001.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1001.a
+		set_country_flag=SOV_lenin_died
+	}
+}
+country_event = {
+	id = soviet.1003
+	title = soviet.1003.t
+	desc = soviet.1003.d
+	picture = GFX_report_event_japanese_transport_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1003.a
+		ai_chance = { factor = 75 }
+	}
+	option = { 
+		name = soviet.1003.b
+		ai_chance = { factor = 25 }
+	}
+}
+country_event = {
+	id = soviet.1000
+	title = soviet.1000.t
+	desc = soviet.1000.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1000.a
+		add_political_power=25
+		complete_national_focus=SOV_new_leninism
+	}
+}
+country_event = {
+	id = soviet.1004
+	title = soviet.1004.t
+	desc = soviet.1004.d
+	trigger={
+		tag=SOV
+	}
+	
+	fire_only_once = yes
+
+	option = { 
+		name = soviet.1004.a
+		ai_will_do={factor=10}
+		country_event=soviet.1000
+	}
+	option = {
+		name = soviet.1004.b
+		ai_will_do={factor=1}
+		country_event=soviet.1001
+		custom_effect_tooltip=SOV_tooltip_lenin_died
+	}
+}
+country_event = {
+	id = soviet.1005
+	title = soviet.1005.t
+	desc = soviet.1005.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1005.a
+		add_ideas=SOV_the_discontent_of_workers_and_peasants
+		country_event=soviet.1006
+	}
+}
+country_event = {
+	id = soviet.1006
+	title = soviet.1006.t
+	desc = soviet.1006.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1006.a
+		add_ideas=SOV_passive_resistance_of_peasants
+		add_ideas=SOV_farmer_hate
+		country_event=soviet.1007
+	}
+}
+country_event = {
+	id = soviet.1007
+	title = soviet.1007.t
+	desc = soviet.1007.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1007.a
+		add_ideas=SOV_backward_agricultural_production_technology
+		country_event=soviet.1008
+	}
+}
+country_event = {
+	id = soviet.1008
+	title = soviet.1008.t
+	desc = soviet.1008.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1008.a
+		add_ideas=SOV_science_low
+		country_event=soviet.1009
+	}
+}
+country_event = {
+	id = soviet.1009
+	title = soviet.1009.t
+	desc = soviet.1009.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1009.a
+		add_ideas=SOV_culture_low
+		country_event=soviet.1010
+	}
+}
+country_event = {
+	id = soviet.1010
+	title = soviet.1010.t
+	desc = soviet.1010.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1010.a
+		add_ideas=SOV_washing
+	}
+}
+country_event = {
+	id = soviet.1011
+	title = soviet.1011.t
+	desc = soviet.1011.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1011.a
+		add_to_variable = { trotzkyist_help = -5 }
+        custom_effect_tooltip=SOV_tooltip_trotzkyist_short
+		add_to_variable = { stalinist_help = -5 }
+        custom_effect_tooltip=SOV_tooltip_stalinist_short
+	}
+}
+country_event = {
+	id = soviet.1012
+	title = soviet.1012.t
+	desc = soviet.1012.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = soviet.1012.a
+		add_to_variable = { stalinist_help = -5 }
+			custom_effect_tooltip=SOV_tooltip_stalinist_short
+			add_to_variable = { bukharinist_help = -5 }
+			custom_effect_tooltip=SOV_tooltip_bukharinist_short
+			add_to_variable = { trotzkyist_help = -5 }
+			custom_effect_tooltip=SOV_tooltip_trotzkyist_short
+	}
+}

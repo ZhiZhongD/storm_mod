@@ -1,0 +1,22 @@
+state={
+	id=913
+	name="STATE_913"
+	provinces={
+		2114 2163 7533 8234 8249 10977 10991 11019 12934 12968 13308 13318 13345 13377 
+	}
+	history = {
+		owner = RAU
+		add_core_of = AST
+		add_core_of = RAU
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+		}
+	}
+	manpower=1503100
+	buildings_max_level_factor=1.000
+	state_category = city
+	local_supplies=0.000
+}

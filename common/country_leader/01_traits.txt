@@ -1,0 +1,67 @@
+leader_traits={
+    revolution_teacher = {
+		random = no
+		political_power_factor = 0.15
+        communism_drift=0.1
+	}
+	steel_statesman = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.15
+		industrial_capacity_factory = 0.05
+		war_support_factor = 0.1
+		stability_factor = 0.1
+	}
+	popular_president = {
+		random=no
+		political_power_factor = 0.15
+		stability_factor = 0.15
+		war_support_factor = 0.15
+		political_advisor_cost_factor = -0.33
+		surrender_limit = 0.5
+	}
+	revolutionary_elder={
+		random=no
+		political_power_factor = 0.15
+		stability_factor = 0.15
+	}
+	popular_leader={
+		random=no
+		political_power_factor = 0.3
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		surrender_limit = 1
+	}
+	military_genius={
+		random=no
+		army_org_factor = 0.1
+	    army_morale_factor = 0.1
+		supply_consumption_factor = -0.1
+		org_loss_when_moving = -0.1
+		army_speed_factor = 0.1
+	}
+	revolutionaries_of_workers_and_peasants={
+		random=no
+		political_power_factor = 0.15
+	    local_resources_factor = 0.1
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		conscription = 0.01
+	}
+	popular_politician={
+		random=no
+		political_power_factor = 0.15
+		stability_factor = 0.1
+		war_support_factor = 0.05
+	}
+	FNG_defend={
+		random=no
+		ai_focus_defense_factor = 0.5
+	}
+	PRC_planner_leader={
+		random=no
+		production_speed_arms_factory_factor = 0.05
+	    production_speed_industrial_complex_factor = 0.05
+		production_speed_infrastructure_factor = 0.1
+	}
+}

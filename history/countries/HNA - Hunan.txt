@@ -1,0 +1,13 @@
+﻿recruit_character = HNA_he_jian
+add_ideas = {
+	closed_economy
+	extensive_conscription
+	partial_economic_mobilisation
+}
+set_politics = {
+	ruling_party = neutrality
+}
+set_popularities = {
+	neutrality=100
+}
+oob = "HNA_1936"

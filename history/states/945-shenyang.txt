@@ -1,0 +1,30 @@
+state={
+	id=945
+	name="STATE_945"
+	provinces={
+		11771 
+	}
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = FNG
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 5
+
+		}
+		victory_points = {
+			11771 3 
+		}
+
+	}
+
+	manpower=500000
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

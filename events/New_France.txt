@@ -1,0 +1,231 @@
+﻿###########################
+# Red France Events
+###########################
+
+add_namespace = RF
+
+country_event = {
+	id = RF.1
+	title = RF.1.t
+	desc = RF.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # 接受
+		name = RF.1.a
+		ai_chance = { factor = 50 }
+		FRA={country_event={id=RF.2}}
+	}
+	option = { # 拒绝
+		name = RF.1.b
+		ai_chance = { factor = 75 }
+		FRA={country_event={id=RF.3}}
+	}
+}
+
+country_event={
+	id=RF.2
+	title=RF.2.t
+	desc=RF.2.d
+
+	is_triggered_only=yes
+
+	option={
+		name=RF.2.a
+		USA={
+         send_equipment = { target = FRA type = infantry_equipment amount = 500 }
+		 send_equipment = { target = FRA type = artillery_equipment amount = 500 }
+		 send_equipment = { target = FRA type = motorized_equipment amount = 500 }
+		 send_equipment = { target = FRA type = fighter_equipment amount = 500 }
+		 send_equipment = { target = FRA type = CAS_equipment amount = 500 }
+		}
+			add_tech_bonus = {
+				name = FRA_laissez_faire
+				category = industry
+				uses = 1
+				bonus = 1
+			}
+				free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			add_popularity = { ideology = democratic popularity = 0.05 }
+	}
+}
+
+country_event={
+	id=RF.3
+	title=RF.3.t
+	desc=RF.3.d
+
+	is_triggered_only=yes
+
+	option={
+		name=RF.3.a
+		add_popularity = { ideology = democratic popularity = -0.05 }
+		add_popularity = { ideology = shmzzy popularity = 0.05 }
+	}
+}
+
+#请求援助
+country_event={
+	id=RF.4
+	title=RF.4.t
+	desc=RF.4.d
+
+	is_triggered_only=yes
+
+	option={
+		name=RF.4.a
+		ai_chance = { factor = 50 }
+		FRA={
+			country_event=RF.5
+	    }
+    }
+}
+#获得援助
+country_event={
+	id=RF.5
+	title=RF.5.t
+	desc=RF.5.d
+
+	is_triggered_only=yes
+
+	option={
+		name=RF.5.a
+		SOV={
+		 send_equipment = { target = FRA type = infantry_equipment amount = 500 }
+		 send_equipment = { target = FRA type = artillery_equipment amount = 500 }
+		 send_equipment = { target = FRA type = motorized_equipment amount = 500 }
+		 send_equipment = { target = FRA type = fighter_equipment amount = 500 }
+		 send_equipment = { target = FRA type = CAS_equipment amount = 500 }
+		}
+			add_tech_bonus = {
+				name = FRA_laissez_faire
+				category = industry
+				uses = 1
+				bonus = 2
+			}
+				free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			add_popularity = { ideology = democratic popularity = -0.05 }
+	}
+}
+
+#选择路线
+country_event={
+	id=RF.6
+	title=RF.6.t
+	desc=RF.6.d
+
+	is_triggered_only=yes
+
+	option={
+		name=RF.6.a
+		complete_national_focus=FRA_mzshzy
+	}
+	option={
+		name=RF.6.b
+		complete_national_focus=FRA_wqshzy
+	}
+}
+
+#Meeting
+country_event={
+	id=RF.7
+	title=RF.7.t
+	desc=RF.7.d
+
+	is_triggered_only=yes
+
+	option={
+		name=RF.7.a
+	 country_event={id=RF.8   days=1}
+}
+}
+
+
+country_event={
+	id=RF.8
+	title=RF.8.t
+	desc=RF.8.d
+
+	is_triggered_only=yes
+
+	option={
+		name=RF.8.a
+		add_popularity = { ideology = communism popularity = 0.05 }
+		add_stability=0.05
+		country_event={id=RF.9 days=1}
+	}
+	option={
+		name=RF.8.b
+		add_popularity = { ideology = gmshzy popularity = 0.1 }
+		add_stability=-0.05
+		country_event={id=RF.9 days=1}
+	}
+}
+
+#Work Union and Party
+country_event={
+	id=RF.9
+	title=RF.9.t
+	desc=RF.9.d
+
+	is_triggered_only=yes
+
+	option={
+		name=RF.9.a
+		add_popularity = { ideology = communism popularity = 0.05 }
+		add_stability=0.05
+		country_event={id=RF.10 days=1}
+	}
+	option={
+		name=RF.9.b
+		add_popularity = { ideology = gmshzy popularity = 0.1 }
+		add_stability=-0.05
+		country_event={id=RF.10 days=1}
+	}
+}
+
+#Farm and Factorty
+country_event={
+	id=RF.10
+	title=RF.10.t
+	desc=RF.10.d
+
+	is_triggered_only=yes
+
+	option={
+		name=RF.10.a
+		add_popularity = { ideology = communism popularity = 0.05 }
+		add_stability=0.05
+	}
+	option={
+		name=RF.10.b
+		add_popularity = { ideology = gmshzy popularity = 0.1 }
+		add_stability=-0.05
+	}
+}
+
+
+

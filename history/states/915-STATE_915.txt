@@ -1,0 +1,23 @@
+
+state={
+	id=915
+	name="STATE_915"
+
+	history={
+		owner = NZL
+		add_core_of = NZL
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		2203 4819 5195 7839 8204 8212 10650 12632 12966 13287 13292 13294 
+	}
+	manpower=254213
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

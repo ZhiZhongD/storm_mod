@@ -1,0 +1,19 @@
+﻿l_simp_chinese:
+ ryan_naval_decisions:0 "海军管理-提高你的国家的海军."
+ ryan_naval_decisions_desc:0 "成为造船专业户！创建世界级造船厂.  整合专业制造流程以提高效率。承包私营企业提高造船产量."
+ 
+ ryan_ship_upgrade_efficiency:0 "利用私营造船厂改进舰船改装"
+ ryan_ship_upgrade_efficiency_desc:0 "为国家最好的造船商提供合同船只升级"
+ 
+ ryan_heavy_ship_specialization:0 "模块化生产的重型舰船专业化"
+ ryan_heavy_ship_specialization_desc:0 "将炮兵和坦克工厂改造成制造重型舰船部件的工厂."
+
+ryan_navy_research:0 "通过投资对外联系提升海军技术"
+ryan_navy_research_desc:0 "在外国发展间谍网络和商业联系，窃取和学习海军技术."
+
+ryan_heavy_engine_specialization:0 "船舶重型发动机专业化-转移军工厂支持造船厂"
+ryan_heavy_engine_specialization_desc:0 "将坦克工厂改造成制造重型船舶发动机的工厂"
+
+ryan_carrier_specialization:0 "运营商专业化"
+ryan_carrier_specialization_desc:0 "将飞机工厂改造成制造航母部件的工厂."
+ 

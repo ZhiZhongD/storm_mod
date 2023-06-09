@@ -1,0 +1,21 @@
+﻿# Infantry
+RAU_INF_02 = {
+	name = "工团红军步兵师"
+
+	for_countries = { RAU }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+}
+
+RAU_INF_01 = {
+	name = "工人赤卫队"
+
+	for_countries = { RAU }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+}
+

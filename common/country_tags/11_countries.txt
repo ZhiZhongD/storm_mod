@@ -1,0 +1,11 @@
+WFA	= "countries/Red_America.txt"
+FJA = "countries/FuJian.txt"
+HNA = "countries/Hunan.txt"
+FNG = "countries/Fengtian.txt"
+SIC = "countries/Sichuan.txt"
+GZO = "countries/Guizhou.txt"
+RAU = "countries/Red_Australia.txt"
+
+
+
+#NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")

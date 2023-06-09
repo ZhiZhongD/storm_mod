@@ -1,0 +1,38 @@
+state={
+	id=936
+	name="STATE_936"
+	provinces={
+		9958 
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			9958 10 
+		}
+		1938.10.25 = {
+			buildings = {
+				industrial_complex = 4
+				infrastructure = 4
+				air_base = 2
+				arms_factory = 2
+
+			}
+			JAP = {
+				set_province_controller = 9958
+			}
+
+		}
+
+	}
+	manpower=500000
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

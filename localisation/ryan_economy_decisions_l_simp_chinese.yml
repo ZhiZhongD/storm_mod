@@ -1,0 +1,47 @@
+﻿l_simp_chinese:
+ ryan_economy_decisions:0 "经济管理"
+ ryan_economy_decisions_desc:0 "提高你的国家的经济、科学和工业产出。这包括对民用和军用大学、交通、农田、采矿和工业的投资。城镇和城市的新地点随着积极的移民政策而发展，以使外国人群体融入这个国家."
+ ryan_increase_population:0 "移民政策促进人口增长."
+ ryan_increase_population_desc:0 "将建筑资源转用于建设定居点，以将新人口融入经济."
+ ryan_increase_manpower:0 "招募外国成年男子."
+ ryan_increase_manpower_desc:0 "转移民用工厂，为外国新兵的家庭建造军用房屋和营房."
+ ryan_increase_political_power:0 "提高政治权力"
+ ryan_increase_political_power_desc:0 "将经济资源用于公民福利."
+ # 政治_权利_贿赂_政治腐败_提供政治基础."
+
+ ryan_increase_technology:0 "提高技术能力"
+ ryan_increase_technology_desc:0 "将工业、军事和海军综合体转变为研发设施."
+ ryan_state_development_wasteland:0 "完成扩大农田的项目"
+ ryan_state_development_wasteland_desc:0 "耕种土地以种植适合恶劣气候的作物."
+ ryan_state_development_rural:0 "农村地区的长期发展."
+ ryan_state_development_rural_desc:0 "对发展的大量投资，农村地区大量城镇形成."
+ ryan_state_development_town:0 "促进城镇发展"
+ ryan_state_development_town_desc:0 "投资城镇，让它们成长为城市."
+
+ ryan_state_development_city:0 "使城市现代化"
+ ryan_state_development_city_desc:0 "完成城市世界级基础设施的建设."
+
+ ryan_state_development_largetown:0 "城市地区因投资而繁荣昌盛"
+ ryan_state_development_largetown_desc:0 "将人口中心扩展到密集的城市地区."
+
+ ryan_state_development_largecity:0 "继续城市扩张"
+ ryan_state_development_largecity_desc:0 "这项长期投资会及时得到回报."
+
+ ryan_state_development_metropolis:0 "城市建设的巅峰"
+ ryan_state_development_metropolis_desc:0 "因为城市投资导致到处是繁荣的城市."
+
+ ryan_state_development_1:0 "创建新工业区"
+ ryan_state_development_1_desc:0 "划分土地和建设基础设施，以支持新的工业区."
+
+ ryan_invest_in_steel:0 "支持钢铁工业"
+ ryan_invest_in_steel_desc:0 "钢铁大规模生产需要大量劳动力."
+
+ ryan_invest_in_aluminium:0 "支持铝工业."
+ ryan_invest_in_aluminium_desc:0 "大型冶炼厂在大型工业区扩张."
+
+ ryan_invest_in_chromium:0 "支持铬工业"
+ ryan_invest_in_chromium_desc:0 "支持检测矿脉和采矿符合国家利益."
+
+ ryan_invest_in_tungsten:0 "支持钨产业"
+ ryan_invest_in_tungsten_desc:0 "支持检测矿脉和采矿符合国家利益."
+ 
