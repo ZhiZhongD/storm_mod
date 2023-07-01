@@ -2,9 +2,7 @@
 state={
 	id=932
 	name="STATE_932"
-	provinces={
-		4042 7014 10034 10076 12052 12076 13142 
-	}
+
 	history={
 		owner = CHI
 		add_core_of = CHI
@@ -24,10 +22,10 @@ state={
 
 		}
 		victory_points = {
-			7014 25
+			7014 25 
 		}
 		victory_points = {
-			10076 10
+			10076 10 
 		}
 		1938.10.25 = {
 			controller = JAP
@@ -35,8 +33,12 @@ state={
 		}
 
 	}
+
+	provinces={
+		4042 7014 10034 12052 12076 
+	}
 	manpower=5000000
-	state_category = large_city
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=0.000
 }
