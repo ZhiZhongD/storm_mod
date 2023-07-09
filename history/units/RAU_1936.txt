@@ -21,6 +21,26 @@ division_template = {
 	}
 	priority = 1
 }
+division_template = {
+	name = "工团红军突击师"				# Represents three-column local militia groups (Triangular Corps); poorly-equipped, lowest experience
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x=2 y=1 }
+		artillery_brigade = { x=2 y=2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+	priority = 1
+}
 
 units = {
 	division = {
@@ -30,9 +50,21 @@ units = {
 
 	}
 	division = {
+		name = "工团红军第7师"
+		location = 2130
+		division_template = "工团红军突击师"
+
+	}
+	division = {
 		name = "工团红军第2师"
 		location = 8249
 		division_template = "工团红军步兵师"
+
+	}
+	division = {
+		name = "工团红军第8师"
+		location = 8249
+		division_template = "工团红军突击师"
 
 	}
 	division = {
@@ -42,9 +74,21 @@ units = {
 
 	}
 	division = {
-		name = "工团红军第师"
+		name = "工团红军第9师"
+		location = 10500
+		division_template = "工团红军突击师"
+
+	}
+	division = {
+		name = "工团红军第4师"
 		location = 2163
 		division_template = "工团红军步兵师"
+
+	}
+	division = {
+		name = "工团红军第10师"
+		location = 2163
+		division_template = "工团红军突击师"
 
 	}
 	division = {
@@ -54,9 +98,21 @@ units = {
 
 	}
 	division = {
+		name = "工团红军第11师"
+		location = 13308
+		division_template = "工团红军突击师"
+
+	}
+	division = {
 		name = "工团红军第6师"
 		location = 7649
 		division_template = "工团红军步兵师"
+
+	}
+	division = {
+		name = "工团红军第12师"
+		location = 7649
+		division_template = "工团红军突击师"
 
 	}
 	division = {
@@ -144,5 +200,26 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 
+	}
+}
+#############################################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRC"
+		}
+		requested_factories = 5
+		progress = 0.33
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_0
+			creator = "PRC"
+		}
+		requested_factories = 5
+		progress = 0.33
+		efficiency = 100
 	}
 }

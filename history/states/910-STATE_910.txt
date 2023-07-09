@@ -8,11 +8,16 @@ state={
 		owner = AST
 		add_core_of = AST
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			8155 20 
 		}
 	}
-	manpower=141545
+	
+	manpower=3415450
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = large_city
 	local_supplies=0.000
 }

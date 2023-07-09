@@ -9,7 +9,6 @@ state={
 	history={
 		owner = SIC
 		add_core_of = CHI
-		add_core_of = PRC
 		add_core_of = SIC
 		buildings = {
 			infrastructure = 4
@@ -23,7 +22,7 @@ state={
 				industrial_complex = 6
 				infrastructure = 3
 				air_base = 3
-				arms_factory = 3
+				arms_factory = 6
 
 			}
 

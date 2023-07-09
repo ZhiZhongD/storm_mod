@@ -8,7 +8,6 @@ state={
 		owner = SHX
 		add_core_of = SHX
 		add_core_of = CHI
-		add_core_of = PRC
 		victory_points = {
 			1519 10 
 		}
@@ -18,14 +17,9 @@ state={
 			industrial_complex = 2
 
 		}
-		1938.10.25 = {
-			owner = PRC
-			controller = JAP
-		}
-
 	}
 	manpower=500000
-	state_category = city
+	state_category = large_city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

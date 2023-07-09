@@ -11,27 +11,12 @@ state={
 		owner = SIC
 		add_core_of = SIC
 		add_core_of = CHI
-		add_core_of = PRC
 		victory_points = {
 			2045 1 
 		}
 		buildings = {
 			infrastructure = 2
 
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger"
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-			}
 		}
 	}
 

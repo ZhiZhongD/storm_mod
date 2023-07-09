@@ -1,0 +1,12 @@
+﻿l_simp_chinese:
+
+#eu4_like_ideas_modifiers_l_english
+ idea_cost_modifier: "£eu4_idea_cost_texticon  理念花费"
+ subject_ideology_drift: "£boost_popularity_texticon  主体意识形态走向 [Root.GetRulingIdeologyNounCapitalized]"
+ research_bonus_cat_mobile_warfare: "$MODIFIER_RESEARCH_SPEED_FACTOR$  $cat_mobile_warfare$的科研速度"
+ research_bonus_cat_heavy_armor: "£research_speed_tank_texticon  $cat_heavy_armor$的科研速度"
+ add_research_slot: "£research_icon  科研槽"
+ policy_cost: "£eu4_policy_cost_texticon  政策花费"
+ max_allowed_policies: "£eu4_max_policies_texticon  可行的政策"
+ political_power_cost_for_government_ideas: "£political_power_cost_texticon  政治点数花费（内阁）"
+ monthly_most_popular_ideology_drift: "£boost_popularity_texticon  最受欢迎的意识形态支持度（每月）"

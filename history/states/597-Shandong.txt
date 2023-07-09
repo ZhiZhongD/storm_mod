@@ -6,10 +6,8 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
 			air_base = 3
 			4205 = {
 				naval_base = 2
@@ -17,10 +15,6 @@ state={
 				bunker = 1
 
 			}
-
-		}
-		1938.10.25 = {
-			controller = JAP
 
 		}
 

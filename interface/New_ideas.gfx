@@ -51,3 +51,19 @@ spriteTypes={
 	    name="GFX_idea_FRA_spirit"
 		texturefile="gfx/interface/ideas/FRA_spirit.png"
     }
+	spriteType = {
+	    name="GFX_idea_GXC_liangguang_broken"
+		texturefile="gfx/interface/ideas/GXC_liangguang_broken.png"
+    }
+	spriteType = {
+	    name="GFX_idea_CZE_Sugar_industry"
+		texturefile="gfx/interface/ideas/CZE_Sugar_industry.png"
+    }
+	spriteType = {
+	    name="GFX_idea_GXC_liangguang_broken"
+		texturefile="gfx/interface/ideas/GXC_liangguang_broken.png"
+    }
+	spriteType = {
+	    name="GFX_idea_GXC_liangguang_broken"
+		texturefile="gfx/interface/ideas/GXC_liangguang_broken.png"
+    }

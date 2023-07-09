@@ -7,18 +7,14 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
+			arms_factory = 1
 			air_base = 3
 		}
 		victory_points = {
 			9843 20 
-		}
-		1938.10.25 = {
-			controller = JAP
-
 		}
 
 	}

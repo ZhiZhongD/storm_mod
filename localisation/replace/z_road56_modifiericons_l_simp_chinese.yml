@@ -1,0 +1,62 @@
+﻿l_simp_chinese:
+#CAN_l_english
+ canadian_fuhrer_tt:0 "§Y阿坎德§! 获得特质:\n§Y加拿大元首§!\n£political_power_texticon  政治点数获得：§G+15%§!\n£war_support_modifiericons_texticon  战争支持度：§G+5.00%§!"
+ CAN_state_manpower_tt:0 "§Y[466.GetName]§! 和 §Y[468.GetName]§!:\n£manpower_texticon  当地人力：§G+75%§!\n\n"
+ quebec_conscription_tt:0 "§Y魁北克§! 和 §Y圣劳伦斯§!:\n£manpower_texticon  当地人力：§R-75%§!"
+ quebec_conscription_02_tt:0 "§Y魁北克§! and §Y圣劳伦斯§!:\n£manpower_texticon  当地人力：§R-10%§!"
+ quebec_conscription_modify_tt:0 "修改 §Y魁北克民族主义§! :\n\n§Y魁北克§! 和 §Y圣劳伦斯§!:\n£manpower_texticon  当地人力：§G+60%§!"
+ CAN_conscription_crisis_tt:0 "£manpower_texticon  当地人力 §R-75%§! 在 §Y魁北克§! 核心。"
+ CAN_conscription_crisis_mended_tt:0 "£manpower_texticon  当地人力 §R-10%§! 在 §Y魁北克§! 核心."
+
+#events_l_english
+ establishing_vichy_tt:1 "§Y维希法国§!将在法国南部建立。\n§Y维希法国§!将获得所有§Y法国殖民地§!\n§Y法国§!的部分部队将转移给§Y维希法国§!\n（§Y维希法国§!）：\n§Y法兰西行动§!成为执政党\n§Y菲利浦·贝当§!成为§Y法西斯主义§!政党的领导人。\n获得民族精神§Y占领成本§!，效果为\n(£consumer_goods_texticon  生活消费品工厂：§Y20%§!)\n移动主力舰到§Y奥弗涅§!"
+
+#r56_modifiers_l_english
+ naval_armor_tech_research:0 "£research_speed_naval_texticon  海军装甲研究速度"
+ naval_gunnery_tech_research:0 "£research_speed_battery_texticon  舰艇火炮研究速度"
+ modifier_production_speed_infrastructure_factor:0 "£construction_speed_infrastructure_texticon  §Y基础设施§!建造速度"
+ modifier_production_speed_arms_factory_factor:0 "£construction_speed_milfactory_texticon  §Y军用工厂§!建造速度"
+ modifier_production_speed_industrial_complex_factor:0 "£construction_speed_civfactory_texticon  §Y民用工厂§!建造速度"
+ modifier_production_speed_air_base_factor:0 "£construction_speed_airbase_texticon  §Y空军基地§!建造速度"
+ modifier_production_speed_naval_base_factor:0 "£construction_speed_navalbase_texticon  §Y海军基地§!建造速度"
+ modifier_production_speed_bunker_factor:0 "£construction_speed_landfort_texticon  §Y陆上要塞§!建造速度"
+ modifier_production_speed_coastal_bunker_factor:0 "£construction_speed_coastfort_texticon  §Y海岸要塞§!建造速度"
+ modifier_production_speed_dockyard_factor:0 "£construction_speed_dockyard_texticon  §Y海军船坞§!建造速度"
+ modifier_production_speed_anti_air_building_factor:0 "£construction_speed_antiair_texticon  §Y防空炮阵§!建造速度"
+ modifier_production_speed_synthetic_refinery_factor:0 "£construction_speed_refinery_texticon  §Y合成炼油厂§!建造速度"
+ modifier_production_speed_radar_station_factor:0 "£construction_speed_radar_texticon  §Y雷达站§!建造速度"
+ modifier_production_speed_rocket_site_factor:0 "£construction_speed_rocket_texticon  §Y火箭基地§!建造速度"
+ modifier_production_speed_nuclear_reactor_factor:0 "£construction_speed_reactor_texticon  §Y核反应堆§!建造速度"
+ modifier_production_speed_fuel_silo_factor:0 "£construction_speed_fuelsilo_texticon  §Y储油罐§!建造速度"
+ modifier_production_speed_rail_way_factor:0 "£construction_speed_railway_texticon  §Y铁路§!建造速度"
+ modifier_production_speed_supply_node_factor:0 "£construction_speed_supplyhub_texticon  §Y补给中心§!建造速度"
+ modifier_production_speed_steel_mill_factor:0 "£construction_speed_steelmill_texticon  §Y钢铁厂§! 建造速度"
+ modifier_production_speed_aluminum_mill_factor:0 "£construction_speed_aluminiummill_texticon  §Y炼铝厂§! 建造速度"
+ modifier_production_speed_rubber_refinery_factor:0 "£construction_speed_rubberplant_texticon  §Y橡胶精炼厂§! 建造速度"
+ cat_r56_guerilla_warfare_cost_factor:0 "£army_doctrine_cost_texticon  不对称战争学说花费"
+ 
+#r56e_technology_l_english
+ TECH_BOOSTS_STEEL_MILL_TOOLTIP:0 "修正§L钢铁厂§!的产出为：£steel_texticon  §B+2 Steel§!."
+ TECH_BOOSTS_ALUMINIUM_MILL_TOOLTIP:0 "修正§L炼铝厂§!的产出为：£aluminium_texticon  §B+2 Aluminium§!."
+ TECH_BOOSTS_RUBBER_MILL_TOOLTIP:0 "修正§LY橡胶精炼厂§!的产出为：£rubber_texticon  §B+2 Rubber§!."
+ 
+#Rt56_SOV_l_english
+ SOV_invest_in_enigneering_tooltip:0 "§Y重视工业§! 将会获得 §Y工业推动§! 国家精神作为额外§Y效果§!，这将获得\n为期§Y30天§!的（£construction_speed_texticon  建造速度：§G+5.00%§!, £civ_factory_output  工厂产出：§G+5.00%§! ）\n"
+ SOV_world_revolution_tt:0 "每一个非共产主义国家:\n   获得 §Y'共产主义的影响'§! ，这将在§Y365§!天内使 （£boost_popularity_texticon  共产主义理念每日新增支持率：§G+0.05§!）"
+ 
+#POL_l_english
+ modifier_production_speed_synthetic_rubber_plant_factor:0 "£construction_speed_rubberplant_texticon  §H橡胶精炼厂§!建造速度"
+ High_Frequency_Radar_Tooltip:0 "获得\n   £spotting  驱逐舰对潜探测：§G+10%§!\n   £convoy_escort_texticon  护航效率：§G+10%§!\n\n"
+ POL_Man_Portable_Land_Mine_Detectors_tt:0 "这将使\n   §H全部陆军§!：£attrition_texticon  损耗:：§G-2%§!\n§H   步兵 & 骑兵/摩托化步兵/机械化步兵§!:\n      £attack_texticon  陆上要塞攻击：§G+3%§! \n   §H工兵连§!:\n      £breakthrough_texticon  突破：§G+10%§!\n\n"
+ Reversible_Periscope_tt:0 " 获得:\n   §H坦克, 自行反坦克炮 & 宪兵连§!:\n      £organization_texticon  组织度：§G+2§!\n      £breakthrough_texticon  突破：§G+5%§!\n\n"
+ POL_Swiatecki_Bomb_Slip_tt:0 " 获得:\n   £strat_bombing_texticon  战略轰炸：§G+20%§!\n\n"
+ POL_Synthetic_Rubber_tt:0 "§WModify§! §H橡胶精炼厂§! §W橡胶产出：§! £rubber_texticon  §G+2§!£resources_strip|3.\n"
+ POL_technical_training_focus_tt:0 "启用 §H技术培训§!\n§H步兵§!:\n    £organization_texticon  组织度：§R-2§!\n§H支援连§!:\n    £organization_texticon  组织度：§G+5§!\n    £army_morale_texticon  陆军组织度恢复：§G+10%§!\n"
+ POL_partial_anti_aircraft_motorization_tt:0 "§H防空§!:\n    摩托化装备：§H+9§!\n    防空装备： §H-3§!\n      £attacker_speed_texticon  最大速度：§H5.4 km/h§!\n      £strenght_texticon  HP：§G+0.2§!\n      £attacker_damage_texticon  装甲率：§G+5%§!\n"
+ POL_partial_anti_tank_motorization_tt:0 "§H反坦克§!:\n    摩托化装备：§H+11§!\n    反坦克装备：§H-3§!\n      £attacker_speed_texticon  最大速度：§H5.4 km/h§!\n      £strenght_texticon  HP：§G+0.2§!\n      £attacker_damage_texticon  装甲率：§G+5%§!\n"
+ POL_armor_training_focus_tt:0 "§H徒步步兵§!:\n    £organization_texticon  组织度：§R-1§!\n    £army_morale_texticon  陆军组织度恢复：§R-5%§!\n§H骑兵，摩托化步兵与机械化步兵§!:\n    £army_morale_texticon  陆军组织度恢复：§G+5%§!\n§H坦克与装甲变体§!:\n    £organization_texticon  组织度：§G+1§!\n    £army_morale_texticon  陆军组织度恢复：§G+15%§!\n启用战术：§H奇袭§!\n"
+ POL_artillery_training_focus_tt:0 "§H徒步步兵§!:\n    £organization_texticon  组织度：§R-1§!\n    £army_morale_texticon  陆军组织度恢复：§R-5%§!\n§H所有前线部队§!:\n    £soft_attack_texticon  对人员杀伤：§G+5%§!\n"
+ POL_engineers_special_forces_training_tt:0 "§H徒步步兵§!:\n    £organization_texticon  组织度：§R-1§!\n    £army_morale_texticon  陆军组织度恢复：§R-5%§!\n§H特种部队§!:\n    £defence_texticon  防御：§G+10%§!\n£dig_in_max_texticon  堑壕上线：§G+5§!\n£specops_max_texticon  特种部队容量上限乘数：§G+2%§!\n"
+  
+#RAJ_l_english
+ RAJ_Princely_States_tt:0 "在§Y封建土邦§!的£civ_factory  当地工业值：§R-33%§!\n在§Y封建土邦§!的£manpower_texticon  当地人力：§R-33%§!\n在§Y封建土邦§!的£resources_texticon  当地可用资源：§R-33%§!\n"

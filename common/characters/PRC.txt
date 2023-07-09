@@ -24,11 +24,11 @@ characters={
 			ideology=marxism
 			traits={ cornered_fox popular_leader }
 			expire="1965.1.1.1"
-			id=-1
 		}
 		advisor={
+			idea_token = PRC_mao_zedong_1
 			slot = political_advisor
-			allowed  = {
+			allowed = {
 				original_tag  = PRC
 			}
 			traits  = {
@@ -36,40 +36,8 @@ characters={
 			}
 			cost = 150
 		}
-	}
-	#gai
-	PRC_song_qingling={
-		name=PRC_song_qingling
-		portraits={
-			civilian={
-				large="gfx\leaders\PRC\Portrait_CHI_Song_Qingling.dds"
-			}
-		}
-		country_leader={
-			ideology=social_democraticism
-			traits={ revolutionary_elder }
-			expire="1965.1.1.1"
-		}
-	}
-	PRC_mao_zedong_scd={
-		name=PRC_mao_zedong
-		portraits={
-			army={
-				large="GFX_portrait_prc_mao_zedong"
-				small=gfx\interface\ideas\idea_PRC_mao_zedong.dds
-			}
-			civilian={
-				large="GFX_portrait_prc_mao_zedong"
-				small=gfx\interface\ideas\idea_PRC_mao_zedong.dds
-			}
-		}
-		country_leader={
-			ideology=social_democraticism
-			traits={ cornered_fox popular_leader }
-			expire="1965.1.1.1"
-			id=-1
-		}
 		advisor={
+			idea_token = PRC_mao_zedong_2
 			slot = army_chief
 			allowed = {
 				original_tag = PRC
@@ -83,20 +51,51 @@ characters={
 			}
 		}
 	}
+	#gai
+	PRC_mao_zedong_scd={
+		name=PRC_mao_zedong
+		portraits={
+			civilian={
+				large="GFX_portrait_prc_mao_zedong"
+				small=gfx\interface\ideas\idea_PRC_mao_zedong.dds
+			}
+		}
+		country_leader={
+			ideology=social_democraticism
+			traits={ cornered_fox popular_leader }
+			expire="1965.1.1.1"
+		}
+	}
+	PRC_song_qingling={
+		name=PRC_song_qingling
+		
+		portraits={
+			civilian={
+				large="gfx\leaders\PRC\Portrait_CHI_Song_Qingling.dds"
+			}
+		}
+		country_leader={
+			ideology=social_democraticism
+			traits={ revolutionary_elder }
+			expire="1965.1.1.1"
+		}
+	}
 	PRC_chen_yun={
 		name=PRC_chen_yun
+		
 		portraits={
 			civilian={
 				small="gfx\leaders\PRC\idea_generic_Chen_Yun.dds"
 			}
 		}
 		advisor={
+			idea_token = PRC_chen_yun
 			available = {
 				has_completed_focus = PRC_planner
 			}
 			slot = political_advisor
 			allowed = {
-				original_tag  = PRC
+				original_tag = PRC
 			}
 			traits = {
 				PRC_planner_leader

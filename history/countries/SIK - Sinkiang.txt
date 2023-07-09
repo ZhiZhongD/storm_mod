@@ -1,10 +1,14 @@
-﻿capital = 617
+﻿capital = 942
 
 oob = "SIK_1936"
 
 set_technology = {
 	infantry_weapons = 1
 	
+}
+add_ideas={
+	PRC_low_ager_nation
+	China_location
 }
 set_politics = {
 	ruling_party = neutrality

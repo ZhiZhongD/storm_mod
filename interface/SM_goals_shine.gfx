@@ -1954,11 +1954,11 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"   
-		texturefile = "gfx/interface/goals/.png"  
+		name = "GFX_AST_syndicalist_shine"   
+		texturefile = "gfx/interface/goals/AST_syndicalist.png"  
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/.png"  
+			animationmaskfile = "gfx/interface/goals/AST_syndicalist.png"  
 			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1971,7 +1971,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/.png" 
+			animationmaskfile = "gfx/interface/goals/AST_syndicalist.png" 
 			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

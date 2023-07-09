@@ -1,4 +1,6 @@
 ﻿l_simp_chinese:
+PRC_chairman_song:0"宋庆龄主席"
+PRC_chairman_mao:0"毛泽东主席"
 PRC_sovle_the_political_problem:0"调和国共矛盾"
 PRC_cut_rent_and_interest_rates:0"继续减租减息"
 PRC_agrarian_revolution:0"土地革命"
@@ -81,10 +83,21 @@ PRC_two_hundred:0"双百方针"
 PRC_national_capitalism:0"民族资本主义"
 PRC_partial_nationalization_of_enterprises:0"部分企业国有化"
 PRC_peoples_insurance:0"人民保险"
-
-
-
-
+PRC_local_national_assembly:0"地方国民会议"
+PRC_council_of_workers_and_peasants:0"工农代表会议"
+PRC_light_cruiser_project:0"轻巡洋舰研发指导"
+PRC_help_of_economy_from_RAU:0"澳联盟的经济援助"
+PRC_coastal_patrol_planes:0"海军轰炸机支援"
+PRC_modern_submarines:0"现代潜艇"
+PRC_train_marines:0"海军陆战队培训"
+PRC_order_destroyers:0"驱逐舰援助"
+PRC_investment_into_shipbuilding:0"军港援建"
+PRC_Australian_officer_corps:0"澳联盟军官团"
+PRC_equipment_from_RAU:0"来自澳联盟的军备"
+PRC_volunteer_from_RAU:0"工团军事志愿者"
+PRC_emancipate_Hunan:0"埋葬湘系"
+PRC_against_the_six_encirclement_and_suppression:0"打倒第六次反革命围剿"
+PRC_western_sign:0"西征"
 
 
 
