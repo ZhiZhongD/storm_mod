@@ -30,6 +30,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = { days = 5 id = news.1 }
+			PRC={country_event=new_china.16}
 		}
 		USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
 		if = {

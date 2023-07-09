@@ -921,12 +921,12 @@ news_event = {
 	major = yes
 
 	trigger = {
-		NOT = { has_completed_focus = SOV_new_leninism }
 		NOT = { has_global_flag = SOV_fourth_international_fired }
 		SOV = {	has_government = communism }
 		OR = {
 			SOV = { has_completed_focus = SOV_the_fourth_international }
 			AND = {
+				NOT = { has_completed_focus = SOV_new_leninism }
 				NOT = { SOV = { has_completed_focus = SOV_the_left_opposition } }
 				date > 1938.9.1
 			}

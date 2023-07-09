@@ -1,0 +1,18 @@
+PRC_government = {
+
+	#icon = generic_prepare_civil_war
+
+
+	#scripted_gui = 
+
+
+}
+PRC_war = {
+
+	#icon = generic_prepare_civil_war
+
+
+	#scripted_gui = 
+
+
+}

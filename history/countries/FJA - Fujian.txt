@@ -15,3 +15,7 @@ set_popularities = {
 	communism=10
 }
 oob = "FJA_1936"
+add_ideas={
+	PRC_low_ager_nation
+	China_location
+}

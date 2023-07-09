@@ -11,3 +11,7 @@ set_popularities = {
 	neutrality=100
 }
 oob = "GZO_1936"
+add_ideas={
+	PRC_low_ager_nation
+	China_location
+}

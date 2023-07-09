@@ -1,0 +1,959 @@
+PRC_government = {
+
+
+	build_gov_in_guangxi={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 594
+			controls_state = 922
+			controls_state = 599
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 594
+		    controls_state = 922
+			controls_state = 599
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=594
+			add_state_core=922
+			add_state_core=599
+		}
+
+	}
+	build_gov_in_jiangxi={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 600
+			controls_state = 927
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 600
+		    controls_state = 927
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=600
+			add_state_core=927
+		}
+
+	}
+	build_gov_in_anhui={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 749
+			controls_state = 606
+			controls_state = 935
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 749
+		    controls_state = 606
+			controls_state = 935
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=749
+			add_state_core=606
+			add_state_core=935
+		}
+
+	}
+	build_gov_in_jiangsu={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 613
+			controls_state = 598
+			controls_state = 934
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 613
+		    controls_state = 598
+			controls_state = 934
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=613
+			add_state_core=598
+			add_state_core=934
+		}
+
+	}
+	build_gov_in_zhejiang={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 596
+			controls_state = 931
+			controls_state = 933
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 596
+		    controls_state = 931
+			controls_state = 933
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=596
+			add_state_core=931
+			add_state_core=933
+		}
+
+	}
+	build_gov_in_shandong={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 597
+			controls_state = 937
+			controls_state = 743
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 597
+		    controls_state = 937
+			controls_state = 743
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=597
+			add_state_core=937
+			add_state_core=743
+		}
+
+	}
+	build_gov_in_guizhou={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 603
+			controls_state = 923
+			controls_state = 748
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 603
+		    controls_state = 923
+			controls_state = 748
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=603
+			add_state_core=923
+			add_state_core=748
+		}
+
+	}
+	build_gov_in_yunnan={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 325
+			controls_state = 924
+			controls_state = 747
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 325
+		    controls_state = 924
+			controls_state = 747
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=325
+			add_state_core=924
+			add_state_core=747
+		}
+
+	}
+	build_gov_in_wuhan={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 620
+			controls_state = 928
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 620
+		    controls_state = 928
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=620
+			add_state_core=928
+		}
+
+	}
+	build_gov_in_xian={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 744
+			controls_state = 938
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 744
+		    controls_state = 938
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=744
+			add_state_core=938
+		}
+
+	}
+	build_gov_in_henan={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 607
+			controls_state = 936
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 607
+		    controls_state = 936
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=607
+			add_state_core=936
+		}
+
+	}
+	build_gov_in_hebei={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 614
+			controls_state = 608
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 614
+		    controls_state = 608
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=614
+			add_state_core=608
+		}
+
+	}
+	build_gov_in_shanxi={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 939
+			controls_state = 615
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 939
+		    controls_state = 615
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=939
+			add_state_core=615
+		}
+
+	}
+	build_gov_in_huangtu={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 746
+			controls_state = 621
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 746
+		    controls_state = 621
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=746
+			add_state_core=621
+		}
+
+	}
+	build_gov_in_mengjiang={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 612
+			controls_state = 611
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 612
+		    controls_state = 611
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=612
+			add_state_core=611
+		}
+
+	}
+	build_gov_in_beijing={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 943
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 943
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=943
+		}
+
+	}
+	build_gov_in_tianjing={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 944
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 944
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=944
+		}
+
+	}
+	build_gov_in_shannxi={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 622
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 622
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=622
+		}
+
+	}
+	build_gov_in_hainan={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 591
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 591
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=591
+		}
+
+	}
+	build_gov_in_hunan={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 602
+			controls_state = 925
+			controls_state = 750
+			controls_state = 926
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 602
+		    controls_state = 925
+			controls_state = 750
+			controls_state = 926
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=602
+			add_state_core=925
+			add_state_core=750
+			add_state_core=926
+		}
+
+	}
+	build_gov_in_xibei={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 616
+			controls_state = 283
+			controls_state = 941
+			controls_state = 754
+			controls_state = 756
+			controls_state = 755
+			controls_state = 604
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 616
+		    controls_state = 283
+			controls_state = 941
+			controls_state = 754
+			controls_state = 756
+			controls_state = 755
+			controls_state = 604
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=616
+			add_state_core=283
+			add_state_core=941
+			add_state_core=754
+			add_state_core=756
+			add_state_core=755
+			add_state_core=604
+		}
+
+	}
+	build_gov_in_xinjiang={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 759
+			controls_state = 287
+			controls_state = 619
+			controls_state = 760
+			controls_state = 617
+			controls_state = 618
+			controls_state = 942
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 759
+		    controls_state = 287
+			controls_state = 619
+			controls_state = 760
+			controls_state = 617
+			controls_state = 618
+			controls_state = 942
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=759
+			add_state_core=287
+			add_state_core=619
+			add_state_core=760
+			add_state_core=617
+			add_state_core=618
+			add_state_core=942
+		}
+
+	}
+	build_gov_in_xizang={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 601
+			controls_state = 757
+			controls_state = 322
+			controls_state = 758
+			controls_state = 950
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 601
+		    controls_state = 757
+			controls_state = 322
+			controls_state = 758
+			controls_state = 950
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=601
+			add_state_core=757
+			add_state_core=322
+			add_state_core=758
+			add_state_core=950
+			add_state_core=434
+		}
+
+	}
+	build_gov_in_sichuang={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 751
+			controls_state = 752
+			controls_state = 753
+			controls_state = 605
+			controls_state = 949
+			controls_state = 948
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 751
+		    controls_state = 752
+			controls_state = 753
+			controls_state = 605
+			controls_state = 949
+			controls_state = 948
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=751
+			add_state_core=752
+			add_state_core=753
+			add_state_core=605
+			add_state_core=949
+			add_state_core=948
+		}
+
+	}
+	build_gov_in_dongbei={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 745
+			controls_state = 716
+			controls_state = 609
+			controls_state = 610
+			controls_state = 715
+			controls_state = 946
+			controls_state = 328
+			controls_state = 714
+			controls_state = 761
+			controls_state = 717
+			controls_state = 947
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 745
+		    controls_state = 716
+			controls_state = 609
+			controls_state = 610
+			controls_state = 715
+			controls_state = 946
+			controls_state = 328
+			controls_state = 714
+			controls_state = 761
+			controls_state = 717
+			controls_state = 947
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=745
+			add_state_core=716
+			add_state_core=609
+			add_state_core=610
+			add_state_core=715
+			add_state_core=946
+			add_state_core=328
+			add_state_core=714
+			add_state_core=761
+			add_state_core=717
+			add_state_core=947
+		}
+
+	}
+	build_gov_in_taiwan={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 524
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 524
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=524
+		}
+
+	}
+
+}
+PRC_war={
+	fight_HNA={
+		days_remove = 35
+
+		cost=35
+
+
+		allowed={original_tag=PRC}
+		
+		available={
+			country_exists = HNA
+			NOT={country_exists = GXC}
+		}
+		visible={
+			country_exists = HNA
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			create_wargoal = {
+			target = HNA type = annex_everything 
+			}
+		}
+
+	}
+	fight_GZO={
+		days_remove = 35
+
+		cost=35
+
+
+		allowed={original_tag=PRC}
+		
+		available={
+			country_exists = GZO
+			NOT={country_exists = GXC}
+		}
+		visible={
+			country_exists = GZO
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			create_wargoal = {
+			target = GZO type = annex_everything 
+			}
+		}
+
+	}
+	fight_YUN={
+		days_remove = 35
+
+		cost=35
+
+
+		allowed={original_tag=PRC}
+		
+		available={
+			country_exists = YUN
+			NOT={country_exists = GXC}
+		}
+		visible={
+			country_exists = YUN
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			create_wargoal = {
+			target = YUN type = annex_everything 
+			}
+		}
+
+	}
+	fight_SIC={
+		days_remove = 35
+
+		cost=35
+
+
+		allowed={original_tag=PRC}
+		
+		visible={
+			country_exists = SIC
+		}
+		available={
+			country_exists = SIC
+			NOT={country_exists = GXC}
+			date>1939.1.1
+			NOT={is_in_faction_with = SIC}
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			create_wargoal = {
+			target = SIC type = annex_everything 
+			}
+		}
+
+	}
+	fight_SHX={
+		days_remove = 35
+
+		cost=35
+
+
+		allowed={original_tag=PRC}
+		
+		available={
+			country_exists = SHX
+			NOT={country_exists = GXC}
+			date>1939.1.1
+			NOT={is_in_faction_with = SHX}
+		}
+
+		fire_only_once=yes
+		visible={
+			country_exists = SHX
+		}
+
+		remove_effect={
+			create_wargoal = {
+			target = SHX type = annex_everything 
+			}
+		}
+
+	}
+	fight_XSM={
+		days_remove = 35
+
+		cost=35
+
+
+		allowed={original_tag=PRC}
+		
+		available={
+			country_exists = XSM
+			NOT={country_exists = GXC}
+			date>1939.1.1
+			NOT={is_in_faction_with = XSM}
+		}
+
+		fire_only_once=yes
+		visible={
+			country_exists = XSM
+		}
+
+		remove_effect={
+			create_wargoal = {
+			target = XSM type = annex_everything 
+			}
+		}
+
+	}
+	fight_TIB={
+		days_remove = 35
+
+		cost=35
+
+
+		allowed={original_tag=PRC}
+		
+		available={
+			country_exists = TIB
+			NOT={country_exists = GXC}
+			date>1939.1.1
+			NOT={is_in_faction_with = TIB}
+		}
+		visible={
+			country_exists = TIB
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			create_wargoal = {
+			target = TIB type = annex_everything 
+			}
+		}
+
+	}
+	fight_SIK={
+		days_remove = 35
+
+		cost=35
+
+
+		allowed={original_tag=PRC}
+		
+		available={
+			country_exists = SIK
+			NOT={country_exists = GXC}
+			date>1939.1.1
+			NOT={is_in_faction_with = SIK}
+		}
+
+		fire_only_once=yes
+		visible={
+			country_exists = SIK
+		}
+
+		remove_effect={
+			create_wargoal = {
+			target = SIK type = annex_everything 
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,8 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_cn_naval_battery_texticon"
+		texturefile = "gfx/texticons/cn_naval_battery_texticon.dds"
+		legacy_lazy_load = no
+	}
+}

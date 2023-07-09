@@ -73,10 +73,7 @@ idea_categories = {
 	
 	military_minister = {
 		character_slot = army_chief 
-		character_slot = army_chief
 		character_slot = navy_chief
-		character_slot = navy_chief
-		character_slot = air_chief
 		character_slot = air_chief
 
 		ledger = invalid # must be overridden

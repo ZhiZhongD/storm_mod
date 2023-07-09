@@ -1,0 +1,34 @@
+add_namespace = RAU
+
+country_event={
+	id = RAU.1
+	title = RAU.1.t
+	desc = RAU.1.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+
+	trigger={
+		tag=RAU
+		has_war = no
+	}
+
+
+	option = {
+		name = RAU.1.a
+		add_state_core = 521
+		add_state_core = 873
+		add_state_core = 872
+		add_state_core = 909
+		add_state_core = 674
+		add_state_core = 520
+		add_state_core = 870
+		add_state_core = 910
+		add_state_core = 911
+		add_state_core = 522
+		add_state_core = 871
+		add_state_core = 519
+		add_state_core = 912
+		add_state_core = 674
+		add_state_core = 518
+    }
+}

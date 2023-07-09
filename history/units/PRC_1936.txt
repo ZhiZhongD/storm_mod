@@ -37,42 +37,46 @@ units = {
 		name = "人民革命军第1师"
 		location = 1047
 		division_template = "人民革命军"
-
+		start_experience_factor = 0.8
 	}
 	division = {
 		name = "人民革命军第2师"
 		location = 1087
 		division_template = "人民革命军"
-
+		start_experience_factor = 0.8
 	}
 	division = {
 		name = "人民革命军第3师"
 		location = 1162
 		division_template = "人民革命军"
-
+		start_experience_factor = 0.8
 	}
 	division = {
 		name = "人民革命军第4师"
 		location = 1078
 		division_template = "人民革命军"
+		start_experience_factor = 0.8
 
 	}
 	division = {
 		name = "人民革命军第5师"
 		location = 10080
 		division_template = "人民革命军"
+		start_experience_factor = 0.8
 
 	}
 	division = {
 		name = "人民革命军共产党师"
 		location = 11941
 		division_template = "人民革命军"
+		start_experience_factor = 0.8
 
 	}
 	division = {
 		name = "人民革命军国民师"
 		location = 1131
 		division_template = "人民革命军"
+		start_experience_factor = 0.8
 
 	}
 	division = {

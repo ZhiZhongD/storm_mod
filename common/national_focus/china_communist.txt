@@ -452,20 +452,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip=PRC_tooltip_soviet_economic_aid_a
-			add_offsite_building = { type = industrial_complex level =1 }
 			add_offsite_building = { type = arms_factory level =1 }
-			random_state={
-				limit = {
-					is_controlled_by = PRC
-					is_core_of = PRC
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes 
-				}
-			}
 			add_to_variable = { PRC.PRC_national_industry_production_speed_buildings_factor = 0.05 }
 		}
 	}
@@ -534,10 +521,10 @@ focus_tree = {
 		
 		completion_reward = {
 			592 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes 
 				}
 			}
@@ -584,7 +571,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = PRC_peoples_revolutionary_army
 		
-		cost = 2
+		cost = 5
 		
 		ai_will_do = {
 			factor = 1
@@ -628,7 +615,7 @@ focus_tree = {
 	focus={
 		id=PRC_peoples_revolutionary_army
 		icon=GFX_focus_SOV_builder_of_the_red_army
-		x=11
+		x=10
 		y=1
 		cost=5
 		prerequisite={focus= PRC_popular_front_third_meeting}
@@ -747,6 +734,36 @@ focus_tree = {
 		y=1
 		cost=5
 		completion_reward={
+			set_technology = { gwtank = 1 }
+			set_technology = {motorised_infantry=1}
+			add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 400 producer = SOV }
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 300
+				producer = SOV
+			}
+			division_template = {
+				name = "革命机动师"			
+				regiments = {
+					light_armor = { x = 0 y = 0 }
+					light_armor = { x = 0 y = 1 }
+					light_armor = { x = 1 y = 0 }
+					light_armor = { x = 1 y = 1 }
+					motorized = { x = 2 y = 0 }
+					motorized = { x = 2 y = 1 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+			921={
+				create_unit = {
+					division = "name = \"第一机动师\" division_template = \"革命机动师\" start_experience_factor = 0.5"  
+					owner = ROOT
+					count=2
+					allow_spawning_on_enemy_provs = yes 
+				}
+			}
 		}
 	}
 	focus={
@@ -956,15 +973,18 @@ focus_tree = {
 	}
 	focus={
 		id=PRC_expand_the_Huangpu_military_academy
-		icon=GFX_focus_chi_army_reform
+		icon=GFX_focus_chi_whampoa_military_academy
 		prerequisite={focus= PRC_peoples_revolutionary_army }
 		relative_position_id= PRC_peoples_revolutionary_army
 		x=9
 		y=1
-		cost=5
+		cost=3
 		completion_reward={
+			army_experience = 50
+			
 			custom_effect_tooltip=PRC_tooltip_expand_the_Huangpu_military_academy
 			add_to_variable={PRC.PRC_pra_army_leader_start_level=1}
+			add_ideas = CHI_whampoa_military_academy
 		}
 	}
 	focus={
@@ -1055,7 +1075,7 @@ focus_tree = {
 		relative_position_id= PRC_formulate_a_national_economic_plan
 		x=-1
 		y=1
-		cost=5
+		cost=6
 		completion_reward={
 			add_to_variable = { PRC.PRC_national_consumer_goods_factor = -0.01 }
 			custom_effect_tooltip=PRC_tooltip_national_heavy_industry_group
@@ -1064,10 +1084,10 @@ focus_tree = {
 					is_controlled_by = PRC
 					is_core_of = PRC
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes 
 				}
 			}
@@ -1076,10 +1096,10 @@ focus_tree = {
 					is_controlled_by = PRC
 					is_core_of = PRC
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes 
 				}
 			}
@@ -1091,7 +1111,7 @@ focus_tree = {
 		icon=GFX_focus_generic_steel
 		prerequisite={focus=PRC_formulate_a_national_economic_plan}
 		relative_position_id=PRC_formulate_a_national_economic_plan
-		cost=4
+		cost=5
 		x=0
 		y=2
 		completion_reward={
@@ -1100,10 +1120,10 @@ focus_tree = {
 					is_controlled_by = PRC
 					is_core_of = PRC
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes 
 				}
 			}
@@ -1299,7 +1319,7 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = 25
-				producer = PRC
+				producer = SOV
 			}
 			add_ideas=PRC_resources_bureau
 			custom_effect_tooltip=PRC_tooltip_set_up_a_resources_bureau
@@ -1379,8 +1399,9 @@ focus_tree = {
 		}
 		available = {
 		}
-		complete_tooltip = {}
-        completion_reward = {}
+        completion_reward = {
+			add_ideas=PRC_against_nanjing
+		}
     }
 	focus = {
 		id = PRC_emancipate_Hunan
@@ -1392,6 +1413,9 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 		  factor = 1
+		}
+		bypass={
+			NOT={country_exists=HNA}
 		}
 		complete_tooltip = {}
         completion_reward = {
@@ -1405,11 +1429,15 @@ focus_tree = {
 		relative_position_id= PRC_a_unified_peoples_government
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 		  factor = 1
 		}
 		available = {
+		}
+		bypass={
+			NOT={country_exists=GZO}
+			NOT={country_exists=YUN}
 		}
 		complete_tooltip = {}
         completion_reward = {
@@ -1419,13 +1447,24 @@ focus_tree = {
     }
 	focus={
 		id=PRC_national_united_front
-		icon=GFX_goal_generic_alliance
+		icon=GFX_focus_chi_united_front
 		prerequisite={focus= PRC_against_the_six_encirclement_and_suppression }
+		prerequisite={focus= PRC_western_sign }
+		prerequisite={focus= PRC_emancipate_Hunan }
 		relative_position_id= PRC_against_the_six_encirclement_and_suppression
 		x=0
 		y=1
 		cost=5
 		completion_reward={
+			create_faction = "中华民族阵线"
+				add_to_faction = CHI
+				add_to_faction = SHX
+				add_to_faction = YUN
+				add_to_faction = GXC
+				add_to_faction = SIC
+				add_to_faction = SIK
+				add_to_faction = TIB
+				add_to_faction = XSM
 		}
 	}
 	focus={
@@ -1457,7 +1496,7 @@ focus_tree = {
 		icon=GFX_CHI_tigress_battalions
 		prerequisite={focus= PRC_national_united_front }
 		relative_position_id= PRC_national_united_front
-		x=1
+		x=5
 		y=2
 		cost=5
 		completion_reward={
@@ -1527,10 +1566,351 @@ focus_tree = {
 		icon=GFX_East_Comintern
 		prerequisite={focus= PRC_national_united_front }
 		relative_position_id= PRC_national_united_front
-		x=5
+		x=1
 		y=2
 		cost=5
 		completion_reward={
+			RAU={
+				create_faction = "共产国际大洋区部"
+			}
+			RAU = {
+				add_to_faction = PRC
+			}
+		}
+	}
+	focus={
+		id=PRC_volunteer_from_RAU
+		icon=GFX_goal_generic_allies_build_infantry
+		prerequisite={focus= PRC_comintern_eastern_front }
+		relative_position_id= PRC_comintern_eastern_front
+		x=0
+		y=1
+		cost=5
+		completion_reward={
+			division_template = {
+				name = "工团志愿师"			
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					artillery_brigade= { x = 2 y = 0 }
+					artillery_brigade= { x = 2 y = 1 }
+					artillery_brigade= { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+				}
+			}
+			921={
+				create_unit = {
+					division = "name = \"工团志愿师\" division_template = \"工团志愿师\" start_experience_factor = 0.5"  
+					owner = ROOT
+					count=2
+					allow_spawning_on_enemy_provs = yes 
+				}
+			}
+		}
+	}
+	focus={
+		id=PRC_equipment_from_RAU
+		icon=GFX_focus_secret_rearmament
+		prerequisite={focus= PRC_volunteer_from_RAU }
+		relative_position_id= PRC_volunteer_from_RAU
+		x=1
+		y=1
+		cost=3
+		completion_reward={
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+				producer = AST
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+				producer = AST
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 600
+				producer = AST
+			}
+			
+		}
+	}
+	focus = {
+		id = PRC_Australian_officer_corps
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRC_volunteer_from_RAU }
+		x = -1
+		y = 1
+		relative_position_id = PRC_volunteer_from_RAU
+	
+		cost = 6
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			every_army_leader = {
+				add_logistics = 1
+				add_planning = 1
+				add_attack = 1
+			}
+		}
+	}
+	focus = {
+		id = PRC_investment_into_shipbuilding
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = PRC_help_of_economy_from_RAU }
+		x = -1
+		y = 1
+		relative_position_id = PRC_help_of_economy_from_RAU
+	
+		cost = 6
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			any_state = {
+				is_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
+	
+		complete_tooltip = {
+			navy_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = CHI_investment_into_shipbuilding_DY
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = CHI_investment_into_shipbuilding_DY
+			}
+		}
+	}
+	focus = {
+		id = PRC_order_destroyers
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = PRC_investment_into_shipbuilding }
+		x = -4
+		y = 1
+		relative_position_id = PRC_investment_into_shipbuilding
+	
+		cost = 6
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = PRC_train_marines
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = PRC_order_destroyers }
+		x = 0
+		y = 1
+		relative_position_id = PRC_investment_into_shipbuilding
+	
+		cost = 6
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			add_ideas = CHI_train_marines
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = marine_tech
+			}
+		}
+	}
+	focus = {
+		id = PRC_modern_submarines
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = PRC_investment_into_shipbuilding }
+		x = 2
+		y = 1
+		relative_position_id = PRC_investment_into_shipbuilding
+	
+		cost = 6
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = PRC_coastal_patrol_planes
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = PRC_modern_submarines }
+		prerequisite={focus=PRC_train_marines}
+		prerequisite={focus=PRC_light_cruiser_project}
+		prerequisite={focus= PRC_order_destroyers }
+		x = -2
+		y = 1
+		relative_position_id = PRC_modern_submarines
+	
+		cost = 6
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = naval_bomber
+			}
+		}
+	}
+	focus = {
+		id = PRC_light_cruiser_project
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = PRC_investment_into_shipbuilding }
+		x = -2
+		y = 1
+		relative_position_id = PRC_investment_into_shipbuilding
+	
+		cost = 6
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = cl_tech
+			}
+		}
+	}
+	focus={
+		id=PRC_help_of_economy_from_RAU
+		icon=GFX_AST_syndicalist
+		prerequisite={focus= PRC_comintern_eastern_front }
+		relative_position_id= PRC_comintern_eastern_front
+		x=-2
+		y=1
+		cost=5
+		completion_reward={
+			RAU={country_event=new_china.14}
 		}
 	}
 	focus={
@@ -1540,8 +1920,16 @@ focus_tree = {
 			has_completed_focus= PRC_popular_front_third_meeting
 			date>1942.1.1
 		}
+		select_effect = {
+			hidden_effect = {
+				country_event = {
+					id = new_china.2
+					days = 7
+				}
+			}
+		}
 		x=18
-		y=10
+		y=15
 		cost=5
 		completion_reward={
 		}
@@ -1549,26 +1937,29 @@ focus_tree = {
 	focus={
 		id=PRC_CPC
 		icon=GFX_focus_prc_maoism
-		prerequisite={focus=PRC_new_china }
-		relative_position_id= PRC_new_china
+		prerequisite={focus=PRC_popular_front_forth_meeting }
+		relative_position_id= PRC_popular_front_forth_meeting
 		mutually_exclusive = { focus = PRC_LKMT }
 		x=-2
 		y=1
 		cost=5
 		completion_reward={
 			set_politics = { ruling_party = communism elections_allowed = no }
+			set_party_name = { ideology = communism long_name = 中国共产党 name = 中国共产党 }
+		   }
 		}
-	}
 	focus={
 		id=PRC_LKMT
 		icon=GFX_chinese_collaborationist_air_force
-		prerequisite={focus= PRC_new_china }
-		relative_position_id= PRC_new_china
+		prerequisite={focus= PRC_popular_front_forth_meeting }
+		relative_position_id= PRC_popular_front_forth_meeting
 		mutually_exclusive = { focus = PRC_CPC }
 		x=2
 		y=1
 		cost=5
 		completion_reward={
+			add_stability=0.05
+			set_party_name = { ideology = social_democratic long_name = 中国左翼国民党 name = 中国左翼国民党 }
 		}
 		
 	}
@@ -1581,6 +1972,8 @@ focus_tree = {
 		y=1
 		cost=5
 		completion_reward={
+			add_political_power=100
+			add_stability=-0.05
 		}
 	}
 	focus={
@@ -1596,6 +1989,8 @@ focus_tree = {
 		y=1
 		cost=5
 		completion_reward={
+			add_stability=0.15
+			set_party_name = { ideology = social_democratic long_name = 中国共产党 name = 中国共产党 }
 		}
 	}
 	focus={
@@ -1608,6 +2003,8 @@ focus_tree = {
 		y=1
 		cost=5
 		completion_reward={
+			add_popularity = { ideology = social_democratic popularity = 1 }
+			start_civil_war = { ideology = communism size = 0.2 }
 		}
 	}
 	focus={
@@ -1620,26 +2017,17 @@ focus_tree = {
 		y=1
 		cost=5
 		completion_reward={
+			add_stability=0.05
+			add_popularity = { ideology = communism popularity = 0.1 }
 		}
 	}
 	focus={
 		id=PRC_hold_peoples_congress
 		icon=GFX_commune_politics
-		prerequisite={focus= PRC_maintain_independence focus=PRC_merged_with_the_left_national_party }
+		prerequisite={focus= PRC_new_china }
 		relative_position_id= PRC_merged_with_the_left_national_party
 		x=1
-		y=1
-		cost=5
-		completion_reward={
-		}
-	}
-	focus={
-		id=PRC_national_assembly
-		icon=GFX_focus_generic_china1
-		prerequisite={focus= PRC_fight_CPC focus=PRC_united_CPC }
-		relative_position_id= PRC_united_CPC
-		x=1
-		y=1
+		y=2
 		cost=5
 		completion_reward={
 		}
@@ -1647,10 +2035,25 @@ focus_tree = {
 	focus={
 		id=PRC_new_china
 		icon=GFX_focus_chi_one_china_policy
-		prerequisite={focus= PRC_popular_front_forth_meeting }
+		prerequisite={focus= PRC_maintain_independence focus=PRC_merged_with_the_left_national_party focus= PRC_fight_CPC focus=PRC_united_CPC }
 		relative_position_id= PRC_popular_front_forth_meeting
 		x=0
-		y=1
+		y=3
+		cost=5
+		completion_reward = {
+			set_cosmetic_tag = PRC_proclaimed
+			hidden_effect = {
+				news_event = { id = wtt_news.37 days = 3 random_days = 3 }
+			}
+		}
+	}
+	focus={
+		id=PRC_national_assembly
+		icon=GFX_focus_generic_china1
+		prerequisite={focus= PRC_new_china }
+		relative_position_id= PRC_united_CPC
+		x=1
+		y=2
 		cost=5
 		completion_reward={
 		}
@@ -1662,9 +2065,10 @@ focus_tree = {
 		relative_position_id= PRC_hold_peoples_congress
 		x=2
 		y=1
-		cost=5
+		cost=10
 		completion_reward={
 			add_ideas=PRC_rapid_industrialization_idea
+			remove_ideas=PRC_low_ager_nation
 			random_state = {
 				limit = {
 					is_controlled_by = PRC

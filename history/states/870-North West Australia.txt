@@ -5,19 +5,25 @@ state={
 
 	history={
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		owner = AST
 		add_core_of = AST
-
+		victory_points = {
+			2201 10 
+		}
+		victory_points = {
+			8209 15 
+		}
 	}
 
 	provinces={
 		2201 5207 8152 8209 8247 10937 10958 11016 12993 13133 13466 13482 13488 13493 13500 13504 13507 13517 13521 13522 13523 13524 13525 13527 13529 13530 13531 13534 13537 13538 13541 13545 13627 13628 13629 13630 
 	}
-	manpower=1000
+	manpower=1003498
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=large_town
 	local_supplies=0.000
 }

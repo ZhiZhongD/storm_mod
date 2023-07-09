@@ -1,6 +1,4 @@
-﻿capital = 622
-
-oob = "PRC_1936"
+﻿oob = "PRC_1936"
 #gai
 add_dynamic_modifier = { modifier = PRC_national_industry }
 add_dynamic_modifier = { modifier = PRC_peoples_revolutionary_army_idea }
@@ -36,11 +34,12 @@ set_variable = { PRC_pra_land_reinforce_rate = 0 }
 set_variable = { PRC_pra_military_leader_cost_factor = 0 }
 set_variable = { PRC_pra_army_leader_start_level = 0 }
 set_variable = { PRC_training_time_army_factor = 0 }
-set_variable = { PRC_army_artillery_attack_factor = 0 }
-set_variable = { PRC_army_artillery_defence_factor = 0 }
+set_variable = { PRC_army_artillery_attack_factor = -0.05 }
+set_variable = { PRC_army_artillery_defence_factor = -0.05 }
 add_ideas = {
 	PRC_problem_with_LKMT_and_CPC
 	PRC_attack_GXC
+	PRC_low_ager_nation
 }
 set_autonomy = {
 	target = FJA
@@ -90,7 +89,7 @@ recruit_character = PRC_he_yuandang
 #gai
 recruit_character = PRC_song_qingling
 recruit_character = PRC_chen_yun
-
+recruit_character = PRC_mao_zedong_scd
 
 save_global_event_target_as = WTT_communist_china
 
