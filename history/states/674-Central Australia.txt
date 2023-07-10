@@ -7,13 +7,14 @@ state={
 		owner = AST
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = AST
 
 	}
 
 	provinces={
-		2223 8237 11013 12992 13132 
+		2223 8237 11013 12992 13132 13609 13610 13650 13651 13655 13657 13659 13662 13663 13665 13668 13669 13670 13671 13672 
 	}
 	manpower=30000
 	buildings_max_level_factor=1.000

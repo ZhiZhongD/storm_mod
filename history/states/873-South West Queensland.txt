@@ -8,6 +8,7 @@ state={
 			infrastructure = 3
 			industrial_complex = 3
 			arms_factory = 3
+
 		}
 		owner = AST
 		add_core_of = AST
@@ -15,7 +16,7 @@ state={
 	}
 
 	provinces={
-		2116 2221 5198 10941 12949 13394 13395 
+		2116 2221 5198 10941 12949 13394 13395 13639 13658 13661 
 	}
 	manpower=3495736
 	buildings_max_level_factor=1.000

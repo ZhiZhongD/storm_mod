@@ -1,24 +1,28 @@
+
 state={
 	id=912
 	name="STATE_912"
-	provinces={
-		2205 5138 7623 8206 12906 13131 13171 13172 13375 
-	}
-	history = {
+
+	history={
 		owner = AST
 		add_core_of = AST
 		buildings = {
 			industrial_complex = 3
 			arms_factory = 3
 			infrastructure = 2
+
 		}
 		victory_points = {
 			8206 15 
 		}
+
 	}
-	
+
+	provinces={
+		2205 5138 7623 8206 12906 13131 13171 13172 13375 13634 13636 13637 13638 13641 13642 13643 13644 13645 13646 13647 13649 
+	}
 	manpower=1435650
 	buildings_max_level_factor=1.000
-	state_category = large_city
+	state_category=large_city
 	local_supplies=0.000
 }

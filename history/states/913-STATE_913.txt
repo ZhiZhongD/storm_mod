@@ -1,10 +1,9 @@
+
 state={
 	id=913
 	name="STATE_913"
-	provinces={
-		2114 2163 7533 8234 8249 10977 10991 11019 12934 12968 13308 13318 13345 13377 
-	}
-	history = {
+
+	history={
 		owner = RAU
 		add_core_of = AST
 		add_core_of = RAU
@@ -13,14 +12,19 @@ state={
 			arms_factory = 6
 			industrial_complex = 6
 			air_base = 3
+
 		}
 		victory_points = {
-			13345 20
+			13345 20 
 		}
+
 	}
-	
+
+	provinces={
+		2114 2163 7533 8234 8249 10977 10991 11019 12934 12968 13308 13318 13345 13377 13633 13635 
+	}
 	manpower=11031000
 	buildings_max_level_factor=1.000
-	state_category = megalopolis
+	state_category=megalopolis
 	local_supplies=0.000
 }

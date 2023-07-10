@@ -5443,14 +5443,7 @@ country_event = {
 							instant_build = yes
 						}
 					}
-					add_building_construction = {
-						type = bunker
-						level = 1
-						province = {
-							id = 12732
-						}
-						instant_build = yes
-					}
+
 				}
 				283 = { #GANSU - Infra + Air Base + Fort
 					if = {
@@ -5635,14 +5628,6 @@ country_event = {
 						level = 1
 						instant_build = yes
 					}
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = {
-						id = 12732
-					}
-					instant_build = yes
 				}
 			}
 			283 = { #GANSU - Infra + Air Base + Fort

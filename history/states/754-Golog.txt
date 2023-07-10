@@ -7,9 +7,6 @@ state={
 		owner = XSM
 		add_core_of = XSM
 		add_core_of = CHI
-		victory_points = {
-			12732 3 
-		}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
