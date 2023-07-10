@@ -9,8 +9,10 @@ state={
 	history={
 		owner = NZL
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			air_base = 1
+			industrial_complex = 8
+			arms_factory = 2
 
 
 		}
@@ -18,7 +20,13 @@ state={
 			2197 1 
 		}
 		victory_points = {
-			2211 1 
+			13258 15 
+		}
+		victory_points = {
+			13262 15
+		}
+		victory_points = {
+			13275 25 
 		}
 		add_core_of = NZL
 
@@ -27,8 +35,8 @@ state={
 	provinces={
 		2197 13257 13258 13259 13262 13264 13265 13266 13267 13268 13269 13270 13271 13272 13273 13274 13275 13276 13277 13278 13279 13280 13282 
 	}
-	manpower=547198
+	manpower=9471980
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=megalopolis
 	local_supplies=0.000
 }

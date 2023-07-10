@@ -156,7 +156,10 @@ country_event={
 
 	option = {
 		name = new_china.11.a
-		PRC={ country_event=new_china.12 }
+		hidden_effect = {
+			PRC={ country_event=new_china.12 }
+		    CHI={ country_event = new_china.united }
+		}
     }
 }
 country_event={
@@ -187,6 +190,29 @@ country_event={
 	option = {
 		name = new_china.10.a
 		remove_ideas=PRC_attack_GXC
+    }
+}
+country_event={
+	id = new_china.united
+	title = new_china.united.t
+	desc = new_china.united.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.united.a
+		PRC={ country_event = new_china.united.1 }
+    }
+}
+country_event={
+	id = new_china.united.1
+	title = new_china.united.1.t
+	desc = new_china.united.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.united.1.a
     }
 }
 country_event={
@@ -261,6 +287,169 @@ country_event={
 
 	option = {
 		name = new_china.16.a
+		PRC={ country_event = new_china.17 }
+    }
+}
+country_event={
+	id = new_china.17
+	title = new_china.17.t
+	desc = new_china.17.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = new_china.17.a
 		complete_national_focus=PRC_national_united_front
+    }
+}
+country_event={
+	id = new_china.18
+	title = new_china.18.t
+	desc = new_china.18.d
+	fire_only_once = yes
+	trigger={
+		tag = CHI
+		CHI={surrender_progress>0.5}
+		CHI={has_war_with = JAP}
+	}
+
+
+	option = {
+		name = new_china.18.a
+		JAP={ country_event = new_china.19 }
+    }
+}
+country_event={
+	id = new_china.19
+	title = new_china.19.t
+	desc = new_china.19.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.18.a
+		create_faction = 团结协定东线
+		JAP = {
+			add_to_faction = CHI
+		}
+		puppet=CHI
+		news_event = { id = new_china_news.1 }
+		PRC={ country_event = new_china.19 }
+    }
+}
+country_event={
+	id = new_china.20
+	title = new_china.20.t
+	desc = new_china.20.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.20.a
+    }
+}
+news_event = {
+	id = new_china_news.1
+	title = new_china_news.1.t
+	desc = new_china_news.1.d
+	picture = GFX_news_event_070
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = new_china_news.1.a
+		trigger = {
+			NOT = {
+				tag = JAP
+			}
+		}
+	}
+	option = {
+		name = new_china_news.2.a
+		trigger = {
+			tag = JAP
+		}
+	}
+}
+country_event={
+	id = new_china.21
+	title = new_china.21.t
+	desc = new_china.21.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.21.a
+		PRC={ country_event = new_china.22 }
+    }
+}
+country_event={
+	id = new_china.22
+	title = new_china.22.t
+	desc = new_china.22.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.22.a
+		RAU={
+			create_faction = "共产国际大洋区部"
+		}
+		RAU = {
+			add_to_faction = PRC
+		}
+		news_event = { id = new_china_news.2 }
+    }
+}
+news_event = {
+	id = new_china_news.2
+	title = new_china_news.2.t
+	desc = new_china_news.2.d
+	picture = GFX_news_event_turanist_ambition
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = new_china_news.2.a
+	}
+}
+country_event={
+	id = new_china.23
+	title = new_china.23.t
+	desc = new_china.23.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.23.a
+		random_state={
+			limit = {
+				is_controlled_by = PRC
+				is_core_of = PRC
+			}
+			create_unit = {
+				division = "name = \"人民革命军步兵师\" division_template = \"人民革命军\" start_experience_factor = 0.1"  
+				owner = ROOT
+				allow_spawning_on_enemy_provs = yes 
+				count=2
+			}
+		}
+		random_state={
+			limit = {
+				is_controlled_by = PRC
+				is_core_of = PRC
+			}
+			create_unit = {
+				division = "name = \"人民卫队\" division_template = \"人民卫队\" start_experience_factor = 0.1"  
+				owner = ROOT
+				allow_spawning_on_enemy_provs = yes 
+				count=4
+			}
+		}
     }
 }

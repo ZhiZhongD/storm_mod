@@ -485,14 +485,12 @@ PRC_government = {
 		}
 
 	}
-	build_gov_in_hunan={
+	build_gov_in_changde={
 		days_remove = 56
 
 		cost=30
 
 		visible={
-			controls_state = 602
-			controls_state = 925
 			controls_state = 750
 			controls_state = 926
 		}
@@ -500,17 +498,13 @@ PRC_government = {
 		allowed={original_tag=PRC}
 		
 		available={
-			controls_state = 602
-		    controls_state = 925
 			controls_state = 750
-			controls_state = 926
+		    controls_state = 926
 		}
 
 		fire_only_once=yes
 
 		remove_effect={
-			add_state_core=602
-			add_state_core=925
 			add_state_core=750
 			add_state_core=926
 		}
@@ -665,6 +659,31 @@ PRC_government = {
 			add_state_core=605
 			add_state_core=949
 			add_state_core=948
+		}
+
+	}
+	build_gov_in_hunan={
+		days_remove = 56
+
+		cost=30
+
+		visible={
+			controls_state = 602
+			controls_state = 925
+		}
+
+		allowed={original_tag=PRC}
+		
+		available={
+			controls_state = 602
+		    controls_state = 925
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			add_state_core=602
+			add_state_core=925
 		}
 
 	}
@@ -953,6 +972,29 @@ PRC_war={
 			target = SIK type = annex_everything 
 			}
 		}
+
+	}
+	mobilize_the_people={
+		days_remove = 30
+
+		cost=10
+
+
+		allowed={original_tag=PRC}
+		
+		remove_effect={
+			random_state={
+				limit = {
+					is_controlled_by = PRC
+					is_core_of = PRC
+				}
+				create_unit = {
+					division = "name = \"人民革命军步兵师\" division_template = \"人民革命军\" start_experience_factor = 0.1"  
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes 
+					count=1
+				}
+			}
 
 	}
 

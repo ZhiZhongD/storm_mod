@@ -956,7 +956,7 @@ focus_tree = {
 	}
 	focus={
 		id=PRC_learn_from_the_soviet_experience
-		icon=GFX_focus_chi_mission_to_the_soviet_union
+		icon=GFX_focus_ETH_peacekeeping_forces
 		prerequisite={focus= PRC_peoples_revolutionary_army }
 		relative_position_id= PRC_peoples_revolutionary_army
 		x=7
@@ -971,6 +971,19 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = PRC_help_of_military_technology_from_USSR
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = PRC_peoples_revolutionary_army }
+		x = -5
+		y = 1
+		relative_position_id = PRC_peoples_revolutionary_army 
+		cost = 10
+		completion_reward = {
+			show_ideas_tooltip = SOV_morozov_design_bureau
+		}
+	}
+	
 	focus={
 		id=PRC_expand_the_Huangpu_military_academy
 		icon=GFX_focus_chi_whampoa_military_academy
@@ -1401,6 +1414,7 @@ focus_tree = {
 		}
         completion_reward = {
 			add_ideas=PRC_against_nanjing
+			country_event=new_china.23
 		}
     }
 	focus = {
@@ -1449,8 +1463,6 @@ focus_tree = {
 		id=PRC_national_united_front
 		icon=GFX_focus_chi_united_front
 		prerequisite={focus= PRC_against_the_six_encirclement_and_suppression }
-		prerequisite={focus= PRC_western_sign }
-		prerequisite={focus= PRC_emancipate_Hunan }
 		relative_position_id= PRC_against_the_six_encirclement_and_suppression
 		x=0
 		y=1
@@ -1569,13 +1581,16 @@ focus_tree = {
 		x=1
 		y=2
 		cost=5
-		completion_reward={
+		available={
+			CHI={
+				is_in_faction_with = JAP	
+			}
 			RAU={
-				create_faction = "共产国际大洋区部"
+				has_war_with = JAP
 			}
-			RAU = {
-				add_to_faction = PRC
-			}
+		}
+		completion_reward={
+			RAU={country_event = new_china.21}
 		}
 	}
 	focus={
@@ -1695,21 +1710,7 @@ focus_tree = {
 				is_coastal = yes
 			}
 		}
-	
-		complete_tooltip = {
-			navy_experience = 25
-			random_state = {
-				limit = {
-					has_state_flag = CHI_investment_into_shipbuilding_DY
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
+
 	
 		completion_reward = {
 			navy_experience = 25
@@ -1728,7 +1729,6 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = CHI_investment_into_shipbuilding_DY
 			}
 		}
 	}

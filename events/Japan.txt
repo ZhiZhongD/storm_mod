@@ -20,17 +20,13 @@ country_event = {
   			type = annex_everything
   			target = CHI
   		}
-  		create_wargoal = {
-  			type = annex_everything
-  			target = SHX
-  		}
 		  create_wargoal = {
 			type = annex_everything
 			target = PRC
 		}
 		hidden_effect = {
 			country_event = { days = 5 id = news.1 }
-			PRC={country_event=new_china.16}
+			CHI={country_event=new_china.16}
 		}
 		USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
 		if = {

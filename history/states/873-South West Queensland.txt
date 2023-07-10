@@ -5,17 +5,20 @@ state={
 
 	history={
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 3
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 2
 		}
 		owner = AST
 		add_core_of = AST
+		victory_points={
+			12949 10
+		}
 
 	}
 
 	provinces={
-		2116 2221 5198 10941 12949 13394 13395 
+		2116 2221 5198 10941 12949 13394 13395 13607 13608 13610
 	}
 	manpower=3495736
 	buildings_max_level_factor=1.000

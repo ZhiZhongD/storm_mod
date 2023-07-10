@@ -9,14 +9,15 @@ state={
 		add_core_of = AST
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
+			industrial_complex = 4
+			arms_factory = 2
 		}
 		victory_points = {
 			8155 20 
 		}
 	}
 	
-	manpower=3415450
+	manpower=1915450
 	buildings_max_level_factor=1.000
 	state_category = large_city
 	local_supplies=0.000
