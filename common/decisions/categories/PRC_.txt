@@ -1,16 +1,15 @@
 PRC_government = {
 
-	#icon = generic_prepare_civil_war
-
-
+	icon = infiltration
+	picture = GFX_decision_cat_picture_chi_infiltration
 	#scripted_gui = 
 
 
 }
 PRC_war = {
 
-	#icon = generic_prepare_civil_war
-
+	icon = infiltration
+	picture = GFX_decision_cat_picture_chi_infiltration
 
 	#scripted_gui = 
 

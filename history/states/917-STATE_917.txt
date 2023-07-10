@@ -9,13 +9,19 @@ state={
 		owner = NZL
 		add_core_of = NZL
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 1
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 4
+		}
+		victory_points={
+			13378 15
+		}
+		victory_points={
+			13341 10
 		}
 	}
-	manpower=652131
+	manpower=5652131
 	buildings_max_level_factor=1.000
-	state_category = large_town
+	state_category = large_city
 	local_supplies=0.000
 }

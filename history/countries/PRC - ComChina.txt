@@ -44,6 +44,7 @@ add_ideas = {
 set_autonomy = {
 	target = FJA
 	autonomous_state = autonomy_dominion
+	#autonomy_dominion
 	freedom_level = 0.2
 }
 
