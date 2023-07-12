@@ -2,7 +2,12 @@
 state={
 	id=913
 	name="STATE_913"
-
+	resources={
+		steel=16.000
+		tungsten = 3
+	    chromium = 4
+	    aluminium = 8
+	}
 	history={
 		owner = RAU
 		add_core_of = AST

@@ -64,4 +64,20 @@ leader_traits={
 	    production_speed_industrial_complex_factor = 0.05
 		production_speed_infrastructure_factor = 0.1
 	}
+	PRC_financial_expert={
+		random=no
+		consumer_goods_factor = -0.05
+	    global_building_slots_factor = 0.05
+	}
+	PRC_military_and_political_organizers={
+		random=no
+		max_command_power = 100
+		army_morale_factor = 0.1
+		military_leader_cost_factor = -0.50
+		mobilization_speed = 0.1
+	}
+	PRC_educational_reformer={
+		random=no
+		research_speed_factor = 0.05
+	}
 }

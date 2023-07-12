@@ -13,9 +13,32 @@
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "重步兵师"	# Divisions were reserves assigned to various military districts
+
+	division_names_group = AST_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 		infantry = { x = 3 y = 0 }
 		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
 	}
+	support = {
+        artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+	
 }
 division_template = {
 	name = "Cavalry Division"
@@ -55,12 +78,233 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 1652 # Perth
+		location = 2116 # Perth
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13646 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13644 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13651 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13659 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 2223 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13669 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12936 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13518 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13674 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7481 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10458 # Perth
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12451 # Perth
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13395 # Perth
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1773 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13289 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12918 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13632 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 2205 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13375 # Perth
+		division_template = "重步兵师"
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		#name = "5th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13394 # Perth
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+
+
 	division= {	
 		#name = "1st Cavalry Division"
 		division_name = {    # New syntax for compatibility with name lists
@@ -83,7 +327,6 @@ units = {
 		location = 7564 # Sydney
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -95,7 +338,6 @@ units = {
 		location = 12910 # Canberra
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 
@@ -109,7 +351,6 @@ units = {
 		location = 1570 # Melbourne
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -118,10 +359,9 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 2221 # Melbourne
+		location = 13639 # Melbourne
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -131,10 +371,8 @@ units = {
 			name_order = 2
 		}
 		location = 5211 # Melbourne
-		division_template = "Cavalry Division"
+		division_template = "重步兵师"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
 	}
 
 }

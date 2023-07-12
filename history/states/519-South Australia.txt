@@ -13,6 +13,24 @@ state={
 				naval_base = 2
 
 			}
+			1773 = {
+				bunker = 2
+			}
+			13289 = {
+				bunker = 2
+			}
+			12918 = {
+				bunker = 2
+			}
+			5211 = {
+				bunker = 2
+			}
+			13632 = {
+				bunker = 2
+			}
+			1773 = {
+				bunker = 2
+			}
 
 		}
 		victory_points = {
@@ -22,13 +40,13 @@ state={
 			5197 20 
 		}
 		victory_points = {
-			2219 15 
+			13611 15 
 		}
 		victory_points = {
-			8186 15 
+			13615 15 
 		}
 		victory_points = {
-			8220 15
+			12732 15
 		}
 		add_core_of = AST
 

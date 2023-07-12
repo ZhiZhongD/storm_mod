@@ -44,6 +44,7 @@ characters={
 			}
 			traits = {
 				military_genius
+				army_chief_offensive_2
 			}
 			cost = 150
 			ai_will_do = {
@@ -64,6 +65,103 @@ characters={
 			ideology=social_democraticism
 			traits={ cornered_fox popular_leader }
 			expire="1965.1.1.1"
+		}
+	}
+	PRC_deng_fa={
+		name=PRC_deng_fa
+		portraits={
+			civilian={
+				small=gfx\interface\ideas\prc_deng_fa.dds
+			}
+		}
+		advisor={
+			idea_token = PRC_deng_af
+			slot = political_advisor
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				head_of_intelligence
+			}
+			cost = 75
+		}
+	}
+	PRC_xu_teli={
+		name=PRC_xu_teli
+		portraits={
+			civilian={
+				small=gfx\interface\ideas\prc_xu_teli.dds
+			}
+		}
+		advisor={
+			idea_token = PRC_xu_teli
+			slot = political_advisor
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				head_of_intelligence
+			}
+			cost = 75
+		}
+	}
+	PRC_deng_fa={
+		name=PRC_deng_fa
+		portraits={
+			civilian={
+				small=gfx\interface\ideas\prc_deng_fa.dds
+			}
+		}
+		advisor={
+			idea_token = PRC_deng_fa
+			slot = political_advisor
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				head_of_intelligence
+			}
+			cost = 75
+		}
+	}
+	PRC_li_yunlong={
+		name=PRC_li_yunlong
+		portraits={
+			civilian={
+				large="gfx\leaders\PRC\li_yunlong.png"
+			}
+		}
+		corps_commander={
+			traits={
+				infantry_officer
+				infantry_leader
+				bearer_of_artillery
+			}
+			skill=4
+			attack_skill=4
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	PRC_xu_teli={
+		name=PRC_xu_teli
+		portraits={
+			civilian={
+				small=gfx\interface\ideas\prc_xu_teli.dds
+			}
+		}
+		advisor={
+			idea_token = PRC_xu_teli
+			slot = political_advisor
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				PRC_educational_reformer
+			}
+			cost = 75
 		}
 	}
 	PRC_song_qingling={
@@ -128,12 +226,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ infantry_officer organizer }
+			traits={ infantry_officer organizer infantry_leader }
 			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=4
+			attack_skill=5
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -166,9 +264,9 @@ characters={
 			traits={ infantry_officer }
 			skill=3
 			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -184,10 +282,10 @@ characters={
 		corps_commander={
 			traits={ infantry_officer trait_mountaineer }
 			skill=4
-			attack_skill=3
+			attack_skill=4
 			defense_skill=5
-			planning_skill=3
-			logistics_skill=2
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -201,12 +299,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer trait_mountaineer }
+			traits={ infantry_officer trait_mountaineer infantry_leader }
 			skill=5
-			attack_skill=4
+			attack_skill=5
 			defense_skill=5
-			planning_skill=3
-			logistics_skill=4
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}

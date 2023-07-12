@@ -165,7 +165,6 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
-				has_intelligence_agency  = yes 
 				has_focus_tree  = china_communist_focus
 			}
 			allowed  = {
@@ -177,7 +176,7 @@ every_possible_country = {
 				NOT = { original_tag = MAN }
 			}
 			traits  = {
-				head_of_intelligence 
+				PRC_military_and_political_organizers
 			}
 		}
 	}

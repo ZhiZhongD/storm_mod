@@ -23,5 +23,81 @@ characters={
 			id=-1
 		}
 	}
+	RAU_Joseph_Biden={
+		name=RAU_Joseph_Biden
+		portraits={
+			army={
+				large="gfx\leaders\RAU\Portrait_Joe_Biden.png"
+				small=gfx\leaders\RAU\Portrait_Biden_US_General.png
+			}
+			civilian={
+				large="gfx\leaders\RAU\Portrait_Joe_Biden.png"
+				small=gfx\leaders\RAU\Portrait_Biden_US_General.png
+			}
+		}
+		corps_commander={
+			traits={
+				infantry_officer
+				infantry_leader
+			}
+			skill=4
+			attack_skill=6
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+		advisor={
+			idea_token = RAU_Joseph_Biden
+			slot = army_chief
+			allowed = {
+				original_tag  = RAU
+			}
+			traits  = {
+				army_chief_offensive_3
+			}
+			cost = 100
+		}
+	}
+	RAU_Donald_Trump={
+		name=RAU_Donald_Trump
+		portraits={
+			army={
+				large="gfx\leaders\RAU\Donald_Trump.png"
+				small=gfx\leaders\RAU\Donald_Trump_small.png
+			}
+			civilian={
+				large="gfx\leaders\RAU\Donald_Trump.png"
+				small=gfx\leaders\RAU\Donald_Trump_small.png
+			}
+		}
+		corps_commander={
+			traits={
+				infantry_officer
+				infantry_leader
+			}
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+		advisor={	
+			slot = high_command
+			idea_token = PRC_Donald_Trump
+			ledger = army
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				army_infantry_3
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 }
 

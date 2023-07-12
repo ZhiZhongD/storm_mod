@@ -91,6 +91,9 @@ recruit_character = PRC_he_yuandang
 recruit_character = PRC_song_qingling
 recruit_character = PRC_chen_yun
 recruit_character = PRC_mao_zedong_scd
+recruit_character = PRC_li_yunlong
+recruit_character = PRC_xu_teli
+recruit_character = PRC_deng_fa
 
 save_global_event_target_as = WTT_communist_china
 

@@ -1013,7 +1013,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost=10
+		cost=5
 		ai_will_do={factor=1}
 		completion_reward={
 			custom_effect_tooltip=PRC_popular_front_third_meeting_tootip
@@ -1411,6 +1411,7 @@ focus_tree = {
 		  factor = 1
 		}
 		available = {
+			has_war_with = CHI
 		}
         completion_reward = {
 			add_ideas=PRC_against_nanjing
@@ -1970,7 +1971,7 @@ focus_tree = {
 		relative_position_id= PRC_CPC
 		x=1
 		y=1
-		cost=5
+		cost=1
 		completion_reward={
 			add_political_power=100
 			add_stability=-0.05
@@ -1987,7 +1988,7 @@ focus_tree = {
 		mutually_exclusive={focus = PRC_maintain_independence }
 		x=-1
 		y=1
-		cost=5
+		cost=1
 		completion_reward={
 			add_stability=0.15
 			set_party_name = { ideology = social_democratic long_name = 中国共产党 name = 中国共产党 }
@@ -2001,7 +2002,7 @@ focus_tree = {
 		mutually_exclusive={focus = PRC_united_CPC }
 		x=1
 		y=1
-		cost=5
+		cost=1
 		completion_reward={
 			add_popularity = { ideology = social_democratic popularity = 1 }
 			start_civil_war = { ideology = communism size = 0.2 }
@@ -2015,7 +2016,7 @@ focus_tree = {
 		mutually_exclusive={focus = PRC_fight_CPC }
 		x=-1
 		y=1
-		cost=5
+		cost=1
 		completion_reward={
 			add_stability=0.05
 			add_popularity = { ideology = communism popularity = 0.1 }

@@ -9,12 +9,25 @@ state={
 	history={
 		owner = AST
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			air_base = 1
-			industrial_complex = 2
+			industrial_complex = 3
+			arms_factory = 1
 			7669 = {
 				naval_base = 1
 
+			}
+			12936 = {
+				bunker = 2
+			}
+			13518 = {
+				bunker = 2
+			}
+			13674 = {
+				bunker = 2
+			}
+			7481 = {
+				bunker = 2
 			}
 
 		}
@@ -22,6 +35,7 @@ state={
 			7669 5 
 		}
 		add_core_of = AST
+		
 
 	}
 
