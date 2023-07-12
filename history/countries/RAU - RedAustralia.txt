@@ -1,11 +1,14 @@
 ﻿recruit_character = RAU_eileen_gu
 recruit_character = RAU_Joseph_Biden
 recruit_character = RAU_Donald_Trump
+recruit_character = RAU_David_Smith
+recruit_character = RAU_Charlotte_Jones
 add_ideas = {
 	closed_economy
 	extensive_conscription
 	partial_economic_mobilisation
 	RAU_counterattack
+	RAU_revolution_of_union
 }
 set_politics = {
 	ruling_party = unionism

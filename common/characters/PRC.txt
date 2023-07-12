@@ -31,10 +31,13 @@ characters={
 			allowed = {
 				original_tag  = PRC
 			}
-			traits  = {
+			traits = {
 				revolutionaries_of_workers_and_peasants
 			}
 			cost = 150
+			ai_will_do = {
+				factor = 10.000
+			}
 		}
 		advisor={
 			idea_token = PRC_mao_zedong_2
@@ -48,7 +51,7 @@ characters={
 			}
 			cost = 150
 			ai_will_do = {
-				factor = 1.000
+				factor = 10.000
 			}
 		}
 	}
@@ -84,6 +87,9 @@ characters={
 				head_of_intelligence
 			}
 			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	PRC_xu_teli={
@@ -103,6 +109,9 @@ characters={
 				head_of_intelligence
 			}
 			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	PRC_deng_fa={
@@ -122,6 +131,9 @@ characters={
 				head_of_intelligence
 			}
 			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	PRC_li_yunlong={
@@ -199,6 +211,9 @@ characters={
 				PRC_planner_leader
 			}
 			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 

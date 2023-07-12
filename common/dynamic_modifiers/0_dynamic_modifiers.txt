@@ -100,8 +100,8 @@ RAU_defence={
 	defence_modifier = yes
 
 	air_cas_present_factor = -0.75
-	army_attack_factor = -0.95
-	army_defence_factor = 1
+	army_attack_factor = -1
+	army_defence_factor = 2.5
 	army_speed_factor = -0.75
 	ground_attack_factor = -0.75
 	local_org_regain = -0.5
@@ -113,8 +113,8 @@ RAU_attack={
 	attacker_modifier = yes
 	defence_modifier = yes
 
-	army_attack_factor = 0.25
-	army_defence_factor = -0.25
+	army_attack_factor = 0.5
+	army_defence_factor = -0.5
 }
 
 sabotaged_resources = {

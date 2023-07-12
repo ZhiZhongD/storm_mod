@@ -85,7 +85,7 @@ characters={
 		}
 		advisor={	
 			slot = high_command
-			idea_token = PRC_Donald_Trump
+			idea_token = RAU_Donald_Trump
 			ledger = army
 			allowed = {
 				original_tag = RAU
@@ -94,6 +94,69 @@ characters={
 				army_infantry_3
 			}
 			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RAU_David_Smith={
+		name=RAU_David_Smith
+		portraits={
+			army={
+				large="gfx\leaders\ASTRAU\australian_military_male.dds"
+				small=gfx\leaders\ASTRAU\small\australian_military_male.dds
+			}
+			civilian={
+				large="gfx\leaders\ASTRAU\australian_military_male.dds"
+				small=gfx\leaders\ASTRAU\small\australian_military_male.dds
+			}
+		}
+		corps_commander={
+			traits={
+				bearer_of_artillery
+				old_guard
+				harsh_leader
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={	
+			slot = high_command
+			idea_token = RAU_David_Smith
+			ledger = army
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RAU_Charlotte_Jones={
+		name=RAU_Charlotte_Jones
+		portraits={
+			civilian={
+				small=gfx\leaders\ASTRAU\small\australian_political_female.dds
+			}
+		}
+		advisor={
+			idea_token = RAU_Charlotte_Jones
+			slot = political_advisor
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				RAU_feminists
+			}
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}

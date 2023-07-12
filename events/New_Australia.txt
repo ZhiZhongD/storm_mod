@@ -9,7 +9,7 @@ country_event={
 
 	trigger={
 		tag=RAU
-		has_war = no
+		NOT={country_exists = AST}
 	}
 
 
@@ -30,5 +30,143 @@ country_event={
 		add_state_core = 912
 		add_state_core = 674
 		add_state_core = 518
+    }
+}
+country_event={
+	id = RAU.2
+	title = RAU.2.t
+	desc = RAU.2.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+
+	trigger={
+		tag=AST
+		AST={surrender_progress>0.29}
+		AST={has_war_with = RAU}
+	}
+
+
+	option = {
+		name = RAU.2.a
+		674={
+			create_unit = {
+				division = "name = \"应急响应部队\" division_template = \"Infantry Division\" start_experience_factor = 0.5"  
+				owner = ROOT
+				count=12
+				allow_spawning_on_enemy_provs = yes 
+			}
+		}
+    }
+}
+country_event={
+	id = RAU.3
+	title = RAU.3.t
+	desc = RAU.3.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+
+	trigger={
+		tag=RAU
+		AST={surrender_progress>0.29}
+		AST={has_war_with = RAU}
+	}
+
+
+	option = {
+		name = RAU.3.a
+		white_peace = AST
+		transfer_state = 521
+		transfer_state = 873
+		transfer_state = 909
+		transfer_state = 872
+		add_state_core = 521
+		add_state_core = 873
+		add_state_core = 909
+		add_state_core = 872
+    }
+}
+country_event={
+	id = RAU.4
+	title = RAU.4.t
+	desc = RAU.4.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+
+	trigger={
+		tag=RAU
+		AST={surrender_progress>0.15}
+		AST={has_war_with = RAU}
+	}
+
+
+	option = {
+		name = RAU.4.a
+		913={
+			create_unit = {
+				division = "name = \"紧急工人赤卫队\" division_template = \"工人赤卫队\" start_experience_factor = 0.5"  
+				owner = ROOT
+				count=12
+				allow_spawning_on_enemy_provs = yes 
+			}
+		}
+    }
+}
+country_event={
+	id = RAU.5
+	title = RAU.5.t
+	desc = RAU.5.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+
+	trigger={
+		tag=RAU
+		date>1940.1.1
+	}
+
+
+	option = {
+		name = RAU.5.a
+		declare_war_on = { target = AST type = annex_everything }
+		873={
+			remove_dynamic_modifier = {
+				modifier = RAU_attack
+			}
+		}
+		521={
+			remove_dynamic_modifier = {
+				modifier = RAU_attack
+			}
+		}
+		909={
+			remove_dynamic_modifier = {
+				modifier = RAU_attack
+			}
+		}
+		872={
+			remove_dynamic_modifier = {
+				modifier = RAU_attack
+			}
+		}
+		519={
+			remove_dynamic_modifier = {
+				modifier = RAU_defence
+			}
+		}
+		912={
+			remove_dynamic_modifier = {
+				modifier = RAU_defence
+			}
+		}
+		674={
+			remove_dynamic_modifier = {
+				modifier = RAU_defence
+			}
+		}
+		520={
+			remove_dynamic_modifier = {
+				modifier = RAU_defence
+			}
+		}
+		
     }
 }

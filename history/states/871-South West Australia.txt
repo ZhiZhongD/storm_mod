@@ -17,13 +17,19 @@ state={
 		victory_points = {
 			13617 15
 		}
+		victory_points = {
+			13612 25
+		}
+		victory_points = {
+			13312 15
+		}
 
 	}
 
 	provinces={
 		1526 2191 8200 10949 10969 10997 11011 12948 12962 12976 12990 13312 13314 13316 13319 13325 13327 13333 13335 13336 13340 13356 13358 13363 13364 13365 13368 13379 13387 13388 13612 13617 13619 13620 13621 13622 
 	}
-	manpower=50000
+	manpower=6000000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

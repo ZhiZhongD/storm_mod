@@ -12,7 +12,7 @@ state={
 		owner = AST
 		add_core_of = AST
 		victory_points={
-			12949 10
+			13661 10
 		}
 
 	}
