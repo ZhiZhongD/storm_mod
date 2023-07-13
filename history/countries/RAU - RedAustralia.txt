@@ -3,6 +3,19 @@ recruit_character = RAU_Joseph_Biden
 recruit_character = RAU_Donald_Trump
 recruit_character = RAU_David_Smith
 recruit_character = RAU_Charlotte_Jones
+recruit_character = RAU_Ethan_Williams
+recruit_character = RAU_Mia_Brown
+recruit_character = RAU_Ethan_Wilson
+recruit_character = RAU_Xavier_Taylor
+recruit_character = RAU_Chelsea_Johnson
+recruit_character = RAU_Avery_Lee
+recruit_character = RAU_Xavier_Martin
+recruit_character = RAU_Liam_White
+recruit_character = RAU_Jasper_White
+recruit_character = RAU_SanShang
+recruit_character = RAU_lance_sharkey
+recruit_character = RAU_Tom_Martin
+recruit_character = RAU_Jack_White
 add_ideas = {
 	closed_economy
 	extensive_conscription

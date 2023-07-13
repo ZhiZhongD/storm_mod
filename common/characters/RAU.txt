@@ -10,12 +10,16 @@ characters={
 			}
 		}
 		field_marshal={
-			skill=4
-			attack_skill=2
-			defense_skill=4
+			skill=3
+			attack_skill=4
+			defense_skill=2
 			planning_skill=3
 			logistics_skill=4
 			legacy_id=-1
+			traits={
+				offensive_doctrine
+				fast_planner
+			}
 		}
 		country_leader={
 			ideology=marxist_unionism
@@ -48,7 +52,7 @@ characters={
 			legacy_id=-1
 		}
 		advisor={
-			idea_token = RAU_Joseph_Biden
+			idea_token = RAU_Joseph_Biden_a
 			slot = army_chief
 			allowed = {
 				original_tag  = RAU
@@ -57,6 +61,20 @@ characters={
 				army_chief_offensive_3
 			}
 			cost = 100
+		}
+		advisor={
+			cost = 100
+
+			slot = theorist
+			idea_token = PRC_Joseph_Biden_b
+			ledger = army
+			allowed = {
+				original_tag = RAU
+			}
+
+			traits = {
+				military_theorist
+			}
 		}
 	}
 	RAU_Donald_Trump={
@@ -83,15 +101,29 @@ characters={
 			logistics_skill=5
 			legacy_id=-1
 		}
-		advisor={	
+		advisor={
+			idea_token = RAU_Donald_Trump_a
+			slot = political_advisor
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				RAU_revolutionary_organiser
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 10.000
+			}
+		}
+		advisor={
 			slot = high_command
-			idea_token = RAU_Donald_Trump
+			idea_token = RAU_Donald_Trump_b
 			ledger = army
 			allowed = {
 				original_tag = RAU
 			}
 			traits = {
-				army_infantry_3
+				army_infantry_2
 			}
 			cost = 75
 			ai_will_do = {
@@ -148,6 +180,7 @@ characters={
 			}
 		}
 		advisor={
+			cost = 150
 			idea_token = RAU_Charlotte_Jones
 			slot = political_advisor
 			allowed = {
@@ -162,5 +195,322 @@ characters={
 			}
 		}
 	}
+	RAU_lance_sharkey={
+		name=AST_lance_sharkey
+		portraits={
+			army={
+				small="GFX_idea_AST_lance_sharkey" #small="GFX_idea_generic_communist_revolutionary_western_european_2d"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = RAU_lance_sharkey
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				silent_workhorse 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RAU_Ethan_Williams={
+		name=RAU_Ethan_Williams
+		portraits={
+			civilian={
+				small="gfx\leaders\ASTRAU\small\australian_political_male.dds" 
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = RAU_Ethan_Williams
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				war_industrialist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RAU_Mia_Brown={
+		name=RAU_Mia_Brown
+		portraits={
+			civilian={
+				small="gfx\leaders\generic_europe\small\military_female4.dds" 
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = RAU_Mia_Brown
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				captain_of_industry
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RAU_Ethan_Wilson={
+		name=RAU_Ethan_Wilson
+		portraits={
+			civilian={
+				small="gfx\leaders\ASTRAU\small\australian_military_male2.dds" 
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = RAU_Ethan_Wilson_a
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				RAU_army_scientist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RAU_Ethan_Wilson_b
+			ledger = army
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
+	}
+	RAU_Xavier_Taylor={
+		name=RAU_Xavier_Taylor
+		portraits={
+			civilian={
+				small="gfx\leaders\ASTRAU\small\australian_military_male1.dds" 
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = RAU_Xavier_Taylor
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				naval_theorist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RAU_Chelsea_Johnson={
+		name=RAU_Chelsea_Johnson
+		portraits={
+			civilian={
+				small="gfx\leaders\ASTRAU\small\australian_military_female.dds" 
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = RAU_Chelsea_Johnson
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				air_warfare_theorist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RAU_Avery_Lee={
+		name=RAU_Avery_Lee
+		portraits={
+			civilian={
+				small="gfx\leaders\ASTRAU\small\australian_military_female3.dds" 
+			}
+		}
+		advisor={
+			cost = 100
+			slot = navy_chief
+			idea_token = RAU_Avery_Lee
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RAU_Liam_White={
+		name=RAU_Liam_White
+		portraits={
+			civilian={
+				small="gfx\leaders\ASTRAU\small\australian_political_male1.dds" 
+			}
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = RAU_Liam_White
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				RAU_military_mobilizer
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RAU_Jasper_White={
+		name=RAU_Jasper_White
+		portraits={
+			civilian={
+				small="gfx\leaders\ASTRAU\small\australian_political_male6.dds" 
+			}
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = RAU_Jasper_White
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				RAU_revolutionary_artist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RAU_SanShang={
+		name=RAU_SanShang
+		portraits={
+			civilian={
+				small="gfx\leaders\RAU\SanShang.png" 
+			}
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = RAU_SanShang_a
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				head_of_intelligence
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RAU_SanShang_b
+			ledger = army
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				army_artillery_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
+	}
+	RAU_Xavier_Martin={
+		name=RAU_Xavier_Martin
+		portraits={
+			civilian={
+				small="gfx\leaders\ASTRAU\small\australian_military_male8.dds" 
+			}
+		}
+		advisor={
+			cost = 100
+			slot = air_chief
+			idea_token = RAU_Xavier_Martin
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RAU_Tom_Martin={
+		name=RAU_Tom_Martin
+		portraits={
+			civilian={
+				small="gfx\leaders\generic_europe\small\military_male29.dds" 
+			}
+		}
+		advisor={
+			cost = 150
+			slot = high_command
+			idea_token = RAU_Tom_Martin
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				navy_anti_submarine_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RAU_Jack_White={
+		name=RAU_Jack_White
+		portraits={
+			civilian={
+				small="gfx\leaders\generic_europe\small\military_male39.dds" 
+			}
+		}
+		advisor={
+			cost = 150
+			slot = high_command
+			idea_token = RAU_Jack_White
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				air_air_combat_training_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
 }
 

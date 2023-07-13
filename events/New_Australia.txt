@@ -126,6 +126,7 @@ country_event={
 
 	option = {
 		name = RAU.5.a
+		JAP={country_event=RAU.6}
 		declare_war_on = { target = AST type = annex_everything }
 		873={
 			remove_dynamic_modifier = {
@@ -168,5 +169,49 @@ country_event={
 			}
 		}
 		
+    }
+}
+country_event={
+	id = RAU.6
+	title = RAU.6.t
+	desc = RAU.6.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.6.a
+		AST={country_event=RAU.7}
+    }
+}
+country_event={
+	id = RAU.7
+	title = RAU.7.t
+	desc = RAU.7.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.7.a
+		JAP={country_event=RAU.8}
+    }
+}
+country_event={
+	id = RAU.8
+	title = RAU.8.t
+	desc = RAU.8.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.8.a
+		JAP = {
+			add_to_faction = AST
+		}
     }
 }

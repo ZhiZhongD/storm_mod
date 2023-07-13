@@ -2,7 +2,10 @@
 state={
 	id=911
 	name="STATE_911"
-
+	resources={
+		steel = 13.000
+		rubber = 21
+	}
 	history={
 		owner = AST
 		add_core_of = AST

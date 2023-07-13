@@ -1,0 +1,461 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+RAU_unit_production = {
+	allowed = {
+		original_tag = RAU
+	}
+	enable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 20
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 65
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 0
+	}
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 50
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 20
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 20
+	}
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 3
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 40
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 100
+	}
+}
+
+RAU_equipment_production = {
+	allowed = {
+		original_tag = RAU
+	}
+	enable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = infantry
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 15
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 30
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 5
+	}
+}
+
+RAU_protect_your_island_please = {
+	allowed = {
+		original_tag = RAU
+	}
+	enable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = area_priority
+		id = UK
+		value = 55
+	}
+}
+
+
+
+royal_air_force = {
+	allowed = {
+		original_tag = RAU
+	}
+	enable = {
+		date > 1939.4.1
+	}
+	ai_strategy = {
+		type = air_factory_balance
+		value = 125
+	}
+}
+
+RAU_template_design_default = {
+	allowed = {
+		original_tag = RAU
+	}
+	enable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -99
+	}
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -99
+	}
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -99
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mountaineers
+		value = -99
+	}
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -99
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = -99
+	}
+}
+
+RAU_template_design_1939 = {
+	allowed = {
+		original_tag = RAU
+	}
+	enable = {
+		date > 1939.1.1
+	}
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = -25
+	}
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = -99
+	}
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 25
+	}
+}
+
+
+
+RAU_naval_role_ratios_historical = {
+	enable = {
+		has_dlc = "Man the Guns"
+		original_tag = RAU
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = -90
+	}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 20		#aim for a 2-1 ratio on naval factories
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = -10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = -90
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier_light
+		value = 15
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = -150
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 250
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 50
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 60
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 20
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 10
+	}
+}
+
+RAU_naval_role_ratios_anti_submarines = {
+	enable = {
+		has_dlc = "Man the Guns"
+		original_tag = RAU
+		anti_submarine_strategy_required_trigger = yes
+	}
+	abort = {
+		not = {
+			anti_submarine_strategy_required_trigger = yes
+		}
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = -90
+	}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 20		#aim for a 2-1 ratio on naval factories
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = -10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = -90
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier_light
+		value = -25
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = -150
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = -70
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = -25
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = -10
+	}
+}
+
+RAU_the_channel_is_dangerous = {
+	enable = {
+		original_tag = RAU
+		has_war_with = DVL
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 18		#RAUlish channel
+		value = 100
+	}
+}
+
+RAU_lifeline_of_the_empire = {
+	enable = {
+		original_tag = RAU
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = 25		# this is extra on top of 50 base
+	}
+}
+
+RAU_going_to_research_trade_blockade = {
+	enable = {
+		original_tag = RAU
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = research_tech
+		id = trade_interdiction
+		value = 300		# this is extra on top of 50 base
+	}
+}
+
+
+
+
+
+RAU_accept_USA_access = {
+	allowed = {
+		tag = RAU
+	}
+	enable = {
+		tag = RAU
+		date > 1940.9.9
+		USA = {
+			is_ai = yes
+			NOT = {
+				OR = {
+					is_in_faction_with = RAU
+					has_military_access_to = RAU
+				}
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = USA
+		target = military_access
+		value = 1000
+	}
+}
+
+
+
+RAU_halt_light_armor_production_in_transitioning = {
+	enable = {
+		original_tag = RAU
+		has_template_majority_unit = medium_armor
+		OR = {
+			has_equipment = {
+				light_tank_equipment > 600
+			}
+			date > 1938.1.1
+		}
+	}
+	abort = {
+		# once we start we never go back to light armor
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_equipment
+		value = -75
+	}
+}

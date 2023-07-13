@@ -29,7 +29,7 @@ characters={
 		}
 	}
 	
-	CHI_wang_jingwei={
+	CHI_wang_jingwei_japan={
 		name=CHI_wang_jingwei
 		portraits={
 			civilian={

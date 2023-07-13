@@ -683,14 +683,6 @@ focus_tree = {
 		completion_reward={
 			custom_effect_tooltip=PRC_tooltip_concentration_of_forces
 			add_to_variable={PRC.PRC_pra_army_infantry_attack_factor=0.1}
-			592={
-				create_unit = {
-					division = "name = \"人民革命军新3师\" division_template = \"人民革命军\" start_experience_factor = 0.1"  
-					owner = ROOT
-					allow_spawning_on_enemy_provs = yes 
-					count=1
-				}
-			}
 		}
 	}
 	focus={
@@ -817,21 +809,13 @@ focus_tree = {
 		cost=5
 		completion_reward={
 			custom_effect_tooltip=PRC_tooltip_enlarged_militia
-			add_to_variable={PRC.PRC_training_time_army_factor=-0.25}
+			add_to_variable={PRC.PRC_training_time_army_factor=-0.5}
 			592={
 				create_unit = {
 					division = "name = \"人民卫队\" division_template = \"人民卫队\" start_experience_factor = 0.1"  
 					owner = ROOT
 					allow_spawning_on_enemy_provs = yes 
-					count=1
-				}
-			}
-			592={
-				create_unit = {
-					division = "name = \"人民卫队\" division_template = \"人民卫队\" start_experience_factor = 0.1"  
-					owner = ROOT
-					allow_spawning_on_enemy_provs = yes 
-					count=1
+					count=12
 				}
 			}
 		}
@@ -952,6 +936,7 @@ focus_tree = {
 		completion_reward={
 			custom_effect_tooltip=PRC_tooltip_all_the_people_are_soldiers
 			add_to_variable={PRC.PRC_conscription=0.05}
+			add_ideas=PRC_popular_army
 		}
 	}
 	focus={
@@ -1425,7 +1410,10 @@ focus_tree = {
 		relative_position_id= PRC_a_unified_peoples_government
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
+		available = {
+			NOT={ has_war_with = CHI }
+		}
 		ai_will_do = {
 		  factor = 1
 		}
@@ -1449,6 +1437,7 @@ focus_tree = {
 		  factor = 1
 		}
 		available = {
+			NOT={ has_war_with = CHI }
 		}
 		bypass={
 			NOT={country_exists=GZO}
@@ -1465,6 +1454,11 @@ focus_tree = {
 		icon=GFX_focus_chi_united_front
 		prerequisite={focus= PRC_against_the_six_encirclement_and_suppression }
 		relative_position_id= PRC_against_the_six_encirclement_and_suppression
+		available={
+			JAP={
+				has_completed_focus = JAP_intervene_in_china
+			}
+		}
 		x=0
 		y=1
 		cost=5

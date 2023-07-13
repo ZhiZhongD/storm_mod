@@ -30,6 +30,9 @@
  liberal_democracyism:0"自由民主主义"
  liberal_democracyism_desc:0"社会自由主义尊重并强调个人自由并建设较为自由的市场经济。除此之外，社会自由主义认为保护公民权利并加强民主是国家的主要功能。"
  FRA_social_democratic_party:0 "人民阵线"
- PRC_social_democratic_party:0 "人民阵线（左国党）"
+ PRC_social_democratic_party:0 "人民阵线"
  PRC_social_democratic_party_long:0 "人民阵线（左翼国民党）"
-
+ RAU_social_democratic_party:0 "澳大利亚社会党"
+ RAU_unionism_party:0 "全国劳工联合会"
+ RAU_radical_socialism_party:0 "罗马主义社会党"
+ RAU_anarchism_party:0 "无政府主义者协会"

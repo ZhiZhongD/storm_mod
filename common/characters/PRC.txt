@@ -92,28 +92,6 @@ characters={
 			}
 		}
 	}
-	PRC_xu_teli={
-		name=PRC_xu_teli
-		portraits={
-			civilian={
-				small=gfx\interface\ideas\prc_xu_teli.dds
-			}
-		}
-		advisor={
-			idea_token = PRC_xu_teli
-			slot = political_advisor
-			allowed = {
-				original_tag = PRC
-			}
-			traits = {
-				head_of_intelligence
-			}
-			cost = 75
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
 	PRC_deng_fa={
 		name=PRC_deng_fa
 		portraits={
@@ -276,10 +254,27 @@ characters={
 		}
 
 		corps_commander={
-			traits={ infantry_officer }
+			traits={ rmor_officer war_hero }
 			skill=3
 			attack_skill=4
 			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	PRC_he_long={
+		name=PRC_he_long
+		portraits={
+			army={
+				large="gfx\leaders\PRC\portrait_prc_helong2.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer infantry_leader urban_assault_specialist hill_fighter }
+			skill=3
+			attack_skill=4
+			defense_skill=4
 			planning_skill=5
 			logistics_skill=5
 			legacy_id=-1

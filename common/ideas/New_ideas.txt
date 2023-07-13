@@ -506,7 +506,6 @@ ideas = {
 	PRC_peoples_war_idea={
 		picture=air_support_focus
 		modifier={
-			surrender_limit = 0.5
 			resistance_target_on_our_occupied_states = 0.5
 			resistance_growth_on_our_occupied_states = 0.5
 			compliance_growth_on_our_occupied_states = -0.5
@@ -519,7 +518,7 @@ ideas = {
 		}
 	}
 	PRC_LKMT_lead={
-		picture=GFX_idea_KR_focus_KMT_democracy
+		picture=KR_focus_KMT_democracy
 		modifier={
 			political_power_factor = 0.1
 			production_speed_industrial_complex_factor = 0.05
@@ -570,7 +569,6 @@ ideas = {
 			global_building_slots_factor = -0.25
 			consumer_goods_factor = 0.05
 			production_speed_buildings_factor = -0.75
-			industrial_capacity_factory = -0.25
 		}
 	}
 	PRC_against_nanjing={
@@ -586,13 +584,15 @@ ideas = {
 		}
 	}
 	China_location={
-		#picture=
+		picture=
 		allowed_civil_war={
 			always=yes
 		}
 		modifier = {
+			#
 			#generate_wargoal_tension = 1.00
 			join_faction_tension = 1.00
+			#
 			#lend_lease_tension = 0.50
 			send_volunteers_tension = 0.20
 			guarantee_tension = 1.0
@@ -619,7 +619,7 @@ ideas = {
 	}
 	RAU_revolution_of_union={
 		allowed={original_tag=RAU}
-		picture=GFX_ideology_unionism_group
+		picture=GFX_orthodox_syndicalism
 		allowed_civil_war={
 			always=yes
 		}
@@ -627,6 +627,18 @@ ideas = {
 			industrial_capacity_factory = 0.15
 			global_building_slots_factor = 0.2
 			training_time_army_factor = -0.25
+		}
+	}
+	PRC_popular_army={
+		allowed={original_tag=RAU}
+		picture=orthodox_syndicalism
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			army_defence_factor = 0.05
+			experience_loss_factor = -0.15
+			experience_gain_army_factor = 0.15
 		}
 	}
 	

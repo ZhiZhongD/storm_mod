@@ -975,15 +975,9 @@ PRC_war={
 
 	}
 	mobilize_the_people={
-		days_remove = 25
+		days_remove = 30
 
-<<<<<<< Updated upstream
-		cost=25
-=======
 		cost=30
->>>>>>> Stashed changes
-
-
 		allowed={original_tag=PRC}
 		
 		remove_effect={

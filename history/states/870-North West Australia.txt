@@ -2,6 +2,13 @@
 state={
 	id=870
 	name="STATE_870"
+	resources={
+		steel = 13.000
+		oil = 11
+	    tungsten = 9
+	    chromium = 14
+	    aluminium = 21
+	}
 
 	history={
 		buildings = {
