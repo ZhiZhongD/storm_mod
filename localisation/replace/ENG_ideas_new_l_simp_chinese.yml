@@ -1,0 +1,8 @@
+﻿l_simp_chinese:
+ ENG_dyn_staff_air:0 "皇家空军"
+ ENG_dyn_staff_air_1_tooltip:0 "获得§Y皇家空军§!，其效果为（£ace_generation_texticon  王牌机师产生的概率：§G+10.00%§!，£air_efficiency_texticon  空军任务效率：§G+10.00%§!）"
+ ENG_dyn_staff_air_2_tooltip:0 "§Y皇家空军§!追加效果：\n£attack_air_superiority_texticon  夺取制空权任务攻击：§G+5.00%§!"
+ ENG_dyn_staff_air_3_tooltip:0 "§Y皇家空军司令部§!追加效果：\n£attack_cas_texticon  密接支援任务攻击：§G+5.00%§!"
+ ENG_dyn_staff_air_4_tooltip:0 "§Y皇家空军司令部§!追加效果：\n£naval_strike_texticon  对海攻击：§G+5.00%§!"
+
+ENG_africa_company:0 "不列颠非洲公司"
