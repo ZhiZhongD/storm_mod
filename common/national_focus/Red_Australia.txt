@@ -59,10 +59,84 @@ focus_tree = {
 #	}
 	#shared_focus = CHI_invite_foreign_investors
 	focus = {
+		id = RAU_progressive_tensendustrial_of_revolution
+		icon = GFX_FRA_syndicalistmilitarism
+		x = 4
+		y = 1
+		cost = 2
+		ai_will_do = {
+		factor = 100
+	    }
+		available = {
+			OR={
+				date>1939.7.1
+				has_completed_focus = RAU_rearmament
+			}
+		}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+			create_wargoal = { target = AST type = annex_everything }
+		}
+    }
+	focus = {
+		id = RAU_comintern_eastern_front
+		icon = GFX_East_Comintern
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+		factor = 100
+	    }
+		available = {
+			CHI={
+				is_in_faction_with = JAP	
+			}
+			RAU={
+				has_war_with = JAP
+			}
+		}
+		relative_position_id=RAU_progressive_tensendustrial_of_revolution
+		prerequisite={ focus = RAU_progressive_tensendustrial_of_revolution }
+		bypass = {
+			PRC={
+				has_completed_focus=PRC_comintern_eastern_front
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {
+			country_event=RAU.15
+		}
+    }
+	focus = {
+		id = RAU_beware_of_federation
+		icon = GFX_focus_attack_australia
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id=RAU_progressive_tensendustrial_of_revolution
+		prerequisite={ focus = RAU_progressive_tensendustrial_of_revolution }
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {
+		}
+		bypass = {
+			NOT={country_exists = BAU}
+		}
+		complete_tooltip = {}
+		completion_reward = {
+			add_timed_idea={
+				idea=RAU_beware_of_federation_idea
+				days=720
+			}
+		}
+    }
+	focus = {
 		id = RAU_plant_conversion
 		icon = GFX_UKR_Workers_Principle
 		x = 20
-		y = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 		factor = 10
@@ -78,7 +152,7 @@ focus_tree = {
 		id = RAU_enlarge_conscription
 		icon = GFX_GEO_Loyal_Workers_Make_Loyal_Soldiers
 		x = 22
-		y = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 		factor = 10
@@ -210,6 +284,24 @@ focus_tree = {
 			add_war_support = 0.05
 			add_popularity = { ideology = unionism popularity = 0.2 }
 			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+    }
+	focus = {
+		id = RAU_propagate_of_liberal_revolution
+		icon = GFX_BBR_syndie_media
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+		factor = 10
+	    }
+		relative_position_id = RAU_freedom_of_union
+		prerequisite = { focus = RAU_freedom_of_union }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+			add_ideas=RAU_liberal_revolution_idea
 		}
     }
 	focus = {
@@ -592,7 +684,12 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		complete_tooltip = {}
-		completion_reward = {}
+		completion_reward = {
+			custom_effect_tooltip=RAU_tooltip_liveism
+			hidden_effect={
+				add_dynamic_modifier = { modifier = RAU_peoples_livelihoodism }
+		    }
+		}
     }
 	focus = {
 		id = RAU_consumer_goods_preferred
@@ -631,6 +728,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_to_variable = { RAU.RAU_peoples_livelihoodism_production_speed_industrial_complex_factor = 0.1 }
 			custom_effect_tooltip = RAU_tooltip_RAU_encourage_civil_industry
 			random_state={
 				limit = {
@@ -681,7 +779,7 @@ focus_tree = {
 		icon = GFX_GUA_People_Army
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -693,6 +791,9 @@ focus_tree = {
 		complete_tooltip = {}
 		completion_reward = {
 			custom_effect_tooltip=RAU_tooltip_RAU_workers_enthusiasm_for_production
+			add_to_variable = { RAU.RAU_peoples_livelihoodism_consumer_goods_factor = -0.05 }
+			add_to_variable = { RAU.RAU_peoples_livelihoodism_production_speed_industrial_complex_factor = 0.05 }
+			add_to_variable = { RAU.RAU_peoples_livelihoodism_production_factory_efficiency_gain_factor = 0.15 }
 		}
     }
 	focus = {
@@ -821,6 +922,9 @@ focus_tree = {
 		complete_tooltip = {}
 		completion_reward = {
 			custom_effect_tooltip=RAU_tooltip_RAU_syndicalist_economic_miracle
+			add_to_variable = { RAU.RAU_peoples_livelihoodism_industrial_capacity_factory = 0.15 }
+			add_to_variable = { RAU.RAU_peoples_livelihoodism_production_factory_max_efficiency_factor = 0.1 }
+			add_to_variable = { RAU.RAU_peoples_livelihoodism_global_building_slots_factor = 0.1 }
 		}
     }
 	focus = {
@@ -841,6 +945,7 @@ focus_tree = {
 		complete_tooltip = {}
 		completion_reward = {
 			custom_effect_tooltip=RAU_tooltip_RAU_inescapable
+			add_to_variable = { RAU.RAU_peoples_livelihoodism_production_speed_arms_factory_factor = 0.1 }
 			add_ideas = war_economy
 		}
     }
@@ -912,7 +1017,10 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		complete_tooltip = {}
-		completion_reward = {}
+		completion_reward = {
+			add_to_variable = { RAU.RAU_accelerationismism_consumer_goods_factor = -0.05 }
+			custom_effect_tooltip=RAU_tooltip_accelerationism
+		}
     }
 	focus = {
 		id = RAU_industry_priority
@@ -930,6 +1038,9 @@ focus_tree = {
 		complete_tooltip = {}
 		completion_reward = {
 			custom_effect_tooltip=RAU_tooltip_RAU_industry_priority
+			add_to_variable = { RAU.RAU_accelerationismism_industrial_capacity_factory = 0.15 }
+			add_to_variable = { RAU.RAU_accelerationismism_production_speed_arms_factory_factor = 0.15 }
+			add_to_variable = { RAU.RAU_accelerationismism_global_building_slots_factor = 0.1 }
 			random_state={
 				limit = {
 					is_controlled_by = RAU
@@ -1184,7 +1295,6 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
-			add_stability=-0.05
 			add_timed_idea={
 				idea=RAU_revolutionary_bond_idea
 				days=360
@@ -1262,9 +1372,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
-			add_political_power=100
-			add_stability=0.15
-			add_war_support=0.1
+			add_ideas=RAU_limited_democracy
 		}
     }
 	focus = {
@@ -1320,8 +1428,8 @@ focus_tree = {
 		complete_tooltip = {}
 		completion_reward = {
 			add_political_power=100
-			add_stability=0.15
-			add_war_support=0.15
+			add_stability=0.2
+			add_war_support=0.2
 		}
     }
 	focus = {

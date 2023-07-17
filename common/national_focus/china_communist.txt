@@ -1576,6 +1576,11 @@ focus_tree = {
 		x=1
 		y=2
 		cost=5
+		bypass={
+			RAU={
+				has_completed_focus=RAU_progressive_tensendustrial_of_revolution
+			}
+		}
 		available={
 			CHI={
 				is_in_faction_with = JAP	

@@ -627,8 +627,7 @@ ideas = {
 		}
 		modifier={
 			global_building_slots_factor = 0.2
-			training_time_army_factor = -0.25
-			breakthrough_factor = 0.15
+			breakthrough_factor = 0.1
 		}
 	}
 	PRC_popular_army={
@@ -931,6 +930,7 @@ ideas = {
 			command_power_gain = 0.5
 			communism_drift = 0.01
 			conscription = 0.02
+			stability_weekly = 0.001
 		}
 	}
 	RAU_collectivism_idea={
@@ -956,5 +956,51 @@ ideas = {
 			army_org_factor = 0.05
 			army_core_defence_factor = 0.1
 		}
+	}
+	RAU_limited_democracy={
+		allowed={original_tag=RAU}
+		picture=generic_democratic_drift_bonus
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			political_power_factor = 0.15
+			stability_factor = 0.05
+		}
+	}
+	RAU_limited_democracy={
+		allowed={original_tag=RAU}
+		picture=generic_democratic_drift_bonus
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			political_power_factor = 0.15
+			stability_factor = 0.05
+		}
+	}
+	RAU_liberal_revolution_idea={
+		allowed={original_tag=RAU}
+		picture=new_liberalism
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			army_attack_factor = 0.05
+			army_speed_factor = 0.05
+			conscription = 0.03
+		}
+	}
+	RAU_beware_of_federation_idea={
+		allowed={original_tag=RAU}
+		picture=cos_defense
+		allowed_civil_war={
+			always=no
+		}
+		targeted_modifier = {
+			tag = BAU
+			attack_bonus_against = 0.05
+		    defense_bonus_against = 0.05
+		}	
 	}
 }

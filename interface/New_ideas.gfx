@@ -84,12 +84,12 @@ spriteTypes={
 		texturefile="gfx/interface/ideas/kinship_economy.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_new_liberalism"
+		texturefile="gfx/interface/ideas/new_liberalism.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_cos_defense"
+		texturefile="gfx/interface/ideas/cos_defense.png"
     }
 	spriteType = {
 	    name="GFX_idea_"

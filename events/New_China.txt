@@ -310,7 +310,7 @@ country_event={
 	fire_only_once = yes
 	trigger={
 		tag = CHI
-		CHI={surrender_progress>0.5}
+		CHI={surrender_progress>0.01}
 		CHI={has_war_with = JAP}
 	}
 

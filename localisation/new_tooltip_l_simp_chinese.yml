@@ -76,4 +76,6 @@ RAU_tooltip_RAU_workers_enthusiasm_for_production:0"§Y民生主义工业§!\追
 RAU_tooltip_RAU_syndicalist_economic_miracle:0"§Y民生主义工业§!\追加效果：\n工厂产出：§G+15.00%§!\n生产效率上限：§G+10.00%§!\n地区最大工业值：§G+10.00%§!"
 RAU_tooltip_RAU_inescapable:0"§Y民生主义工业§!\追加效果：\n军用工厂建造速度：§G+10.00%§!"
 RAU_tooltip_RAU_industry_priority:0"§Y加速主义工业§!\追加效果：\n生活消费品工厂：§Y-5.0%§!"
-RAU_tooltip_RAU_give_blood_to_heavy_industry:0"§Y加速主义工业§!\追加效果：\n工厂产出：§G+15.00%§!\n地区最大工业值：§G+10.00%§!\n军用工厂建造速度：§G+15.00%§!"
+RAU_tooltip_RAU_give_blood_to_heavy_industry:0"§Y加速主义工业§!\追加效果：\n工厂产出：§G+15.00%§!\n地区最大工业值：§G+10.00%§!\n§Y军用工厂§!建造速度：§G+15.00%§!"
+RAU_tooltip_liveism:0"获得§Y民生主义工业§!，\其效果为：\n§Y民用工厂§!建造速度：§G+5.00%§!\n§Y军用工厂§!建造速度：§R-5.00%§!\n地区最大工业值：§G+10.00%§!"
+RAU_tooltip_accelerationism:0"获得§Y加速主义工业§!，\其效果为：\n§Y军用工厂§!建造速度：§G+5.00%§!\n地区最大工业值：§G+5.00%§!"

@@ -2233,11 +2233,11 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"   
-		texturefile = "gfx/interface/goals/.png"  
+		name = "GFX_BBR_syndie_media_shine"   
+		texturefile = "gfx/interface/goals/BBR_syndie_media.png"  
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/.png"  
+			animationmaskfile = "gfx/interface/goals/BBR_syndie_media.png"  
 			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2250,7 +2250,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/.png" 
+			animationmaskfile = "gfx/interface/goals/BBR_syndie_media.png" 
 			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2264,11 +2264,11 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"   
-		texturefile = "gfx/interface/goals/.png"  
+		name = "GFX_FRA_syndicalistmilitarism_shine"   
+		texturefile = "gfx/interface/goals/FRA_syndicalistmilitarism.png"  
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/.png"  
+			animationmaskfile = "gfx/interface/goals/FRA_syndicalistmilitarism.png"  
 			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2281,7 +2281,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/.png" 
+			animationmaskfile = "gfx/interface/goals/FRA_syndicalistmilitarism.png" 
 			animationtexturefile = "gfx/interface/goals/shine_overlay.png" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

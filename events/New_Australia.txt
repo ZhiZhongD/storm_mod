@@ -9,7 +9,7 @@ country_event={
 
 	trigger={
 		tag=RAU
-		NOT={country_exists = AST}
+		date>1942.1.1
 	}
 
 
@@ -148,15 +148,19 @@ country_event={
 	fire_only_once = yes
 
 	trigger={
-		tag=RAU
-		date>1940.1.1
+		tag=JAP
+		CHI={
+			is_in_faction_with = JAP	
+		}
+		RAU={
+			has_war_with = AST
+		}
 	}
 
 
 	option = {
 		name = RAU.5.a
-		JAP={country_event=RAU.6}
-		declare_war_on = { target = AST type = annex_everything }
+		AST={country_event=RAU.6}
     }
 }
 country_event={
@@ -170,7 +174,7 @@ country_event={
 
 	option = {
 		name = RAU.6.a
-		AST={country_event=RAU.7}
+		JAP={country_event=RAU.7}
     }
 }
 country_event={
@@ -184,7 +188,9 @@ country_event={
 
 	option = {
 		name = RAU.7.a
-		JAP={country_event=RAU.8}
+		JAP = {
+			add_to_faction = AST
+		}
     }
 }
 country_event={
@@ -193,14 +199,16 @@ country_event={
 	desc = RAU.8.d
 	picture = GFX_report_event_ger_civil_war
 	fire_only_once = yes
-	is_triggered_only = yes
+	trigger={
+		tag = BAU
+		date>1937.1.1
+		AST={surrender_progress>0.5}
+		AST={has_war_with = RAU }
+	}
 
 
 	option = {
 		name = RAU.8.a
-		JAP = {
-			add_to_faction = AST
-		}
     }
 }
 country_event={
@@ -279,6 +287,9 @@ country_event={
 	option = {
 		name = RAU.13.a
 		add_political_power=50
+		RAU={
+			country_event=RAU.14
+		}
     }
 }
 country_event={
@@ -293,5 +304,20 @@ country_event={
 		name = RAU.14.a
 		add_political_power=120
 		add_stability=0.1
+    }
+}
+country_event={
+	id = RAU.15
+	title = RAU.15.t
+	desc = RAU.15.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.15.a
+		RAU={
+			country_event=RAU.16
+		}
     }
 }

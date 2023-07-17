@@ -234,6 +234,9 @@ characters={
 			traits = {
 				war_industrialist
 			}
+			available={
+				has_completed_focus = RAU_accelerationism
+			}
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -255,6 +258,9 @@ characters={
 			}
 			traits = {
 				captain_of_industry
+			}
+			available = {
+				has_completed_focus = RAU_peoples_livelihood
 			}
 			ai_will_do = {
 				factor = 1.000
