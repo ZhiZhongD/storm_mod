@@ -568,7 +568,7 @@ ideas = {
 		modifier={
 			global_building_slots_factor = -0.25
 			consumer_goods_factor = 0.05
-			production_speed_buildings_factor = -0.75
+			production_speed_buildings_factor = -0.95
 		}
 	}
 	PRC_against_nanjing={
@@ -584,7 +584,7 @@ ideas = {
 		}
 	}
 	China_location={
-		picture=
+		picture=KR_focus_KMT_democracy
 		allowed_civil_war={
 			always=yes
 		}
@@ -613,25 +613,27 @@ ideas = {
 			defense_bonus_against = 0.15
 		}
 		modifier={
+			stability_factor = 0.3
+			war_support_factor = 0.3
 			planning_speed = 1
 			army_speed_factor = 0.2
 		}
 	}
 	RAU_revolution_of_union={
 		allowed={original_tag=RAU}
-		picture=GFX_orthodox_syndicalism
+		picture=generic_syndicalism_drift_bonus
 		allowed_civil_war={
 			always=yes
 		}
 		modifier={
-			industrial_capacity_factory = 0.15
 			global_building_slots_factor = 0.2
 			training_time_army_factor = -0.25
+			breakthrough_factor = 0.15
 		}
 	}
 	PRC_popular_army={
 		allowed={original_tag=RAU}
-		picture=orthodox_syndicalism
+		picture=FRA_spirit
 		allowed_civil_war={
 			always=yes
 		}
@@ -641,4 +643,318 @@ ideas = {
 			experience_gain_army_factor = 0.15
 		}
 	}
-	
+	RAU_agricultural_combination_idea={
+		allowed={original_tag=RAU}
+		picture=DEI_idea_secure_foodsystem2
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			global_building_slots_factor = 0.1
+		}
+	}
+	RAU_freedom_of_union_idea={
+		allowed={original_tag=RAU}
+		picture=air_support_focus
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			research_speed_factor = 0.05
+			drift_defence_factor = -0.5
+		}
+	}
+	RAU_counter_revolutionary_lockout={
+		allowed={original_tag=RAU}
+		picture=idea_POL_disjointed_industry
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			industrial_capacity_factory = -0.15
+		}
+	}
+	RAU_one_man_management_idea={
+		allowed={original_tag=RAU}
+		picture=idea_POL_disjointed_industry
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			political_power_gain = 0.3
+			stability_factor = 0.05
+		}
+	}
+	RAU_the_three_point_system_idea={
+		allowed={original_tag=RAU}
+		picture=idea_POL_disjointed_industry
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			line_change_production_efficiency_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.1
+		}
+	}
+	RAU_internal_strife_1={
+		allowed={original_tag=RAU}
+		picture=centralised_syndicalism
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			political_power_factor = -0.25
+			stability_factor = -0.2
+		}
+	}
+	RAU_internal_strife_2={
+		allowed={original_tag=RAU}
+		picture=centralised_syndicalism
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			political_power_factor = -0.1
+			stability_factor = -0.1
+		}
+	}
+	RAU_the_syndicalist_government_1={
+		allowed={original_tag=RAU}
+		picture=orthodox_syndicalism
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			political_power_gain = 0.25
+			industrial_capacity_factory = 0.05
+		}
+	}
+	RAU_the_syndicalist_government_2={
+		allowed={original_tag=RAU}
+		picture=orthodox_syndicalism
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			political_power_gain = 0.25
+			industrial_capacity_factory = 0.05
+			tank_manufacturer_cost_factor = -0.33
+			naval_manufacturer_cost_factor = -0.33
+			aircraft_manufacturer_cost_factor = -0.33
+			materiel_manufacturer_cost_factor = -0.33
+			industrial_concern_cost_factor = -0.33
+		}
+	}
+	RAU_peoples_welfare_fund_idea={
+		allowed={original_tag=RAU}
+		picture=spr_seize_the_gold_reserves
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			drift_defence_factor = 0.5
+			resistance_decay = 1
+			compliance_growth = 1
+		}
+	}
+	RAU_urban_famine={
+		allowed={original_tag=RAU}
+		picture=idea_generic_agrarian_society
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			stability_weekly = -0.001
+			monthly_population = -0.5
+		}
+	}
+	RAU_chaotic_economy_1={
+		allowed={original_tag=RAU}
+		picture=idea_POL_disjointed_industry
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			production_speed_buildings_factor = -0.15
+			industrial_capacity_factory = -0.15
+		}
+	}
+	RAU_chaotic_economy_2={
+		allowed={original_tag=RAU}
+		picture=idea_POL_disjointed_industry
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			production_speed_buildings_factor = -0.1
+			industrial_capacity_factory = -0.1
+		}
+	}
+	RAU_ecological_construction={
+		allowed={original_tag=RAU}
+		picture=generic_research_bonus
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			global_building_slots_factor = 0.1
+			local_resources_factor = 0.05
+		}
+	}
+	RAU_soviet_five_year_plan_experience={
+		allowed={original_tag=RAU}
+		picture=idea_eng_spirit_of_the_industrial_revolution
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			production_speed_buildings_factor = 0.05
+		}
+	}
+	RAU_collective_farm_idea={
+		allowed={original_tag=RAU}
+		picture=idea_gre_agricultural_communes
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			stability_factor = -0.05
+			global_building_slots_factor = 0.1
+			consumer_goods_factor = -0.02
+		}
+	}
+	RAU_consumer_goods_is_first_idea={
+		allowed={original_tag=RAU}
+		picture=idea_gre_agricultural_communes
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			consumer_goods_factor = 0.1
+		}
+	}
+	RAU_eastern_australian_mining_board_idea={
+		allowed={original_tag=RAU}
+		picture=idea_generic_exploit_mines
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			local_resources_factor = 0.15
+		}
+	}
+	RAU_armaments_production_idea={
+		allowed={original_tag=RAU}
+		picture=idea_generic_license_production
+		allowed_civil_war={
+			always=no
+		}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			artillery_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			support_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+	}
+	RAU_production_competition_idea={
+		allowed={original_tag=RAU}
+		picture=generic_production_bonus
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			production_factory_efficiency_gain_factor = 0.15
+			industrial_capacity_factory = 0.05
+			consumer_goods_factor = -0.02
+		}
+	}
+	RAU_the_secret_police_of_the_alliance={
+		allowed={original_tag=RAU}
+		picture=idea_generic_secret_police
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			operative_slot = 1
+            agency_upgrade_time = -0.15
+			subversive_activites_upkeep = -0.25
+		}
+	}
+	RAU_revolutionary_bond_idea={
+		allowed={original_tag=RAU}
+		picture=spr_relocate_the_gold_reserves
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			production_speed_buildings_factor = 0.05
+		}
+	}
+	RAU_cadre_appointment_idea={
+		allowed={original_tag=RAU}
+		picture=idea_generic_political_support
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			mobilization_laws_cost_factor = -0.25
+			trade_laws_cost_factor = -0.25
+			economy_cost_factor = -0.25
+			political_advisor_cost_factor = -0.25
+			tank_manufacturer_cost_factor = -0.25
+			naval_manufacturer_cost_factor = -0.25
+			aircraft_manufacturer_cost_factor = -0.25
+			materiel_manufacturer_cost_factor = -0.25
+			industrial_concern_cost_factor = -0.25
+			theorist_cost_factor = -0.25
+			army_chief_cost_factor = -0.25
+			navy_chief_cost_factor = -0.25
+			air_chief_cost_factor = -0.25
+			high_command_cost_factor = -0.25
+		}
+	}
+	RAU_mobe_idea={
+		allowed={original_tag=RAU}
+		picture=idea_yug_federal_defense_council
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			command_power_gain = 0.5
+			communism_drift = 0.01
+			conscription = 0.02
+		}
+	}
+	RAU_collectivism_idea={
+		allowed={original_tag=RAU}
+		picture=generic_manpower_bonus
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			conscription = 0.02
+			monthly_population = 0.25
+			mobilization_speed = 0.2
+		}
+	}
+	RAU_star_of_revolution_idea={
+		allowed={original_tag=RAU}
+		picture=generic_communism_drift_bonus
+		allowed_civil_war={
+			always=no
+		}
+		modifier={
+			breakthrough_factor = 0.1
+			army_org_factor = 0.05
+			army_core_defence_factor = 0.1
+		}
+	}
+}

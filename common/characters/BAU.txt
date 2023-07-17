@@ -1,0 +1,42 @@
+characters={
+	BAU_john_curtin={
+		name=AST_john_curtin
+		portraits={
+			civilian={
+				large=GFX_portrait_AST_john_curtin
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BAU_arthur_calwell={
+		name=AST_arthur_calwell
+		portraits={
+			army={
+				small="GFX_idea_AST_arthur_calwell" #small="GFX_idea_generic_democratic_reformer_western_european_2d"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_arthur_calwell
+			allowed = {
+				original_tag = AST
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+}
+

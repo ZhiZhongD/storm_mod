@@ -4,7 +4,6 @@
 			state = 519
 			state = 912
 			state = 674
-			state = 520
 		}
 	}
 	add_dynamic_modifier = {
@@ -24,7 +23,7 @@ every_owned_state = {
 		modifier = RAU_attack
 	}
 }
-capital = 871
+capital = 522
 oob = "AST_1936"
 set_stability = 0.8
 set_war_support = 0.3
@@ -145,6 +144,7 @@ recruit_character = AST_lance_sharkey
 recruit_character = AST_herbert_v_evatt
 recruit_character = AST_generic_fascist_demagogue
 recruit_character = AST_arthur_calwell
+recruit_character = AST_cesar_boll
 
 if = {
 	limit = {
@@ -298,22 +298,22 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1934.9.15"
-	election_frequency = 36
-	elections_allowed = yes
+	ruling_party = absolute_monarchy
 }
 
 set_popularities = {
-	democratic = 98
+	absolute_monarchy = 56
 	communism = 2
+	unionism = 20
+	democratic = 12
+	fascism = 10
 }
 
 set_convoys = 100
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = absolute_monarchy
 		last_election = "1937.10.23"
 		election_frequency = 36
 		elections_allowed = yes

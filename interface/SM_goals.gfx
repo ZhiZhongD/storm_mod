@@ -244,12 +244,56 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/AST_syndicalist.png"
 	}
 	SpriteType = {
-		name = "GFX_orthodox_syndicalism"
-		texturefile = "gfx/interface/goals/orthodox_syndicalism.png"
+		name = "GFX_RAU_eileen"
+		texturefile = "gfx/interface/goals/RAU_eileen.png"
 	}
 	SpriteType = {
-		name = "GFX_KR_focus_KMT_democracy"
-		texturefile = "gfx/interface/goals/KR_focus_KMT_democracy.png"
+		name = "GFX_RAU_trump"
+		texturefile = "gfx/interface/goals/RAU_trump.png"
+	}
+	SpriteType = {
+		name = "GFX_ideology_syndicalist"
+		texturefile = "gfx/interface/goals/ideology_syndicalist.png"
+	}
+	SpriteType = {
+		name = "GFX_HOL_council_communism"
+		texturefile = "gfx/interface/goals/HOL_council_communism.png"
+	}
+	SpriteType = {
+		name = "GFX_RUS_Syndical_Cooperative_Federation"
+		texturefile = "gfx/interface/goals/RUS_Syndical_Cooperative_Federation.png"
+	}
+	SpriteType = {
+		name = "GFX_CSA_industrial_unionism"
+		texturefile = "gfx/interface/goals/CSA_industrial_unionism.png"
+	}
+	SpriteType = {
+		name = "GFX_CRO_eliminate_syndies"
+		texturefile = "gfx/interface/goals/CRO_eliminate_syndies.png"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Full_Communist_Orthodoxy"
+		texturefile = "gfx/interface/goals/MEX_Full_Communist_Orthodoxy.png"
+	}
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/.png"
+	}
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/.png"
+	}
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/.png"
+	}
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/.png"
+	}
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/.png"
 	}
 	SpriteType = {
 		name = "GFX_"

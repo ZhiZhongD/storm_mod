@@ -5,6 +5,7 @@ FNG = "countries/Fengtian.txt"
 SIC = "countries/Sichuan.txt"
 GZO = "countries/Guizhou.txt"
 RAU = "countries/Red_Australia.txt"
+BAU = "countries/Blue_Australia.txt"
 
 
 
