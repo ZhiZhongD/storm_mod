@@ -1,0 +1,14 @@
+ENG_dyn_staff_air= {  #空军司令部
+	enable = { always = yes }
+	icon = GFX_idea_generic_air_research
+
+	air_air_superiority_attack_factor = ENG_dyn_staff_air_air_air_superiority_attack_factor
+	air_close_air_support_attack_factor = ENG_dyn_staff_air_air_close_air_support_attack_factor 
+	naval_strike_attack_factor = ENG_dyn_staff_air_naval_strike_attack_factor 
+	air_ace_generation_chance_factor = ENG_dyn_staff_air_air_ace_generation_chance_factor 
+	air_mission_efficiency = ENG_dyn_staff_air_air_mission_efficiency
+
+	
+
+
+}
