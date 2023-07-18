@@ -1,0 +1,20 @@
+RAU_help_PRC = {
+	RAU_eco_help={
+		visible={
+			has_completed_focus=RAU_help_the_Chinese_revolution
+		}
+		allowed={original_tag=RAU}
+		cost=50
+		available={
+		}
+		fire_only_once=yes
+		complete_effect={
+		}
+	}
+
+
+
+
+
+
+}

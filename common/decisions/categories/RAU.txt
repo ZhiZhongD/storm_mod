@@ -1,0 +1,8 @@
+RAU_help_PRC = {
+
+	icon = infiltration
+	picture = GFX_decision_cat_picture_chi_infiltration
+	#scripted_gui = 
+
+
+}

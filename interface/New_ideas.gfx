@@ -64,6 +64,39 @@ spriteTypes={
 		texturefile="gfx/interface/ideas/GXC_liangguang_broken.png"
     }
 	spriteType = {
-	    name="GFX_idea_GXC_liangguang_broken"
-		texturefile="gfx/interface/ideas/GXC_liangguang_broken.png"
+	    name="GFX_idea_generic_syndicalism_drift_bonus"
+		texturefile="gfx/interface/ideas/generic_syndicalism_drift_bonus.png"
     }
+	spriteType = {
+	    name="GFX_idea_KR_focus_KMT_democracy"
+		texturefile="gfx/interface/ideas/KR_focus_KMT_democracy.png"
+    }
+	spriteType = {
+	    name="GFX_idea_centralised_syndicalism"
+		texturefile="gfx/interface/ideas/centralised_syndicalism.png"
+    }
+	spriteType = {
+	    name="GFX_idea_orthodox_syndicalism"
+		texturefile="gfx/interface/ideas/orthodox_syndicalism.png"
+    }
+	spriteType = {
+	    name="GFX_idea_kinship_economy"
+		texturefile="gfx/interface/ideas/kinship_economy.png"
+    }
+	spriteType = {
+	    name="GFX_idea_new_liberalism"
+		texturefile="gfx/interface/ideas/new_liberalism.png"
+    }
+	spriteType = {
+	    name="GFX_idea_cos_defense"
+		texturefile="gfx/interface/ideas/cos_defense.png"
+    }
+	spriteType = {
+	    name="GFX_idea_national_railway_corporation"
+		texturefile="gfx/interface/ideas/national_railway_corporation.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+}

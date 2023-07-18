@@ -25,6 +25,9 @@ characters={
 			ideology=marxist_unionism
 			expire="1965.1.1.1"
 			id=-1
+			traits={
+				RAU_rising_star_of_revolution
+			}
 		}
 	}
 	RAU_Joseph_Biden={
@@ -107,6 +110,11 @@ characters={
 			allowed = {
 				original_tag = RAU
 			}
+			available={
+				NOT = {
+					has_completed_focus= RAU_Trump
+				}
+			}
 			traits = {
 				RAU_revolutionary_organiser
 			}
@@ -128,6 +136,22 @@ characters={
 			cost = 75
 			ai_will_do = {
 				factor = 1.000
+			}
+		}
+	}
+	RAU_Donald_Trump_leader={
+		name=RAU_Donald_Trump
+		portraits={
+			civilian={
+				large="gfx\leaders\RAU\Donald_Trump.png"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+			traits={
+				RAU_revolutionary_organiser
 			}
 		}
 	}
@@ -234,6 +258,9 @@ characters={
 			traits = {
 				war_industrialist
 			}
+			available={
+				has_completed_focus = RAU_accelerationism
+			}
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -255,6 +282,9 @@ characters={
 			}
 			traits = {
 				captain_of_industry
+			}
+			available = {
+				has_completed_focus = RAU_peoples_livelihood
 			}
 			ai_will_do = {
 				factor = 1.000
@@ -438,6 +468,9 @@ characters={
 			}
 			traits = {
 				army_artillery_3
+			}
+			available={
+				has_completed_focus=RAU_artillery_talent_promotion
 			}
 			cost = 150
 			ai_will_do = {

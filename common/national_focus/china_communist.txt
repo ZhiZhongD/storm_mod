@@ -1575,7 +1575,30 @@ focus_tree = {
 		relative_position_id= PRC_national_united_front
 		x=1
 		y=2
+		cost=1
+		bypass={
+		}
+		available={
+			RAU={
+				has_completed_focus=RAU_a_member_of_comintern_in_ocean
+			}
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=PRC_fight_together
+		icon=GFX_FRA_syndicalistmilitarism
+		prerequisite={focus= PRC_comintern_eastern_front }
+		relative_position_id= PRC_comintern_eastern_front
+		x=-4
+		y=1
 		cost=5
+		bypass={
+			RAU={
+				has_completed_focus=RAU_progressive_tensendustrial_of_revolution
+			}
+		}
 		available={
 			CHI={
 				is_in_faction_with = JAP	

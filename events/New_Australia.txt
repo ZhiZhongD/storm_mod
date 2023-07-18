@@ -9,7 +9,7 @@ country_event={
 
 	trigger={
 		tag=RAU
-		NOT={country_exists = AST}
+		date>1942.1.1
 	}
 
 
@@ -20,7 +20,6 @@ country_event={
 		add_state_core = 872
 		add_state_core = 909
 		add_state_core = 674
-		add_state_core = 520
 		add_state_core = 870
 		add_state_core = 910
 		add_state_core = 911
@@ -38,12 +37,7 @@ country_event={
 	desc = RAU.2.d
 	picture = GFX_report_event_ger_civil_war
 	fire_only_once = yes
-
-	trigger={
-		tag=AST
-		AST={surrender_progress>0.29}
-		AST={has_war_with = RAU}
-	}
+	is_triggered_only = yes
 
 
 	option = {
@@ -83,51 +77,6 @@ country_event={
 		add_state_core = 873
 		add_state_core = 909
 		add_state_core = 872
-    }
-}
-country_event={
-	id = RAU.4
-	title = RAU.4.t
-	desc = RAU.4.d
-	picture = GFX_report_event_ger_civil_war
-	fire_only_once = yes
-
-	trigger={
-		tag=RAU
-		AST={surrender_progress>0.15}
-		AST={has_war_with = RAU}
-	}
-
-
-	option = {
-		name = RAU.4.a
-		913={
-			create_unit = {
-				division = "name = \"紧急工人赤卫队\" division_template = \"工人赤卫队\" start_experience_factor = 0.5"  
-				owner = ROOT
-				count=12
-				allow_spawning_on_enemy_provs = yes 
-			}
-		}
-    }
-}
-country_event={
-	id = RAU.5
-	title = RAU.5.t
-	desc = RAU.5.d
-	picture = GFX_report_event_ger_civil_war
-	fire_only_once = yes
-
-	trigger={
-		tag=RAU
-		date>1940.1.1
-	}
-
-
-	option = {
-		name = RAU.5.a
-		JAP={country_event=RAU.6}
-		declare_war_on = { target = AST type = annex_everything }
 		873={
 			remove_dynamic_modifier = {
 				modifier = RAU_attack
@@ -163,12 +112,50 @@ country_event={
 				modifier = RAU_defence
 			}
 		}
-		520={
-			remove_dynamic_modifier = {
-				modifier = RAU_defence
+    }
+}
+country_event={
+	id = RAU.4
+	title = RAU.4.t
+	desc = RAU.4.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.4.a
+		913={
+			create_unit = {
+				division = "name = \"紧急工人赤卫队\" division_template = \"工人赤卫队\" start_experience_factor = 0.5"  
+				owner = ROOT
+				count=12
+				allow_spawning_on_enemy_provs = yes 
 			}
 		}
-		
+    }
+}
+country_event={
+	id = RAU.5
+	title = RAU.5.t
+	desc = RAU.5.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+
+	trigger={
+		tag=JAP
+		CHI={
+			is_in_faction_with = JAP	
+		}
+		RAU={
+			has_war_with = AST
+		}
+	}
+
+
+	option = {
+		name = RAU.5.a
+		AST={country_event=RAU.6}
     }
 }
 country_event={
@@ -182,7 +169,7 @@ country_event={
 
 	option = {
 		name = RAU.6.a
-		AST={country_event=RAU.7}
+		JAP={country_event=RAU.7}
     }
 }
 country_event={
@@ -196,7 +183,9 @@ country_event={
 
 	option = {
 		name = RAU.7.a
-		JAP={country_event=RAU.8}
+		JAP = {
+			add_to_faction = AST
+		}
     }
 }
 country_event={
@@ -205,13 +194,203 @@ country_event={
 	desc = RAU.8.d
 	picture = GFX_report_event_ger_civil_war
 	fire_only_once = yes
-	is_triggered_only = yes
+	trigger={
+		tag = BAU
+		date>1937.1.1
+		AST={surrender_progress>0.5}
+		AST={has_war_with = RAU }
+	}
 
 
 	option = {
 		name = RAU.8.a
-		JAP = {
-			add_to_faction = AST
+    }
+}
+country_event={
+	id = RAU.9
+	title = RAU.9.t
+	desc = RAU.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.9.a
+		country_event = {
+			id = RAU.10
+			days = 7
 		}
+		set_country_flag=RAU_attack
+		ai_will_do={factor=10}
+    }
+	option = {
+		name = RAU.9.b
+		country_event = {
+			id = RAU.10
+			days = 7
+		}
+		set_country_flag=RAU_defence
+		ai_will_do={factor=5}
+    }
+}
+country_event={
+	id = RAU.10
+	title = RAU.10.t
+	desc = RAU.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.10.a
+		country_event = {
+			id = RAU.11
+			days = 7
+		}
+		set_country_flag=RAU_eileen
+		ai_will_do={factor=10}
+    }
+	option = {
+		name = RAU.10.b
+		country_event = {
+			id = RAU.11
+			days = 7
+		}
+		set_country_flag=RAU_trump
+		ai_will_do={factor=5}
+    }
+}
+country_event={
+	id = RAU.11
+	title = RAU.11.t
+	desc = RAU.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.11.a
+		add_political_power=25
+		country_event = {
+			id = RAU.12
+			days = 7
+		}
+    }
+}
+country_event={
+	id = RAU.12
+	title = RAU.12.t
+	desc = RAU.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.12.a
+		add_political_power=25
+    }
+}
+country_event={
+	id = RAU.13
+	title = RAU.13.t
+	desc = RAU.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.13.a
+		add_political_power=50
+		RAU={
+			country_event=RAU.14
+		}
+    }
+}
+country_event={
+	id = RAU.14
+	title = RAU.14.t
+	desc = RAU.14.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.14.a
+		add_political_power=120
+		add_stability=0.1
+    }
+}
+country_event={
+	id = RAU.15
+	title = RAU.15.t
+	desc = RAU.15.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.15.a
+		RAU={
+			country_event=RAU.16
+		}
+    }
+}
+country_event={
+	id = RAU.16
+	title = RAU.16.t
+	desc = RAU.16.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.15.a
+		PRC={
+			add_ideas=FRA_kjhzdll
+		}
+    }
+}
+country_event={
+	id = RAU.17
+	title = RAU.17.t
+	desc = RAU.17.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.17.a
+		SOV={
+			add_ideas=FRA_kjhzdll
+		}
+    }
+}
+country_event={
+	id = RAU.18
+	title = RAU.18.t
+	desc = RAU.18.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.18.a
+		add_political_power=25
+		RAU={
+			country_event=RAU.19
+		}
+    }
+}
+country_event={
+	id = RAU.19
+	title = RAU.19.t
+	desc = RAU.19.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.19.a
+		unlock_decision_category_tooltip=RAU_comintern
     }
 }

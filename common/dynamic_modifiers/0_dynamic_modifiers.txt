@@ -106,6 +106,7 @@ RAU_defence={
 	ground_attack_factor = -0.75
 	local_org_regain = -0.5
 }
+#gai
 RAU_attack={
 	enable={always=yes}
 	icon = GFX_decision_hol_inundate_water_lines
@@ -115,6 +116,28 @@ RAU_attack={
 
 	army_attack_factor = 0.5
 	army_defence_factor = -0.5
+}
+#gai
+RAU_peoples_livelihoodism={
+	enable={always=yes}
+	icon = GFX_kinship_economy
+	consumer_goods_factor = RAU_peoples_livelihoodism_consumer_goods_factor
+	global_building_slots_factor = RAU_peoples_livelihoodism_global_building_slots_factor
+	industrial_capacity_factory = RAU_peoples_livelihoodism_industrial_capacity_factory
+	production_factory_max_efficiency_factor = RAU_peoples_livelihoodism_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = RAU_peoples_livelihoodism_production_factory_efficiency_gain_factor
+	production_speed_industrial_complex_factor = RAU_peoples_livelihoodism_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = RAU_peoples_livelihoodism_production_speed_arms_factory_factor
+}
+#gai
+RAU_accelerationismism={
+	enable={always=yes}
+	icon = GFX_idea_new_economic_policy
+	consumer_goods_factor = RAU_accelerationismism_consumer_goods_factor
+	global_building_slots_factor = RAU_accelerationismism_global_building_slots_factor
+	industrial_capacity_factory = RAU_accelerationismism_industrial_capacity_factory
+	production_factory_efficiency_gain_factor = RAU_accelerationismism_production_factory_efficiency_gain_factor
+	production_speed_arms_factory_factor = RAU_accelerationismism_production_speed_arms_factory_factor
 }
 
 sabotaged_resources = {
