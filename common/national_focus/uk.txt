@@ -2957,7 +2957,7 @@ completion_reward = {
 		available_if_capitulated=yes
 		
 		completion_reward={
-			127 = {
+			126 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 5
@@ -3101,7 +3101,9 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
-			GER = {}
+			GER = {
+				country_event = St_eng.0001
+			}
 		}
 	}
 	focus={#反苏同盟
@@ -3122,7 +3124,9 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
-			GER = {}
+			GER = {
+				country_event = St_eng.0004
+			}
 		}
 	}
 	focus={#重新谈判凡尔赛条约
@@ -3143,7 +3147,9 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
-			GER = {}
+			GER = {				
+				country_event = St_eng.0007
+			}
 		}
 	}
 	focus={#工业换北非
@@ -3160,11 +3166,16 @@ completion_reward = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = ENG_sell_FRA_to_GER
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
-			ITA = {}
+			ITA = {
+				country_event = St_eng.0010
+			}
 		}
 	}
 
@@ -3176,7 +3187,9 @@ completion_reward = {
 		prerequisite={focus=ENG_steady_as_she_goes}
 
 		icon = GFX_focus_SOV_socialism_in_one_country
+		available = {
 
+		}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3250,7 +3263,7 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
-
+			country_event = St_eng.0013
 		}
 	}
 	focus={#禁运苏联
@@ -3277,6 +3290,7 @@ completion_reward = {
 		}
 		completion_reward={
 			send_embargo = SOV
+			add_threat = 5
 		}
 	}
 	focus={#反共产主义移民
@@ -3298,7 +3312,7 @@ completion_reward = {
 		}
 		completion_reward={
 			add_timed_idea = {
-				idea = immigrant_of_anti_communism
+				idea = immigrant_of_anti_communism_of_eng
 				days = 60
 			}		
 		}
@@ -3321,7 +3335,7 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
-			add_ideas = ban_trade_unions
+			add_ideas = ban_trade_unions_of_eng
 			add_stability = -0.05
 		}
 	}
@@ -3343,7 +3357,7 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
-			add_ideas = anti_soviet_intelligence
+			add_ideas = anti_soviet_intelligence_of_eng
 		}
 	}
 	focus={#反苏秘密军事训练
@@ -3365,7 +3379,7 @@ completion_reward = {
 		}
 		completion_reward={
 			add_timed_idea = {
-				idea = anti_soviet_military_training
+				idea = anti_soviet_military_training_of_eng
 				days = 30
 			}		
 		}
@@ -3427,8 +3441,8 @@ completion_reward = {
 		available_if_capitulated=yes
 		search_filters={
 		}
-		completion_reward={
-
+		completion_reward = {
+			custom_effect_tooltip = ENG_lightning_offensive_tooltip
 		}
 	}
 	focus={#反装甲步兵
@@ -3440,6 +3454,14 @@ completion_reward = {
 
 		icon = GFX_focus_generic_army_tanks2
 
+		available = {
+			Not = {
+				OR = {
+					has_tech = infantry_at2
+				is_researching_technology = infantry_at2
+				}
+			}
+		}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3470,6 +3492,7 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			swe = {}
 		}
 	}
 	focus={#反苏志愿军
@@ -3489,6 +3512,7 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = ENG_volunteer_of_anti_soviet_tooltip
 		}
 	}
 	focus={#芬兰复仇计划
@@ -3508,6 +3532,7 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = ENG_revenge_of_finland_tooltip
 		}
 	}
 
@@ -3528,6 +3553,7 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = ENG_war_to_soviet_tooltip
 			declare_war_on = {
 				target = SOV
 				type = annex_everything
@@ -3553,6 +3579,32 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			set_war_support = 0.3
+			set_stability = 0.3
+			if = {
+				limit = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = civilian_economy
+						has_idea = low_economic_mobilisation
+					}
+				}
+				add_ideas = war_economy
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_idea = extensive_conscription
+							has_idea = scraping_the_barrel
+							has_idea = service_by_requirement
+							has_idea = all_adults_serve
+						}
+					}
+				}
+				add_ideas = extensive_conscription
+			}
 		}
 	}
 	focus={#与德国谈判
@@ -3611,7 +3663,15 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
-		}
+			BEL = {
+
+			}
+			HOL = {
+
+			}
+			LUX = {
+
+			}
 	}
 	focus={#入侵法国
 		id = ENG_invade_france
@@ -3633,5 +3693,7 @@ completion_reward = {
 		}
 	}
 	
+
+}
 
 }
