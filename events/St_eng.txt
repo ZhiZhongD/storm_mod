@@ -1,0 +1,419 @@
+add_namespace = St_eng
+
+country_event = {#英国要求谈判
+	id = St_eng.0001
+	title = St_eng.0001.t
+	desc = St_eng.0001.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0001.a
+        ai_chance = {
+            base = 10
+        }
+        ENG = {
+            country_event = St_eng.0002
+			white_peace = GER
+			annex_country = {
+			target = FRA
+			}
+        }
+	}
+    option = { 
+		name = St_eng.0001.b
+        ai_chance = {
+            base = 0       
+        }
+        ENG = {
+            country_event = St_eng.0003
+        }
+	}
+}
+country_event = {#英国要求谈判-同意
+	id = St_eng.0002
+	title = St_eng.0002.t
+	desc = St_eng.0002.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0002.a
+        ai_chance = {
+            base = 10
+        }
+
+		FRA = {
+			every_state = {
+				limit = {
+					AND = {
+					is_core_of = FRA
+					is_on_continent = europe
+
+					}
+				}
+				transfer_state_to = FRA
+			}
+			28 = {
+				transfer_state_to = GER
+			}
+		}
+		GER = {
+			puppet = FRA
+		}
+	}
+    
+}
+country_event = {#英国要求谈判-拒绝
+	id = St_eng.0003
+	title = St_eng.0003.t
+	desc = St_eng.0003.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0003.a
+        ai_chance = {
+            base = 10
+        }
+        
+	}
+    
+}
+country_event = {#反苏同盟
+	id = St_eng.0004
+	title = St_eng.0004.t
+	desc = St_eng.0004.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0004.a
+        ai_chance = {
+            base = 10
+        }
+		add_ideas = anti_SOV_faction_of_ger
+		ENG = {
+            country_event = St_eng.0005
+        }
+        
+	}
+	option = { 
+		name = St_eng.0004.b
+        ai_chance = {
+            base = 0
+        }
+		ENG = {
+            country_event = St_eng.0006
+        }
+	}
+    
+}
+
+country_event = {#反苏同盟-接受
+	id = St_eng.0005
+	title = St_eng.0005.t
+	desc = St_eng.0005.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0005.a
+        ai_chance = {
+            base = 10
+        }
+		add_ideas = anti_SOV_faction_of_eng
+	}
+    
+}
+country_event = {#反苏同盟-拒绝
+	id = St_eng.0006
+	title = St_eng.0006.t
+	desc = St_eng.0006.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0006.a
+        ai_chance = {
+            base = 10
+        }
+        
+	}
+    
+}
+
+country_event = {#凡尔赛条约
+	id = St_eng.0007
+	title = St_eng.0007.t
+	desc = St_eng.0007.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0007.a
+        ai_chance = {
+            base = 10
+        }
+		add_timed_idea = {
+			idea = versailles_of_ger
+			days = 60
+		}
+		ENG = {
+            country_event = St_eng.0008
+        }
+	}
+	option = { 
+		name = St_eng.0007.b
+        ai_chance = {
+            base = 0
+        }
+		ENG = {
+            country_event = St_eng.0009
+        }
+	}
+    
+}
+country_event = {#凡尔赛条约-接受
+	id = St_eng.0008
+	title = St_eng.0008.t
+	desc = St_eng.0008.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0008.a
+        ai_chance = {
+            base = 10
+        }
+		add_timed_idea = {
+			idea = versailles_of_eng
+			days = 60
+		}
+	}
+    
+}
+country_event = {#凡尔赛条约-拒绝
+	id = St_eng.0009
+	title = St_eng.0009.t
+	desc = St_eng.0009.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0009.a
+        ai_chance = {
+            base = 10
+        }
+        
+	}
+    
+}
+country_event = {#工业换北非
+	id = St_eng.0010
+	title = St_eng.0010.t
+	desc = St_eng.0010.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0010.a
+        ai_chance = {
+            base = 10
+        }
+		add_timed_idea = {
+			idea = ENG_trade_ita_of_ita
+			days = 60
+		}
+        ENG = {
+            country_event = St_eng.0011
+			268 = {
+				transfer_state_to = ITA
+			}
+			269 = {
+				transfer_state_to = ITA
+			}
+			903 = {
+				transfer_state_to = ITA
+			}
+				
+        }
+	}
+    option = { 
+		name = St_eng.0010.b
+        ai_chance = {
+            base = 0
+        }
+        ENG = {
+            country_event = St_eng.0012
+        }
+	}
+    
+}
+
+country_event = {#工业换北非
+	id = St_eng.0011
+	title = St_eng.0011.t
+	desc = St_eng.0011.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0011.a
+        ai_chance = {
+            base = 10
+        }
+		add_timed_idea = {
+			idea = ENG_trade_ita_of_eng
+			days = 60
+		}
+		ITA = {
+			
+			273 = {
+				transfer_state_to = ENG
+			}
+			663 = {
+				transfer_state_to = ENG
+			}
+			451 = {
+				transfer_state_to = ENG
+			}
+			450 = {
+				transfer_state_to = ENG
+			}
+			662 = {
+				transfer_state_to = ENG
+			}
+			449 = {
+				transfer_state_to = ENG
+			}
+			661 = {
+				transfer_state_to = ENG
+			}
+			448 = {
+				transfer_state_to = ENG
+			}
+	}
+  
+}
+}
+country_event = {#工业换北非
+	id = St_eng.0012
+	title = St_eng.0012.t
+	desc = St_eng.0012.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0012.a
+        ai_chance = {
+            base = 10
+        }
+        
+	}
+  
+}
+
+country_event = {#护国公首相
+	id = St_eng.0013
+	title = St_eng.0013.t
+	desc = St_eng.0013.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0013.a
+        ai_chance = {
+            base = 10
+        }
+		add_country_leader_role = {
+			character = ENG_winston_churchill
+			promote_leader = yes
+			country_leader = {
+				desc = POLITICS_WINSTON_CHURCHILL_DESC
+				ideology = liberalism
+				traits = {
+					british_bulldog
+				}
+			}
+		}
+	}
+}
+country_event = {#屈服
+	id = St_eng.0014
+	title = St_eng.0014.t
+	desc = St_eng.0014.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0014.a
+        ai_chance = {
+            base = 99
+        }
+		ENG = {
+            country_event = St_eng.0015
+			puppet = ROOT
+        }
+	}
+	option = { 
+		name = St_eng.0014.b
+        ai_chance = {
+            base = 1
+        }
+		ENG = {
+            country_event = St_eng.0016
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+        }
+	}
+    
+}
+country_event = {#屈服-接受
+	id = St_eng.0015
+	title = St_eng.0015.t
+	desc = St_eng.0015.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0015.a
+        ai_chance = {
+            base = 10
+        }
+	}
+    
+}
+country_event = {#屈服-拒绝
+	id = St_eng.0016
+	title = St_eng.0016.t
+	desc = St_eng.0016.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0016.a
+        ai_chance = {
+            base = 10
+        }
+	}
+    
+}

@@ -44,8 +44,8 @@ ideas = {
 			consumer_goods_factor = -0.02
 			production_speed_industrial_complex_factor = 0.1
 			production_speed_infrastructure_factor = 0.1
-			weekly_manpower = -10000
-			monthly_population = -0.5
+			weekly_manpower = -12500
+			monthly_population = -0.67
 			army_core_attack_factor = 0.1
 			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
@@ -74,8 +74,8 @@ ideas = {
 			consumer_goods_factor = -0.03
 			production_speed_industrial_complex_factor = 0.1
 			production_speed_infrastructure_factor = 0.1
-			weekly_manpower = -10000
-			monthly_population = -0.5
+			weekly_manpower = -15000
+			monthly_population = -0.75
 			army_core_attack_factor = 0.1
 			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
@@ -179,7 +179,90 @@ ideas = {
 				org_loss_when_moving = 0.2
 			}		
 		}
-		
+		anti_SOV_faction_of_eng = {#反苏同盟-英国
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+			always = yes
+			}
+			picture = ger_bulwark_against_bolshevism
+			modifier = {
+				fascism_acceptance = 50
+			}		
+			targeted_modifier = {
+				tag = GER
+				extra_trade_to_target_factor = 0.4
+				trade_cost_for_target_factor = -0.2
+						}
+		}
+		anti_SOV_faction_of_ger = {#反苏同盟-德国
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+			always = yes
+			}
+			picture = ger_bulwark_against_bolshevism
+			modifier = {
+				democratic_acceptance = 50
+			}		
+			targeted_modifier = {
+				tag = ENG
+				extra_trade_to_target_factor = 0.4
+				trade_cost_for_target_factor = -0.2
+						}
+		}
+		versailles_of_eng = {#凡尔赛-英国
+			allowed = {
+				original_tag = ENG
+			}
+			allowed_civil_war = {
+			always = yes
+			}
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				consumer_goods_factor = 0.03
+			}		
+		}
+		versailles_of_ger = {#凡尔赛-德国
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+			always = yes
+			}
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				consumer_goods_factor = -0.03
+			}		
+		}
+		ENG_trade_ita_of_eng = {#意大利投资-英国
+		allowed = {
+			original_tag = ENG
+		}
+		allowed_civil_war = {
+		always = yes
+		}
+		picture = SOV_second_five_year_plan
+		modifier = {
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = -0.2
+		}		
+	}
+	ENG_trade_ita_of_ita = {#意大利投资-意大利
+		allowed = {
+			original_tag = GER
+		}
+		allowed_civil_war = {
+		always = yes
+		}
+		picture = SOV_second_five_year_plan
+		modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.2
+		}		
+	}
 		george_v = {
 			
 			allowed = {
