@@ -120,12 +120,7 @@ country_event={
 	desc = RAU.4.d
 	picture = GFX_report_event_ger_civil_war
 	fire_only_once = yes
-
-	trigger={
-		tag=RAU
-		AST={surrender_progress>0.15}
-		AST={has_war_with = RAU}
-	}
+	is_triggered_only = yes
 
 
 	option = {
@@ -221,13 +216,21 @@ country_event={
 
 	option = {
 		name = RAU.9.a
-		country_event=RAU.10
+		country_event = {
+			id = RAU.10
+			days = 7
+		}
 		set_country_flag=RAU_attack
+		ai_will_do={factor=10}
     }
 	option = {
 		name = RAU.9.b
-		country_event=RAU.10
+		country_event = {
+			id = RAU.10
+			days = 7
+		}
 		set_country_flag=RAU_defence
+		ai_will_do={factor=5}
     }
 }
 country_event={
@@ -240,13 +243,21 @@ country_event={
 
 	option = {
 		name = RAU.10.a
-		country_event=RAU.11
+		country_event = {
+			id = RAU.11
+			days = 7
+		}
 		set_country_flag=RAU_eileen
+		ai_will_do={factor=10}
     }
 	option = {
 		name = RAU.10.b
-		country_event=RAU.11
+		country_event = {
+			id = RAU.11
+			days = 7
+		}
 		set_country_flag=RAU_trump
+		ai_will_do={factor=5}
     }
 }
 country_event={
@@ -260,7 +271,10 @@ country_event={
 	option = {
 		name = RAU.11.a
 		add_political_power=25
-		country_event=RAU.12
+		country_event = {
+			id = RAU.12
+			days = 7
+		}
     }
 }
 country_event={
@@ -319,5 +333,64 @@ country_event={
 		RAU={
 			country_event=RAU.16
 		}
+    }
+}
+country_event={
+	id = RAU.16
+	title = RAU.16.t
+	desc = RAU.16.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.15.a
+		PRC={
+			add_ideas=FRA_kjhzdll
+		}
+    }
+}
+country_event={
+	id = RAU.17
+	title = RAU.17.t
+	desc = RAU.17.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.17.a
+		SOV={
+			add_ideas=FRA_kjhzdll
+		}
+    }
+}
+country_event={
+	id = RAU.18
+	title = RAU.18.t
+	desc = RAU.18.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.18.a
+		add_political_power=25
+		RAU={
+			country_event=RAU.19
+		}
+    }
+}
+country_event={
+	id = RAU.19
+	title = RAU.19.t
+	desc = RAU.19.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.19.a
+		unlock_decision_category_tooltip=RAU_comintern
     }
 }

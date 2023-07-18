@@ -20,7 +20,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 2000 }
+	continuous_focus_position = { x = 150 y = 1000 }
 
 #	focus = {
 #		id = PRC_
@@ -59,11 +59,92 @@ focus_tree = {
 #	}
 	#shared_focus = CHI_invite_foreign_investors
 	focus = {
-		id = RAU_progressive_tensendustrial_of_revolution
-		icon = GFX_FRA_syndicalistmilitarism
+		id = RAU_seeking_lenin_aid
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
 		x = 4
 		y = 1
+		cost = 1
+		ai_will_do = {
+		factor = 100
+	    }
+		available = {
+			NOT={
+				has_war_with = AST
+			}
+		}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = RAU_a_member_of_comintern_in_ocean
+		icon = GFX_East_Comintern
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+		factor = 100
+	    }
+		prerequisite={focus= RAU_seeking_lenin_aid }
+		relative_position_id = RAU_seeking_lenin_aid
+		available = {
+		}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+			add_ideas=RAU_a_member_of_Comintern_idea
+		}
+    }
+	focus = {
+		id = RAU_comintern_scientific_research_cooperation
+		icon = GFX_SOV_soviet_technocracy
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+		factor = 100
+	    }
+		prerequisite={focus= RAU_a_member_of_comintern_in_ocean }
+		relative_position_id = RAU_a_member_of_comintern_in_ocean
+		available = {
+		}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+			add_ideas=FRA_kjhzdll
+			PRC={ country_event = RAU.16 }
+			SOV={ country_event = RAU.17 }
+		}
+    }
+	focus = {
+		id = RAU_help_the_Chinese_revolution
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+		factor = 100
+	    }
+		prerequisite={focus= RAU_a_member_of_comintern_in_ocean }
+		relative_position_id = RAU_a_member_of_comintern_in_ocean
+		available = {
+		}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+			unlock_decision_category_tooltip=RAU_help_PRC
+		}
+    }
+	focus = {
+		id = RAU_progressive_tensendustrial_of_revolution
+		icon = GFX_FRA_syndicalistmilitarism
+		x = 0
+		y = 2
 		cost = 2
+		prerequisite = { focus = RAU_a_member_of_comintern_in_ocean}
+		relative_position_id=RAU_a_member_of_comintern_in_ocean
 		ai_will_do = {
 		factor = 100
 	    }
@@ -80,8 +161,8 @@ focus_tree = {
 		}
     }
 	focus = {
-		id = RAU_comintern_eastern_front
-		icon = GFX_East_Comintern
+		id = RAU_fight_together
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
 		x = 1
 		y = 1
 		cost = 5
@@ -181,7 +262,7 @@ focus_tree = {
 		}
 		select_effect = {
 				country_event = {
-					id = new_china.2
+					id = RAU.9
 					days = 7
 				}
 		}
@@ -548,7 +629,7 @@ focus_tree = {
 		}
     }
 	focus = {
-		id = RAU_central_railway_network
+		id = RAU_eastern_railway_network
 		icon = GFX_goal_generic_construct_infrastructure
 		x = -1
 		y = 1
@@ -561,7 +642,18 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		complete_tooltip = {}
-		completion_reward = {}
+		completion_reward = {
+			custom_effect_tooltip=RAU_tooltip_east_raliway
+			add_ideas=RAU_union_railway_supply_network
+			build_railway = {
+				level=2
+				path = { 2163 2116 11006 4517 4632 }
+			}
+			build_railway = {
+				level=2
+				path = { 12957 13519 13626 10955 10336 2221 13639 13377 13345 }
+			}
+		}
     }
 	focus = {
 		id = RAU_be_kind_to_nature
@@ -1173,6 +1265,9 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			set_politics = { 
+				ruling_party = communism
+			}
 			add_popularity = { ideology = communism popularity = 0.2 }
 			remove_ideas = RAU_revolution_of_union
 		}
@@ -1264,7 +1359,7 @@ focus_tree = {
     }
 	focus = {
 		id = RAU_union_security_agency
-		icon = GFX_goal_generic_defence
+		icon = GFX_CSA_general_defence_committee
 		x = 2
 		y = 1
 		cost = 5
@@ -1489,6 +1584,577 @@ focus_tree = {
 		complete_tooltip = {}
 		completion_reward = {
 			add_ideas=RAU_star_of_revolution_idea
+		}
+    }
+	focus = {
+		id = RAU_army_of_union
+		icon = GFX_union_army
+		x = 20
+		y = 15
+		cost = 10
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {
+			NOT={
+				has_war_with=AST
+			}
+		}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_exportist
+		icon = GFX_FIU_syndicalize_unions
+		x = -7
+		y = 1
+		cost = 5
+		mutually_exclusive={focus=RAU_defenceist}
+		prerequisite={focus= RAU_army_of_union}
+		relative_position_id= RAU_army_of_union
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+
+	focus = {
+		id = RAU_artillery_talent_promotion
+		icon = GFX_GEO_Artillery_Tactics
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_exportist}
+		relative_position_id= RAU_exportist
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_soviet_armor_theory
+		icon = GFX_focus_generic_tankette
+		x = -1
+		y = 2
+		cost = 5
+		prerequisite={focus= RAU_artillery_talent_promotion}
+		relative_position_id= RAU_artillery_talent_promotion
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_tilt_to_armor
+		icon = GFX_focus_generic_tank_production
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_artillery_talent_promotion}
+		relative_position_id= RAU_artillery_talent_promotion
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_tilting_ship
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = -3
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_exportist}
+		relative_position_id= RAU_exportist
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_big_ship_first
+		icon = GFX_goal_generic_navy_battleship
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_tilting_ship}
+		relative_position_id= RAU_tilting_ship
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_aircraft_carrier_revolution
+		icon = GFX_goal_generic_navy_carrier
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_tilting_ship}
+		relative_position_id= RAU_tilting_ship
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_landing_drill
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite={focus= RAU_tilting_ship}
+		relative_position_id= RAU_tilting_ship
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_mechanized_army
+		icon = GFX_goal_generic_army_motorized
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_soviet_armor_theory}
+		prerequisite={focus= RAU_tilt_to_armor }
+		relative_position_id= RAU_soviet_armor_theory
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_extended_air_force
+		icon = GFX_goal_generic_build_airforce
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_defenceist focus= RAU_exportist }
+		relative_position_id= RAU_exportist
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_bring_in_foreign_professional_instructors
+		icon = GFX_focus_eng_special_air_service
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_extended_air_force }
+		relative_position_id= RAU_extended_air_force
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_specialized_aviation_factory
+		icon = GFX_focus_generic_aircraft_production
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_extended_air_force }
+		relative_position_id= RAU_extended_air_force
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_sky_filled_aircraft
+		icon = GFX_goal_generic_air_fighter2
+		x = -1
+		y = 2
+		cost = 5
+		prerequisite={focus= RAU_extended_air_force }
+		relative_position_id= RAU_extended_air_force
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_a_field_of_runways
+		icon = GFX_focus_generic_armored_air_support
+		x = 3
+		y = 2
+		cost = 5
+		prerequisite={focus= RAU_extended_air_force }
+		relative_position_id= RAU_extended_air_force
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_alliance_aero_club
+		icon = GFX_goal_generic_air_bomber
+		x = 1
+		y = 2
+		cost = 5
+		prerequisite={focus= RAU_extended_air_force }
+		relative_position_id= RAU_extended_air_force
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_defenceist
+		icon = GFX_CSA_defensive_outlook
+		x = -1
+		y = 1
+		cost = 5
+		mutually_exclusive={focus=RAU_exportist}
+		prerequisite={focus= RAU_army_of_union}
+		relative_position_id= RAU_army_of_union
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_a_surface_that_enemy_planes_fear
+		icon = GFX_goal_generic_army_artillery
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_defenceist}
+		relative_position_id= RAU_defenceist
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_coastal_defense
+		icon = GFX_goal_generic_navy_cruiser
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_defenceist}
+		relative_position_id= RAU_defenceist
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_pettyshipism
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_defenceist}
+		relative_position_id= RAU_defenceist
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_quantity_first
+		icon = GFX_focus_generic_refit_civilian_ships
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_pettyshipism}
+		relative_position_id= RAU_pettyshipism
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_oceanic_barrier
+		icon = GFX_focus_generic_coastal_fort
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_quantity_first}
+		relative_position_id= RAU_quantity_first
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_mobile_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_defenceist}
+		relative_position_id= RAU_defenceist
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_absolute_defense
+		icon = GFX_goal_generic_defence
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_mobile_army}
+		relative_position_id= RAU_mobile_army
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_defensive_supply_net
+		icon = GFX_focus_SOV_the_road_of_life
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_mobile_army}
+		relative_position_id= RAU_mobile_army
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_favor_a_standing_army
+		icon = GFX_CSA_professional_red_army
+		x = 5
+		y = 1
+		cost = 5
+		mutually_exclusive={focus=RAU_hold_the_flag_of_civil_arms}
+		prerequisite={focus= RAU_army_of_union}
+		relative_position_id= RAU_army_of_union
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_high_command_section
+		icon = GFX_focus_generic_military_dictatorship
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_favor_a_standing_army}
+		relative_position_id= RAU_favor_a_standing_army
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_fine_equipment
+		icon = GFX_goal_generic_military_sphere
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_high_command_section}
+		relative_position_id= RAU_high_command_section
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_hold_the_flag_of_civil_arms
+		icon = GFX_CSA_union_army
+		x = 12
+		y = 1
+		cost = 5
+		mutually_exclusive={focus=RAU_favor_a_standing_army}
+		prerequisite={focus= RAU_army_of_union}
+		relative_position_id= RAU_army_of_union
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_community_arming
+		icon = GFX_focus_mex_caudillo_private_armies
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_hold_the_flag_of_civil_arms}
+		relative_position_id= RAU_hold_the_flag_of_civil_arms
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_the_fighting_zeal_of_the_revolutionary_people
+		icon = GFX_CSA_socialist_defence_doctrine
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite={focus= RAU_community_arming}
+		relative_position_id= RAU_community_arming
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_labor_complex
+		icon = GFX_CSA_industrial_army
+		x = 2
+		y = 1
+		cost = 5
+		mutually_exclusive={ focus = RAU_military_discipline }
+		prerequisite={focus= RAU_hold_the_flag_of_civil_arms focus = RAU_favor_a_standing_army }
+		relative_position_id= RAU_favor_a_standing_army
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = RAU_military_discipline
+		icon = GFX_DKB_don_army
+		x = 5
+		y = 1
+		cost = 5
+		mutually_exclusive={ focus = RAU_labor_complex }
+		prerequisite={focus= RAU_hold_the_flag_of_civil_arms focus = RAU_favor_a_standing_army }
+		relative_position_id= RAU_favor_a_standing_army
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
 		}
     }
 }

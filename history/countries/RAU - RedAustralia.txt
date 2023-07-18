@@ -16,6 +16,7 @@ recruit_character = RAU_SanShang
 recruit_character = RAU_lance_sharkey
 recruit_character = RAU_Tom_Martin
 recruit_character = RAU_Jack_White
+recruit_character = RAU_Donald_Trump_leader
 set_variable = { RAU_accelerationismism_global_building_slots_factor = 0.05 }
 set_variable = { RAU_accelerationismism_production_speed_arms_factory_factor = 0.05 }
 set_variable = { RAU_peoples_livelihoodism_global_building_slots_factor = 0.1 }

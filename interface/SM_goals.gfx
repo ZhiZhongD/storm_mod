@@ -284,6 +284,42 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/FRA_syndicalistmilitarism.png"
 	}
 	SpriteType = {
+		name = "GFX_union_army"
+		texturefile = "gfx/interface/goals/union_army.png"
+	}
+	SpriteType = {
+		name = "GFX_FIU_syndicalize_unions"
+		texturefile = "gfx/interface/goals/FIU_syndicalize_unions.png"
+	}
+	SpriteType = {
+		name = "GFX_CSA_defensive_outlook"
+		texturefile = "gfx/interface/goals/CSA_defensive_outlook.png"
+	}
+	SpriteType = {
+		name = "GFX_GEO_Artillery_Tactics"
+		texturefile = "gfx/interface/goals/GEO_Artillery_Tactics.png"
+	}
+	SpriteType = {
+		name = "GFX_CSA_professional_red_army"
+		texturefile = "gfx/interface/goals/CSA_professional_red_army.png"
+	}
+	SpriteType = {
+		name = "GFX_CSA_socialist_defence_doctrine"
+		texturefile = "gfx/interface/goals/CSA_socialist_defence_doctrine.png"
+	}
+	SpriteType = {
+		name = "GFX_CSA_industrial_army"
+		texturefile = "gfx/interface/goals/CSA_industrial_army.png"
+	}
+	SpriteType = {
+		name = "GFX_DKB_don_army"
+		texturefile = "gfx/interface/goals/DKB_don_army.png"
+	}
+	SpriteType = {
+		name = "GFX_CSA_general_defence_committee"
+		texturefile = "gfx/interface/goals/CSA_general_defence_committee.png"
+	}
+	SpriteType = {
 		name = "GFX_"
 		texturefile = "gfx/interface/goals/.png"
 	}

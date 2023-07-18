@@ -92,8 +92,8 @@ spriteTypes={
 		texturefile="gfx/interface/ideas/cos_defense.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_national_railway_corporation"
+		texturefile="gfx/interface/ideas/national_railway_corporation.png"
     }
 	spriteType = {
 	    name="GFX_idea_"
