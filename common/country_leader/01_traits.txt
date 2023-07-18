@@ -94,9 +94,6 @@ leader_traits={
 	}
 	RAU_revolutionary_artist={
 		random=no
-		economy_cost_factor = -0.33
-		mobilization_laws_cost_factor = -0.33
-		trade_laws_cost_factor = -0.33
 		stability_factor = 0.15
 		war_support_factor = 0.1
 	}

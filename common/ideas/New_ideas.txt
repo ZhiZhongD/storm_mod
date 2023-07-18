@@ -665,7 +665,7 @@ ideas = {
 	}
 	RAU_counter_revolutionary_lockout={
 		allowed={original_tag=RAU}
-		picture=idea_POL_disjointed_industry
+		picture=KTG_Industrial_Crisis_Town
 		allowed_civil_war={
 			always=yes
 		}
@@ -746,7 +746,7 @@ ideas = {
 	}
 	RAU_peoples_welfare_fund_idea={
 		allowed={original_tag=RAU}
-		picture=spr_seize_the_gold_reserves
+		picture=economic_freedom_bill
 		allowed_civil_war={
 			always=yes
 		}
@@ -758,7 +758,7 @@ ideas = {
 	}
 	RAU_urban_famine={
 		allowed={original_tag=RAU}
-		picture=idea_generic_agrarian_society
+		picture=SCT_farms
 		allowed_civil_war={
 			always=yes
 		}
@@ -769,7 +769,7 @@ ideas = {
 	}
 	RAU_chaotic_economy_1={
 		allowed={original_tag=RAU}
-		picture=idea_POL_disjointed_industry
+		picture=YUC_unclear_economy
 		allowed_civil_war={
 			always=yes
 		}
@@ -780,7 +780,7 @@ ideas = {
 	}
 	RAU_chaotic_economy_2={
 		allowed={original_tag=RAU}
-		picture=idea_POL_disjointed_industry
+		picture=YUC_unclear_economy
 		allowed_civil_war={
 			always=yes
 		}
@@ -802,7 +802,7 @@ ideas = {
 	}
 	RAU_soviet_five_year_plan_experience={
 		allowed={original_tag=RAU}
-		picture=idea_eng_spirit_of_the_industrial_revolution
+		picture=NOR_planned_economy
 		allowed_civil_war={
 			always=no
 		}
@@ -812,7 +812,7 @@ ideas = {
 	}
 	RAU_collective_farm_idea={
 		allowed={original_tag=RAU}
-		picture=idea_gre_agricultural_communes
+		picture=modern_farms
 		allowed_civil_war={
 			always=no
 		}
@@ -824,7 +824,7 @@ ideas = {
 	}
 	RAU_consumer_goods_is_first_idea={
 		allowed={original_tag=RAU}
-		picture=idea_gre_agricultural_communes
+		picture=industrial_army
 		allowed_civil_war={
 			always=no
 		}
@@ -834,7 +834,7 @@ ideas = {
 	}
 	RAU_eastern_australian_mining_board_idea={
 		allowed={original_tag=RAU}
-		picture=idea_generic_exploit_mines
+		picture=CZE_Uranium_Mining
 		allowed_civil_war={
 			always=no
 		}
@@ -877,7 +877,7 @@ ideas = {
 	}
 	RAU_the_secret_police_of_the_alliance={
 		allowed={original_tag=RAU}
-		picture=idea_generic_secret_police
+		picture=NOR_secret_police_spirit
 		allowed_civil_war={
 			always=no
 		}
@@ -889,7 +889,7 @@ ideas = {
 	}
 	RAU_revolutionary_bond_idea={
 		allowed={original_tag=RAU}
-		picture=spr_relocate_the_gold_reserves
+		picture=WCC_War_Bonds
 		allowed_civil_war={
 			always=no
 		}
@@ -899,7 +899,7 @@ ideas = {
 	}
 	RAU_cadre_appointment_idea={
 		allowed={original_tag=RAU}
-		picture=idea_generic_political_support
+		picture=CAN_exile_government
 		allowed_civil_war={
 			always=no
 		}
@@ -922,7 +922,7 @@ ideas = {
 	}
 	RAU_mobe_idea={
 		allowed={original_tag=RAU}
-		picture=idea_yug_federal_defense_council
+		picture=cultural
 		allowed_civil_war={
 			always=no
 		}
@@ -1023,6 +1023,19 @@ ideas = {
 		modifier = {
 			supply_consumption_factor = -0.1
 	        no_supply_grace = 12
+		}	
+	}
+	RAU_red_army_of_union={
+		allowed={original_tag=RAU}
+		picture=generic_syndicalist_manpower
+		allowed_civil_war={
+			always=yes
+		}
+		modifier = {
+			army_defence_factor = -0.15
+			experience_loss_factor = 0.15
+			army_org_factor = -0.2
+	        army_morale_factor = -0.2
 		}	
 	}
 }

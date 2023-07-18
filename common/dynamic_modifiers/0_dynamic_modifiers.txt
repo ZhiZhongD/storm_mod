@@ -120,7 +120,7 @@ RAU_attack={
 #gai
 RAU_peoples_livelihoodism={
 	enable={always=yes}
-	icon = GFX_kinship_economy
+	icon = GFX_idea_kinship_economy
 	consumer_goods_factor = RAU_peoples_livelihoodism_consumer_goods_factor
 	global_building_slots_factor = RAU_peoples_livelihoodism_global_building_slots_factor
 	industrial_capacity_factory = RAU_peoples_livelihoodism_industrial_capacity_factory
@@ -132,7 +132,7 @@ RAU_peoples_livelihoodism={
 #gai
 RAU_accelerationismism={
 	enable={always=yes}
-	icon = GFX_idea_new_economic_policy
+	icon = GFX_idea_GRU_heavy_industry
 	consumer_goods_factor = RAU_accelerationismism_consumer_goods_factor
 	global_building_slots_factor = RAU_accelerationismism_global_building_slots_factor
 	industrial_capacity_factory = RAU_accelerationismism_industrial_capacity_factory

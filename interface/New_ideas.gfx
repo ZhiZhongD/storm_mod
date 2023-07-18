@@ -96,6 +96,150 @@ spriteTypes={
 		texturefile="gfx/interface/ideas/national_railway_corporation.png"
     }
 	spriteType = {
+	    name="GFX_idea_cultural"
+		texturefile="gfx/interface/ideas/cultural.png"
+    }
+	spriteType = {
+	    name="GFX_idea_generic_syndicalist_manpower"
+		texturefile="gfx/interface/ideas/generic_syndicalist_manpower.png"
+    }
+	spriteType = {
+	    name="GFX_idea_CAN_exile_government"
+		texturefile="gfx/interface/ideas/CAN_exile_government.png"
+    }
+	spriteType = {
+	    name="GFX_idea_NOR_secret_police_spirit"
+		texturefile="gfx/interface/ideas/NOR_secret_police_spirit.png"
+    }
+	spriteType = {
+	    name="GFX_idea_modern_farms"
+		texturefile="gfx/interface/ideas/modern_farms.png"
+    }
+	spriteType = {
+	    name="GFX_idea_YUC_unclear_economy"
+		texturefile="gfx/interface/ideas/YUC_unclear_economy.png"
+    }
+	spriteType = {
+	    name="GFX_idea_SCT_farms"
+		texturefile="gfx/interface/ideas/SCT_farms.png"
+    }
+	spriteType = {
+	    name="GFX_idea_economic_freedom_bill"
+		texturefile="gfx/interface/ideas/economic_freedom_bill.png"
+    }
+	spriteType = {
+	    name="GFX_idea_NOR_planned_economy"
+		texturefile="gfx/interface/ideas/NOR_planned_economy.png"
+    }
+	spriteType = {
+	    name="GFX_idea_WCC_War_Bonds"
+		texturefile="gfx/interface/ideas/WCC_War_Bonds.png"
+    }
+	spriteType = {
+	    name="GFX_idea_KTG_Industrial_Crisis_Town"
+		texturefile="gfx/interface/ideas/KTG_Industrial_Crisis_Town.png"
+    }
+	spriteType = {
+	    name="GFX_idea_industrial_army"
+		texturefile="gfx/interface/ideas/industrial_army.png"
+    }
+	spriteType = {
+	    name="GFX_idea_CZE_Uranium_Mining"
+		texturefile="gfx/interface/ideas/CZE_Uranium_Mining.png"
+    }
+	spriteType = {
+	    name="GFX_idea_GRU_heavy_industry"
+		texturefile="gfx/interface/ideas/GRU_heavy_industry.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
 	    name="GFX_idea_"
 		texturefile="gfx/interface/ideas/.png"
     }
