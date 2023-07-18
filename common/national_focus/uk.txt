@@ -3492,7 +3492,9 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
-			swe = {}
+			swe = {
+				country_event = St_eng.0014
+			}
 		}
 	}
 	focus={#反苏志愿军
@@ -3533,6 +3535,7 @@ completion_reward = {
 		}
 		completion_reward={
 			custom_effect_tooltip = ENG_revenge_of_finland_tooltip
+			FIN = {}
 		}
 	}
 
@@ -3596,6 +3599,7 @@ completion_reward = {
 				limit = {
 					NOT = {
 						OR = {
+							has_idea = limited_conscription
 							has_idea = extensive_conscription
 							has_idea = scraping_the_barrel
 							has_idea = service_by_requirement
@@ -3603,7 +3607,7 @@ completion_reward = {
 						}
 					}
 				}
-				add_ideas = extensive_conscription
+				add_ideas = limited_conscription
 			}
 		}
 	}
@@ -3673,6 +3677,7 @@ completion_reward = {
 
 			}
 	}
+	}
 	focus={#入侵法国
 		id = ENG_invade_france
 		x=0
@@ -3696,4 +3701,3 @@ completion_reward = {
 
 }
 
-}

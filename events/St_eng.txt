@@ -352,7 +352,7 @@ country_event = {#护国公首相
 		}
 	}
 }
-country_event = {#确保瑞典
+country_event = {#屈服
 	id = St_eng.0014
 	title = St_eng.0014.t
 	desc = St_eng.0014.d
@@ -367,6 +367,7 @@ country_event = {#确保瑞典
         }
 		ENG = {
             country_event = St_eng.0015
+			puppet = ROOT
         }
 	}
 	option = { 
@@ -376,11 +377,15 @@ country_event = {#确保瑞典
         }
 		ENG = {
             country_event = St_eng.0016
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
         }
 	}
     
 }
-country_event = {#确保瑞典-接受
+country_event = {#屈服-接受
 	id = St_eng.0015
 	title = St_eng.0015.t
 	desc = St_eng.0015.d
@@ -393,11 +398,10 @@ country_event = {#确保瑞典-接受
         ai_chance = {
             base = 10
         }
-		puppet = SWE
 	}
     
 }
-country_event = {#确保瑞典-拒绝
+country_event = {#屈服-拒绝
 	id = St_eng.0016
 	title = St_eng.0016.t
 	desc = St_eng.0016.d
@@ -410,10 +414,6 @@ country_event = {#确保瑞典-拒绝
         ai_chance = {
             base = 10
         }
-        create_wargoal = {
-			type = puppet_wargoal_focus
-			target = SWE
-		}
 	}
     
 }
