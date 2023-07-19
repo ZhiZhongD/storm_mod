@@ -539,7 +539,7 @@ characters={
 		}
 		advisor={
 			cost = 50
-			slot = advisor
+			slot = political_advisor
 			idea_token = RAU_Bernie_Sanders
 			allowed = {
 				original_tag = RAU

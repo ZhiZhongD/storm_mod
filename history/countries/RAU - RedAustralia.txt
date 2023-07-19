@@ -40,6 +40,7 @@ add_ideas = {
 	RAU_urban_famine
 	RAU_red_army_of_union
 }
+set_research_slots = 3
 set_convoys = 100
 set_politics = {
 	ruling_party = unionism

@@ -8,6 +8,7 @@ RAU_help_PRC = {
 		available={
 		}
 		fire_only_once=yes
+		ai_will_do={factor=5}
 		complete_effect={
 			PRC={
 				country_event=RAU.23
@@ -23,6 +24,7 @@ RAU_help_PRC = {
 		available={
 		}
 		fire_only_once=yes
+		ai_will_do={factor=5}
 		complete_effect={
 			PRC={
 				country_event=RAU.22
@@ -37,6 +39,7 @@ RAU_help_PRC = {
 		cost=50
 		available={
 		}
+		ai_will_do={factor=5}
 		fire_only_once=yes
 		complete_effect={
 			PRC={
@@ -52,6 +55,7 @@ RAU_help_PRC = {
 		cost=50
 		available={
 		}
+		ai_will_do={factor=5}
 		fire_only_once=yes
 		complete_effect={
 			PRC={

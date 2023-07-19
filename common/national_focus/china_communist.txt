@@ -107,7 +107,6 @@ focus_tree = {
 		}
 		available = {
 		}
-		complete_tooltip = {}
         completion_reward = {
 			retire_country_leader = yes 
 		}
@@ -126,7 +125,6 @@ focus_tree = {
 		}
 		available = {
 		}
-		complete_tooltip = {}
         completion_reward = {
 			add_political_power=25
 		}
@@ -190,9 +188,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 		add_ideas=PRC_cut_rent_and_interest_rates_idea
@@ -225,9 +220,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 			swap_ideas = {
@@ -263,9 +255,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 		add_ideas=PRC_agrarian_revolution_idea
@@ -298,9 +287,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 			swap_ideas = {
@@ -335,9 +321,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 		add_ideas=PRC_cooperative_movement_idea
@@ -369,9 +352,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 			add_to_variable={PRC.PRC_national_consumer_goods_factor=-0.03}
@@ -412,9 +392,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 			custom_effect_tooltip=PRC_tooltip_reform_the_tax_system
@@ -446,9 +423,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 			custom_effect_tooltip=PRC_tooltip_soviet_economic_aid_a
@@ -481,9 +455,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 			custom_effect_tooltip=PRC_tooltip_enterprise_law
@@ -515,9 +486,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-			
-		}
 		
 		completion_reward = {
 			592 = {
@@ -555,9 +523,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 			create_intelligence_agency = yes
@@ -589,9 +554,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		complete_tooltip = {
-		
-		}
 		
 		completion_reward = {
 		593={
@@ -1420,7 +1382,6 @@ focus_tree = {
 		bypass={
 			NOT={country_exists=HNA}
 		}
-		complete_tooltip = {}
         completion_reward = {
 			declare_war_on = { target = HNA type = annex_everything }
 		}
@@ -1443,7 +1404,6 @@ focus_tree = {
 			NOT={country_exists=GZO}
 			NOT={country_exists=YUN}
 		}
-		complete_tooltip = {}
         completion_reward = {
 			declare_war_on = { target = GZO type = annex_everything }
 			declare_war_on = { target = YUN type = annex_everything }

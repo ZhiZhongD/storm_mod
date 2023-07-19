@@ -1150,7 +1150,7 @@ ideas = {
 	}
 	RAU_exportist_idea={
 		allowed={original_tag=RAU}
-		picture=generic_syndicalist_manpower
+		picture=RAU_revolution_out
 		allowed_civil_war={
 			always=yes
 		}

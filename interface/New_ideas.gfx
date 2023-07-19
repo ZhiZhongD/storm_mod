@@ -200,8 +200,8 @@ spriteTypes={
 		texturefile="gfx/interface/ideas/ZAM_reforms_support_idea.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_RAU_revolution_out"
+		texturefile="gfx/interface/ideas/RAU_revolution_out.png"
     }
 	spriteType = {
 	    name="GFX_idea_"
