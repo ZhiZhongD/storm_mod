@@ -270,7 +270,7 @@ country_event={
 
 	option = {
 		name = RAU.11.a
-		add_political_power=25
+		complete_national_focus = RAU_seeking_lenin_aid
 		country_event = {
 			id = RAU.12
 			days = 7
@@ -330,8 +330,11 @@ country_event={
 
 	option = {
 		name = RAU.15.a
-		RAU={
-			country_event=RAU.16
+		PRC={
+			RAU={ create_faction = 共产国际大洋区部 }
+			RAU = {
+				add_to_faction = PRC
+			}
 		}
     }
 }
@@ -344,7 +347,7 @@ country_event={
 
 
 	option = {
-		name = RAU.15.a
+		name = RAU.16.a
 		PRC={
 			add_ideas=FRA_kjhzdll
 		}
@@ -366,31 +369,92 @@ country_event={
     }
 }
 country_event={
-	id = RAU.18
-	title = RAU.18.t
-	desc = RAU.18.d
+	id = RAU.20
+	title = RAU.20.t
+	desc = RAU.20.d
 	fire_only_once = yes
 	is_triggered_only = yes
 
 
 	option = {
-		name = RAU.18.a
+		name = RAU.20.a
 		add_political_power=25
 		RAU={
-			country_event=RAU.19
+			country_event=RAU.21
 		}
     }
 }
 country_event={
-	id = RAU.19
-	title = RAU.19.t
-	desc = RAU.19.d
+	id = RAU.22
+	title = RAU.22.t
+	desc = RAU.22.d
 	fire_only_once = yes
 	is_triggered_only = yes
 
 
 	option = {
-		name = RAU.19.a
-		unlock_decision_category_tooltip=RAU_comintern
+		name = RAU.22.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = RAU
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 500
+			producer = RAU
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 750
+			producer = RAU
+		}
+    }
+}
+country_event={
+	id = RAU.23
+	title = RAU.23.t
+	desc = RAU.23.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.23.a
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_offsite_building = { type = industrial_complex level = 1 }
+    }
+}
+country_event={
+	id = RAU.24
+	title = RAU.24.t
+	desc = RAU.24.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.24.a
+		add_timed_idea={
+			idea=RAU_help_prc_idea
+			days=360
+		}
+    }
+}
+country_event={
+	id = RAU.25
+	title = RAU.25.t
+	desc = RAU.25.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RAU.25.a
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = land_doctrine
+		}
     }
 }

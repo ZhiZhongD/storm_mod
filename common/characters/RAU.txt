@@ -538,14 +538,14 @@ characters={
 			}
 		}
 		advisor={
-			cost = 150
+			cost = 50
 			slot = advisor
 			idea_token = RAU_Bernie_Sanders
 			allowed = {
 				original_tag = RAU
 			}
 			traits = {
-				economic_reformer
+				RAU_peoples_reformer
 			}
 			ai_will_do = {
 				factor = 1.000
@@ -617,6 +617,48 @@ characters={
 				factor = 1.000
 			}
 		}		
+	}
+	RAU_John_Clarebrough={
+		name=RAU_John_Clarebrough
+		portraits={
+			army={
+				large="gfx\leaders\RAU\Portrait_AST_John_Clarebrough.png" 
+			}
+		}
+		corps_commander={
+			traits={
+				armor_officer
+				harsh_leader
+				trickster
+			}
+			skill=3
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}	
+	}
+	RAU_Thomas_Fannell={
+		name=RAU_Thomas_Fannell
+		portraits={
+			army={
+				large="gfx\leaders\RAU\Portrait_AST_Thomas_Fannell.png" 
+			}
+		}
+		corps_commander={
+			traits={
+				infantry_officer
+				bearer_of_artillery
+				skilled_staffer
+			}
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}	
 	}
 	
 }

@@ -152,52 +152,52 @@ spriteTypes={
 		texturefile="gfx/interface/ideas/GRU_heavy_industry.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_PAN_Guns_Panama"
+		texturefile="gfx/interface/ideas/PAN_Guns_Panama.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_RAU_revolution_out"
+		texturefile="gfx/interface/ideas/RAU_revolution_out.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_BAN_defend_republic"
+		texturefile="gfx/interface/ideas/BAN_defend_republic.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_NFA_tank_war"
+		texturefile="gfx/interface/ideas/NFA_tank_war.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_NFE_marines"
+		texturefile="gfx/interface/ideas/NFE_marines.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_KSV_rule_from_the_air_idea"
+		texturefile="gfx/interface/ideas/KSV_rule_from_the_air_idea.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_generic_airforce"
+		texturefile="gfx/interface/ideas/generic_airforce.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_GEN_air_close_air_support"
+		texturefile="gfx/interface/ideas/GEN_air_close_air_support.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_BAN_defend_republic"
+		texturefile="gfx/interface/ideas/BAN_defend_republic.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_GEN_navy_decisive_bat"
+		texturefile="gfx/interface/ideas/GEN_navy_decisive_bat.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_carm_static_defense"
+		texturefile="gfx/interface/ideas/carm_static_defense.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_ZAM_reforms_support_idea"
+		texturefile="gfx/interface/ideas/ZAM_reforms_support_idea.png"
     }
 	spriteType = {
 	    name="GFX_idea_"

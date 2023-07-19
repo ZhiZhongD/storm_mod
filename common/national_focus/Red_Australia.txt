@@ -75,7 +75,9 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
-			
+			SOV={
+				country_event=RAU.20
+			}
 		}
     }
 	focus = {
@@ -1603,6 +1605,9 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			army_experience = 25
+	        navy_experience = 15
+	        air_experience = 15
 		}
     }
 	focus = {
@@ -1617,10 +1622,13 @@ focus_tree = {
 		ai_will_do = {
 		factor = 10
 	    }
-		available = {}
+		available = {
+			has_country_flag=RAU_attack
+		}
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_exportist_idea
 		}
     }
 
@@ -1639,6 +1647,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			custom_effect_tooltip=RAU_artillery_advisor
 		}
     }
 	focus = {
@@ -1656,6 +1665,11 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = armor
+			}
 		}
     }
 	focus = {
@@ -1673,6 +1687,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_tilt_to_armor_idea
 		}
     }
 	focus = {
@@ -1690,6 +1705,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_tilting_ship_idea
 		}
     }
 	focus = {
@@ -1707,6 +1723,26 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = bb_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = bc_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cl_tech
+			}
 		}
     }
 	focus = {
@@ -1724,6 +1760,11 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = cv_tech
+			}
 		}
     }
 	focus = {
@@ -1741,6 +1782,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_landing_drill_idea
 		}
     }
 	focus = {
@@ -1759,6 +1801,11 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
 		}
     }
 	focus = {
@@ -1776,6 +1823,12 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
 		}
     }
 	focus = {
@@ -1793,6 +1846,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_bring_in_foreign_professional_instructors_idea
 		}
     }
 	focus = {
@@ -1810,6 +1864,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_specialized_aviation_factory_idea
 		}
     }
 	focus = {
@@ -1827,6 +1882,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_sky_filled_aircraft_idea
 		}
     }
 	focus = {
@@ -1834,7 +1890,7 @@ focus_tree = {
 		icon = GFX_focus_generic_armored_air_support
 		x = 3
 		y = 2
-		cost = 5
+		cost = 2.9
 		prerequisite={focus= RAU_extended_air_force }
 		relative_position_id= RAU_extended_air_force
 		ai_will_do = {
@@ -1844,6 +1900,17 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			every_owned_state={
+				limit = {
+					is_controlled_by = RAU
+					is_core_of = RAU
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes 
+				}
+			}
 		}
     }
 	focus = {
@@ -1861,6 +1928,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			air_experience = 150
 		}
     }
 	focus = {
@@ -1875,10 +1943,13 @@ focus_tree = {
 		ai_will_do = {
 		factor = 10
 	    }
-		available = {}
+		available = {
+			has_country_flag=RAU_defence
+		}
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_defenceist_idea
 		}
     }
 	focus = {
@@ -1886,7 +1957,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		x = 4
 		y = 1
-		cost = 5
+		cost = 2.9
 		prerequisite={focus= RAU_defenceist}
 		relative_position_id= RAU_defenceist
 		ai_will_do = {
@@ -1896,6 +1967,17 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			every_owned_state={
+				limit = {
+					is_controlled_by = RAU
+					is_core_of = RAU
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes 
+				}
+			}
 		}
     }
 	focus = {
@@ -1913,6 +1995,11 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 3
+				category = dd_tech
+			}
 		}
     }
 	focus = {
@@ -1930,6 +2017,11 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 3
+				category = ss_tech
+			}
 		}
     }
 	focus = {
@@ -1947,6 +2039,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_quantity_first_idea
 		}
     }
 	focus = {
@@ -1964,6 +2057,258 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 4791
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 7811
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 7798
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 1759
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10637
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10622
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 4763
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 12560
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 4673
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 4864
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 12406
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 7520
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 7450
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 1611
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10458
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10445
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 7564
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 7535
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 7522
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 4481
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 12308
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 7651
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10475
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10487
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10460
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 4560
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 7566
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 12367
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 4520
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10378
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10365
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10350
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 10338
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 1644
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 4648
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 13548
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 7506
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 13546
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 1501
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 2166
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 12957
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				province = 1514	
+				instant_build = yes
+			}
 		}
     }
 	focus = {
@@ -1981,6 +2326,11 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = motorized_equipment
+			}
 		}
     }
 	focus = {
@@ -1998,6 +2348,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_absolute_defense_idea
 		}
     }
 	focus = {
@@ -2015,6 +2366,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_defensive_supply_net_idea
 		}
     }
 	focus = {
@@ -2033,6 +2385,10 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			swap_ideas = {
+				add_idea = RAU_red_army_of_union_standing_army_1
+				remove_idea = RAU_red_army_of_union
+			}
 		}
     }
 	focus = {
@@ -2050,16 +2406,21 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			swap_ideas = {
+				add_idea = RAU_red_army_of_union_standing_army_2
+				remove_idea = RAU_red_army_of_union_standing_army_1
+			}
 		}
     }
 	focus = {
 		id = RAU_fine_equipment
 		icon = GFX_goal_generic_military_sphere
-		x = 0
+		x = 2
 		y = 1
 		cost = 5
-		prerequisite={focus= RAU_high_command_section}
-		relative_position_id= RAU_high_command_section
+		mutually_exclusive={focus= RAU_the_fighting_zeal_of_the_revolutionary_people }
+		prerequisite={ focus = RAU_hold_the_flag_of_civil_arms focus= RAU_favor_a_standing_army }
+		relative_position_id= RAU_favor_a_standing_army
 		ai_will_do = {
 		factor = 10
 	    }
@@ -2067,6 +2428,7 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			add_ideas=RAU_fine_equipment_idea
 		}
     }
 	focus = {
@@ -2085,6 +2447,10 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			swap_ideas = {
+				add_idea = RAU_red_army_of_union_civil_arms_1
+				remove_idea = RAU_red_army_of_union
+			}
 		}
     }
 	focus = {
@@ -2102,11 +2468,34 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			swap_ideas = {
+				add_idea = RAU_red_army_of_union_civil_arms_2
+				remove_idea = RAU_red_army_of_union_civil_arms_1
+			}
 		}
     }
 	focus = {
 		id = RAU_the_fighting_zeal_of_the_revolutionary_people
 		icon = GFX_CSA_socialist_defence_doctrine
+		x = 5
+		y = 1
+		cost = 5
+		mutually_exclusive={focus= RAU_fine_equipment } 
+		prerequisite={focus= RAU_hold_the_flag_of_civil_arms focus = RAU_favor_a_standing_army }
+		relative_position_id= RAU_favor_a_standing_army
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {}
+		bypass = {}
+		complete_tooltip = {}
+		completion_reward = {
+			add_ideas=RAU_hot_of_people
+		}
+    }
+	focus = {
+		id = RAU_labor_complex
+		icon = GFX_CSA_industrial_army
 		x = 0
 		y = 1
 		cost = 5
@@ -2119,35 +2508,20 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
-		}
-    }
-	focus = {
-		id = RAU_labor_complex
-		icon = GFX_CSA_industrial_army
-		x = 2
-		y = 1
-		cost = 5
-		mutually_exclusive={ focus = RAU_military_discipline }
-		prerequisite={focus= RAU_hold_the_flag_of_civil_arms focus = RAU_favor_a_standing_army }
-		relative_position_id= RAU_favor_a_standing_army
-		ai_will_do = {
-		factor = 10
-	    }
-		available = {}
-		bypass = {}
-		complete_tooltip = {}
-		completion_reward = {
+			swap_ideas = {
+				add_idea = RAU_red_army_of_union_civil_arms_3
+				remove_idea = RAU_red_army_of_union_civil_arms_2
+			}
 		}
     }
 	focus = {
 		id = RAU_military_discipline
 		icon = GFX_DKB_don_army
-		x = 5
+		x = 0
 		y = 1
 		cost = 5
-		mutually_exclusive={ focus = RAU_labor_complex }
-		prerequisite={focus= RAU_hold_the_flag_of_civil_arms focus = RAU_favor_a_standing_army }
-		relative_position_id= RAU_favor_a_standing_army
+		prerequisite={focus = RAU_high_command_section }
+		relative_position_id= RAU_high_command_section
 		ai_will_do = {
 		factor = 10
 	    }
@@ -2155,6 +2529,10 @@ focus_tree = {
 		bypass = {}
 		complete_tooltip = {}
 		completion_reward = {
+			swap_ideas = {
+				add_idea = RAU_red_army_of_union_standing_army_3
+				remove_idea = RAU_red_army_of_union_standing_army_2
+			}
 		}
     }
 }

@@ -21,6 +21,8 @@ recruit_character = RAU_Hillary_Clinton
 recruit_character = RAU_Hussein_Obama
 recruit_character = RAU_Kyle_Clinton
 recruit_character = RAU_Bernie_Sanders
+recruit_character = RAU_John_Clarebrough
+recruit_character = RAU_Thomas_Fannell
 set_variable = { RAU_accelerationismism_global_building_slots_factor = 0.05 }
 set_variable = { RAU_accelerationismism_production_speed_arms_factory_factor = 0.05 }
 set_variable = { RAU_peoples_livelihoodism_global_building_slots_factor = 0.1 }
