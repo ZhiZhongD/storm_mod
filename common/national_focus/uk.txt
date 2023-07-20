@@ -77,29 +77,15 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#蒂泽德代表团
-		id = tizard_mission_focus
+	focus = {#大英黑科技
+		id = uk_black_technology_focus
 		available = {				
 			has_government = democratic
 			any_other_country = {
 				has_war_with = ROOT
 				NOT = { has_government = democratic }
-				num_of_factories > 30
+				num_of_factories > 100
 			}
-			NOt = {
-				has_war_with = USA
-			}
-			USA = { 
-				has_government = ROOT
-				has_war = no
-				NOT = {
-					OR = {
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-					}
-				}
-			}
-			
 		} 
 		prerequisite = { focus = crypto_bomb_focus }
 		prerequisite = { focus = radar_focus }
@@ -113,19 +99,30 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			USA = {
-				country_event = britain.1
+			add_tech_bonus = {
+				name = tizard_mission_focus
+				uses = 1
+				bonus = 0.5
+				category = light_fighter
 			}
+			add_tech_bonus = {
+				name = tizard_mission_focus
+				bonus = 0.5
+				uses = 1
+				category = radar_tech
+			}
+			add_research_slot = 1
 		}
 	}
-	focus = {#MAUD委员会
-		id = maud_focus
-		available = { is_in_faction_with = USA }
-		prerequisite = { focus = tizard_mission_focus }
+	focus = {#皇帝的权杖
+		id = uk_scepter_of_the_king
+		available = { 
+		}
+		prerequisite = { focus = uk_black_technology_focus }
 		icon = GFX_focus_wonderweapons
 		x = 0
 		y = 1
-		relative_position_id = tizard_mission_focus
+		relative_position_id = uk_black_technology_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -135,10 +132,22 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
-				name = maud_focus
-				bonus = 1.0
-				uses = 1
+				name = uk_scepter_of_the_king
+				bonus = 1.5
+				uses = 2
 				category = nuclear
+			}
+			add_tech_bonus = {
+				name = uk_scepter_of_the_king
+				bonus = 1.5
+				uses = 2
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = uk_scepter_of_the_king
+				bonus = 1.5
+				uses = 2
+				category = rocketry
 			}
 		}
 	}
@@ -879,42 +888,6 @@ focus_tree = {
 			add_ideas = british_arms_discount
 		}
 	}
-	focus = {
-		id = UK_secret_focus
-		prerequisite = { focus = royal_ordinance_focus }
-		prerequisite = { focus = maud_focus }
-		icon = GFX_goal_generic_secret_weapon
-		x = -1
-		y = 1
-		relative_position_id = royal_ordinance_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_tech_bonus = {
-				name = UK_secret_focus
-				bonus = 1.0
-				uses = 2
-				category = electronics
-			}
-			add_tech_bonus = {
-				name = UK_secret_focus
-				bonus = 1.0
-				uses = 2
-				category = rocketry
-			}
-			add_tech_bonus = {
-				name = UK_secret_focus
-				bonus = 1.0
-				uses = 1
-				category = nuclear
-			}
-		}
-	}
 	focus = {#空军军备重整
 		id = air_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
@@ -1483,9 +1456,9 @@ focus_tree = {
 		id = ENG_secure_the_imperial_shipping_routes
 		prerequisite = { focus = uk_service_focus }
 		icon = GFX_focus_generic_cruiser2
-		x = -6
+		x = 0
 		y = 1
-		relative_position_id = uk_colonial_focus
+		relative_position_id = uk_service_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1559,7 +1532,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {注重运输护航
+	focus = {#注重运输护航
 		id = uk_convoy_focus
 		prerequisite = { focus = uk_destroyer_focus }
 		icon = GFX_goal_generic_navy_cruiser
@@ -1629,7 +1602,6 @@ focus_tree = {
 	focus = {#航母
 		id = uk_carrier_focus
 		prerequisite = { focus = uk_waves_focus }
-		mutually_exclusive = { focus = uk_battleship_focus }
 		icon = GFX_goal_generic_navy_carrier
 		x = -1
 		y = 1
@@ -1655,7 +1627,6 @@ focus_tree = {
 	focus = {#战列
 		id = uk_battleship_focus
 		prerequisite = { focus = uk_waves_focus }
-		mutually_exclusive = { focus = uk_carrier_focus }
 		icon = GFX_goal_generic_navy_battleship
 		x = 1
 		y = 1
@@ -1780,9 +1751,7 @@ focus_tree = {
 			date > 1944.1.1
 			has_tech = advanced_ship_hull_heavy
 			has_full_control_of_state = 133
-			#has_tech = improved_heavy_battery
-			#has_tech = dp_light_battery_3
-			#has_tech = antiair5
+			
 		}
 
 		available_if_capitulated = yes
@@ -2240,10 +2209,10 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_generic_industry_3
-		x = -2
+		x = -4
 		y = 1
 		relative_position_id = uk_imperial_preference
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2263,10 +2232,9 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 					}
-					set_state_flag = ENG_uk_india_focus_2IC
 				}
 				random_owned_controlled_state = {
 					limit = {
@@ -2279,10 +2247,9 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 					}
-					set_state_flag = ENG_uk_india_focus_2IC
 				}
 				random_owned_controlled_state = {
 					limit = {
@@ -2298,7 +2265,6 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-					set_state_flag = ENG_uk_india_focus_1IC
 				}
 			}
 		}
@@ -2306,12 +2272,11 @@ focus_tree = {
 	focus = {#加拿大粮食计划
 		id = uk_canadian_farmland
 		available = {
-			
 		}
 
 		prerequisite = { focus = uk_canada_develop }
 		icon = GFX_focus_generic_land_reclamation
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = uk_canada_develop
 		cost = 10
@@ -2328,16 +2293,39 @@ focus_tree = {
 	focus = {#加拿大雪地训练营
 		id = uk_canadian_snow_training
 		available = {
+		}
+		prerequisite = { focus = uk_canada_develop }
+
+		icon = GFX_focus_prc_infiltration
+		x = 1
+		y = 1
+		relative_position_id = uk_canada_develop
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_service_overseas_idea
+				add_idea = ENG_service_overseas_idea_1
+			}
+		}
+	}
+	focus = {#缓解大萧条
+		id = uk_relief_from_the_great_depression
+		available = {
 		
 		}
 		
-		will_lead_to_war_with = JAP
-		prerequisite = { focus = uk_canadian_farmland }
+		prerequisite = { 
+			focus = uk_canada_develop 
+			focus = uk_invite_america 
+		}
 
 		icon = GFX_focus_prc_infiltration
 		x = 0
-		y = 1
-		relative_position_id = uk_canadian_farmland
+		y = 2
+		relative_position_id = uk_canada_develop
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2346,7 +2334,6 @@ focus_tree = {
 			
 		}
 	}
-
 
 	focus = {#允许非帝国成员参加
 		id = uk_sure_non_member_join
@@ -2394,6 +2381,26 @@ focus_tree = {
 		}
 	}
 	focus = {#美国军事合作
+		id = uk_america_technology
+		prerequisite = { focus = uk_invite_america }
+		icon = GFX_focus_usa_build_the_pentagon
+		x = -2
+		y = 1
+		relative_position_id = uk_invite_america
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		available = {
+		
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {#美国军事合作
 		id = uk_america_military_cooperation
 		prerequisite = { focus = uk_invite_america }
 		icon = GFX_focus_usa_build_the_pentagon
@@ -2415,10 +2422,11 @@ focus_tree = {
 	}
 	focus = {#重新邀请澳大利亚
 	id = uk_invite_australia
-	prerequisite = { focus = uk_imperial_preference }
+	prerequisite = { focus = uk_sure_non_member_join }
+	prerequisite = { focus = uk_indonesia_to_malaysia }
 	icon = GFX_focus_hol_the_foundations_of_defense
 	x = 2
-	y = 1
+	y = 2
 	relative_position_id = uk_imperial_preference
 	cost = 10
 	ai_will_do = {
@@ -2562,7 +2570,7 @@ completion_reward = {
 	
 	focus = {#大洋彼岸的威胁
 		id = uk_threats_from_across_the_ocean
-		prerequisite = { focus = uk_canadian_snow_training  }
+		prerequisite = { focus = uk_service_focus  }
 		mutually_exclusive={focus= uk_unite_united_states }
 
 		available = {
@@ -2570,9 +2578,9 @@ completion_reward = {
 		} 
 		
 		icon = GFX_focus_usa_voter_registration_act
-		x = 0
+		x = -7
 		y = 1
-		relative_position_id = uk_canadian_snow_training
+		relative_position_id = uk_service_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2584,7 +2592,7 @@ completion_reward = {
 	}
 	focus = {#联合美国
 		id = uk_unite_united_states
-		prerequisite = { focus = uk_america_military_cooperation  }
+		prerequisite = { focus = uk_service_focus  }
 		mutually_exclusive={focus= uk_threats_from_across_the_ocean }
 
 		available = {
@@ -2592,9 +2600,9 @@ completion_reward = {
 		} 
 		
 		icon = GFX_focus_usa_recruit_the_free_corps
-		x = 0
+		x = -9
 		y = 1
-		relative_position_id = uk_america_military_cooperation
+		relative_position_id = uk_service_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2796,30 +2804,6 @@ completion_reward = {
 	
 	}
 }
-focus = {#中东联邦
-id = ENG_middle_east_fed
-prerequisite = { focus = ENG_inida_and_pakistan }
-icon = GFX_focus_TUR_treaty_of_saadabad
-x = 1
-y = 1
-relative_position_id = ENG_inida_and_pakistan
-cost = 10
-ai_will_do = {
-	factor = 3
-}
-
-available = {
-	
-}
-
-bypass = {
-}
-
-completion_reward = {
-
-}
-}
-
 
 
 
@@ -2842,8 +2826,6 @@ completion_reward = {
 							exists = no
 					}
 				}
-				
-				
 				}
 			
 		}
@@ -3423,6 +3405,24 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			AFG = {				
+				country_event = St_eng.0014
+			}
+			PER = {				
+				country_event = St_eng.0014
+			}
+			IRQ = {				
+				country_event = St_eng.0014
+			}
+			SAU = {				
+				country_event = St_eng.0014
+			}
+			YEM = {				
+				country_event = St_eng.0014
+			}
+			OMA = {				
+				country_event = St_eng.0014
+			}
 		}
 	}
 	focus={#闪电攻势
@@ -3535,7 +3535,9 @@ completion_reward = {
 		}
 		completion_reward={
 			custom_effect_tooltip = ENG_revenge_of_finland_tooltip
-			FIN = {}
+			FIN = {#效果还没写
+				country_event = St_eng.0017
+			}
 		}
 	}
 
@@ -3628,6 +3630,8 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			country_event = St_eng.0017
+
 		}
 	}
 	focus={#威胁意大利
@@ -3668,12 +3672,15 @@ completion_reward = {
 		}
 		completion_reward={
 			BEL = {
+				country_event = St_eng.0014
 
 			}
 			HOL = {
+				country_event = St_eng.0014
 
 			}
 			LUX = {
+				country_event = St_eng.0014
 
 			}
 	}
@@ -3695,6 +3702,10 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
 		}
 	}
 	

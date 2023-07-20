@@ -13,8 +13,8 @@ ideas = {
 			consumer_goods_factor = -0.01
 			production_speed_industrial_complex_factor = 0.05
 			production_speed_infrastructure_factor = 0.1
-			weekly_manpower = -10000
-			monthly_population = -0.5
+			weekly_manpower = -1000
+			monthly_population = -1.5
 			army_core_attack_factor = 0.1
 			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
@@ -44,8 +44,8 @@ ideas = {
 			consumer_goods_factor = -0.02
 			production_speed_industrial_complex_factor = 0.1
 			production_speed_infrastructure_factor = 0.1
-			weekly_manpower = -12500
-			monthly_population = -0.67
+			weekly_manpower = -1250
+			monthly_population = -1.75
 			army_core_attack_factor = 0.1
 			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
@@ -74,8 +74,8 @@ ideas = {
 			consumer_goods_factor = -0.03
 			production_speed_industrial_complex_factor = 0.1
 			production_speed_infrastructure_factor = 0.1
-			weekly_manpower = -15000
-			monthly_population = -0.75
+			weekly_manpower = -1500
+			monthly_population = -2
 			army_core_attack_factor = 0.1
 			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
@@ -1479,6 +1479,28 @@ ideas = {
 			
 			modifier = {
 				acclimatization_hot_climate_gain_factor = 0.1
+				sickness_chance = -0.5
+			}
+
+			picture = eng_service_overseas
+
+			removal_cost = -1
+		}
+		ENG_service_overseas_idea_1 = {
+
+			name = uk_service_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.1
 				sickness_chance = -0.5
 			}
 
