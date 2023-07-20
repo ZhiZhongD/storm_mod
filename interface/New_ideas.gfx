@@ -96,6 +96,150 @@ spriteTypes={
 		texturefile="gfx/interface/ideas/national_railway_corporation.png"
     }
 	spriteType = {
+	    name="GFX_idea_cultural"
+		texturefile="gfx/interface/ideas/cultural.png"
+    }
+	spriteType = {
+	    name="GFX_idea_generic_syndicalist_manpower"
+		texturefile="gfx/interface/ideas/generic_syndicalist_manpower.png"
+    }
+	spriteType = {
+	    name="GFX_idea_CAN_exile_government"
+		texturefile="gfx/interface/ideas/CAN_exile_government.png"
+    }
+	spriteType = {
+	    name="GFX_idea_NOR_secret_police_spirit"
+		texturefile="gfx/interface/ideas/NOR_secret_police_spirit.png"
+    }
+	spriteType = {
+	    name="GFX_idea_modern_farms"
+		texturefile="gfx/interface/ideas/modern_farms.png"
+    }
+	spriteType = {
+	    name="GFX_idea_YUC_unclear_economy"
+		texturefile="gfx/interface/ideas/YUC_unclear_economy.png"
+    }
+	spriteType = {
+	    name="GFX_idea_SCT_farms"
+		texturefile="gfx/interface/ideas/SCT_farms.png"
+    }
+	spriteType = {
+	    name="GFX_idea_economic_freedom_bill"
+		texturefile="gfx/interface/ideas/economic_freedom_bill.png"
+    }
+	spriteType = {
+	    name="GFX_idea_NOR_planned_economy"
+		texturefile="gfx/interface/ideas/NOR_planned_economy.png"
+    }
+	spriteType = {
+	    name="GFX_idea_WCC_War_Bonds"
+		texturefile="gfx/interface/ideas/WCC_War_Bonds.png"
+    }
+	spriteType = {
+	    name="GFX_idea_KTG_Industrial_Crisis_Town"
+		texturefile="gfx/interface/ideas/KTG_Industrial_Crisis_Town.png"
+    }
+	spriteType = {
+	    name="GFX_idea_industrial_army"
+		texturefile="gfx/interface/ideas/industrial_army.png"
+    }
+	spriteType = {
+	    name="GFX_idea_CZE_Uranium_Mining"
+		texturefile="gfx/interface/ideas/CZE_Uranium_Mining.png"
+    }
+	spriteType = {
+	    name="GFX_idea_GRU_heavy_industry"
+		texturefile="gfx/interface/ideas/GRU_heavy_industry.png"
+    }
+	spriteType = {
+	    name="GFX_idea_PAN_Guns_Panama"
+		texturefile="gfx/interface/ideas/PAN_Guns_Panama.png"
+    }
+	spriteType = {
+	    name="GFX_idea_RAU_revolution_out"
+		texturefile="gfx/interface/ideas/RAU_revolution_out.png"
+    }
+	spriteType = {
+	    name="GFX_idea_BAN_defend_republic"
+		texturefile="gfx/interface/ideas/BAN_defend_republic.png"
+    }
+	spriteType = {
+	    name="GFX_idea_NFA_tank_war"
+		texturefile="gfx/interface/ideas/NFA_tank_war.png"
+    }
+	spriteType = {
+	    name="GFX_idea_NFE_marines"
+		texturefile="gfx/interface/ideas/NFE_marines.png"
+    }
+	spriteType = {
+	    name="GFX_idea_KSV_rule_from_the_air_idea"
+		texturefile="gfx/interface/ideas/KSV_rule_from_the_air_idea.png"
+    }
+	spriteType = {
+	    name="GFX_idea_generic_airforce"
+		texturefile="gfx/interface/ideas/generic_airforce.png"
+    }
+	spriteType = {
+	    name="GFX_idea_GEN_air_close_air_support"
+		texturefile="gfx/interface/ideas/GEN_air_close_air_support.png"
+    }
+	spriteType = {
+	    name="GFX_idea_BAN_defend_republic"
+		texturefile="gfx/interface/ideas/BAN_defend_republic.png"
+    }
+	spriteType = {
+	    name="GFX_idea_GEN_navy_decisive_bat"
+		texturefile="gfx/interface/ideas/GEN_navy_decisive_bat.png"
+    }
+	spriteType = {
+	    name="GFX_idea_carm_static_defense"
+		texturefile="gfx/interface/ideas/carm_static_defense.png"
+    }
+	spriteType = {
+	    name="GFX_idea_ZAM_reforms_support_idea"
+		texturefile="gfx/interface/ideas/ZAM_reforms_support_idea.png"
+    }
+	spriteType = {
+	    name="GFX_idea_RAU_revolution_out"
+		texturefile="gfx/interface/ideas/RAU_revolution_out.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
 	    name="GFX_idea_"
 		texturefile="gfx/interface/ideas/.png"
     }

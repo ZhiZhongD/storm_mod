@@ -446,22 +446,8 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
-			slot = political_advisor
-			idea_token = RAU_SanShang_a
-			allowed = {
-				original_tag = RAU
-			}
-			traits = {
-				head_of_intelligence
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		advisor={
 			slot = high_command
-			idea_token = RAU_SanShang_b
+			idea_token = RAU_SanShang
 			ledger = army
 			allowed = {
 				original_tag = RAU
@@ -477,6 +463,94 @@ characters={
 				factor = 1.000
 			}
 		}	
+	}
+	RAU_Hillary_Clinton={
+		name=RAU_Hillary_Clinton
+		portraits={
+			civilian={
+				small="gfx\leaders\RAU\Hillary.png" 
+			}
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = RAU_Hillary_Clinton
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				head_of_intelligence
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RAU_Hussein_Obama={
+		name=RAU_Hussein_Obama
+		portraits={
+			civilian={
+				small="gfx\leaders\RAU\Obama.png" 
+			}
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = RAU_Hussein_Obama
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				minister_of_finance_deressa
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RAU_Kyle_Clinton={
+		name=RAU_Kyle_Clinton
+		portraits={
+			civilian={
+				small="gfx\leaders\generic_europe\small\military_male26.png" 
+			}
+		}
+		advisor={
+			cost = 150
+			slot = high_command
+			idea_token = RAU_Kyle_Clinton
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				army_logistics_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RAU_Bernie_Sanders={
+		name=RAU_Bernie_Sanders
+		portraits={
+			civilian={
+				small="gfx\leaders\RAU\Sanders.png" 
+			}
+		}
+		advisor={
+			cost = 50
+			slot = political_advisor
+			idea_token = RAU_Bernie_Sanders
+			allowed = {
+				original_tag = RAU
+			}
+			traits = {
+				RAU_peoples_reformer
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 	RAU_Xavier_Martin={
 		name=RAU_Xavier_Martin
@@ -543,6 +617,48 @@ characters={
 				factor = 1.000
 			}
 		}		
+	}
+	RAU_John_Clarebrough={
+		name=RAU_John_Clarebrough
+		portraits={
+			army={
+				large="gfx\leaders\RAU\Portrait_AST_John_Clarebrough.png" 
+			}
+		}
+		corps_commander={
+			traits={
+				armor_officer
+				harsh_leader
+				trickster
+			}
+			skill=3
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}	
+	}
+	RAU_Thomas_Fannell={
+		name=RAU_Thomas_Fannell
+		portraits={
+			army={
+				large="gfx\leaders\RAU\Portrait_AST_Thomas_Fannell.png" 
+			}
+		}
+		corps_commander={
+			traits={
+				infantry_officer
+				bearer_of_artillery
+				skilled_staffer
+			}
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}	
 	}
 	
 }

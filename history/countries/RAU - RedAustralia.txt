@@ -17,6 +17,12 @@ recruit_character = RAU_lance_sharkey
 recruit_character = RAU_Tom_Martin
 recruit_character = RAU_Jack_White
 recruit_character = RAU_Donald_Trump_leader
+recruit_character = RAU_Hillary_Clinton
+recruit_character = RAU_Hussein_Obama
+recruit_character = RAU_Kyle_Clinton
+recruit_character = RAU_Bernie_Sanders
+recruit_character = RAU_John_Clarebrough
+recruit_character = RAU_Thomas_Fannell
 set_variable = { RAU_accelerationismism_global_building_slots_factor = 0.05 }
 set_variable = { RAU_accelerationismism_production_speed_arms_factory_factor = 0.05 }
 set_variable = { RAU_peoples_livelihoodism_global_building_slots_factor = 0.1 }
@@ -28,7 +34,13 @@ add_ideas = {
 	partial_economic_mobilisation
 	RAU_counterattack
 	RAU_revolution_of_union
+	RAU_counter_revolutionary_lockout
+	RAU_internal_strife_1
+	RAU_chaotic_economy_1
+	RAU_urban_famine
+	RAU_red_army_of_union
 }
+set_research_slots = 3
 set_convoys = 100
 set_politics = {
 	ruling_party = unionism
