@@ -209,6 +209,70 @@ focus_tree = {
 		}
     }
 	focus = {
+		id = RAU_our_home
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id=RAU_progressive_tensendustrial_of_revolution
+		prerequisite={ focus = RAU_progressive_tensendustrial_of_revolution }
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {
+		   OR = {
+			AST = { has_war = no }
+			NOT = {
+				country_exists = AST
+			}
+		   }
+		}
+		bypass = {
+		}
+		completion_reward = {
+			add_state_core = 521
+		    add_state_core = 873
+		    add_state_core = 872
+		    add_state_core = 909
+		    add_state_core = 674
+		    add_state_core = 870
+		    add_state_core = 910
+		    add_state_core = 911
+		    add_state_core = 522
+		    add_state_core = 871
+		    add_state_core = 519
+		    add_state_core = 912
+		    add_state_core = 674
+		    add_state_core = 518
+		}
+    }
+	focus = {
+		id = RAU_let_them_go
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id=RAU_our_home
+		prerequisite={ focus = RAU_our_home }
+		ai_will_do = {
+		factor = 10
+	    }
+		available = {
+		   OR = {
+			AST = { has_war = no }
+			NOT = {
+				country_exists = AST
+			}
+		   }
+		}
+		bypass = {
+		}
+		completion_reward = {
+			release = PNG
+			release = SOL
+		}
+    }
+	focus = {
 		id = RAU_plant_conversion
 		icon = GFX_UKR_Workers_Principle
 		x = 20
@@ -539,7 +603,7 @@ focus_tree = {
 		icon = GFX_SOV_workers
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -559,7 +623,7 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -576,7 +640,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -585,8 +649,19 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+			521={
+				add_extra_state_shared_building_slots = 3
+			}
+			873={
+				add_extra_state_shared_building_slots = 3
+			}
+			909={
+				add_extra_state_shared_building_slots = 3
+			}
 			872={
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
+			}
+			872={
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -594,7 +669,6 @@ focus_tree = {
 				}
 			}
 			909={
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -608,7 +682,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -634,7 +708,7 @@ focus_tree = {
 		icon = GFX_goal_continuous_research
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -651,7 +725,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -681,7 +755,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 3
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -699,7 +773,7 @@ focus_tree = {
 		icon = GFX_goal_continuous_suppression
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -718,7 +792,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_breadbasket_of_the_union
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -735,7 +809,7 @@ focus_tree = {
 		icon = GFX_focus_generic_the_giant_wakes#GFX_RUS_Free_Trade_Unions
 		x = -3
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -756,7 +830,7 @@ focus_tree = {
 		icon = GFX_goal_generic_trade
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -777,7 +851,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -807,7 +881,7 @@ focus_tree = {
 		icon = GFX_goal_continuous_non_factory_construct
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -857,7 +931,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -879,7 +953,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -983,7 +1057,7 @@ focus_tree = {
 		icon = GFX_GEO_Loyal_Workers_Make_Loyal_Soldiers
 		x = 0
 		y = 3
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -1004,7 +1078,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -1038,7 +1112,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = 4
 		y = 1
-		cost = 3
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -1055,7 +1129,7 @@ focus_tree = {
 		icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
 		x = 3
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -1074,7 +1148,7 @@ focus_tree = {
 		icon = GFX_goal_generic_soviet_construction
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -1118,7 +1192,7 @@ focus_tree = {
 		icon = GFX_r56_goal_FRA_work_with_the_cgt
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -1128,7 +1202,7 @@ focus_tree = {
 		bypass = {}
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1
+				bonus = 2
 				uses = 2
 				category = industry
 			}
@@ -1139,7 +1213,7 @@ focus_tree = {
 		icon = GFX_r56_goal_FRA_industrial_decentralization
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -1156,7 +1230,7 @@ focus_tree = {
 		icon = GFX_focus_rus_right_communists
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -1186,7 +1260,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 		factor = 10
 	    }
@@ -1750,6 +1824,11 @@ focus_tree = {
 				uses = 2
 				category = air_doctrine
 			}
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe_1
+				amount = 500
+				producer = ENG
+			}	
 		}
     }
 	focus = {
@@ -2282,7 +2361,7 @@ focus_tree = {
 		icon = GFX_CSA_professional_red_army
 		x = 5
 		y = 1
-		cost = 5
+		cost = 10
 		mutually_exclusive={focus=RAU_hold_the_flag_of_civil_arms}
 		prerequisite={focus= RAU_army_of_union}
 		relative_position_id= RAU_army_of_union
@@ -2303,7 +2382,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_dictatorship
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite={focus= RAU_favor_a_standing_army}
 		relative_position_id= RAU_favor_a_standing_army
 		ai_will_do = {
@@ -2323,7 +2402,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		mutually_exclusive={focus= RAU_the_fighting_zeal_of_the_revolutionary_people }
 		prerequisite={ focus = RAU_hold_the_flag_of_civil_arms focus= RAU_favor_a_standing_army }
 		relative_position_id= RAU_favor_a_standing_army
@@ -2341,7 +2420,7 @@ focus_tree = {
 		icon = GFX_CSA_union_army
 		x = 12
 		y = 1
-		cost = 5
+		cost = 10
 		mutually_exclusive={focus=RAU_favor_a_standing_army}
 		prerequisite={focus= RAU_army_of_union}
 		relative_position_id= RAU_army_of_union
@@ -2362,7 +2441,7 @@ focus_tree = {
 		icon = GFX_focus_mex_caudillo_private_armies
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite={focus= RAU_hold_the_flag_of_civil_arms}
 		relative_position_id= RAU_hold_the_flag_of_civil_arms
 		ai_will_do = {
@@ -2382,7 +2461,7 @@ focus_tree = {
 		icon = GFX_CSA_socialist_defence_doctrine
 		x = 5
 		y = 1
-		cost = 5
+		cost = 10
 		mutually_exclusive={focus= RAU_fine_equipment } 
 		prerequisite={focus= RAU_hold_the_flag_of_civil_arms focus = RAU_favor_a_standing_army }
 		relative_position_id= RAU_favor_a_standing_army
@@ -2400,7 +2479,7 @@ focus_tree = {
 		icon = GFX_CSA_industrial_army
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite={focus= RAU_community_arming}
 		relative_position_id= RAU_community_arming
 		ai_will_do = {
@@ -2420,7 +2499,7 @@ focus_tree = {
 		icon = GFX_DKB_don_army
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		prerequisite={focus = RAU_high_command_section }
 		relative_position_id= RAU_high_command_section
 		ai_will_do = {

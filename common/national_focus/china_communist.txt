@@ -1544,6 +1544,7 @@ focus_tree = {
 			}
 		}
 		completion_reward={
+			add_ideas= RAU_a_member_of_Comintern_idea
 		}
 	}
 	focus={

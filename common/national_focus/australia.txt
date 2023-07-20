@@ -2405,6 +2405,62 @@
 			add_political_power = 120
 		}
 	}
+	focus = {
+		id = AST_fortify_the_line
+		icon = GFX_goal_generic_defence
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		relative_position_id=AST_establish_advisory_war_council
+		prerequisite={focus=AST_establish_advisory_war_council}
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			674 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+			912 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+			519 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = AST_national_security_act

@@ -320,8 +320,8 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/CSA_general_defence_committee.png"
 	}
 	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.png"
+		name = "GFX_NEE_syndie_crackdown"
+		texturefile = "gfx/interface/goals/NEE_syndie_crackdown.png"
 	}
 	SpriteType = {
 		name = "GFX_"

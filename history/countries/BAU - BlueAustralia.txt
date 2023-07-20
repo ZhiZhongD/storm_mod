@@ -1,10 +1,5 @@
 ﻿recruit_character = BAU_arthur_calwell
 recruit_character = BAU_john_curtin
-add_ideas = {
-	closed_economy
-	extensive_conscription
-	partial_economic_mobilisation
-}
 set_convoys = 100
 set_politics = {
 	ruling_party = liberal_democracy
@@ -39,3 +34,8 @@ set_technology = {
 }
 set_stability = 0.7
 set_war_support = 0.3
+add_ideas={
+	BAU_help_from_uk_fra_idea
+	extensive_conscription
+	partial_economic_mobilisation
+}

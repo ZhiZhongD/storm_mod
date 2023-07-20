@@ -8,7 +8,7 @@ characters={
 		}
 		country_leader={
 			ideology=despotism
-			traits={ generallissimo }
+			traits={ generallissimo PRC_capitulationists }
 			expire="1965.1.1.1"
 			id=-1
 		}

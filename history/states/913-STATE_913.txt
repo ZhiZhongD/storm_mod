@@ -4,10 +4,11 @@ state={
 	name="STATE_913"
 	resources={
 		steel=16.000
-		tungsten = 3
-	    chromium = 4
-	    aluminium = 8
+		tungsten=3.000
+		chromium=4.000
+		aluminium=8.000
 	}
+
 	history={
 		owner = RAU
 		add_core_of = AST
@@ -20,13 +21,13 @@ state={
 
 		}
 		victory_points = {
-			13345 20 
+			13345 15
 		}
 
 	}
 
 	provinces={
-		2114 2163 7533 8234 8249 10977 10991 11019 12934 12968 13308 13318 13345 13377 13633 13635 
+		2163 7533 8234 8249 10977 10991 12934 12968 13308 13318 13345 13377 13633 13635 
 	}
 	manpower=11031000
 	buildings_max_level_factor=1.000

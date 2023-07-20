@@ -1,4 +1,5 @@
 ﻿oob = "PRC_1936"
+capital = 613
 #gai
 add_dynamic_modifier = { modifier = PRC_national_industry }
 add_dynamic_modifier = { modifier = PRC_peoples_revolutionary_army_idea }

@@ -186,24 +186,6 @@ country_event={
     }
 }
 country_event={
-	id = RAU.8
-	title = RAU.8.t
-	desc = RAU.8.d
-	picture = GFX_report_event_ger_civil_war
-	fire_only_once = yes
-	trigger={
-		tag = BAU
-		date>1937.1.1
-		AST={surrender_progress>0.5}
-		AST={has_war_with = RAU }
-	}
-
-
-	option = {
-		name = RAU.8.a
-    }
-}
-country_event={
 	id = RAU.9
 	title = RAU.9.t
 	desc = RAU.9.d
@@ -217,7 +199,7 @@ country_event={
 			id = RAU.10
 			days = 7
 		}
-		set_country_flag=RAU_attack
+		set_country_flag=RAU_attackism
 		ai_will_do={factor=10}
     }
 	option = {
@@ -226,7 +208,7 @@ country_event={
 			id = RAU.10
 			days = 7
 		}
-		set_country_flag=RAU_defence
+		set_country_flag=RAU_defenceism
 		ai_will_do={factor=5}
     }
 }

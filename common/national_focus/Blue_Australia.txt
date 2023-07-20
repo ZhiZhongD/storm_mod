@@ -17,7 +17,7 @@
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
@@ -39,7 +39,7 @@
 		x = -1
 		y = 1
 		relative_position_id = army_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -63,7 +63,7 @@
 		x = 1
 		y = 1
 		relative_position_id = army_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -84,7 +84,7 @@
 		x = 0
 		y = 2
 		relative_position_id = army_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -107,7 +107,7 @@
 		x = 0
 		y = 2
 		relative_position_id = equipment_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -130,7 +130,7 @@
 		x = 0
 		y = 2
 		relative_position_id = motorization_effort_1
-		cost = 10
+		cost = 5
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 
@@ -152,7 +152,7 @@
 		x = 0
 		y = 2
 		relative_position_id = doctrine_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -175,7 +175,7 @@
 		x = 0
 		y = 2
 		relative_position_id = equipment_effort_2_1
-		cost = 10
+		cost = 5
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -198,7 +198,7 @@
 		x = 0
 		y = 2
 		relative_position_id = mechanization_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -222,7 +222,7 @@
 		x = 1
 		y = 1
 		relative_position_id = equipment_effort_3_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -563,10 +563,10 @@
 
 		complete_tooltip = {
 			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
 				type = dockyard
-				level = 3
+				level = 4
 				instant_build = yes
 			}
 		}
@@ -903,7 +903,7 @@
 		icon = GFX_goal_generic_production
 		x = 15
 		y = 1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
@@ -947,7 +947,7 @@
 		x = -1
 		y = 1
 		relative_position_id = industrial_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1021,7 +1021,7 @@
 		x = 1
 		y = 1
 		relative_position_id = industrial_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1094,7 +1094,7 @@
 		x = 0
 		y = 1
 		relative_position_id = construction_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1167,7 +1167,7 @@
 		x = 0
 		y = 1
 		relative_position_id = production_effort_1
-		cost = 10
+		cost = 5
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 
@@ -1240,7 +1240,7 @@
 		x = 0
 		y = 1
 		relative_position_id = construction_effort_2_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -1335,7 +1335,7 @@
 		x = 0
 		y = 1
 		relative_position_id = production_effort_2_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1408,7 +1408,7 @@
 		x = 0
 		y = 1
 		relative_position_id = infrastructure_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -1503,7 +1503,7 @@
 		x = 2
 		y = 1
 		relative_position_id = infrastructure_effort_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1576,7 +1576,7 @@
 		x = -2
 		y = 1
 		relative_position_id = infrastructure_effort_2_1
-		cost = 10
+		cost = 5
 		
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 
@@ -1605,7 +1605,7 @@
 		x = 0
 		y = 1
 		relative_position_id = infrastructure_effort_2_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 		
@@ -1628,7 +1628,7 @@
 		x = 0
 		y = 1
 		relative_position_id = extra_tech_slot_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 		
@@ -1646,7 +1646,7 @@
 		x = 2
 		y = 1
 		relative_position_id = infrastructure_effort_2_1
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 		
@@ -1676,7 +1676,7 @@
 		icon = GFX_goal_generic_demand_territory
 		x = 19
 		y = 1
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	
@@ -1695,7 +1695,7 @@
 		x = 0
 		y = 1
 		relative_position_id = political_effort_1
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -2194,7 +2194,7 @@
 	focus = {
 		id = technology_sharing_1
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = ideological_fanaticism }
+		prerequisite = { focus = ideological_fanaticism_1 }
 		available = {
 			has_war = yes
 			is_in_faction = yes
@@ -2208,7 +2208,7 @@
 		}		
 		x = 0
 		y = 1
-		relative_position_id = ideological_fanaticism
+		relative_position_id = ideological_fanaticism_1
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
@@ -2248,5 +2248,72 @@
 			}			
 		}
 	}
+	focus = {
+		id = attack_redist
+		icon = GFX_NEE_syndie_crackdown
+		available = {
+			date>1939.1.1
+			RAU={
+				has_war_with=AST
+			}
+			AST={surrender_progress>0.5}
+		}		
+		x = -10
+		y = -1
+		relative_position_id = ideological_fanaticism_1
+		cost = 1
+		ai_will_do={factor=100}
 	
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			declare_war_on = { target = RAU type = annex_everything }
+			add_state_core = 913
+			add_state_core = 285
+			add_state_core = 517
+			add_state_core = 521
+			add_state_core = 873
+			add_state_core = 909
+			add_state_core = 872
+			add_state_core = 952
+	}
+	
+}
+focus = {
+	id = attack_greyist
+	icon = GFX_focus_attack_australia
+	available = {
+		date>1939.1.1
+		AST={
+			has_war = no
+		}
+	}		
+	x = 0
+	y = 1
+	relative_position_id = attack_redist
+	prerequisite={focus=attack_redist}
+	cost = 1
+	ai_will_do={factor=100}
+
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		declare_war_on = { target = AST type = annex_everything }
+		add_state_core = 674
+		add_state_core = 910
+		add_state_core = 911
+		add_state_core = 519
+		add_state_core = 871
+		add_state_core = 522
+		add_state_core = 737
+		add_state_core = 523
+		add_state_core = 518
+		add_state_core = 634
+		add_state_core = 951
+}
+
 }
