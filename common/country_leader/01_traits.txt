@@ -131,4 +131,10 @@ leader_traits={
 		trade_laws_cost_factor = -0.1
 		economy_cost_factor = -0.1
 	}
+	PRC_capitulationists={
+		random=no
+		sprite = 13
+		army_core_defence_factor = -0.25
+		surrender_limit = -0.5
+	}
 }

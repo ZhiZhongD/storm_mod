@@ -27,7 +27,10 @@ SOV_culture_low:0"文化专制"
 SOV_washing:0"大清洗运动"
 
 
-
+BAU_help_from_uk_fra_idea:"英法支持"
+BAU_help_from_japan_idea:"日本支持"
+RAU_defence:"重兵堡垒群"
+RAU_attack:"革命反攻"
 RAU_counterattack:0"革命反攻"
 RAU_revolution_of_union:0"工团主义革命"
 RAU_agricultural_combination_idea:0"农业组合"
@@ -105,6 +108,8 @@ PRC_peoples_air_army:0"简易飞机生产"
 PRC_peoples_war_idea:0"人民战争的汪洋大海"
 PRC_problem_with_LKMT_and_CPC:0"国共矛盾"
 PRC_peoples_revolutionary_army_idea:0"人民革命军"
+RAU_attackism:"输出派"
+RAU_defenceism:"保卫派"
 China_location:0"中国军阀"
 PRC_against_nanjing:0"打倒第六次反革命围剿！"
 PRC_low_ager_nation:0"落后农业国"
@@ -113,7 +118,6 @@ PRC_LKMT_lead:0"国民党左派主导"
 PRC_CPC_lead:0"共产党主导"
 PRC_popular_army"0"人民军队"
 FNG_defend_japan:0"抗日热情"
-
 
 
 

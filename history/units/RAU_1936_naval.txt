@@ -54,9 +54,9 @@ instant_effect = {
 			creator = "RAU"
 			version_name = "V/W Class"
 		}
-		requested_factories = 2
+		requested_factories = 4
 		progress = 0.95
-		amount = 2
+		amount = 5
 	}
 	add_equipment_production = {
 		equipment = {
@@ -64,18 +64,9 @@ instant_effect = {
 			creator = "RAU"
 			version_name = "Canberra Class"
 		}
-		requested_factories = 2
+		requested_factories = 5
 		progress = 0.95
-		amount = 2
-	}
-	add_equipment_production = {
-		equipment = {
-			type = mtg_transport
-			creator = "RAU"
-		}
-		requested_factories = 1
-		progress = 0.95
-		amount = 2
+		amount = 5
 	}
 }
 

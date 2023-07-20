@@ -1096,8 +1096,8 @@ ideas = {
 			mobilization_speed = 0.1
 			conscription = 0.01
 			army_core_defence_factor = 0.15
-			army_morale_factor = 0.15
-
+			army_morale_factor = 0.1
+			training_time_army_factor = -0.1
 		}	
 	}
 	RAU_fine_equipment_idea={
@@ -1384,6 +1384,38 @@ ideas = {
 		}
 		modifier={
 			research_speed_factor = 0.05
+		}	
+	}
+	BAU_help_from_uk_fra_idea={
+		allowed={original_tag=BAU}
+		picture=economic_freedom_bill
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			industrial_capacity_factory = 0.25
+			research_speed_factor = 0.25
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.25
+	        production_speed_bunker_factor = 0.5
+			army_core_defence_factor = 0.15
+			training_time_army_factor = -0.5
+		}	
+	}
+	BAU_help_from_japan_idea={
+		allowed={original_tag=AST}
+		picture=KSV_rule_from_the_air_idea
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			industrial_capacity_factory = 0.25
+			research_speed_factor = 0.25
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.25
+	        production_speed_bunker_factor = 0.5
+			army_core_defence_factor = 0.15
+			training_time_army_factor = -0.5
 		}	
 	}
 }

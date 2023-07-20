@@ -23,8 +23,12 @@ every_owned_state = {
 		modifier = RAU_attack
 	}
 }
-capital = 522
+add_ideas={
+	BAU_help_from_japan_idea
+}
+capital = 951
 oob = "AST_1936"
+set_air_oob = "AST_1936_air"
 set_stability = 0.8
 set_war_support = 0.3
 # Starting tech

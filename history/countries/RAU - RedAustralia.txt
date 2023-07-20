@@ -57,7 +57,7 @@ declare_war_on = {
 }
 oob = "RAU_1936"
 set_naval_oob = "RAU_1936_naval"
-capital = 285
+capital = 952
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1

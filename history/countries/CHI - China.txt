@@ -57,7 +57,7 @@ recruit_character = CHI_chen_yi
 recruit_character = CHI_soong_mei_ling
 recruit_character = CHI_random_prince_of_terror
 recruit_character = CHI_lin_sen
-
+recruit_character = CHI_wang_jingwei_japan
 set_stability = 0.2
 set_war_support = 0.5
 # Starting tech
