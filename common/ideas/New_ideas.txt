@@ -1196,43 +1196,43 @@ ideas = {
 		}
 		equipment_bonus = {
 			dd_tech = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.25
 				instant = yes
 			}
 		}
 		equipment_bonus = {
 			cl_tech = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.25
 				instant = yes
 			}
 		}
 		equipment_bonus = {
 			bc_tech = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.25
 				instant = yes
 			}
 		}
 		equipment_bonus = {
 			ca_tech = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.25
 				instant = yes
 			}
 		}
 		equipment_bonus = {
 			ss_tech = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.25
 				instant = yes
 			}
 		}
 		equipment_bonus = {
 			cv_tech = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.25
 				instant = yes
 			}
 		}
 		equipment_bonus = {
 			bb_tech = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.25
 				instant = yes
 			}
 		}
@@ -1347,11 +1347,11 @@ ideas = {
 		}
 		equipment_bonus = {
 			dd_tech = {
-				build_cost_ic = -0.25
+				build_cost_ic = -0.5
 				instant = yes
 			}
 			ss_tech = {
-				build_cost_ic = -0.25
+				build_cost_ic = -0.5
 				instant = yes
 			}
 		}	
@@ -1404,7 +1404,7 @@ ideas = {
 	}
 	BAU_help_from_japan_idea={
 		allowed={original_tag=AST}
-		picture=KSV_rule_from_the_air_idea
+		picture=japanese_influence_1
 		allowed_civil_war={
 			always=yes
 		}
@@ -1416,6 +1416,18 @@ ideas = {
 	        production_speed_bunker_factor = 0.5
 			army_core_defence_factor = 0.15
 			training_time_army_factor = -0.5
+		}	
+	}
+	PRC_defeatism_prevails={
+		allowed={original_tag=PRC}
+		picture=japanese_influence_3
+		allowed_civil_war={
+			always=yes
+		}
+		modifier={
+			mobilization_speed = -0.15
+			army_core_defence_factor = -0.15
+			conscription = -0.01
 		}	
 	}
 }

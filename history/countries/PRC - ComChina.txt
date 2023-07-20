@@ -41,6 +41,7 @@ add_ideas = {
 	PRC_problem_with_LKMT_and_CPC
 	PRC_attack_GXC
 	PRC_low_ager_nation
+	PRC_defeatism_prevails
 }
 set_autonomy = {
 	target = FJA
