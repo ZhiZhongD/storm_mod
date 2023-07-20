@@ -321,7 +321,10 @@ country_event = {#工业换北非
         ai_chance = {
             base = 10
         }
-        
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = ITA
+		}
 	}
   
 }
@@ -429,8 +432,12 @@ country_event = {#邀请芬兰
 	option = { 
 		name = St_eng.0017.a
         ai_chance = {
-            base = 99
+            base = 10
         }
+		declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
 		ENG = {
             country_event = St_eng.0018
         }
@@ -438,7 +445,15 @@ country_event = {#邀请芬兰
 	option = { 
 		name = St_eng.0017.b
         ai_chance = {
-            base = 1
+            base = 90
+			modifier = {
+				factor = 0
+					NOT = {
+						146 = {
+							is_controlled_by = FIN
+						}
+					}	
+			}
         }
 		ENG = {
             country_event = St_eng.0019
@@ -475,6 +490,7 @@ country_event = {#邀请芬兰-拒绝
         ai_chance = {
             base = 10
         }
+
 	}
     
 }
@@ -498,19 +514,20 @@ country_event = {#德国谈判
 				target = FRA
 			}
 			annex_country = {
+				target = LUX
+			}
+			annex_country = {
 				target = BEL
 			}
 			annex_country = {
 				target = HOL
 			}
-			annex_country = {
-				target = LUX
-			}
         }
+		
 		
 	}
 	option = { 
-		name = St_eng.0017.b
+		name = St_eng.0020.b
         ai_chance = {
             base = 1
         }
@@ -547,7 +564,9 @@ country_event = {#德国谈判-同意
 		26 = { transfer_state_to = FRA }
 		735 = { transfer_state_to = FRA }
 		FRA = {
-			set_capital = 26
+			set_capital ={
+				state = 27
+			}
 		}
 		puppet = FRA
 		every_state = {
@@ -557,10 +576,13 @@ country_event = {#德国谈判-同意
 					is_core_of = LUX
 					is_core_of = BEL
 				}
-				transfer_state_to = GER
 			}
+			transfer_state_to = GER
+
 		}
-		
+		ENG = {
+			add_to_faction = GER
+		}
 
 
 	}
@@ -581,4 +603,108 @@ country_event = {#德国谈判-拒绝
         }
 	}
     
+}
+
+country_event = {#索取北非
+	id = St_eng.0023
+	title = St_eng.0023.t
+	desc = St_eng.0023.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0023.a
+        ai_chance = {
+            base = 5
+        }
+	
+        ENG = {
+            country_event = St_eng.0024
+			268 = {
+				transfer_state_to = ITA
+			}
+			269 = {
+				transfer_state_to = ITA
+			}
+			903 = {
+				transfer_state_to = ITA
+			}
+        }
+	}
+    option = { 
+		name = St_eng.0023.b
+        ai_chance = {
+            base = 5
+        }
+        ENG = {
+            country_event = St_eng.0025
+        }
+	}
+    
+}
+
+country_event = {#索取北非
+	id = St_eng.0024
+	title = St_eng.0024.t
+	desc = St_eng.0024.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0024.a
+        ai_chance = {
+            base = 10
+        }
+		
+		ITA = {
+			
+			273 = {
+				transfer_state_to = ENG
+			}
+			663 = {
+				transfer_state_to = ENG
+			}
+			451 = {
+				transfer_state_to = ENG
+			}
+			450 = {
+				transfer_state_to = ENG
+			}
+			662 = {
+				transfer_state_to = ENG
+			}
+			449 = {
+				transfer_state_to = ENG
+			}
+			661 = {
+				transfer_state_to = ENG
+			}
+			448 = {
+				transfer_state_to = ENG
+			}
+	}
+  
+}
+}
+country_event = {#索取北非
+	id = St_eng.0025
+	title = St_eng.0025.t
+	desc = St_eng.0025.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0025.a
+        ai_chance = {
+            base = 10
+        }
+        create_wargoal = {
+			type = puppet_wargoal_focus
+			target = ITA
+		}
+	}
+  
 }

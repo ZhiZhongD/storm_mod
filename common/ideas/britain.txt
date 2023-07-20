@@ -1,6 +1,25 @@
 ideas = {
 
 	country = {
+		eng_lightning_offensive = {#暴风行动
+			
+		allowed = {
+			
+		}
+
+
+		
+		modifier = {
+			army_speed_factor = 0.025
+            org_loss_when_moving = -0.1
+            experience_loss_factor = 0.05
+            initiative_factor = 0.15
+            breakthrough_factor = 0.05
+            winter_attrition_factor = 0.05
+            supply_consumption_factor = -0.025
+
+		}
+		}
 		ENG_africa_company_1 = {#不列颠非洲公司
 			
 		allowed = {
@@ -14,11 +33,12 @@ ideas = {
 			production_speed_industrial_complex_factor = 0.05
 			production_speed_infrastructure_factor = 0.1
 			weekly_manpower = -1000
-			monthly_population = -1.5
+			monthly_population = -5
 			army_core_attack_factor = 0.1
 			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
 			army_defence_factor = -0.15
+			conscription = 0.25
 
 			
 
@@ -45,11 +65,12 @@ ideas = {
 			production_speed_industrial_complex_factor = 0.1
 			production_speed_infrastructure_factor = 0.1
 			weekly_manpower = -1250
-			monthly_population = -1.75
+			monthly_population = -10
 			army_core_attack_factor = 0.1
 			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
 			army_defence_factor = -0.15
+			conscription = 0.5
 
 			
 
@@ -75,13 +96,13 @@ ideas = {
 			production_speed_industrial_complex_factor = 0.1
 			production_speed_infrastructure_factor = 0.1
 			weekly_manpower = -1500
-			monthly_population = -2
+			monthly_population = -15
 			army_core_attack_factor = 0.1
 			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
 			army_defence_factor = -0.15
 			army_infantry_defence_factor = 0.05
-			
+			conscription = 0.75
 
 			targeted_modifier = {
 				tag = ENG
@@ -126,8 +147,8 @@ ideas = {
 			picture = SOV_conspiracy_in_the_academy_airforce
 						
 			modifier = {
-				communism_drift = -1
-				communism_acceptance = -100
+				communism_drift = -0.01
+				communism_acceptance = -1000
 			}
 			
 
@@ -166,19 +187,7 @@ ideas = {
 				training_time_army_factor = -0.3
 			}
 		}
-		lightning_offensive_of_eng = {#闪电攻势
-			allowed = {
-				original_tag = ENG
-			}
-			allowed_civil_war = {
-			always = yes
-			}
-			picture = FRA_motorized_focus
-			modifier = {
-				army_speed_factor = 0.05
-				org_loss_when_moving = 0.2
-			}		
-		}
+
 		anti_SOV_faction_of_eng = {#反苏同盟-英国
 			allowed = {
 				original_tag = ENG

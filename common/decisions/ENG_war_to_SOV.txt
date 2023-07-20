@@ -1,0 +1,442 @@
+ENG_war_to_SOV_dec = {
+
+    eng_anti_sov_dec={#消灭布尔什维克
+		days_remove = 30
+
+		cost = 50
+
+        icon = GFX_decision_generic_prepare_civil_war
+
+		visible={
+			has_war_with = SOV
+		}
+
+		allowed={
+            original_tag = ENG
+        }
+        ai_will_do = {
+            base = 10
+        }
+		targeted_modifier = {
+            tag = SOV
+            attack_bonus_against = 0.05
+            defense_bonus_against = 0.05
+        }
+        modifier = {
+            political_power_gain = -0.1
+        }
+		
+	}
+    eng_supervise_soldier_dec = {#督战队
+        
+    days_remove = 60
+
+    cost = 100
+
+    icon = GFX_decision_generic_army_support
+
+    visible={
+        has_war_with = SOV
+    }
+
+    allowed={
+        original_tag = ENG
+    }
+
+    available = {
+       
+    }
+    ai_will_do = {
+        base = 10
+    }
+    modifier = {
+        army_org_regain = 0.1
+        experience_gain_army_unit_factor = -0.5
+        army_defence_factor = 0.05
+        supply_consumption_factor = 0.1
+    }
+    }
+    eng_quiet_dec = {#闭嘴，不许多嘴
+        
+    days_remove = 60
+
+    cost = 100
+
+    icon = GFX_decision_onmap_recruit_operative
+
+    visible={
+        has_war_with = SOV
+    }
+
+    allowed={
+        original_tag = ENG
+    }
+
+    available = {
+       
+    }
+    ai_will_do = {
+        base = 10
+    }
+    modifier = {
+        civilian_intel_to_others = -0.15
+        army_intel_to_others = -0.5
+        navy_intel_to_others = -0.25
+        airforce_intel_to_others = -0.15
+
+    }
+    }
+    eng_arrest_of_anti_war_dec = {#逮捕反战人士
+        
+    days_remove = 90
+
+    cost = 100
+
+    icon = GFX_decision_generic_arrest
+
+    visible={
+        has_war_with = SOV
+    }
+
+    allowed={
+        original_tag = ENG
+    }
+
+    available = {
+       
+    }
+    ai_will_do = {
+        base = 10
+    }
+    modifier = {
+        complete_effect = {
+            add_war_support = 0.05
+        }
+    }
+    }
+    eng_worker_007_dec={#强迫工人007
+
+		days_remove = 30
+
+		cost = 150
+
+        icon = GFX_decision_ger_military_buildup
+
+		visible={
+			has_war_with = SOV
+		}
+
+		allowed={
+            original_tag = ENG
+        }
+
+        available = {
+            has_completed_focus = ENG_ban_trade_unions
+        }
+        ai_will_do = {
+            base = 10
+        }
+		modifier = {
+            production_factory_start_efficiency_factor = -0.1
+            production_factory_max_efficiency_factor = -0.1
+            production_factory_efficiency_gain_factor = 0.2
+            production_speed_arms_factory_factor = 0.1
+            industrial_capacity_factory = 0.1
+            industrial_capacity_dockyard = 0.1
+            weekly_manpower = -1000
+			monthly_population = -0.1
+            conscription_factor = -0.5
+            communism_drift = 0.01
+        }
+		
+	}
+    eng_kill_communist_dec={#处死共产主义者
+
+    days_remove = 30
+
+    cost = 25
+
+    icon = GFX_decision_generic_assassination
+
+    visible={
+        has_war_with = SOV
+    }
+
+    allowed={
+        original_tag = ENG
+    }
+
+    available = {
+        has_completed_focus = ENG_ban_trade_unions
+    }
+    ai_will_do = {
+        base = 10
+    }
+    modifier = {
+        communism_drift = -0.02
+    }
+    complete_effect = {
+        manpower = -1
+        add_stability = -0.005
+    }
+}
+    eng_lightning_offensive_dec = {#暴风行动
+        
+    days_remove = 30
+
+    icon = GFX_decision_oppression
+
+    visible={
+        has_war_with = SOV
+    }
+
+    allowed={
+        original_tag = ENG
+    }
+
+    available = {
+        has_completed_focus = ENG_lightning_offensive
+        command_power > 49
+    }
+    ai_will_do = {
+        base = 10
+    }
+    complete_effect = {
+            add_command_power = -50
+            every_country = {
+                limit = {
+                    AND = {
+                        has_war_with = SOV
+                        NOT = { has_war_with = ENG }
+                        NOT = { has_government = communism }
+                        NOT = {
+                            original_tag = ENG
+                        }
+                    }
+                }
+                add_ideas = eng_lightning_offensive
+            }
+        }
+        modifier = {
+            army_speed_factor = 0.05
+            org_loss_when_moving = -0.2
+            experience_loss_factor = 0.1
+            initiative_factor = 0.3
+            breakthrough_factor = 0.1
+            winter_attrition_factor = 0.1
+            supply_consumption_factor = -0.05
+        }	    
+    }
+    eng_recruit_from_the_colony_dec = {#向殖民地征募
+        
+    days_remove = 30
+
+    cost = 150
+
+    icon = GFX_decision_eng_trade_unions_demand
+
+    visible={
+        has_war_with = SOV
+    }
+
+    allowed={
+        original_tag = ENG
+    }
+
+    available = {
+    }
+    ai_will_do = {
+        base = 10
+    }
+    remove_effect = {
+                ENG = {
+                    add_stability = -0.05
+                }
+                if = {
+                    limit = {
+                        has_subject = ENG
+                    }
+                    random_other_country = {
+                        limit = {
+                            is_subject_of = ENG
+                        }
+                        add_stability = -0.05
+                        random_owned_state = {
+                            limit = {
+                                state_population > 10000
+                            }
+                            add_manpower = -10000
+                        }
+                        ENG = {
+                            add_manpower = 10000
+                        }
+                    }
+                    random_other_country = {
+                        limit = {
+                            is_subject_of = ENG
+                        }
+                        add_stability = -0.05
+                        random_owned_state = {
+                            limit = {
+                                state_population > 10000
+                            }
+                            add_manpower = -10000
+                        }
+                        ENG = {
+                            add_manpower = 10000
+                        }
+                    }
+                    random_other_country = {
+                        limit = {
+                            is_subject_of = ENG
+                        }
+                        add_stability = -0.05
+                        random_owned_state = {
+                            limit = {
+                                state_population > 10000
+                            }
+                            add_manpower = -10000
+                        }
+                        ENG = {
+                            add_manpower = 10000
+                        }
+                    }
+                }
+                else = {
+                    ENG = {
+                        
+                            random_owned_state = {
+                                limit = {
+                                    state_population > 10000
+                                    NOT = {
+                                        is_core_of = ENG
+                                    }
+                                }
+                                add_manpower = -10000
+                            }
+                            ENG = {
+                                add_manpower = 10000
+                            }
+                        
+                       
+                            random_owned_state = {
+                                limit = {
+                                    state_population > 10000
+                                    NOT = {
+                                        is_core_of = ENG
+                                    }
+                                }
+                                add_manpower = -10000
+                            }
+                            ENG = {
+                                add_manpower = 10000
+                            }
+                        
+                       
+                           
+                            random_owned_state = {
+                                limit = {
+                                    state_population > 10000
+                                    NOT = {
+                                        is_core_of = ENG
+                                    }
+                                }
+                                add_manpower = -10000
+                            }
+                            ENG = {
+                                add_manpower = 10000
+                            }
+                        
+                    }
+                }
+              
+        }	    
+    }
+    eng_add_fin_into_war_dec = {#邀请芬兰入战
+        
+    days_remove = 60
+
+    cost = 150
+
+    icon = GFX_decision_generic_political_discourse
+
+    visible={
+        has_war_with = SOV
+    }
+
+    allowed={
+        original_tag = ENG
+    }
+
+    available = {
+        AND = {
+            has_completed_focus = ENG_revenge_of_finland
+            FIN = {
+                NOT = { has_war_with = SOV  }
+                NOT = { is_subject_of = SOV }
+            }
+        }
+    }
+    ai_will_do = {
+        base = 10
+    }
+    remove_effect = {
+                FIN = {
+				country_event = St_eng.0017
+			}
+        }	    
+    }
+    eng_volunteer_of_anti_soviet_dec = {#英国号召反共志愿军
+        
+    days_remove = 60
+
+    cost = 100
+
+    icon = GFX_decision_generic_military
+
+    visible={
+        has_war_with = SOV
+    }
+
+    allowed={
+        original_tag = ENG
+    }
+
+    available = {
+        AND = {
+            has_completed_focus = ENG_volunteer_of_anti_soviet
+           
+        }
+    }
+    ai_will_do = {
+        base = 10
+    }
+    remove_effect = {
+              every_country = {
+                limit = {
+                    AND = {
+                        has_war_with = SOV
+                        NOT = { has_war_with = ENG }
+                        NOT = { has_government = communism }
+                        NOT = {
+                            original_tag = ENG
+                        }
+                    }
+                }
+                random_list = {
+                    10 = {
+                        add_manpower = 5000
+                    }
+                    10 = {
+                        add_manpower = 10000
+                    }
+                    10 = {
+
+                    }
+                    
+                }
+
+              }
+        }	    
+    }
+}
