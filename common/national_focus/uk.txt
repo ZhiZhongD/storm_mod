@@ -22,27 +22,13 @@ focus_tree = {
 	focus = { #密码炸弹
 		id = crypto_bomb_focus
 		available = {
-				has_war_with = GER
+				has_war_with = SOV
 				POL = {
 					NOT = { is_in_faction_with = GER } #We assume POL will help vs Germany unless they are allied to them
 				}
 			}
 		
-		bypass = {
-			OR = {
-				AND = {
-					has_war_with = GER
-					POL = {
-							is_in_faction_with = GER # If POL is in GER's faction, no help for us
-						}
-				}
-				AND = {
-					has_war = yes
-					is_in_faction_with = USA
-				}
-				GER = { exists = no }
-			}
-		}
+
 		
 		icon = GFX_focus_generic_cryptologic_bomb
 		x = 0
@@ -2098,7 +2084,7 @@ focus_tree = {
 
 		available = {
 			SAF = {
-				is_puppet_of = ENG
+				is_subject_of = ENG
 			}
 		}
 
@@ -3317,6 +3303,7 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = ENG_ban_trade_unions_tooltip
 			add_ideas = ban_trade_unions_of_eng
 			add_stability = -0.05
 		}
@@ -3530,14 +3517,16 @@ completion_reward = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			SOV = {
+				has_completed_focus = SOV_secure_leningrad
+			}
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
 			custom_effect_tooltip = ENG_revenge_of_finland_tooltip
-			FIN = {#效果还没写
-				country_event = St_eng.0017
-			}
 		}
 	}
 
@@ -3630,7 +3619,9 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
-			country_event = St_eng.0017
+			GER = {			
+				country_event = St_eng.0020
+		}
 
 		}
 	}
@@ -3651,6 +3642,9 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			ITA = {
+			country_event =	St_eng.0023
+			}
 		}
 	}
 	
