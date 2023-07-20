@@ -417,3 +417,168 @@ country_event = {#屈服-拒绝
 	}
     
 }
+
+country_event = {#邀请芬兰
+	id = St_eng.0017
+	title = St_eng.0017.t
+	desc = St_eng.0017.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0017.a
+        ai_chance = {
+            base = 99
+        }
+		ENG = {
+            country_event = St_eng.0018
+        }
+	}
+	option = { 
+		name = St_eng.0017.b
+        ai_chance = {
+            base = 1
+        }
+		ENG = {
+            country_event = St_eng.0019
+        }
+	}
+    
+}
+country_event = {#邀请芬兰-接受
+	id = St_eng.0018
+	title = St_eng.0018.t
+	desc = St_eng.0018.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0018.a
+        ai_chance = {
+            base = 10
+        }
+	}
+    
+}
+country_event = {#邀请芬兰-拒绝
+	id = St_eng.0019
+	title = St_eng.0019.t
+	desc = St_eng.0019.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0019.a
+        ai_chance = {
+            base = 10
+        }
+	}
+    
+}
+
+country_event = {#德国谈判
+	id = St_eng.0020
+	title = St_eng.0020.t
+	desc = St_eng.0020.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0020.a
+        ai_chance = {
+            base = 99
+        }
+		ENG = {
+            country_event = St_eng.0021
+			annex_country = {
+				target = FRA
+			}
+			annex_country = {
+				target = BEL
+			}
+			annex_country = {
+				target = HOL
+			}
+			annex_country = {
+				target = LUX
+			}
+        }
+		
+	}
+	option = { 
+		name = St_eng.0017.b
+        ai_chance = {
+            base = 1
+        }
+		ENG = {
+            country_event = St_eng.0022
+        }
+	}
+    
+}
+country_event = {#德国谈判-同意
+	id = St_eng.0021
+	title = St_eng.0021.t
+	desc = St_eng.0021.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0021.a
+        ai_chance = {
+            base = 10
+        }
+		28 = {
+			transfer_state_to = GER
+		}
+		18 = { transfer_state_to = FRA }
+		22 = { transfer_state_to = FRA }
+		20 = { transfer_state_to = FRA }
+		32 = { transfer_state_to = FRA }
+		21 = { transfer_state_to = FRA }
+		851 = { transfer_state_to = FRA }
+		17 = { transfer_state_to = FRA }
+		27 = { transfer_state_to = FRA }
+		26 = { transfer_state_to = FRA }
+		735 = { transfer_state_to = FRA }
+		FRA = {
+			set_capital = 26
+		}
+		puppet = FRA
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = HOL
+					is_core_of = LUX
+					is_core_of = BEL
+				}
+				transfer_state_to = GER
+			}
+		}
+		
+
+
+	}
+    
+}
+country_event = {#德国谈判-拒绝
+	id = St_eng.0022
+	title = St_eng.0022.t
+	desc = St_eng.0022.d
+    picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = St_eng.0022.a
+        ai_chance = {
+            base = 10
+        }
+	}
+    
+}
