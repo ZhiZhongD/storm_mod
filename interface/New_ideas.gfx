@@ -204,28 +204,28 @@ spriteTypes={
 		texturefile="gfx/interface/ideas/RAU_revolution_out.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_Union_tank_factory"
+		texturefile="gfx/interface/ideas/Union_tank_factory.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_marx_industry"
+		texturefile="gfx/interface/ideas/marx_industry.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_generic_army"
+		texturefile="gfx/interface/ideas/generic_army.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_japanese_influence_3"
+		texturefile="gfx/interface/ideas/japanese_influence_3.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_japanese_influence_1"
+		texturefile="gfx/interface/ideas/japanese_influence_1.png"
     }
 	spriteType = {
-	    name="GFX_idea_"
-		texturefile="gfx/interface/ideas/.png"
+	    name="GFX_idea_industrial_protectionism"
+		texturefile="gfx/interface/ideas/industrial_protectionism.png"
     }
 	spriteType = {
 	    name="GFX_idea_"

@@ -734,7 +734,7 @@ characters={
 	}
 
 	PRC_deng_ye_peng={
-		name=PRC_deng_ye_peng
+		name=PRC_deng_ye_peng_1
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_1"

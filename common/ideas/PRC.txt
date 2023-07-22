@@ -1,0 +1,138 @@
+ideas = {
+	tank_manufacturer = {
+	
+		designer = yes
+		SOV_tank_factory = {
+			picture = Union_tank_factory
+						
+			research_bonus = {
+				armor = 0.1
+			}
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				RAU={has_completed_focus = RAU_comintern_scientific_research_cooperation}
+			}
+			#traits = { d1 }
+			
+			modifier = {
+			}
+			equipment_bonus = {
+				light_tank_chassis = {
+				build_cost_ic = -0.1
+			}
+			light_tank_artillery_chassis = {
+				build_cost_ic = -0.1
+			}
+			light_tank_destroyer_chassis = {
+				build_cost_ic = -0.1
+			}
+			light_tank_aa_chassis = {
+				build_cost_ic = -0.1
+			}
+			}
+		}
+	}
+	industrial_concern = {
+		designer = yes
+		RAU_revolutionary_factory = {
+			picture = marx_industry
+			#picture = GFX_idea_Union_tank_factory
+						
+			research_bonus = {
+				electronics = 0.05
+				industry = 0.1
+			}
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				has_completed_focus = PRC_national_heavy_industry_group
+			}
+			#traits = { d1 }
+			
+			modifier = {
+			}
+		}
+		PRC_national_pioneer_enterprise = {
+			picture = industrial_protectionism
+			#picture = GFX_idea_Union_tank_factory
+
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				has_completed_focus = PRC_enterprise_law
+			}
+			#traits = { d1 }
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+	}
+	naval_manufacturer = {
+		designer = yes
+		Union_naval_factory = {
+			picture = GEN_navy_decisive_bat
+						
+			equipment_bonus = {
+				ship_hull_carrier = {
+					carrier_size = 2
+					naval_range = 0.15
+				}
+				ship_hull_heavy = {
+					lg_attack = 0.15
+					hg_attack = 0.15
+					naval_range = 0.15
+				}
+				}
+				research_bonus = {
+					naval_equipment = 0.15
+				}
+			allowed = {
+				original_tag = PRC
+			}
+			available = {
+				has_completed_focus = PRC_national_heavy_industry_group
+			}
+		}
+	}
+	materiel_manufacturer = {		
+		designer = yes
+		national_materiel_firm = {
+			picture = generic_army
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			equipment_bonus = {
+			infantry_equipment = {
+				defense =0.12
+				breakthrough = 0.12
+				ap_attack =0.12
+			}
+			}
+			traits = { e1 }
+			
+			modifier = {
+			}
+		}
+	}
+	aircraft_manufacturer = {
+		designer = yes
+		national_aircraft_firm = {
+			picture = generic_airforce
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_defence = 0.1
+					maximum_speed = 0.05
+					reliability = 0.05
+				}
+			}
+			research_bonus = {
+				air_equipment = 0.05
+			}
+		}
+	}
+}

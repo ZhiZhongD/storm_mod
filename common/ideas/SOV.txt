@@ -4457,7 +4457,6 @@ ideas = {
 							tag = MAN
 						}
 					}
-					has_completed_focus = CHI_hire_soviet_designer
 					NOT = {
 						has_war_with = SOV
 					}

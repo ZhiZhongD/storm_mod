@@ -26,7 +26,7 @@ SOV_mass_armament_production:0"大规模军备生产"
 SOV_culture_low:0"文化专制"
 SOV_washing:0"大清洗运动"
 
-
+FNG_defend_japan:"抗日热情"
 BAU_help_from_uk_fra_idea:"英法支持"
 BAU_help_from_japan_idea:"日本支持"
 RAU_defence:"重兵堡垒群"
@@ -116,18 +116,11 @@ PRC_low_ager_nation:0"落后农业国"
 PRC_attack_GXC:0"西征讨桂"
 PRC_LKMT_lead:0"国民党左派主导"
 PRC_CPC_lead:0"共产党主导"
-PRC_popular_army"0"人民军队"
-FNG_defend_japan:0"抗日热情"
-
-
-
-
-
-
-
-
-
-
-
-
-
+PRC_popular_army:"人民军队"
+PRC_defeatism_prevails:"失败主义盛行"
+SOV_tank_factory:"苏联坦克援助集团"
+RAU_revolutionary_factory:"澳联盟革命援助工厂"
+PRC_national_pioneer_enterprise:"民族先锋企业"
+Union_naval_factory:"澳联盟海军工厂"
+national_materiel_firm:"国家军备企业"
+national_aircraft_firm:"国家飞机企业"

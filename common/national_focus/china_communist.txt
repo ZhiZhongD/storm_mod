@@ -157,8 +157,8 @@ focus_tree = {
 		relative_position_id= PRC_cut_rent_and_interest_rates
 		prerequisite = { focus = PRC_agrarian_revolution focus = PRC_cut_rent_and_interest_rates }
 		completion_reward = {
-			remove_ideas= PRC_problem_with_LKMT_and_CPC
 			add_political_power=250
+			remove_ideas= PRC_problem_with_LKMT_and_CPC
 		}
 	}
 	focus = {
@@ -505,7 +505,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = PRC_popular_front_third_meeting
-		cost = 5
+		cost = 2.9
 		
 		ai_will_do = {
 			factor = 1
@@ -584,6 +584,18 @@ focus_tree = {
 		relative_position_id= PRC_popular_front_third_meeting
 		completion_reward={
 			add_war_support=0.05
+		}
+	}
+	focus={
+		id=PRC_Air_assistance_from_the_Soviet_Union
+		icon=GFX_goal_generic_build_airforce
+		x=0
+		y=1
+		cost=5
+		prerequisite={focus= PRC_simple_aircraft_production_line}
+		relative_position_id= PRC_simple_aircraft_production_line
+		completion_reward={
+			add_ideas=CHI_camco_1
 		}
 	}
 	focus={
@@ -746,6 +758,11 @@ focus_tree = {
 			custom_effect_tooltip=PRC_tooltip_army_air_corps
 			add_to_variable={PRC.PRC_pra_air_cas_present_factor=0.05}
 			add_to_variable={PRC.PRC_pra_army_bonus_air_superiority_factor=0.05}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
 		}
 	}
 	focus={
@@ -757,6 +774,11 @@ focus_tree = {
 		y=2
 		cost=5
 		completion_reward={
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe_1
+				amount = 500
+				producer = SOV
+			}
 			add_ideas=PRC_peoples_air_army
 		}
 	}
@@ -918,19 +940,6 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
-		id = PRC_help_of_military_technology_from_USSR
-		icon = GFX_focus_chi_mission_to_the_soviet_union
-		prerequisite = { focus = PRC_peoples_revolutionary_army }
-		x = -5
-		y = 1
-		relative_position_id = PRC_peoples_revolutionary_army 
-		cost = 10
-		completion_reward = {
-			show_ideas_tooltip = SOV_morozov_design_bureau
-		}
-	}
-	
 	focus={
 		id=PRC_expand_the_Huangpu_military_academy
 		icon=GFX_focus_chi_whampoa_military_academy
@@ -1192,6 +1201,7 @@ focus_tree = {
 		y=2
 		cost=5
 		completion_reward={
+			add_offsite_building = { type = industrial_complex level = 1 }
 			add_to_variable = { PRC.PRC_national_consumer_goods_factor = -0.02 }
 			add_to_variable = { PRC.PRC_national_industry_production_speed_buildings_factor = 0.03 }
 			custom_effect_tooltip=PRC_tooltip_industrial_and_commercial_subsidies
@@ -1377,7 +1387,7 @@ focus_tree = {
 			NOT={ has_war_with = CHI }
 		}
 		ai_will_do = {
-		  factor = 1
+		  factor = 100
 		}
 		bypass={
 			NOT={country_exists=HNA}
@@ -1395,7 +1405,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		ai_will_do = {
-		  factor = 1
+		  factor = 100
 		}
 		available = {
 			NOT={ has_war_with = CHI }
@@ -1426,8 +1436,6 @@ focus_tree = {
 			create_faction = "中华民族阵线"
 				add_to_faction = CHI
 				add_to_faction = SHX
-				add_to_faction = YUN
-				add_to_faction = GXC
 				add_to_faction = SIC
 				add_to_faction = SIK
 				add_to_faction = TIB
@@ -1523,9 +1531,7 @@ focus_tree = {
 		cost=5
 		completion_reward={
 			add_political_power=100
-			add_war_support=0.1
-			add_stability=0.15
-			
+			remove_ideas=PRC_defeatism_prevails
 		}
 	}
 	focus={
@@ -1922,6 +1928,7 @@ focus_tree = {
 		x=-2
 		y=1
 		cost=5
+		ai_will_do={factor=100}
 		completion_reward={
 			set_politics = { ruling_party = communism elections_allowed = no }
 			set_party_name = { ideology = communism long_name = 中国共产党 name = 中国共产党 }
@@ -1950,6 +1957,7 @@ focus_tree = {
 		x=1
 		y=1
 		cost=1
+		ai_will_do={factor=100}
 		completion_reward={
 			add_political_power=100
 			add_stability=-0.05
