@@ -39,6 +39,9 @@ autonomy_state = {#帝国自由领
 	}
 
 	allowed = {
-	#	has_dlc = "La Resistance"#要尼玛的dlc
+			OR = {
+				is_subject = no
+				has_autonomy_state = empire_freedom_state
+			}		
 		}
 }

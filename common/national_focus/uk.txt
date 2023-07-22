@@ -2197,8 +2197,8 @@ focus_tree = {
 			#换国策树（如有）
 			#加民族精神（上缴工厂，贸易资源buff）
 		}
-		#英国贸易民族精神 
-		}
+		add_ideas = ENG_imperial_preference
+	}
 	}
 
 	focus = {#开发加拿大
@@ -2287,7 +2287,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			#add_ideas = 
+			add_ideas = ENG_canadian_farmland 
 		}
 	}
 	focus = {#加拿大雪地训练营
@@ -2314,7 +2314,11 @@ focus_tree = {
 	focus = {#缓解大萧条
 		id = uk_relief_from_the_great_depression
 		available = {
-		
+		USA = {
+			has_idea = great_depression
+			has_idea = great_depression_2
+			has_idea = great_depression_3
+		}
 		}
 		
 		prerequisite = { 

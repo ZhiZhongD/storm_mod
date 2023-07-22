@@ -31,7 +31,7 @@ ideas = {
 		modifier = {
 			consumer_goods_factor = -0.01
 			production_speed_industrial_complex_factor = 0.05
-			production_speed_infrastructure_factor = 0.1
+			production_speed_infrastructure_factor = 0.05
 			weekly_manpower = -1000
 			monthly_population = -5
 			army_core_attack_factor = 0.1
@@ -67,9 +67,9 @@ ideas = {
 			weekly_manpower = -1250
 			monthly_population = -10
 			army_core_attack_factor = 0.1
-			army_attack_factor = -0.15
+			army_attack_factor = -0.1
 			army_core_defence_factor = 0.1
-			army_defence_factor = -0.15
+			army_defence_factor = -0.1
 			conscription = 0.5
 
 			
@@ -93,14 +93,14 @@ ideas = {
 		
 		modifier = {
 			consumer_goods_factor = -0.03
-			production_speed_industrial_complex_factor = 0.1
-			production_speed_infrastructure_factor = 0.1
+			production_speed_industrial_complex_factor = 0.15
+			production_speed_infrastructure_factor = 0.15
 			weekly_manpower = -1500
 			monthly_population = -15
 			army_core_attack_factor = 0.1
-			army_attack_factor = -0.15
+			army_attack_factor = -0.05
 			army_core_defence_factor = 0.1
-			army_defence_factor = -0.15
+			army_defence_factor = -0.05
 			army_infantry_defence_factor = 0.05
 			conscription = 0.75
 
@@ -261,7 +261,7 @@ ideas = {
 	}
 	ENG_trade_ita_of_ita = {#意大利投资-意大利
 		allowed = {
-			original_tag = GER
+			original_tag = ITA
 		}
 		allowed_civil_war = {
 		always = yes
@@ -272,6 +272,104 @@ ideas = {
 			production_speed_buildings_factor = 0.2
 		}		
 	}
+	ENG_imperial_preference_1 = {#帝国特惠体系1
+		allowed = {
+			original_tag = GER
+		}
+		allowed_civil_war = {
+		always = yes
+		}
+		picture = can_wartime_prices_and_trade_board
+		modifier = {
+			consumer_goods_factor = 0.01
+			trade_laws_cost_factor = -0.5
+			research_speed_factor =0.05
+			faction_trade_opinion_factor = 0.5
+			production_speed_buildings_factor =0.1
+		}		
+	}
+	ENG_imperial_preference_2 = {#帝国特惠体系2
+	allowed = {
+		original_tag = ENG
+	}
+	allowed_civil_war = {
+	always = yes
+	}
+	picture = can_wartime_prices_and_trade_board
+	modifier = {
+		trade_laws_cost_factor = -0.5
+		research_speed_factor =0.05
+		faction_trade_opinion_factor = 0.5
+		production_speed_buildings_factor =0.1
+	}		
+}
+	ENG_canadian_farmland = {#加拿大小麦
+	allowed = {
+		original_tag = ENG
+	}
+	allowed_civil_war = {
+	always = yes
+	}
+	picture = can_wartime_prices_and_trade_board
+	modifier = {
+		supply_consumption_factor = -0.1
+		consumer_goods_factor = -0.01
+	}		
+}
+	ENG_relief_the_great_depression_USA = {#缓解大萧条
+	allowed = {
+		original_tag = USA
+	}
+	allowed_civil_war = {
+	always = yes
+	}
+	picture = can_wartime_prices_and_trade_board
+	modifier = {
+		industrial_capacity_factory = -0.25
+		industrial_capacity_dockyard = -0.25
+		consumer_goods_factor = -0.1
+	}		
+}
+	ENG_relief_the_great_depression_ENG1 = {#缓解大萧条
+	allowed = {
+		original_tag = ENG
+	}
+	allowed_civil_war = {
+	always = yes
+	}
+	picture = can_wartime_prices_and_trade_board
+	modifier = {
+		industrial_capacity_factory = 0.25
+		industrial_capacity_dockyard = 0.25
+		consumer_goods_factor = 0.1
+	}		
+}
+ENG_relief_the_great_depression_CAN = {#缓解大萧条
+allowed = {
+	original_tag = CAN
+}
+allowed_civil_war = {
+always = yes
+}
+picture = can_wartime_prices_and_trade_board
+modifier = {
+	production_factory_efficiency_gain_factor = 0.1
+	consumer_goods_factor = 0.05
+}		
+}
+ENG_relief_the_great_depression_ENG2 = {#缓解大萧条
+allowed = {
+	original_tag = ENG
+}
+allowed_civil_war = {
+always = yes
+}
+picture = can_wartime_prices_and_trade_board
+modifier = {
+	production_factory_efficiency_gain_factor = -0.1
+	consumer_goods_factor = -0.05
+}		
+}
 		george_v = {
 			
 			allowed = {
