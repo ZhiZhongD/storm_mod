@@ -7,7 +7,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			has_completed_focus=SOV_development_aid_for_eastern_allies
 			NOT={has_completed_focus=SOV_war_measures_in_the_east}
 		}
@@ -30,7 +29,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			has_completed_focus=SOV_war_measures_in_the_east
 			NOT={has_completed_focus=SOV_annex_tannu_tuva}
 		}
@@ -53,7 +51,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			has_completed_focus=SOV_war_measures_in_the_east
 			NOT={has_completed_focus=SOV_fortify_mongolian_border}
 		}
@@ -72,17 +69,68 @@ SOV_comintern_focus = {
 
 	complete_SOV_send_military_advisors_to_spain={
 		days_remove = 7
+		ai_will_do={factor=100}
 
 		cost=7
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			NOT={has_completed_focus=SOV_send_military_advisors_to_spain}
 		}
 
 		allowed={original_tag=SOV}
 		
-		available={has_completed_focus=SOV_the_comintern}
+		available={
+			has_completed_focus=SOV_the_comintern
+			has_civil_war = no
+			OR = {
+				has_completed_focus = SOV_new_leninism
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPR_scw_in_progress = yes
+				if = {
+					limit = {
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+					custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_country_exist_tt
+					    country_exists = SPR
+				    }
+				    custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_at_peace_tt
+						NOT = { has_war_with = SPR }
+				    }
+				}
+				else = {
+					if = {
+						limit = {
+							has_completed_focus = SOV_covert_support_for_spanish_poum
+						}
+						country_exists = SPC
+						NOT = { has_war_with = SPC }
+					}
+					else = {
+						country_exists = SPD
+						NOT = { has_war_with = SPD }
+					}
+				}
+			}
+			else = {
+				any_other_country = {
+					original_tag = SPR
+					has_civil_war = yes
+					NOT = { has_war_with = ROOT }
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+				}
+			}
+			has_government = communism
+			is_subject = no
+		}
 
 		fire_only_once=yes
 
@@ -98,7 +146,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			NOT={has_completed_focus=SOV_policy_of_collective_security}
 		}
 
@@ -122,7 +169,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			has_completed_focus=SOV_policy_of_collective_security
 			NOT={has_completed_focus=SOV_anti_fascist_policies}
 		}
@@ -148,7 +194,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			has_completed_focus=SOV_anti_fascist_policies
 			NOT={has_completed_focus=SOV_seek_a_defense_pact_with_the_allies}
 		}
@@ -174,7 +219,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_seek_a_defense_pact_with_the_allies
 			has_completed_focus=SOV_face_the_future
 			NOT={has_completed_focus=SOV_the_khakimov_proposal}
 		}
@@ -199,7 +243,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			has_completed_focus=SOV_seek_a_defense_pact_with_the_allies
 			NOT={has_completed_focus=SOV_eradicate_western_fascism}
 		}
@@ -224,7 +267,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			NOT={has_completed_focus=SOV_policy_of_individual_security}
 		}
 
@@ -248,7 +290,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			has_completed_focus=SOV_policy_of_individual_security
 			NOT={has_completed_focus=SOV_approach_germany}
 		}
@@ -273,7 +314,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			has_completed_focus=SOV_approach_germany
 			NOT={has_completed_focus=SOV_liberation_of_the_european_proletariat}
 		}
@@ -298,7 +338,6 @@ SOV_comintern_focus = {
 		cost=35
 
 		visible={
-			has_completed_focus=SOV_face_the_future
 			NOT={has_completed_focus=SOV_anti_capitalist_policies}
 		}
 
@@ -313,32 +352,6 @@ SOV_comintern_focus = {
 		}
 
 	}
-
-	complete_SOV_recover_alaska={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			has_completed_focus=SOV_anti_capitalist_policies
-			NOT={has_completed_focus=SOV_recover_alaska}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			has_completed_focus=SOV_anti_capitalist_policies
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_recover_alaska
-		}
-
-	}
-
 	complete_SOV_the_fight_for_the_pacific={
 
 		days_remove = 35
@@ -435,33 +448,6 @@ SOV_comintern_focus = {
 		}
 
 	}
-
-	complete_SOV_claims_in_baltic={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			has_completed_focus=SOV_baltic_security
-			NOT={has_completed_focus=SOV_claims_in_baltic}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			NOT={has_completed_focus=SOV_respect_baltic_self_determination}
-			has_completed_focus=SOV_baltic_security
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_claims_in_baltic
-		}
-
-	}
-
 	complete_SOV_secure_leningrad={
 
 		days_remove = 35
@@ -598,57 +584,6 @@ SOV_comintern_focus = {
 		}
 
 	}
-
-	complete_SOV_claim_on_bessarabia={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			has_completed_focus=SOV_claims_on_poland
-			NOT={has_completed_focus=SOV_claim_on_bessarabia}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			has_completed_focus=SOV_claims_on_poland
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_claim_on_bessarabia
-		}
-
-	}
-
-	complete_SOV_demand_balkan_submission={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			has_completed_focus=SOV_claim_on_bessarabia
-			NOT={has_completed_focus=SOV_demand_balkan_submission}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			has_completed_focus=SOV_claim_on_bessarabia
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_demand_balkan_submission
-		}
-
-	}
-
 	complete_SOV_seek_balkan_cooperation={
 
 		days_remove = 35
@@ -695,33 +630,6 @@ SOV_comintern_focus = {
 		}
 
 	}
-
-	complete_SOV_the_southern_thrust={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			has_completed_focus=SOV_middle_east_diplomacy
-			NOT={has_completed_focus=SOV_the_southern_thrust}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			NOT={has_completed_focus=complete_national_focus=SOV_support_afghan_ideology}
-			has_completed_focus=SOV_middle_east_diplomacy
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_the_southern_thrust
-		}
-
-	}
-
 	complete_SOV_support_afghan_ideology={
 
 		days_remove = 35
@@ -747,33 +655,6 @@ SOV_comintern_focus = {
 		}
 
 	}
-
-	complete_SOV_preemptive_invasion_of_iran={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			has_completed_focus=SOV_support_afghan_ideology
-			NOT={has_completed_focus=SOV_preemptive_invasion_of_iran}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			any_enemy_country = { is_major = yes }
-			has_completed_focus=SOV_support_afghan_ideology
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_preemptive_invasion_of_iran
-		}
-
-	}
-
 	complete_SOV_the_threat_from_the_land_of_the_rising_sun={
 
 		days_remove = 35
@@ -797,34 +678,6 @@ SOV_comintern_focus = {
 		}
 
 	}
-
-	complete_SOV_the_gobi_gambit={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			has_completed_focus=SOV_the_threat_from_the_land_of_the_rising_sun
-			NOT={has_completed_focus=SOV_the_gobi_gambit}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			NOT={has_completed_focus=SOV_two_red_flags}
-			NOT={has_completed_focus=SOV_support_the_kuomintang}
-			has_completed_focus=SOV_the_threat_from_the_land_of_the_rising_sun
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_the_gobi_gambit
-		}
-
-	}
-
 	complete_SOV_two_red_flags={
 
 		days_remove = 35
@@ -851,67 +704,6 @@ SOV_comintern_focus = {
 		}
 
 	}
-
-	complete_SOV_support_the_kuomintang={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_the_threat_from_the_land_of_the_rising_sun
-			has_completed_focus=SOV_face_the_future
-			NOT={has_completed_focus=SOV_support_the_kuomintang}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			NOT={has_completed_focus=SOV_two_red_flags}
-			NOT={has_completed_focus=complete_SOV_the_gobi_gambit}
-			has_completed_focus=SOV_the_threat_from_the_land_of_the_rising_sun
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_support_the_kuomintang
-		}
-
-	}
-
-	complete_SOV_intervention_in_china={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			NOT={has_completed_focus=SOV_intervention_in_china}
-			OR={
-				has_completed_focus=SOV_support_the_kuomintang
-				has_completed_focus=SOV_two_red_flags
-				has_completed_focus=SOV_the_gobi_gambit
-			}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			OR={
-				has_completed_focus=SOV_support_the_kuomintang
-				has_completed_focus=SOV_two_red_flags
-				has_completed_focus=SOV_the_gobi_gambit
-			}
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_intervention_in_china
-		}
-
-	}
-
 	complete_SOV_prepare_a_war_with_japan={
 
 		days_remove = 35
@@ -945,7 +737,7 @@ SOV_comintern_focus = {
 
 	}
 
-	complete_SOV_end_the_khalkhin_gol_conflict={
+	complete_SOV_end_the_khalkhin_gol_conflict={	
 
 		days_remove = 35
 		cost=35
@@ -996,82 +788,6 @@ SOV_comintern_focus = {
 		}
 
 	}
-
-	complete_SOV_reconcile_japan={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			NOT={has_completed_focus=SOV_reconcile_japan}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			NOT={has_completed_focus=SOV_the_threat_from_the_land_of_the_rising_sun}
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_reconcile_japan
-		}
-
-	}
-	complete_SOV_spheres_of_influence_in_china={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			has_completed_focus=SOV_SOV_reconcile_japan
-			NOT={has_completed_focus=SOV_spheres_of_influence_in_china}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			has_completed_focus=SOV_SOV_reconcile_japan
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_spheres_of_influence_in_china
-		}
-
-	}
-    
-	complete_SOV_soviet_japanese_pact_against_usa_focus={
-
-		days_remove = 35
-		cost=35
-
-		visible={
-			has_completed_focus=SOV_face_the_future
-			has_completed_focus=SOV_SOV_reconcile_japan
-			NOT={has_completed_focus=SOV_soviet_japanese_pact_against_usa_focus}
-		}
-
-		allowed={original_tag=SOV}
-		
-		available={
-			has_completed_focus=SOV_SOV_reconcile_japan
-			has_completed_focus=SOV_the_comintern}
-
-		fire_only_once=yes
-
-		remove_effect={
-			complete_national_focus=SOV_soviet_japanese_pact_against_usa_focus
-		}
-
-	}
-
-}
-
 SOV_addressing_internal_affairs_focus={
 
 	complete_SOV_nkvd_primacy={

@@ -2413,7 +2413,7 @@
 
 		cost = 5
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 		relative_position_id=AST_establish_advisory_war_council
 		prerequisite={focus=AST_establish_advisory_war_council}

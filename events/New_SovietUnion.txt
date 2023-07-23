@@ -47,28 +47,7 @@ country_event = {
 		complete_national_focus=SOV_new_leninism
 	}
 }
-country_event = {
-	id = soviet.1004
-	title = soviet.1004.t
-	desc = soviet.1004.d
-	trigger={
-		tag=SOV
-	}
-	
-	fire_only_once = yes
 
-	option = { 
-		name = soviet.1004.a
-		ai_will_do={factor=10}
-		country_event=soviet.1000
-	}
-	option = {
-		name = soviet.1004.b
-		ai_will_do={factor=1}
-		country_event=soviet.1001
-		custom_effect_tooltip=SOV_tooltip_lenin_died
-	}
-}
 country_event = {
 	id = soviet.1005
 	title = soviet.1005.t

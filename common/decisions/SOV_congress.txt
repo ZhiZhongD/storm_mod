@@ -1,9 +1,9 @@
 SOV_factional_struggle={
 	SOV_educate_stalinist = {
-		ai_will_do={factor=10}
+		ai_will_do={factor=100}
 		visible = {
 			tag=SOV
-			has_completed_focus=SOV_special_meeting
+ 
 		}
 		icon = GFX_generic_political_discourse
 		modifier = {
@@ -16,10 +16,10 @@ SOV_factional_struggle={
 		days_remove = 40
 	}
 	SOV_educate_trotzkyist = {
-		ai_will_do={factor=10}
+		ai_will_do={factor=100}
 		visible = {
 			tag=SOV
-			has_completed_focus=SOV_special_meeting
+ 
 		}
 		icon = GFX_generic_political_discourse
 		modifier = {
@@ -32,10 +32,10 @@ SOV_factional_struggle={
 		days_remove = 40
 	}
 	SOV_educate_bukharinist = {
-		ai_will_do={factor=10}
+		ai_will_do={factor=100}
 		visible = {
 			tag=SOV
-			has_completed_focus=SOV_special_meeting
+ 
 		}
 		icon = GFX_generic_political_discourse
 		modifier = {
@@ -48,10 +48,10 @@ SOV_factional_struggle={
 		days_remove = 40
 	}
 	SOV_help_unionist = {
-		ai_will_do={factor=10}
+		ai_will_do={factor=100}
 		visible = {
 			tag=SOV
-			has_completed_focus=SOV_special_meeting
+ 
 		}
 		icon = GFX_generic_political_discourse
 		modifier = {

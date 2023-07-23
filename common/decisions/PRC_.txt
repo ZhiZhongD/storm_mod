@@ -1,11 +1,29 @@
 PRC_government = {
+	merging_Fujian={
+		days_remove = 56
+
+		cost=30
+		ai_will_do={factor=100}
+		allowed={original_tag=PRC}
+		
+		available={
+			has_completed_focus=PRC_a_unified_peoples_government
+		}
+
+		fire_only_once=yes
+
+		remove_effect={
+			annex_country = { target = FJA transfer_troops = yes }
+		}
+
+	}
 
 
 	build_gov_in_guangxi={
 		days_remove = 56
 
 		cost=30
-
+		ai_will_do={factor=100}
 		visible={
 			controls_state = 594
 			controls_state = 922
@@ -31,7 +49,7 @@ PRC_government = {
 	}
 	build_gov_in_jiangxi={
 		days_remove = 56
-
+		ai_will_do={factor=100}
 		cost=30
 
 		visible={
@@ -56,7 +74,7 @@ PRC_government = {
 	}
 	build_gov_in_anhui={
 		days_remove = 56
-
+		ai_will_do={factor=100}
 		cost=30
 
 		visible={
@@ -84,6 +102,7 @@ PRC_government = {
 	}
 	build_gov_in_jiangsu={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -112,6 +131,7 @@ PRC_government = {
 	}
 	build_gov_in_zhejiang={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -140,6 +160,7 @@ PRC_government = {
 	}
 	build_gov_in_shandong={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -168,6 +189,7 @@ PRC_government = {
 	}
 	build_gov_in_guizhou={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -196,6 +218,7 @@ PRC_government = {
 	}
 	build_gov_in_yunnan={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -224,6 +247,7 @@ PRC_government = {
 	}
 	build_gov_in_wuhan={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -249,6 +273,7 @@ PRC_government = {
 	}
 	build_gov_in_xian={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -274,6 +299,7 @@ PRC_government = {
 	}
 	build_gov_in_henan={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -299,6 +325,7 @@ PRC_government = {
 	}
 	build_gov_in_hebei={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -324,6 +351,7 @@ PRC_government = {
 	}
 	build_gov_in_shanxi={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -349,6 +377,7 @@ PRC_government = {
 	}
 	build_gov_in_huangtu={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -374,6 +403,7 @@ PRC_government = {
 	}
 	build_gov_in_mengjiang={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -399,6 +429,7 @@ PRC_government = {
 	}
 	build_gov_in_beijing={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -421,6 +452,7 @@ PRC_government = {
 	}
 	build_gov_in_tianjing={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -443,6 +475,7 @@ PRC_government = {
 	}
 	build_gov_in_shannxi={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -465,6 +498,7 @@ PRC_government = {
 	}
 	build_gov_in_hainan={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -487,6 +521,7 @@ PRC_government = {
 	}
 	build_gov_in_changde={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -512,6 +547,7 @@ PRC_government = {
 	}
 	build_gov_in_xibei={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -552,6 +588,7 @@ PRC_government = {
 	}
 	build_gov_in_xinjiang={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -592,6 +629,7 @@ PRC_government = {
 	}
 	build_gov_in_xizang={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -627,6 +665,7 @@ PRC_government = {
 	}
 	build_gov_in_sichuang={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -664,6 +703,7 @@ PRC_government = {
 	}
 	build_gov_in_hunan={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -689,6 +729,7 @@ PRC_government = {
 	}
 	build_gov_in_dongbei={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -741,6 +782,7 @@ PRC_government = {
 	}
 	build_gov_in_taiwan={
 		days_remove = 56
+		ai_will_do={factor=100}
 
 		cost=30
 
@@ -853,7 +895,7 @@ PRC_war={
 		available={
 			country_exists = SIC
 			NOT={country_exists = GXC}
-			date>1939.1.1
+			date>1939.8.1
 			NOT={is_in_faction_with = SIC}
 		}
 
@@ -877,7 +919,7 @@ PRC_war={
 		available={
 			country_exists = SHX
 			NOT={country_exists = GXC}
-			date>1939.1.1
+			date>1939.8.1
 			NOT={is_in_faction_with = SHX}
 		}
 
@@ -904,7 +946,7 @@ PRC_war={
 		available={
 			country_exists = XSM
 			NOT={country_exists = GXC}
-			date>1939.1.1
+			date>1939.8.1
 			NOT={is_in_faction_with = XSM}
 		}
 
@@ -931,7 +973,7 @@ PRC_war={
 		available={
 			country_exists = TIB
 			NOT={country_exists = GXC}
-			date>1939.1.1
+			date>1939.8.1
 			NOT={is_in_faction_with = TIB}
 		}
 		visible={
@@ -958,7 +1000,7 @@ PRC_war={
 		available={
 			country_exists = SIK
 			NOT={country_exists = GXC}
-			date>1939.1.1
+			date>1939.8.1
 			NOT={is_in_faction_with = SIK}
 		}
 
@@ -996,4 +1038,5 @@ PRC_war={
 
 	}
 
+}
 }

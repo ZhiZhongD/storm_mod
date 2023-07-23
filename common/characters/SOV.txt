@@ -13,39 +13,7 @@ characters = {
                                                                                                                   
 
 
-
-	SOV_iosif_stalin = {
-		name = SOV_iosif_stalin
-		portraits = {
-			civilian = {
-				large = GFX_portrait_SOV_iosif_stalin
-			}
-			army = {
-				large = GFX_portrait_SOV_iosif_stalin
-				small = GFX_portrait_SOV_iosif_stalin_small
-			}
-		}
-		country_leader = {
-			ideology = stalinism
-			traits = { stalin_heart_of_steel }
-			expire = "1953.3.1.1"
-			id = -1
-		}
-		advisor={
-			slot=political_advisor
-			idea_token=SOV_iosif_stalin
-			allowed={
-				original_tag=SOV
-			}
-			available={
-				has_completed_focus=SOV_teach_stalin
-			}
-			traits = {
-				steel_statesman
-			}
-		}
-	}
-	SOV_lenin = {
+    SOV_lenin = {
 		name = SOV_lenin
 		portraits = {
 			civilian = {
@@ -57,6 +25,30 @@ characters = {
 			traits = { revolution_teacher }
 			expire = "1945.3.1.1"
 			id = -1
+		}
+	}
+	SOV_iosif_stalin = {
+		name = SOV_iosif_stalin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_iosif_stalin
+			}
+			army = {
+				large = GFX_portrait_SOV_iosif_stalin
+				small = GFX_portrait_SOV_iosif_stalin_small
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=SOV_iosif_stalin
+			allowed={
+				original_tag=SOV
+			}
+			available={
+			}
+			traits = {
+				steel_statesman
+			}
 		}
 	}
 
@@ -217,12 +209,7 @@ characters = {
 			}
 			available = {
 				has_completed_focus = SOV_positive_heroism
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				mass_assault_expert
@@ -269,12 +256,7 @@ characters = {
 			}
 			available = {
 				has_completed_focus = SOV_positive_heroism
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				army_armored_3
@@ -322,12 +304,7 @@ characters = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				army_regrouping_2
@@ -418,12 +395,7 @@ characters = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				army_concealment_2
@@ -470,12 +442,7 @@ characters = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				army_chief_reform_2
@@ -523,12 +490,7 @@ characters = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				army_chief_drill_1
@@ -568,12 +530,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				mass_assault_expert
@@ -1148,12 +1105,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = { naval_theorist }
 		}
@@ -1197,12 +1149,7 @@ characters = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				navy_capital_ship_2
@@ -1252,12 +1199,7 @@ characters = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				navy_amphibious_assault_2
@@ -1307,12 +1249,7 @@ characters = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				navy_submarine_2
@@ -1934,12 +1871,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}				
 			traits = {
 				army_chief_drill_1
@@ -2004,7 +1936,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 3
 			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
+				NOT = { has_character_flag =  }
 				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 			}
 		}
@@ -2113,12 +2045,7 @@ characters = {
 				}
 			}
 			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				popular_figurehead 
@@ -2162,12 +2089,7 @@ characters = {
 						has_autonomy_state = autonomy_supervised_state
 					}
 				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				political_commissar 
@@ -2478,12 +2400,7 @@ characters = {
 			}
 			available = {
 				has_intelligence_agency = yes
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			traits = {
 				head_of_intelligence 
@@ -2596,39 +2513,9 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-					#修改
-					has_completed_focus=SOV_recall_trotsky
-				}
-				OR = {
-					has_completed_focus = SOV_integrate_smirnovs_bloc
-					has_completed_focus = SOV_return_democracy_to_the_party
-					#修改
-					has_completed_focus=SOV_recall_trotsky
-				}
-				is_country_leader = no
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-				IF = {
-					limit = {
-						has_global_flag = flag_mexico_invited_trotsky_to_government
-						NOT = { has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico }
-						SOV_is_opposition = yes 
-					}
-					MEX = { 
-						NOT = { has_idea = MEX_leon_trotsky }
-						NOT = { has_country_leader = { character = MEX_leon_trotsky } } 
-					}
-				}
 			}
 			traits = {
-				pc_military_naval_affairs
+				SOV_constant_revolutionary
 			}
 		}
 	}
@@ -2637,10 +2524,10 @@ characters = {
 		name = SOV_ivan_smirnov
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_SOV_ivan_smirnov"
+				large = "GFX_idea_SOV_ivan_smirnov"
 			}
 			army = {
-				small = "GFX_idea_SOV_ivan_smirnov_imprisoned"
+				small = "GFX_idea_SOV_ivan_smirnov"
 			}
 		}
 		allowed_civil_war = { 
@@ -2667,31 +2554,6 @@ characters = {
 				
 			}
 			available = {
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-					#修改
-					has_completed_focus=SOV_recall_trotsky
-				}
-				OR = {
-					has_completed_focus = SOV_integrate_smirnovs_bloc
-					has_completed_focus = SOV_return_democracy_to_the_party
-					#修改
-					has_completed_focus=SOV_recall_trotsky
-				}
-				is_country_leader = no
-				if = {
-					limit = {
-						has_character_flag = SOV_imprisoned_flag
-					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				head_directorate_of_new_buildings 
@@ -2703,7 +2565,7 @@ characters = {
 		name = SOV_ivar_smilga
 		portraits = {
 			army = {
-				small = "GFX_idea_SOV_ivar_smilga_imprisoned"
+				small = "GFX_idea_SOV_ivar_smilga"
 			}
 		}
 		allowed_civil_war = { 
@@ -2718,7 +2580,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_ivar_smilga
@@ -2726,29 +2587,8 @@ characters = {
 				original_tag = SOV
 			}
 			visible = {
-				NOT = {
-					has_character_flag = SOV_character_purged_flag 
-				}
 			}
 			available = {
-				OR = {
-					has_completed_focus = SOV_integrate_smirnovs_bloc
-					has_completed_focus = SOV_return_democracy_to_the_party
-					#修改
-					has_completed_focus=SOV_recall_trotsky
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_imprisoned_flag
-					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				soviet_economist
@@ -2797,24 +2637,6 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					#修改
-					has_completed_focus=SOV_recall_trotsky
-					AND = {
-						SOV_is_left_opposition = yes 
-						has_completed_focus = SOV_bring_old_trotskyists_back
-					}
-					AND = {
-						SOV_is_right_opposition = yes 
-						has_completed_focus = SOV_cooperation_against_stalin 
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				international_revolutionary 
@@ -2861,26 +2683,6 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					#修改
-					has_completed_focus=SOV_recall_trotsky
-					AND = {
-						tag = SOV
-						SOV_is_left_opposition = yes 
-						has_completed_focus = SOV_bring_old_trotskyists_back
-					}
-					AND = {
-						tag = SOV
-						SOV_is_right_opposition = yes 
-						has_completed_focus = SOV_cooperation_against_stalin 
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				ecomonist_publicist 
@@ -2892,7 +2694,7 @@ characters = {
 		name = SOV_aleksandr_shlyapnikov
 		portraits = {
 			army = {
-				small = "GFX_idea_SOV_aleksandr_shlyapnikov_imprisoned"
+				small = "GFX_idea_SOV_aleksandr_shlyapnikov"
 			}
 		}
 		allowed_civil_war = { 
@@ -2920,24 +2722,6 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					SOV_is_left_opposition = yes
-					has_completed_focus = SOV_return_democracy_to_the_party
-					#修改
-					has_completed_focus=SOV_recall_trotsky
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_imprisoned_flag
-					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				left_trade_unionist
@@ -2984,22 +2768,7 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					SOV_is_right_opposition = yes 
-					#修改
-					has_completed_focus=SOV_help_bukharin
-					AND = {
-						SOV_is_left_opposition = yes 
-						has_completed_focus = SOV_cooperation_against_stalin 
-					}
-				}
 				is_country_leader = no
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				economy_reformer 
@@ -3045,22 +2814,8 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					SOV_is_right_opposition = yes 
-					#修改
-					has_completed_focus=SOV_help_bukharin
-					AND = {
-						SOV_is_left_opposition = yes 
-						has_completed_focus = SOV_cooperation_against_stalin 
-					}
-				}
 				is_country_leader = no
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			
 			traits = {
@@ -3101,19 +2856,6 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					
-					SOV_is_right_opposition = yes
-					has_completed_focus = SOV_return_democracy_to_the_party
-					#修改
-					has_completed_focus=SOV_help_bukharin
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				right_trade_unionist 
@@ -3144,18 +2886,6 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					has_completed_focus = SOV_the_need_for_policy_changes 
-					has_completed_focus = SOV_return_democracy_to_the_party
-					#修改
-					has_completed_focus=SOV_help_bukharin
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				peoples_commissar_of_finance 
@@ -3170,7 +2900,7 @@ characters = {
 				large = "GFX_portrait_SOV_grigory_zinovyev"
 			}
 			army = {
-				small = "GFX_idea_SOV_grigory_zinovyev_imprisoned"
+				small = "GFX_idea_SOV_grigory_zinovyev"
 			}
 		}
 		allowed_civil_war = { 
@@ -3193,34 +2923,8 @@ characters = {
 				original_tag = SOV
 			}
 			visible = {
-				NOT = {
-					has_character_flag = SOV_character_purged_flag 
-				}
 			}
 			available = {
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-					#修改
-					has_completed_focus=SOV_help_bukharin
-					has_completed_focus = SOV_align_the_zinovyevites
-					AND = {
-						has_completed_focus = SOV_the_plan_for_the_coup
-						has_completed_focus = SOV_coup_detat
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_imprisoned_flag
-					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				communist_theorist
@@ -3235,7 +2939,7 @@ characters = {
 				large = "GFX_portrait_SOV_lev_kamenev"
 			}
 			army = {
-				small = "GFX_idea_SOV_lev_kamenev_imprisoned"
+				small = "GFX_idea_SOV_lev_kamenev"
 			}
 		}
 		allowed_civil_war = { 
@@ -3262,27 +2966,7 @@ characters = {
 					has_character_flag = SOV_character_purged_flag 
 				}
 			}
-			available = {
-				
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-					#修改
-					has_completed_focus=SOV_help_bukharin
-					has_completed_focus = SOV_align_the_zinovyevites
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_imprisoned_flag
-					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+			available = { 
 			}
 			traits = {
 				appeasing_technocrat 
@@ -3294,7 +2978,7 @@ characters = {
 		name = SOV_martemyan_ryutin
 		portraits = {
 			army = {
-				small = "GFX_idea_SOV_martemyan_ryutin_imprisoned"
+				small = "GFX_idea_SOV_martemyan_ryutin"
 			}
 		}
 
@@ -3328,26 +3012,6 @@ characters = {
 				}
 			}
 			available = {
-				
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-					#修改
-					has_completed_focus=SOV_help_bukharin
-					has_completed_focus = SOV_liberate_ryutin
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_imprisoned_flag
-					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				anti_stalinist_propagandist 
@@ -3376,10 +3040,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				OR = {
-					has_completed_focus = SOV_patriarch_of_all_russia
-					has_completed_focus = SOV_the_declaration
-				}
+				has_completed_focus = SOV_patriarch_of_all_russia
 			}
 			traits = {
 				patriarch_of_moscow_and_all_russia 
@@ -3481,46 +3142,6 @@ characters = {
 			}
 		}		
 	}
-
-	SOV_anastasy_vonsyatsky = {
-		name = SOV_anastasy_vonsyatsky
-		portraits = {
-			army = {
-				small = "GFX_idea_SOV_anastasy_vonsyatsky"
-			}
-		}
-		allowed_civil_war = {
-			OR = {
-				has_government = neutrality 
-				has_government = fascism
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_anastasy_vonsyatsky
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-				NOT = {
-					has_character_flag = SOV_character_purged_flag 
-				}
-			}
-			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
-			traits = {
-				the_foreign_connection
-			}
-		}		
-	}
-
 	SOV_grigory_semyonov = {
 		name = SOV_grigory_semyonov
 		portraits = {
@@ -3569,12 +3190,7 @@ characters = {
 					limit = { tag = SOV }
 					has_completed_focus = SOV_approach_semyonov
 				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				 
 			}
 			visible = {
 				NOT = {
@@ -3586,77 +3202,6 @@ characters = {
 			}
 		}		
 	}
-
-	SOV_nikolay_ustryalov = {
-		name = SOV_nikolay_ustryalov
-		portraits = {
-			army = {
-				small = "GFX_idea_SOV_nikolay_ustryalov"
-			}
-		}
-		allowed_civil_war = {
-			OR = {
-				has_government = neutrality 
-				has_government = fascism
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_nikolay_ustryalov
-			allowed = {
-				original_tag = SOV
-			}
-			available = {
-				has_completed_focus = SOV_consolidate_power
-			}
-			traits = {
-				political_chameleon
-			}
-		}		
-	}
-
-	SOV_aleksandr_kazembek = {
-		name = SOV_aleksandr_kazembek
-		portraits = {
-			army = {
-				small = "GFX_idea_SOV_aleksandr_kazembek"
-			}
-		}
-		allowed_civil_war = {
-			OR = {
-				has_government = neutrality 
-				has_government = fascism
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_aleksandr_kazembek
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-				NOT = {
-					has_character_flag = SOV_character_purged_flag 
-				}
-			}
-			available = {
-				has_completed_focus = SOV_reconvene_the_zemsky_sobor
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
-			traits = {
-				mladorossi_theorist
-			}
-		}
-	}
-
-
  #######                                         #     #                                                     #                                                       
  #        #    #  #  #       ######   ####       ##   ##  #  #       #  #####    ##    #####   #   #        # #    #####   #    #  #   ####    ####   #####    ####  
  #         #  #   #  #       #       #           # # # #  #  #       #    #     #  #   #    #   # #        #   #   #    #  #    #  #  #       #    #  #    #  #      
@@ -3688,17 +3233,6 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				SOV_is_exiles = yes
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = { victory_through_airpower }
 		}
@@ -3728,17 +3262,6 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				SOV_is_exiles = yes
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = { air_chief_reform_2 }
 		}
@@ -3767,18 +3290,7 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
-			available = {
-				SOV_is_exiles = yes
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+			available = { 
 			}
 			traits = { air_chief_all_weather_2 }
 		}
@@ -3809,17 +3321,6 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				SOV_is_exiles = yes
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = { air_air_superiority_2 }
 		}
@@ -3905,65 +3406,6 @@ characters = {
 				ai_will_do = {
 					factor = 0.000
 				}
-			}
-		}
-	}
-
-	SOV_aleksandr_kerensky = {
-		name = SOV_aleksandr_kerensky
-
-		portraits = {
-			civilian = {
-				large = GFX_portrait_SOV_aleksandr_kerensky
-			}
-			army = {
-				small = "GFX_idea_alexander_kerensky"
-			}
-		}
-		country_leader = {
-			ideology = socialism
-			expire = "1953.3.1.1"
-			id = -1
-		}
-		allowed_civil_war = { tag = SOV}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_aleksandr_kerensky
-			allowed = {
-					original_tag = SOV
-			}
-			visible = {
-				NOT = {
-					has_character_flag = SOV_character_purged_flag 
-				}
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
-			traits = {
-				democratic_reformer 
-			}
-			do_effect = {
-				NOT = {
-					has_government = democratic 
-				}
-			}
-			ai_will_do = {
-				factor = 0.000
 			}
 		}
 	}

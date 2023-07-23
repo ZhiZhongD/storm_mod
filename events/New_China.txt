@@ -138,7 +138,7 @@ country_event={
 	fire_only_once = yes
 	trigger={
 		tag = PRC
-		CHI={surrender_progress>0.15}
+		CHI={surrender_progress>0.1}
 		CHI={has_war_with = PRC}
 	}
 
@@ -310,7 +310,7 @@ country_event={
 	fire_only_once = yes
 	trigger={
 		tag = CHI
-		CHI={surrender_progress>0.01}
+		CHI={surrender_progress>0.1}
 		CHI={has_war_with = JAP}
 	}
 
@@ -328,14 +328,35 @@ country_event={
 	is_triggered_only = yes
 
 	option = {
-		name = new_china.18.a
+		name = new_china.19.a
 		create_faction = 团结协定东线
 		JAP = {
 			add_to_faction = CHI
 		}
 		puppet=CHI
-		news_event = { id = new_china_news.1 }
-		PRC={ country_event = new_china.19 }
+		hidden_effect={
+			PRC={ country_event = new_china.19 }
+			country_event={
+				id = new_china.gankrau
+				days = 30
+			}
+			news_event = { id = new_china_news.1 }
+		}
+    }
+}
+country_event={
+	id = new_china.gankrau
+	title = new_china.gankrau.t
+	desc = new_china.gankrau.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.gankrau.a
+		AST={
+			country_event=RAU.7
+		}
+		declare_war_on = { target = RAU type = puppet_wargoal_focus }
     }
 }
 country_event={
@@ -451,5 +472,126 @@ country_event={
 				count=4
 			}
 		}
+    }
+}
+country_event={
+	id = new_china.23a
+	title = new_china.23a.t
+	desc = new_china.23a.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.23.aa
+		ai_will_do={factor=100}
+		complete_national_focus = PRC_CPC
+		country_event = {
+			id = new_china.24
+			days = 7
+		}
+    }
+	option = {
+		name = new_china.23.ba
+		ai_will_do={factor=1}
+		complete_national_focus = PRC_LKMT
+		country_event = {
+			id = new_china.24
+			days = 7
+		}
+    }
+}
+#闭幕
+country_event={
+	id = new_china.24
+	title = new_china.24.t
+	desc = new_china.24.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.24.a
+    }
+}
+#香港
+country_event={
+	id = new_china.25
+	title = new_china.25.t
+	desc = new_china.25.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.25.a
+		PRC={
+			country_event=new_china.25a
+		}
+    }
+}
+country_event={
+	id = new_china.25a
+	title = new_china.25.ta
+	desc = new_china.25.da
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.25.aa
+		transfer_state = 326
+    }
+}
+#澳门
+country_event={
+	id = new_china.26
+	title = new_china.26.t
+	desc = new_china.26.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.26.a
+		PRC={
+			country_event=new_china.26a
+		}
+    }
+}
+country_event={
+	id = new_china.26a
+	title = new_china.26.ta
+	desc = new_china.26.da
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.26.aa
+		PRC={
+			transfer_state = 729
+		}
+    }
+}
+#广州湾
+country_event={
+	id = new_china.27
+	title = new_china.27.t
+	desc = new_china.27.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.27.a
+		PRC={
+			country_event=new_china.27a
+		}
+    }
+}
+country_event={
+	id = new_china.27a
+	title = new_china.27.ta
+	desc = new_china.27.da
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = new_china.27.aa
+		transfer_state = 728
     }
 }

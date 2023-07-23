@@ -1353,7 +1353,7 @@ focus_tree = {
 		y=1
 		cost=5
 		completion_reward={
-			annex_country = { target = FJA transfer_troops = yes }
+			custom_effect_tooltip=PRC_tooltip_united_government
 		}
 	}
 	focus = {
@@ -1423,6 +1423,8 @@ focus_tree = {
 		id=PRC_national_united_front
 		icon=GFX_focus_chi_united_front
 		prerequisite={focus= PRC_against_the_six_encirclement_and_suppression }
+		prerequisite={focus= PRC_western_sign }
+		prerequisite={focus= PRC_emancipate_Hunan}
 		relative_position_id= PRC_against_the_six_encirclement_and_suppression
 		available={
 			JAP={
@@ -1563,7 +1565,7 @@ focus_tree = {
 		cost=5
 		bypass={
 			RAU={
-				has_completed_focus=RAU_progressive_tensendustrial_of_revolution
+				has_completed_focus= RAU_fight_together
 			}
 		}
 		available={
@@ -1903,20 +1905,20 @@ focus_tree = {
 		icon=GFX_FRA_popularfront
 		available={
 			has_completed_focus= PRC_popular_front_third_meeting
-			date>1942.1.1
+			controls_state = 613
+			controls_state = 943
 		}
 		select_effect = {
-			hidden_effect = {
 				country_event = {
-					id = new_china.2
+					id = new_china.23
 					days = 7
 				}
-			}
 		}
 		x=18
-		y=15
-		cost=5
+		y=12
+		cost=3
 		completion_reward={
+			custom_effect_tooltip=PRC_PFFM
 		}
 	}
 	focus={
@@ -2010,13 +2012,14 @@ focus_tree = {
 	}
 	focus={
 		id=PRC_hold_peoples_congress
-		icon=GFX_commune_politics
+		icon=GFX_focus_prc_proclaim_the_peoples_republic
 		prerequisite={focus= PRC_new_china }
 		relative_position_id= PRC_merged_with_the_left_national_party
-		x=1
+		x=-1
 		y=2
 		cost=5
 		completion_reward={
+			add_political_power=100
 		}
 	}
 	focus={
@@ -2035,14 +2038,57 @@ focus_tree = {
 		}
 	}
 	focus={
+		id=PRC_Hong_Kong_reunification_uprising
+		icon=GFX_goal_generic_demand_territory
+		prerequisite={focus= PRC_new_china }
+		relative_position_id= PRC_new_china
+		x=-2
+		y=1
+		cost=5
+		completion_reward = {
+			ENG={
+				country_event=new_china.25
+			}
+		}
+	}
+	focus={
+		id=PRC_Macau_return_uprising
+		icon=GFX_goal_generic_demand_territory
+		prerequisite={focus= PRC_new_china }
+		relative_position_id= PRC_new_china
+		x=0
+		y=1
+		cost=5
+		completion_reward = {
+			POR={
+				country_event=new_china.26
+			}
+		}
+	}
+	focus={
+		id=PRC_Guangzhouwan_return_uprising
+		icon=GFX_goal_generic_demand_territory
+		prerequisite={focus= PRC_new_china }
+		relative_position_id= PRC_new_china
+		x=2
+		y=1
+		cost=5
+		completion_reward = {
+			FRA={
+				country_event=new_china.27
+			}
+		}
+	}
+	focus={
 		id=PRC_national_assembly
 		icon=GFX_focus_generic_china1
 		prerequisite={focus= PRC_new_china }
 		relative_position_id= PRC_united_CPC
-		x=1
+		x=3
 		y=2
 		cost=5
 		completion_reward={
+			add_political_power=100
 		}
 	}
 	focus={
@@ -2050,12 +2096,14 @@ focus_tree = {
 		icon=GFX_focus_generic_industry_3
 		prerequisite={focus= PRC_national_assembly focus=PRC_hold_peoples_congress }
 		relative_position_id= PRC_hold_peoples_congress
-		x=2
+		x=4
 		y=1
-		cost=10
+		cost=20
 		completion_reward={
-			add_ideas=PRC_rapid_industrialization_idea
-			remove_ideas=PRC_low_ager_nation
+			swap_ideas={
+				add_idea=PRC_rapid_industrialization_idea
+				remove_idea=PRC_low_ager_nation
+			}
 			random_state = {
 				limit = {
 					is_controlled_by = PRC

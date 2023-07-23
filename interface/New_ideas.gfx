@@ -228,6 +228,178 @@ spriteTypes={
 		texturefile="gfx/interface/ideas/industrial_protectionism.png"
     }
 	spriteType = {
+	    name="GFX_idea_generic_navy"
+		texturefile="gfx/interface/ideas/generic_navy.png"
+    }
+	spriteType = {
+	    name="GFX_idea_GRU_SPD_FAUD_WOMAN_RIGHTS"
+		texturefile="gfx/interface/ideas/GRU_SPD_FAUD_WOMAN_RIGHTS.png"
+    }
+	spriteType = {
+	    name="GFX_idea_GEN_army_artillery"
+		texturefile="gfx/interface/ideas/GEN_army_artillery.png"
+    }
+	spriteType = {
+	    name="GFX_idea_union_voluntary_army"
+		texturefile="gfx/interface/ideas/union_voluntary_army.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
+	    name="GFX_idea_"
+		texturefile="gfx/interface/ideas/.png"
+    }
+	spriteType = {
 	    name="GFX_idea_"
 		texturefile="gfx/interface/ideas/.png"
     }

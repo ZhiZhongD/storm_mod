@@ -1268,9 +1268,14 @@
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			JAP_intervene_in_china_remove = yes
+			add_timed_idea={
+				idea=PRC_three_months_to_slay_China
+				days=90
+			}
 			add_named_threat = { threat = 15 name = JAP_secure_china }		
 			USA = { add_war_support = 0.05 }	
 			unlock_decision_tooltip = JAP_ichi_go
+			
 		}
 	}
 
