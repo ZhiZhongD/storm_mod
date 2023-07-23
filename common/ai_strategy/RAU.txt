@@ -459,3 +459,23 @@ RAU_halt_light_armor_production_in_transitioning = {
 		value = -75
 	}
 }
+	ai_strategy = {
+	type = prepare_for_war
+	id = "AST"
+	value = 100
+	}
+	ai_strategy = {
+	type = send_volunteers_desire
+	id = "SPR"
+	value = 100
+	}
+	ai_strategy = {
+	type = send_volunteers_desire
+	id = "PRC"
+	value = 100
+	}
+	ai_strategy = {
+	type = send_volunteers_desire
+	id = "SOV"
+	value = 100
+	}
