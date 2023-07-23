@@ -50,9 +50,11 @@
  uk_america_technology:0 "英美科技联合"
  uk_america_military_cooperation:0 "英美军事合作"
  uk_invite_australia:0 "邀请澳大利亚"
- uk_invest_australia:0 "支援澳大利亚"
+ uk_invite_australia_tooltip:0 "§Y将解锁一系列支持澳大利亚的决议§!"
+ uk_invest_australia:0 "支援澳大利亚工业"
  uk_support_australia_army:0 "支持澳大利亚军事发展"
  uk_military_mutual_aid_australia:0 "澳大利亚军事互助条约"
+ uk_military_mutual_aid_australia_tooltip:0 "§Y将可以在决议中向澳大利亚出售或购买一系列军备§!"
  uk_indonesia_to_malaysia:0 "整合荷属东印度给公司"
  uk_east_indies_company:0 "强化东印度群岛公司"
  uk_right_of_mercenary:0 "公司雇佣兵"
@@ -66,6 +68,6 @@
  ENG_east_timor_in_company:0 "索取东帝汶"
  ENG_middle_east_fed:0 "中东联邦"
 
- uk_black_technology_focus:0 "大英黑科技"
+ uk_black_technology_focus:0 "帝国科技蕴藏"
  uk_scepter_of_the_king:0 "皇帝的权杖"
  

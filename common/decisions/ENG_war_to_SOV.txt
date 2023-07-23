@@ -54,6 +54,7 @@ ENG_war_to_SOV_dec = {
         experience_gain_army_unit_factor = -0.5
         army_defence_factor = 0.05
         supply_consumption_factor = 0.1
+        breakthrough_factor = -0.05
     }
     }
     eng_quiet_dec = {#闭嘴，不许多嘴
@@ -109,9 +110,10 @@ ENG_war_to_SOV_dec = {
         base = 10
     }
     modifier = {
-        complete_effect = {
-            add_war_support = 0.05
-        }
+       political_power_factor = -0.05
+    }
+    complete_effect = {
+        add_war_support = 0.05
     }
     }
     eng_worker_007_dec={#强迫工人007
@@ -182,7 +184,7 @@ ENG_war_to_SOV_dec = {
 }
     eng_lightning_offensive_dec = {#暴风行动
         
-    days_remove = 30
+    days_remove = 10
 
     icon = GFX_decision_oppression
 
@@ -302,53 +304,60 @@ ENG_war_to_SOV_dec = {
                         }
                     }
                 }
-                else = {
+                if = {
+                    limit = {
+                 NOT = {
+                    has_subject = ENG
+                 }       
+                    }
                     ENG = {
                         
-                            random_owned_state = {
-                                limit = {
-                                    state_population > 10000
-                                    NOT = {
-                                        is_core_of = ENG
-                                    }
+                        random_owned_state = {
+                            limit = {
+                                state_population > 10000
+                                NOT = {
+                                    is_core_of = ENG
                                 }
-                                add_manpower = -10000
                             }
-                            ENG = {
-                                add_manpower = 10000
+                            add_manpower = -10000
+                        }
+                        ENG = {
+                            add_manpower = 10000
+                        }
+                    
+                   
+                        random_owned_state = {
+                            limit = {
+                                state_population > 10000
+                                NOT = {
+                                    is_core_of = ENG
+                                }
                             }
-                        
+                            add_manpower = -10000
+                        }
+                        ENG = {
+                            add_manpower = 10000
+                        }
+                    
+                   
                        
-                            random_owned_state = {
-                                limit = {
-                                    state_population > 10000
-                                    NOT = {
-                                        is_core_of = ENG
-                                    }
+                        random_owned_state = {
+                            limit = {
+                                state_population > 10000
+                                NOT = {
+                                    is_core_of = ENG
                                 }
-                                add_manpower = -10000
                             }
-                            ENG = {
-                                add_manpower = 10000
-                            }
-                        
-                       
-                           
-                            random_owned_state = {
-                                limit = {
-                                    state_population > 10000
-                                    NOT = {
-                                        is_core_of = ENG
-                                    }
-                                }
-                                add_manpower = -10000
-                            }
-                            ENG = {
-                                add_manpower = 10000
-                            }
-                        
-                    }
+                            add_manpower = -10000
+                        }
+                        ENG = {
+                            add_manpower = 10000
+                        }
+                    
                 }
+                }
+            
+                
               
         }	    
     }
@@ -374,6 +383,7 @@ ENG_war_to_SOV_dec = {
             FIN = {
                 NOT = { has_war_with = SOV  }
                 NOT = { is_subject_of = SOV }
+                NOT = { has_government = communism }
             }
         }
     }

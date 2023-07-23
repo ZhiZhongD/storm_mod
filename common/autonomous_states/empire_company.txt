@@ -1,5 +1,5 @@
-autonomy_state = {#帝国自由领
-	id = empire_freedom_state
+autonomy_state = {#帝国皇家公司
+	id = empire_company
 	
 	is_puppet = yes
 	
@@ -24,9 +24,10 @@ autonomy_state = {#帝国自由领
 		autonomy_manpower_share = 1
 		can_master_build_for_us = 1
 		extra_trade_to_overlord_factor = 1.0
-		overlord_trade_cost_factor = -0.9
-		peace_score_ratio_transferred_to_overlord = 0.2
-
+		overlord_trade_cost_factor = -1
+		cic_to_overlord_factor = 0.25
+		mic_to_overlord_factor = 0.75
+		peace_score_ratio_transferred_to_overlord = 0.75
 		research_sharing_per_country_bonus_factor = -0.5
 	}
 	
@@ -39,9 +40,10 @@ autonomy_state = {#帝国自由领
 	}
 
 	allowed = {
-			OR = {
-				is_subject = no
-				has_autonomy_state = empire_freedom_state
-			}		
+		OR = {
+			is_subject = no
+			has_autonomy_state = empire_company
+
+		}	
 		}
 }

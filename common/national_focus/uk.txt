@@ -2030,7 +2030,16 @@ focus_tree = {
 		relative_position_id = uk_african_union_plan
 		cost = 10
 		completion_reward = {
-		
+			every_country = {
+				limit = {
+					any_owned_state = {
+						limit = {
+							is_on_continent = europe
+						}
+					}
+				}
+				#country_event = 
+			}
 		}
 	}
 	focus = {#开发非洲资源
@@ -2183,8 +2192,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+		MLZ = {#马来西亚
+			#改名
+			#换国策树（如有）
+			#加民族精神（上缴工厂，贸易资源buff）
 		}
+		add_ideas = ENG_imperial_preference
+	}
 	}
 
 	focus = {#开发加拿大
@@ -2273,7 +2287,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = ENG_canadian_farmland 
 		}
 	}
 	focus = {#加拿大雪地训练营
@@ -2300,7 +2314,11 @@ focus_tree = {
 	focus = {#缓解大萧条
 		id = uk_relief_from_the_great_depression
 		available = {
-		
+		USA = {
+			has_idea = great_depression
+			has_idea = great_depression_2
+			has_idea = great_depression_3
+		}
 		}
 		
 		prerequisite = { 
@@ -2366,10 +2384,10 @@ focus_tree = {
 			
 		}
 	}
-	focus = {#美国军事合作
+	focus = {#英美军事合作
 		id = uk_america_technology
 		prerequisite = { focus = uk_invite_america }
-		icon = GFX_focus_usa_build_the_pentagon
+		icon = GFX_focus_research
 		x = -2
 		y = 1
 		relative_position_id = uk_invite_america
@@ -2425,7 +2443,7 @@ focus_tree = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		
+		custom_effect_tooltip = uk_invite_australia_tooltip
 	}
 }
 	focus = {#投资澳大利亚
@@ -2440,7 +2458,53 @@ ai_will_do = {
 	factor = 0.25
 }
 available = { 
-	
+	BAU = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
 }
 
 available_if_capitulated = yes
@@ -2467,7 +2531,9 @@ available = {
 available_if_capitulated = yes
 
 completion_reward = {
-	
+	BAU = {
+		#add_ideas = 
+	}
 }
 }
 focus = {#澳大利亚军事互助条约
@@ -2488,7 +2554,7 @@ available = {
 available_if_capitulated = yes
 
 completion_reward = {
-	
+	custom_effect_tooltip = uk_military_mutual_aid_australia_tooltip
 }
 }
 	focus = {#整合荷属东印度
@@ -2560,7 +2626,9 @@ completion_reward = {
 		mutually_exclusive={focus= uk_unite_united_states }
 
 		available = {
-			
+			NOT = {
+				is_in_faction_with = USA
+			}
 		} 
 		
 		icon = GFX_focus_usa_voter_registration_act
@@ -2573,7 +2641,10 @@ completion_reward = {
 			
 		}
 		completion_reward = {
-			
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
 		}
 	}
 	focus = {#联合美国
@@ -2581,9 +2652,16 @@ completion_reward = {
 		prerequisite = { focus = uk_service_focus  }
 		mutually_exclusive={focus= uk_threats_from_across_the_ocean }
 
-		available = {
-			
+		bypass = {
+			is_in_faction_with = USA
 		} 
+		available = {
+			USA = {
+				NOT = { 
+				has_government = communism 
+				}
+			}
+		}
 		
 		icon = GFX_focus_usa_recruit_the_free_corps
 		x = -9
@@ -2595,7 +2673,31 @@ completion_reward = {
 			
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					USA = {
+						has_government = democratic
+					}
+				}
+			}
+			if = {
+				limit = {
+					USA = {
+						
+							has_government = fascism 
+						
+					}
+				}
+			}
+			if = {
+				limit = {
+					USA = {
+						
+							has_government = neutrality 
+						
+					}
+				}
+			}
 		}
 	}
 	
@@ -2656,7 +2758,6 @@ completion_reward = {
 			OR = {
 				CAN = { is_in_faction_with = ENG }
 				SAF = { is_in_faction_with = ENG }
-				RAJ = { is_in_faction_with = ENG }
 			}
 		}
 
@@ -2681,8 +2782,6 @@ completion_reward = {
 		}
 
 		available = {
-			OR = {
-			}
 		}
 
 		bypass = {
@@ -2760,10 +2859,11 @@ available = {
 }
 
 bypass = {
+	#东帝汶已被东印度公司控制
 }
 
 completion_reward = {
-
+		
 }
 }
 
@@ -2787,7 +2887,9 @@ completion_reward = {
 	}
 
 	completion_reward = {
-	
+	RAJ = {
+		#country_event = 
+	}
 	}
 }
 
@@ -2795,7 +2897,6 @@ completion_reward = {
 
 	focus = {#帝国联邦 
 		id = ENG_imperial_federation
-		prerequisite = { focus = uk_canada_focus }
 		prerequisite = { focus = uk_african_federation }
 		prerequisite = { focus = uk_empire_politics }
 		available = {
@@ -2829,7 +2930,7 @@ completion_reward = {
 			#}
 		}
 		search_filters = {FOCUS_FILTER_ANNEXATION}	
-		completion_reward  = {
+		completion_reward = {
 			every_state = {
 				limit = {
 					OR = {
@@ -3156,7 +3257,9 @@ completion_reward = {
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 		available = {
+			SOV = {
 
+			}
 		}
 		cost=10
 		ai_will_do={
