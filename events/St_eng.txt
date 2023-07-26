@@ -64,7 +64,9 @@ country_event = {#英国要求谈判-同意
 		GER = {
 			puppet = FRA
 		}
-		add_to_faction = GER
+		GER = {
+			add_to_faction = ENG
+		}
 	}
     
 }
@@ -524,11 +526,12 @@ country_event = {#德国谈判
 			annex_country = {
 				target = HOL
 			}
-			add_to_faction = GER
         }
 		white_peace = GER
 		white_peace = ENG
-
+		GER = {
+			add_to_faction = ENG
+		}
 		
 	}
 	option = { 
@@ -588,8 +591,8 @@ country_event = {#德国谈判-同意
 			transfer_state_to = GER
 
 		}
-		ENG = {
-			add_to_faction = GER
+		GER = {
+			add_to_faction = ENG
 		}
 
 

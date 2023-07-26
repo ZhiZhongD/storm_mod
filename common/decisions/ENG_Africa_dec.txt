@@ -1,0 +1,171 @@
+ENG_Africa_union_dec_categories = {
+	ENG_Africa_ask_land1 = {#索取殖民地
+		icon = GFX_decision_infiltrate_state
+		cost = 10
+		days_remove = 7
+		fire_only_once = no
+		allowed = {
+			has_completed_focus = uk_african_union_prepare
+		}
+		available = {
+			has_completed_focus = uk_african_union_prepare
+		}
+		visible = {
+			has_completed_focus = uk_african_union_prepare
+		}
+		ai_will_do = {
+		factor = 100
+		}
+		state_target = yes
+		on_map_mode = map_only 
+		target_trigger = {
+			FROM = {
+						is_on_continent = africa
+						OR = {
+							AND = {
+								NOT = {
+								is_core_of = FROM
+								is_owned_and_controlled_by = ENG
+								}
+							}
+						}
+						
+			}
+		}
+		remove_effect = {
+			FROM = {
+				transfer_state_to = ENG
+			}
+		}
+
+	}
+
+	ENG_Africa_ask_land2 = {#索取殖民地
+	icon = GFX_decision_infiltrate_state
+	cost = 10
+	days_remove = 7
+	fire_only_once = no
+	allowed = {
+		has_completed_focus = uk_african_union_prepare
+	}
+	available = {
+		has_completed_focus = uk_african_union_prepare
+	}
+	visible = {
+		has_completed_focus = uk_african_union_prepare
+	}
+	ai_will_do = {
+	factor = 100
+	}
+	state_target = yes
+	on_map_mode = map_only 
+	target_trigger = {
+		FROM = {
+			AND = {
+				is_on_continent = africa
+			is_core_of = FROM
+			NOT = {
+				is_owned_and_controlled_by = ENG
+			}
+			
+			}
+					
+		}
+	}
+	remove_effect = {
+		FROM = {
+			if = {
+				limit = {
+					controller = {
+						is_subject_of = ENG
+					}				
+				}
+				FROM = {
+					transfer_state_to = ENG
+				}
+			}
+			if = {
+				limit = {
+					controller = {
+						NOT = {	is_subject_of = ENG }
+					}				
+				}
+				ENG = {
+					declare_war_on = {
+						target = FROM
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+}
+
+ENG_Africa_transfer_to_SAF = {#转移给南非
+icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_african_union_prepare
+}
+available = {
+	has_completed_focus = uk_african_union_prepare
+}
+visible = {
+	has_completed_focus = uk_african_union_prepare
+	FROM = {
+		NOT = {
+			is_owned_and_controlled_by = SAF
+		}
+		is_owned_and_controlled_by = ENG
+	}
+}
+ai_will_do = {
+factor = 100
+}
+state_target = yes
+on_map_mode = decision_view_only  
+
+targets = {
+	state = 681
+	state = 719
+	state = 275
+	state = 542
+	state = 893
+	state = 544
+	state = 541
+	state = 545
+	state = 896
+	state = 895
+	state = 892
+	state = 891
+	state = 771
+	state = 770
+	state = 546
+	state = 904
+	state = 548
+	state = 890
+	state = 889
+	state = 888
+	state = 295
+	state = 796
+	state = 768
+	state = 769
+	state = 897
+	state = 540
+	state = 547
+	state = 903
+	state = 905
+
+
+	
+}
+complete_effect = {
+	FROM = {
+		transfer_state_to = SAF
+		add_core_of = SAF
+	}
+}
+
+
+}
+}

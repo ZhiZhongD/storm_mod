@@ -2000,7 +2000,7 @@ focus_tree = {
 	}
 	focus = {#非洲联邦计划
 		id = uk_african_union_plan 
-		prerequisite = { focus = uk_service_focus }
+		prerequisite = { focus = uk_african_fortress }
 		available = {
 			
 			}
@@ -2038,7 +2038,7 @@ focus_tree = {
 	}
 	focus = {#索取非洲殖民地
 		id = uk_african_union_prepare
-		prerequisite = { focus = uk_service_focus }
+		prerequisite = { focus = uk_african_union_plan }
 		available = {
 			
 			}
@@ -2643,6 +2643,8 @@ completion_reward = {
 					exists = no
 					is_subject_of = ENG
 					is_subject_of = GER
+					is_government_in_exile = yes
+					has_capitulated = yes
 				}
 			}
 		}
@@ -2974,7 +2976,13 @@ completion_reward = {
 	}
 
 	available = {
+		543 = {
+			is_owned_by = ENG
+		}
 		706 = {
+			is_owned_by = ENG
+		}
+		708 = {
 			is_owned_by = ENG
 		}
 		713 = {
@@ -2986,11 +2994,19 @@ completion_reward = {
 	}
 
 	completion_reward = {
+				543 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
 				706 = {
 					transfer_state_to = MAL
 					add_core_of = MAL
 				}
 				707 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
+				708 = {
 					transfer_state_to = MAL
 					add_core_of = MAL
 				}
@@ -3182,7 +3198,7 @@ completion_reward = {
 
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available = { 
@@ -3208,11 +3224,25 @@ completion_reward = {
 
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=100
+			modifier = {
+				factor = 0
+				FRA = {
+					has_completed_focus = FRA_invite_communist_ministers
+				}
+			}	
 		}
 		available_if_capitulated=yes
 		
 		completion_reward={
+			set_rule = {
+				can_guarantee_other_ideologies = no
+			}
+			FRA = {
+				
+					give_guarantee = POL
+				
+			}
 			126 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -3316,7 +3346,7 @@ completion_reward = {
 				
 		}
 	}
-	focus={#出卖法国
+	focus={#背刺法国
 		id = ENG_sell_FRA_to_GER
 		prerequisite={focus=ENG_focus_on_herself}
 
@@ -3326,32 +3356,15 @@ completion_reward = {
 		y = 1
 		relative_position_id = ENG_focus_on_herself
 
-		available = {
-				AND = {
-				has_war_with = GER
+		available = {	
 				FRA = {
-					is_in_faction_with = ENG
+					has_war_with = GER
 				}
-				OR = {
-					16 = {
-						NOT = {
-							is_controlled_by = FRA
-						}
-					}
-					FRA = {
-					OR = {
-					is_government_in_exile = yes
-					has_capitulated = yes
-					}
-				}
-				}
-				}
-			
 		}
 
 		cost = 5
 		ai_will_do={
-			factor=1
+			factor=10000
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -3397,7 +3410,7 @@ completion_reward = {
 
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -3420,7 +3433,7 @@ completion_reward = {
 
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available = {
 			has_completed_focus = ENG_sell_FRA_to_GER
@@ -3446,7 +3459,7 @@ completion_reward = {
 		
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		available = {
@@ -3773,7 +3786,7 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
-			swe = {
+			SWE = {
 				country_event = St_eng.0014
 			}
 		}
@@ -3864,14 +3877,20 @@ completion_reward = {
 
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=0
+			modifier = {
+				factor = 10000
+				FRA = {
+					has_completed_focus = FRA_invite_communist_ministers
+				}
+			}	
 		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
-			set_war_support = 0.3
-			set_stability = 0.3
+			set_war_support = 0.5
+			set_stability = 0.2
 			if = {
 				limit = {
 					OR = {
@@ -3910,7 +3929,7 @@ completion_reward = {
 
 		cost=5
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		available = {
@@ -3983,7 +4002,7 @@ completion_reward = {
 
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -4006,7 +4025,7 @@ completion_reward = {
 
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -4037,7 +4056,7 @@ completion_reward = {
 
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={

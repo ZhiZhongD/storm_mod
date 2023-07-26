@@ -14,3 +14,7 @@
  eng_add_fin_into_war_dec:0 "邀请芬兰向苏联开战"
  eng_volunteer_of_anti_soviet_dec:0 "英国号召反共志愿军"
  
+ ENG_Africa_union_dec_categories:0 "非洲计划"
+ ENG_Africa_ask_land1:0 "索取土地"
+ ENG_Africa_ask_land2:0 "索取土地"
+ ENG_Africa_transfer_to_SAF:0 "将[FROM.GetName]并入南非"
