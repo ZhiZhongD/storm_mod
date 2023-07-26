@@ -2013,7 +2013,28 @@ focus_tree = {
 		relative_position_id = uk_african_fortress
 		cost = 10
 		completion_reward = {
-		
+			set_autonomy = {
+				target = SAF
+				autonomy_state = empire_freedom_state
+				end_wars = no
+				end_civil_wars = no
+			}
+			release_autonomy = {
+				target = EGY
+				autonomy_state = empire_freedom_state
+			}
+			EGY = {
+				every_state = {
+					limit = {
+						AND = {
+						is_core_of = SUD	
+						}
+					}
+					transfer_state_to = EGY
+					add_core_of = EGY
+				}
+				set_cosmetic_tag = EGYSUD_democratic
+			}
 		}
 	}
 	focus = {#索取非洲殖民地
@@ -2022,24 +2043,13 @@ focus_tree = {
 		available = {
 			
 			}
-			
-		
 		icon = GFX_focus_por_recover_latin_america
 		x = 0
 		y = 1
 		relative_position_id = uk_african_union_plan
 		cost = 10
 		completion_reward = {
-			every_country = {
-				limit = {
-					any_owned_state = {
-						limit = {
-							is_on_continent = europe
-						}
-					}
-				}
-				#country_event = 
-			}
+			custom_effect_tooltip = uk_african_union_prepare_tooltip
 		}
 	}
 	focus = {#开发非洲资源
@@ -2048,15 +2058,13 @@ focus_tree = {
 		available = {
 			
 			}
-			
-		
 		icon = GFX_focus_generic_steel
 		x = 0
 		y = 1
 		relative_position_id = uk_african_union_prepare
 		cost = 10
 		completion_reward = {
-		
+			custom_effect_tooltip = uk_african_develop_resources_tooltip
 		}
 	}
 
@@ -2121,7 +2129,11 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-
+		available = {
+			SAF = {
+				is_subject_of = ENG
+			}
+		}
 		completion_reward = {
 			SAF = {
 				swap_ideas = {
@@ -2145,7 +2157,11 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-
+		available = {
+			SAF = {
+				is_subject_of = ENG
+			}
+		}
 		completion_reward = {
 			SAF = {
 				swap_ideas = {
@@ -2192,12 +2208,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		MLZ = {#马来西亚
-			#改名
+		MAL = {
+			set_cosmetic_tag = ENGMLA_democratic
 			#换国策树（如有）
-			#加民族精神（上缴工厂，贸易资源buff）
+			add_ideas = ENG_asia_company_MAL1
 		}
 		add_ideas = ENG_imperial_preference
+		set_autonomy = {
+			target = MAL
+			autonomy_state = empire_company
+			end_wars = no
+			end_civil_wars = no
+		}
 	}
 	}
 
@@ -2314,11 +2336,6 @@ focus_tree = {
 	focus = {#缓解大萧条
 		id = uk_relief_from_the_great_depression
 		available = {
-		USA = {
-			has_idea = great_depression
-			has_idea = great_depression_2
-			has_idea = great_depression_3
-		}
 		}
 		
 		prerequisite = { 
@@ -2335,7 +2352,53 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			
+			custom_effect_tooltip = uk_relief_from_the_great_depression_tooltip
+			if = {
+				limit = {
+					USA = {
+						OR = {
+						has_idea = great_depression
+						has_idea = great_depression_2
+						has_idea = great_depression_3
+						}
+					}
+				}
+				USA = {
+					add_timed_idea = {
+						idea = ENG_relief_the_great_depression_USA
+						days = 90
+					}
+				}
+				ENG = {
+					add_timed_idea = {
+						idea = ENG_relief_the_great_depression_ENG1
+						days = 90
+					}
+				}
+			}
+			if = {
+				limit = {
+					
+					CAN = {
+						OR = {
+							has_idea = CAN_great_depression_1
+							has_idea = CAN_great_depression_2
+						}
+					}
+				}
+				CAN = {
+					add_timed_idea = {
+						idea = ENG_relief_the_great_depression_CAN
+						days = 90
+					}
+				}
+				ENG = {
+					add_timed_idea = {
+						idea = ENG_relief_the_great_depression_ENG2
+						days = 90
+					}
+				}
+			}
 		}
 	}
 
@@ -2569,12 +2632,35 @@ completion_reward = {
 			factor = 0.25
 		}
 		available = { 
-			
+			HOL = {
+				OR = {
+					exists = no
+					is_subject_of = ENG
+					is_subject_of = GER
+				}
+			}
 		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
+				set_autonomy = {
+					target = INS
+					autonomy_state = autonomy_free
+				}
+			every_state = {
+				limit = {
+					is_core_of = INS
+				}
+				add_core_of = MAL
+			}
+			MAL = {
+				annex_country = {
+					target = INS
+					transfer_troops = yes
+				}
+			}
+			
 			
 		}
 	}
@@ -2594,7 +2680,57 @@ completion_reward = {
 		}
 	
 		completion_reward = { 
-		
+			MAL = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				swap_ideas = {
+					remove_idea = ENG_asia_company_MAL1
+					add_idea = ENG_asia_company_MAL2
+				}
+			}
 		}
 	}
 	focus = {#给予公司雇佣兵权限
@@ -2616,7 +2752,12 @@ completion_reward = {
 
 	
 		completion_reward = {
-		
+			MAL = {
+				swap_ideas = {
+				remove_idea = ENG_asia_company_MAL2
+				add_idea = ENG_asia_company_MAL3
+				}
+			}
 		}
 	}
 	
@@ -2755,10 +2896,7 @@ completion_reward = {
 		}
 
 		available = {
-			OR = {
-				CAN = { is_in_faction_with = ENG }
-				SAF = { is_in_faction_with = ENG }
-			}
+		
 		}
 
 		bypass = {
@@ -2830,14 +2968,58 @@ completion_reward = {
 	}
 
 	available = {
-		
+		706 = {
+			is_owned_by = ENG
+		}
+		713 = {
+			is_owned_by = ENG
+		}
 	}
 
 	bypass = {
 	}
 
 	completion_reward = {
-	
+				706 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
+				707 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
+				709 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
+				710 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
+				711 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
+				712 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
+				713 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
+				733 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
+				422 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
+				281 = {
+					transfer_state_to = MAL
+					add_core_of = MAL
+				}
 	}
 }
 focus = {#索取东帝汶
@@ -3256,16 +3438,20 @@ completion_reward = {
 		prerequisite={focus=ENG_steady_as_she_goes}
 
 		icon = GFX_focus_SOV_socialism_in_one_country
-		available = {
-			SOV = {
-
-			}
-		}
+		
 		cost=10
 		ai_will_do={
 			factor=1
 		}
 		available_if_capitulated=yes
+		available = {
+			OR = {
+				threat > 0.5
+			SOV = {
+				has_added_tension_amount > 15
+			}
+			}
+		}
 		search_filters={
 		}
 		completion_reward={
@@ -3719,6 +3905,56 @@ completion_reward = {
 			factor=1
 		}
 		available_if_capitulated=yes
+		available = {
+			AND = {
+				FRA = {
+					OR = {
+						is_subject_of = ENG
+						AND = {
+							exists = no
+							all_core_state = {
+								is_owned_by = ENG
+							}
+						}
+					}
+				}
+				HOL = {
+					OR = {
+						is_subject_of = ENG
+						AND = {
+							exists = no
+							all_core_state = {
+								is_owned_by = ENG
+							}
+						}
+					}
+				}
+				BEL = {
+					OR = {
+						is_subject_of = ENG
+						AND = {
+							exists = no
+							all_core_state = {
+								is_owned_by = ENG
+							}
+						}
+					}
+				}
+				LUX = {
+					OR = {
+						is_subject_of = ENG
+						AND = {
+							exists = no
+							all_core_state = {
+								is_owned_by = ENG
+							}
+						}
+					}
+				}
+
+				}
+			}
+		
 		search_filters={
 		}
 		completion_reward={

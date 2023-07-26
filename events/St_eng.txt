@@ -59,10 +59,12 @@ country_event = {#英国要求谈判-同意
 			28 = {
 				transfer_state_to = GER
 			}
+			set_cosmetic_tag = FLKFRA_fascism
 		}
 		GER = {
 			puppet = FRA
 		}
+		add_to_faction = GER
 	}
     
 }
@@ -522,8 +524,11 @@ country_event = {#德国谈判
 			annex_country = {
 				target = HOL
 			}
+			add_to_faction = GER
         }
-		
+		white_peace = GER
+		white_peace = ENG
+
 		
 	}
 	option = { 
@@ -550,6 +555,9 @@ country_event = {#德国谈判-同意
         ai_chance = {
             base = 10
         }
+		FRA = {
+			set_cosmetic_tag = BGDFRA_democratic
+		}
 		28 = {
 			transfer_state_to = GER
 		}

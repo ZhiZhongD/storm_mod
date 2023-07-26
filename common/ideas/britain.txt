@@ -62,15 +62,15 @@ ideas = {
 		
 		modifier = {
 			consumer_goods_factor = -0.02
-			production_speed_industrial_complex_factor = 0.1
-			production_speed_infrastructure_factor = 0.1
+			production_speed_industrial_complex_factor = 0.15
+			production_speed_infrastructure_factor = 0.15
 			weekly_manpower = -1250
 			monthly_population = -10
 			army_core_attack_factor = 0.1
-			army_attack_factor = -0.1
+			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
-			army_defence_factor = -0.1
-			conscription = 0.5
+			army_defence_factor = -0.15
+			conscription = 0.25
 
 			
 
@@ -97,9 +97,9 @@ ideas = {
 			production_speed_infrastructure_factor = 0.15
 			weekly_manpower = -1500
 			monthly_population = -15
-			army_core_attack_factor = 0.1
+			army_core_attack_factor = 0.05
 			army_attack_factor = -0.05
-			army_core_defence_factor = 0.1
+			army_core_defence_factor = 0.05
 			army_defence_factor = -0.05
 			army_infantry_defence_factor = 0.05
 			conscription = 0.75
@@ -329,6 +329,10 @@ ideas = {
 		industrial_capacity_dockyard = -0.25
 		consumer_goods_factor = -0.1
 	}		
+	targeted_modifier = {
+		tag = ENG
+		cic_to_target_factor = 0.1
+		}
 }
 	ENG_relief_the_great_depression_ENG1 = {#缓解大萧条
 	allowed = {
@@ -369,6 +373,69 @@ modifier = {
 	production_factory_efficiency_gain_factor = -0.1
 	consumer_goods_factor = -0.05
 }		
+}
+ENG_asia_company_MAL1 = {#帝国东印度公司
+allowed = {
+	original_tag = MAL
+}
+allowed_civil_war = {
+always = yes
+}
+picture = can_wartime_prices_and_trade_board
+modifier = {
+	production_speed_buildings_factor =0.1
+	local_resources_factor = 0.3
+	conscription = -0.05
+}		
+targeted_modifier = {
+	tag = ENG
+	cic_to_target_factor = 0.25
+	}
+}
+ENG_asia_company_MAL2 = {#帝国东印度公司
+allowed = {
+	original_tag = MAL
+}
+allowed_civil_war = {
+always = yes
+}
+picture = can_wartime_prices_and_trade_board
+modifier = {
+	production_speed_buildings_factor =0.15
+	local_resources_factor = 0.5
+	political_power_gain = 0.1
+	global_building_slots_factor = 0.25
+	conscription = -0.05
+
+
+}		
+targeted_modifier = {
+	tag = ENG
+	cic_to_target_factor = 0.25
+	}
+}
+ENG_asia_company_MAL3 = {#帝国东印度公司
+allowed = {
+	original_tag = MAL
+}
+allowed_civil_war = {
+always = yes
+}
+picture = can_wartime_prices_and_trade_board
+modifier = {
+	production_speed_buildings_factor =0.15
+	local_resources_factor = 0.5
+	political_power_gain = 0.1
+	global_building_slots_factor = 0.25
+	army_attack_factor = 0.05
+	army_defence_factor = -0.05
+	army_core_defence_factor = 0.05
+	army_strength_factor = 0.05
+}		
+targeted_modifier = {
+	tag = ENG
+	cic_to_target_factor = 0.25
+	}
 }
 		george_v = {
 			
