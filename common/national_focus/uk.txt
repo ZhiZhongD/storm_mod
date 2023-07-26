@@ -3838,6 +3838,9 @@ completion_reward = {
 			factor=1
 		}
 		available_if_capitulated=yes
+		available = {
+			date > 1941.3.1
+		}
 		search_filters={
 		}
 		completion_reward={
