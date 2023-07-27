@@ -110,6 +110,10 @@ RAU_unit_production = {
 	}
 }
 
+RAU_anti_AST = {
+	
+}
+
 RAU_equipment_production = {
 	allowed = {
 		original_tag = RAU

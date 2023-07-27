@@ -3465,7 +3465,7 @@ completion_reward = {
 			OR = {
 				threat > 0.5
 			SOV = {
-				has_added_tension_amount > 15
+				has_added_tension_amount > 5
 			}
 			}
 		}

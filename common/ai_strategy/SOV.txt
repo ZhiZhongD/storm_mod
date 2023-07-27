@@ -1478,6 +1478,171 @@ sov_hate_germany= {
 		value = -200
 	}
 }
+sov_hate_ast = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		country_exists = AST
+	}
+	abort = {
+		NOT = { country_exists = AST }
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = AST
+		value = -200
+	}
+	ai_strategy = {
+		type = alliance
+		id = AST
+		value = -200
+	}
+	ai_strategy = {
+		type = ignore
+		id = AST
+		value = 100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = AST
+		value = -1000
+	}
+}
+
+sov_hate_BAU = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		country_exists = BAU
+	}
+	abort = {
+		NOT = { country_exists = BAU }
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = BAU
+		value = -200
+	}
+	ai_strategy = {
+		type = alliance
+		id = BAU
+		value = -200
+	}
+	ai_strategy = {
+		type = ignore
+		id = BAU
+		value = 100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = BAU
+		value = -1000
+	}
+}
+
+sov_allies_rau= {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		country_exists = RAU
+	}
+	abort = {
+		NOT = { country_exists = RAU }
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = RAU
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = RAU
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RAU
+		value = 200
+	}
+}
+sov_allies_prc = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		country_exists = PRC
+	}
+	abort = {
+		NOT = { country_exists = PRC }
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = PRC
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = PRC
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = PRC
+		value = 200
+	}
+}
+
+sov_allies_prc = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		country_exists = PRC
+	}
+	abort = {
+		NOT = { country_exists = PRC }
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = PRC
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = PRC
+		value = 200
+	}
+}
+sov_allies_WFA = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		country_exists = WFA
+	}
+	abort = {
+		NOT = { country_exists = WFA }
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = WFA
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = WFA
+		value = 200
+	}
+}
 
 germany_enemy = {
 	allowed = {
