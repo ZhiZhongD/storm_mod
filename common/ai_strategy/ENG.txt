@@ -1113,73 +1113,24 @@ ENG_super_boost_armor_div_med = { #lets make sure the uk upgrades armor divs to 
 	}
 }
 
-
-ENG_USA_d_day = {
-	allowed = {
-		OR = {
+reaction_anti_SOV_army = {#反动派调兵苏联
+		allowed = {
+			original_tag = ENG
+			original_tag = GER
 			original_tag = USA
-			original_tag = ENG
 		}
-	}
-	enable = {
-		date > 1941.9.1
-	}
 
-	ai_strategy = {
-		type = area_priority
-		id = normandy_landing_zone
-		value = 60
-	}
+		enable = {
+			is_in_faction_with = GER
+		}
 
-	ai_strategy = {
-		type = invasion_unit_request
-		area = normandy_landing_zone
-		value = 5
-	}
-
+		ai_strategy = {
+			type = prepare_for_war
+			id = SOV
+			value = 1000
+		}
 }
 
-ENG_RAJ_the_hot_gates = {
-	allowed = {
-		OR = {
-			original_tag = ENG
-			original_tag = RAJ
-		}
-	}
-	enable = {
-		OR = {
-			671 = { is_controlled_by = JAP }
-			670 = { is_controlled_by = JAP }
-		}
-	}
-
-	ai_strategy = {
-		type = area_priority
-		id = burma
-		value = 60
-	}
-
-	ai_strategy = {
-		type = front_unit_request
-		area = burma
-		value = 8
-	}
-
-	ai_strategy = {
-		type = put_unit_buffers
-		# burmese states
-		states = {
-			288
-			640
-			430
-		}
-		ratio = 0.05
-		area = burma
-		subtract_invasions_from_need = no
-		subtract_fronts_from_need = yes
-	}
-
-}
 
 
 

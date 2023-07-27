@@ -1,0 +1,378 @@
+# AI plane design for testing
+
+SOV_fighter = {
+	category = air
+
+	available_for = { SOV }
+
+	roles = {
+		air_fighter
+	}
+
+	priority = {
+		factor = 1000
+	}
+
+	great_war_fighter_default = {
+		priority = {
+			factor = 1
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 1000
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
+			}
+		}
+
+		allowed_modules = {
+			engine_1_1x
+			light_mg_2x
+		}
+	}
+
+	basic_fighter_default = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
+			}
+		}
+
+		allowed_modules = {
+			aircraft_cannon_1_2x
+			light_mg_4x
+			engine_2_1x
+		}
+	}
+
+	improved_fighter_default = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = aa_cannon_2
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 3000
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = armor_plate_small
+			}
+		}
+
+		allowed_modules = {
+			heavy_mg_4x
+			engine_2_1x
+			radio_navigation_2
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+			#non_strategic_materials_small
+		}
+	}
+
+	improved_fighter_2 = { #FW 190
+		priority = {
+			factor = 15
+			modifier = { 
+				not = { has_tech = aa_cannon_2 }
+				has_tech = advanced_small_airframe 
+				factor = 0
+			}
+		}
+
+		target_variant = {
+			match_value = 3500
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = armor_plate_small
+			}
+		}
+
+		allowed_modules = {
+			heavy_mg_4x
+			engine_2_1x
+			radio_navigation_2
+			armor_plate_small
+			#non_strategic_materials_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	advanced_fighter_default = { #Ta 152
+		priority = {
+			factor = 20
+			modifier = { 
+				not = { has_tech = aa_cannon_2 }
+				not = { has_tech = improved_small_airframe }
+				factor = 0
+			}
+			modifier = { 
+				has_tech = modern_small_airframe
+				factor = 0
+			}
+		}
+
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_2x
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = non_strategic_materials_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = armor_plate_small
+			}
+		}
+
+		allowed_modules = { 
+			aircraft_cannon_2_2x
+			heavy_mg_4x
+			engine_3_1x
+			#radio_navigation_2
+			armor_plate_small
+			non_strategic_materials_small
+			#self_sealing_fuel_tanks_small
+		}
+	}
+	jet_fighter_default = { #Me 262
+		priority = {
+			factor = 100
+		}
+
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_3 = heavy_mg_4x
+				engine_type_slot = jet_engine_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = armor_plate_small
+			}
+		}
+
+		allowed_modules = { 
+			aircraft_cannon_2_2x
+			heavy_mg_4x
+			jet_engine_1x
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+}
+
+SOV_cas = {
+	category = air
+
+	available_for = {SOV}
+
+	roles = {
+		air_cas
+	}
+
+	priority = {
+		factor = 100
+	}
+	cas_0 = { #Hs 123
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 500
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			
+		}
+
+		allowed_modules = {
+			small_bomb_bay
+			engine_1_1x
+		}
+	}
+	cas_1 = { #Ju 87
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+			
+		}
+
+
+		target_variant = {
+			match_value = 1000
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = dive_brakes_small
+			}
+			
+		}
+
+		allowed_modules = {
+			bomb_locks
+			engine_1_1x
+			dive_brakes_small
+		}
+	}
+	cas_2 = { #Ju 87 G
+		priority = {
+			factor = 150
+			modifier = { 
+				has_tech = advanced_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		target_variant = {
+			match_value = 1500
+			type = small_plane_cas_airframe_2
+			modules = {
+				fixed_main_weapon_slot = tank_buster_2
+				fixed_auxiliary_weapon_slot_1 = rocket_rails
+				fixed_auxiliary_weapon_slot_2 = rocket_rails
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = dive_brakes_small
+				special_type_slot_3 = armor_plate_small
+			}
+		}
+
+		allowed_modules = {
+			bomb_locks
+			tank_buster_2
+			rocket_rails
+			small_bomb_bay
+			#bomb_locks
+			engine_3_1x
+			#radio_navigation_2
+			dive_brakes_small
+			armor_plate_small
+			#non_strategic_materials_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+	cas_3 = { #HS 129
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = modern_small_airframe
+				factor = 0
+			}
+		}
+		target_variant = {
+			match_value = 2500
+			type = small_plane_cas_airframe_3
+			modules = {
+				fixed_main_weapon_slot = tank_buster_2
+				fixed_auxiliary_weapon_slot_1 = rocket_rails
+				fixed_auxiliary_weapon_slot_2 = rocket_rails
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = dive_brakes_small
+				special_type_slot_3 = armor_plate_small
+			}
+		}
+
+		allowed_modules = {
+			tank_buster_2
+			rocket_rails
+			small_bomb_bay
+			#bomb_locks
+			engine_3_1x
+			engine_3_2x
+			#radio_navigation_2
+			dive_brakes_small
+			armor_plate_small
+			#non_strategic_materials_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+	cas_4 = {
+		priority = {
+			factor = 300
+		}
+		target_variant = {
+			match_value = 3000
+			type = small_plane_cas_airframe_4
+			modules = {
+				fixed_main_weapon_slot = tank_buster_2
+				fixed_auxiliary_weapon_slot_1 = rocket_rails
+				fixed_auxiliary_weapon_slot_2 = rocket_rails
+				fixed_auxiliary_weapon_slot_3 = rocket_rails
+				engine_type_slot = jet_engine_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = dive_brakes_small
+				special_type_slot_3 = armor_plate_small
+			}
+		}
+
+		allowed_modules = {
+			tank_buster_2
+			rocket_rails
+			small_bomb_bay
+			#bomb_locks
+			jet_engine_1x
+			#radio_navigation_2
+			dive_brakes_small
+			armor_plate_small
+			non_strategic_materials_small
+			self_sealing_fuel_tanks_small
+		}
+	}
+}
