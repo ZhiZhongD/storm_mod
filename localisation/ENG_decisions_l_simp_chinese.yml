@@ -14,7 +14,19 @@
  eng_add_fin_into_war_dec:0 "邀请芬兰向苏联开战"
  eng_volunteer_of_anti_soviet_dec:0 "英国号召反共志愿军"
  
- ENG_Africa_union_dec_categories:0 "非洲计划"
+ ENG_SAF_union_dec_categories:0 "南非联邦计划"
  ENG_Africa_ask_land1:0 "索取土地"
  ENG_Africa_ask_land2:0 "索取土地"
  ENG_Africa_transfer_to_SAF:0 "将[FROM.GetName]并入南非"
+
+ ENG_CAR_union_dec_categories:0 "中非联邦计划"
+ ENG_Africa_form_to_CAR:0 "成立中非联邦"
+ ENG_Africa_transfer_to_CAR:0 "将[FROM.GetName]并入中非"
+
+ ENG_LIB_union_dec_categories:0 "西非联邦计划"
+ ENG_Africa_form_to_LIB:0 "成立西非联邦"
+ ENG_Africa_transfer_to_LIB:0 "将[FROM.GetName]并入西非"
+
+ ENG_ALG_union_dec_categories:0 "北非联邦计划"
+ ENG_Africa_form_to_ALG:0 "成立北非联邦"
+ ENG_Africa_transfer_to_ALG:0 "将[FROM.GetName]并入北非"

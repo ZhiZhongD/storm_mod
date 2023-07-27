@@ -23,9 +23,6 @@ focus_tree = {
 		id = crypto_bomb_focus
 		available = {
 				has_war_with = SOV
-				POL = {
-					NOT = { is_in_faction_with = GER } #We assume POL will help vs Germany unless they are allied to them
-				}
 			}
 		
 
@@ -603,7 +600,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -622,7 +619,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = shadow_scheme_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -691,7 +688,7 @@ focus_tree = {
 		relative_position_id = limited_rearmament_focus
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {
@@ -714,7 +711,7 @@ focus_tree = {
 		relative_position_id = general_rearmament_focus
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}	
 		completion_reward = {
 			add_ideas = ENG_special_air_service_idea
@@ -765,7 +762,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1118,7 +1115,7 @@ focus_tree = {
 		relative_position_id = air_rearmament_focus
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}	
 		completion_reward = {
 			army_experience = 25
@@ -2021,6 +2018,9 @@ focus_tree = {
 			release_autonomy = {
 				target = EGY
 				autonomy_state = empire_freedom_state
+			}
+			SAF = {
+				set_cosmetic_tag = ENGSAF_democratic
 			}
 			EGY = {
 				every_state = {
@@ -3100,7 +3100,6 @@ completion_reward = {
 
 	focus = {#帝国联邦 
 		id = ENG_imperial_federation
-		prerequisite = { focus = uk_african_federation }
 		prerequisite = { focus = uk_empire_politics }
 		available = {
 				AND = {
@@ -3387,7 +3386,7 @@ completion_reward = {
 
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=10000
 		}
 		available_if_capitulated=yes
 		search_filters={
