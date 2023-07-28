@@ -1892,7 +1892,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 10
+		cost = 5
 		completion_reward = {
 			if = {
 				limit = {
@@ -1995,7 +1995,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_african_fortress
-		cost = 10
+		cost = 5
 		completion_reward = {
 			set_autonomy = {
 				target = SAF
@@ -2034,7 +2034,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_african_union_plan
-		cost = 10
+		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = uk_african_union_prepare_tooltip
 		}
@@ -2112,7 +2112,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_africa_economic
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2772,9 +2772,9 @@ completion_reward = {
 		x = -7
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			
 		}
 		completion_reward = {
@@ -2804,7 +2804,7 @@ completion_reward = {
 		x = -9
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			
@@ -3209,26 +3209,23 @@ completion_reward = {
 		y = 1
 		relative_position_id = ENG_steady_as_she_goes
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=100
-			modifier = {
-				factor = 0
-				FRA = {
-					has_completed_focus = FRA_invite_communist_ministers
-				}
-			}	
 		}
 		available_if_capitulated=yes
 		
 		completion_reward={
+			add_political_power = 300
 			set_rule = {
 				can_guarantee_other_ideologies = no
 			}
 			FRA = {
-				
 					give_guarantee = POL
-				
+					give_guarantee = HOL
+					give_guarantee = LUX
+					give_guarantee = BEL
+					give_guarantee = DEN
 			}
 			126 = {
 				add_building_construction = {
@@ -3372,9 +3369,9 @@ completion_reward = {
 
 		icon = GFX_goal_anti_comintern_pact
 
-		cost=10
+		cost=5
 		ai_will_do={
-			factor=10000
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -3395,7 +3392,7 @@ completion_reward = {
 
 		icon = GFX_goal_generic_forceful_treaty
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=100
 		}
@@ -3418,7 +3415,7 @@ completion_reward = {
 
 		icon = GFX_focus_befriend_italy
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=100
 		}
@@ -3524,8 +3521,19 @@ completion_reward = {
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = {
+			OR = {
+				date > 1937.7.1
+				has_country_leader = {
+					character = ENG_neville_chamberlain
+					ruling_only = yes
+				}	
+			}
+		}
 		completion_reward={
 			country_event = St_eng.0013
+			add_war_support = 0.1
+			add_stability = 0.1
 		}
 	}
 	focus={#禁运苏联
@@ -3543,7 +3551,7 @@ completion_reward = {
 			is_embargoing = SOV
 		}
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3565,7 +3573,7 @@ completion_reward = {
 
 		icon = GFX_focus_ITA_generic_fascist_workers
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3589,7 +3597,7 @@ completion_reward = {
 
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3612,7 +3620,7 @@ completion_reward = {
 
 		icon = GFX_focus_prc_infiltration
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3633,7 +3641,7 @@ completion_reward = {
 
 		icon = GFX_focus_SOV_mobilization_plan
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3678,7 +3686,7 @@ completion_reward = {
 
 		icon = GFX_focus_generic_attack_iran
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3715,7 +3723,7 @@ completion_reward = {
 
 		icon = GFX_focus_generic_truck
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3743,7 +3751,7 @@ completion_reward = {
 				}
 			}
 		}
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3765,7 +3773,7 @@ completion_reward = {
 
 		icon = GFX_focus_generic_attack_sweden
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3787,7 +3795,7 @@ completion_reward = {
 
 		icon = GFX_focus_generic_little_entente
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3807,7 +3815,7 @@ completion_reward = {
 
 		icon = GFX_focus_invite_finland
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -3862,15 +3870,9 @@ completion_reward = {
 
 		icon = GFX_goal_generic_position_armies
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=0
-			modifier = {
-				factor = 10000
-				FRA = {
-					has_completed_focus = FRA_invite_communist_ministers
-				}
-			}	
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -3985,9 +3987,9 @@ completion_reward = {
 		relative_position_id = ENG_negotiate_with_germany
 		prerequisite={focus= ENG_negotiate_with_germany}
 
-		icon = GFX_focus_ITA_capo_supremo
+		icon = GFX_focus_ger_assassinate_mussolini
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=100
 		}
@@ -4010,7 +4012,7 @@ completion_reward = {
 
 		icon = GFX_goal_demand_sudetenland
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=100
 		}
@@ -4041,7 +4043,7 @@ completion_reward = {
 
 		icon = GFX_focus_attack_france
 
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=100
 		}

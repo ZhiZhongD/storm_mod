@@ -67,21 +67,271 @@ SOV_make_some_radar_1 = {#建造雷达的倾向
 		type = build_building
 		id = radar_station
 		target = 195 #leningrad
-		value = 2000
+		value = 3
 	}
 	ai_strategy = {
 		type = build_building
 		id = radar_station
 		target = 219 #moscow
-		value = 3000
+		value = 3
 	}
 	ai_strategy = {
 		type = build_building
 		id = radar_station
 		target = 217 #stalingrad
-		value = 3000
+		value = 3
 	}
 }
+SOV_make_some_industrial_complex_on_main_place = {#铺工厂
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		date < 1939.12.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 195 #列宁格勒
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 219 #莫斯科
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 217 #斯大林格勒
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 229 #阿塞拜疆（巴库油田）
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 252 #高尔基（莫斯科东面）
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 221 #哈尔科夫
+		value = 10
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 252 #斯大林诺（哈尔科夫南面）
+		value = 2000
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 527 #车里雅宾斯克
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 653 #斯维尔德洛夫斯克（车里雅宾斯克北面）
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 405 #塔什干
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 586 #阿拉木图
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 248 #雅罗斯拉夫尔
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 254 #梁赞
+		value = 24
+	}
+	ai_strategy = {
+		type = build_building
+		id = industrial_complex
+		target = 242 #斯摩棱斯克（莫斯科门户）
+		value = 10
+	}
+}
+SOV_make_some_infrastructure = {#铺基建
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 195 #列宁格勒
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 219 #莫斯科
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 217 #斯大林格勒
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 229 #阿塞拜疆（巴库油田）
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 252 #高尔基（莫斯科东面）
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 221 #哈尔科夫
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 252 #斯大林诺（哈尔科夫南面）
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 527 #车里雅宾斯克
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 653 #斯维尔德洛夫斯克（车里雅宾斯克北面）
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 405 #塔什干
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 586 #阿拉木图
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 248 #雅罗斯拉夫尔
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 254 #梁赞
+		value = 5
+	}
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 242 #斯摩棱斯克（莫斯科门户）
+		value = 5
+	}
+}
+
+SOV_has_brain_for_industrial_plan = {#大脑升级
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 195 #列宁格勒
+		value = 10000
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 219 #莫斯科
+		value = 10000
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 217 #斯大林格勒
+		value = 10000
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 229 #阿塞拜疆（巴库油田）
+		value = 10000
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 252 #高尔基（莫斯科东面）
+		value = 5
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 221 #哈尔科夫
+		value = 5
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 252 #斯大林诺（哈尔科夫南面）
+		value = 5
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 405 #塔什干
+		value = 5
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 254 #梁赞
+		value = 5
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 242 #斯摩棱斯克（莫斯科门户）
+		value = 5
+	}
+}
+
 SOV_offensive_assignments = {#苏联装甲进攻倾向
 	allowed = {
 		original_tag = SOV
@@ -187,76 +437,6 @@ SOV_front_italy_1 = {#针对意大利
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = ITA
-		value = 50
-	}
-	ai_strategy = {
-	 	type = front_armor_score
-		id = ITA
-		value = 50
-	}
-}
-SOV_front_italy_2 = {
-	
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_war_with = ITA
-		#ITA = { is_ai = no }
-		has_equipment = { infantry_equipment > 10000 }
-	}
-
-	
-	ai_strategy = {
-		type = front_control
-
-		tag = ITA
-
-		ratio = 0.5
-
-		priority = 200
-		ordertype = front
-		execution_type = careful
-		execute_order = yes
-	}
-	ai_strategy = {
-	 	type = front_unit_request
-		tag = ITA
-		value = 100
-	}
-	ai_strategy = {
-	 	type = front_armor_score
-		id = ITA
-		value = 100
-	}
-}
-SOV_front_italy_3 = {
-	
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_war_with = ITA
-		#ITA = { is_ai = no }
-		has_equipment = { infantry_equipment > 10000 }
-	}
-
-	
-	ai_strategy = {
-		type = front_control
-
-		tag = ITA
-
-		ratio = 0.7
-
-		priority = 300
-		ordertype = front
-		execution_type = balanced
-		execute_order = yes
-	}
-	ai_strategy = {
-	 	type = front_unit_request
-		tag = ITA
 		value = 500
 	}
 	ai_strategy = {
@@ -293,83 +473,15 @@ SOV_front_japan_1 = {#针对日本
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = JAP
-		value = 50
-	}
-	ai_strategy = {
-	 	type = front_armor_score
-		id = JAP
-		value = 50
-	}
-}
-SOV_front_japan_2 = {
-	
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_war_with = JAP
-		#JAP = { is_ai = no }
-		has_equipment = { infantry_equipment > 10000 }
-	}
-
-	
-	ai_strategy = {
-		type = front_control
-
-		tag = JAP
-
-		ratio = 0.5
-
-		priority = 200
-		ordertype = front
-		execution_type = careful
-		execute_order = yes
-	}
-	ai_strategy = {
-	 	type = front_unit_request
-		tag = JAP
-		value = 200
-	}
-	ai_strategy = {
-	 	type = front_armor_score
-		id = JAP
-		value = 100
-	}
-}
-SOV_front_japan_3 = {
-	
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_war_with = JAP
-		#JAP = { is_ai = no }
-		has_equipment = { infantry_equipment > 10000 }
-	}
-	
-	ai_strategy = {
-		type = front_control
-
-		tag = JAP
-
-		ratio = 0.7
-
-		priority = 300
-		ordertype = front
-		execution_type = balanced
-		execute_order = yes
-	}
-	ai_strategy = {
-	 	type = front_unit_request
-		tag = JAP
 		value = 500
 	}
 	ai_strategy = {
 	 	type = front_armor_score
 		id = JAP
-		value = 250
+		value = 500
 	}
 }
+
 SOV_front_us_1 = {#针对美国
 	
 	allowed = {
@@ -401,88 +513,15 @@ SOV_front_us_1 = {#针对美国
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = USA
-		value = 50
-	}
-	ai_strategy = {
-	 	type = front_armor_score
-		id = USA
-		value = 100
-	}
-}
-SOV_front_us_2 = {
-	
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_war_with = USA
-		#USA = { is_ai = no }
-		has_equipment = { infantry_equipment > 10000 }
-		OR = {
-			is_in_faction_with = GER
-			is_in_faction_with = ENG
-		}
-	}
-
-	
-	ai_strategy = {
-		type = front_control
-
-		tag = USA
-
-		ratio = 0.5
-
-		priority = 200
-		ordertype = front
-		execution_type = careful
-		execute_order = yes
-	}
-	ai_strategy = {
-	 	type = front_unit_request
-		tag = USA
-		value = 200
-	}
-	ai_strategy = {
-	 	type = front_armor_score
-		id = "USA"
-		value = 250
-	}
-}
-SOV_front_us_3 = {
-	
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_war_with = USA
-		#USA = { is_ai = no }
-		has_equipment = { infantry_equipment > 10000 }
-	}
-
-	
-	ai_strategy = {
-		type = front_control
-
-		tag = USA
-
-		ratio = 0.7
-
-		priority = 300
-		ordertype = front
-		execution_type = balanced
-		execute_order = yes
-	}
-	ai_strategy = {
-	 	type = front_unit_request
-		tag = USA
 		value = 500
 	}
 	ai_strategy = {
 	 	type = front_armor_score
 		id = USA
-		value = 500
+		value = 750
 	}
 }
+
 SOV_front_uk_1 = {
 	
 	allowed = {
@@ -510,83 +549,15 @@ SOV_front_uk_1 = {
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = ENG
-		value = 150
+		value = 750
 	}
 	ai_strategy = {
 	 	type = front_armor_score
 		id = ENG
-		value = 150
+		value = 750
 	}
 }
-SOV_front_uk_2 = {
-	
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_war_with = ENG
-		#ENG = { is_ai = no }
-		has_equipment = { infantry_equipment > 10000 }
-	}
-	
-	ai_strategy = {
-		type = front_control
 
-		tag = ENG
-
-		ratio = 0.5
-
-		priority = 200
-		ordertype = front
-		execution_type = careful
-		execute_order = yes
-	}
-	ai_strategy = {
-	 	type = front_unit_request
-		tag = ENG
-		value = 250
-	}
-	ai_strategy = {
-	 	type = front_armor_score
-		id = ENG
-		value = 200
-	}
-}
-SOV_front_uk_3 = {
-	
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_war_with = ENG
-		#ENG = { is_ai = no }
-		has_equipment = { infantry_equipment > 10000 }
-	}
-
-	
-	ai_strategy = {
-		type = front_control
-
-		tag = ENG
-
-		ratio = 0.7
-
-		priority = 300
-		ordertype = front
-		execution_type = balanced
-		execute_order = yes
-	}
-	ai_strategy = {
-	 	type = front_unit_request
-		tag = ENG
-		value = 500
-	}
-	ai_strategy = {
-	 	type = front_armor_score
-		id = ENG
-		value = 500
-	}
-}
 SOV_front_france_1 = {
 	
 	allowed = {
@@ -614,86 +585,14 @@ SOV_front_france_1 = {
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = FRA
-		value = 50
-	}
-	ai_strategy = {
-	 	type = front_armor_score
-		id = "FRA"
-		value = 50
-	}
-}
-SOV_front_france_2 = {
-	
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_idea = sov_defense_2
-		has_war_with = FRA
-		#FRA = { is_ai = no }
-		has_equipment = { infantry_equipment > 10000 }
-	}
-
-	
-	ai_strategy = {
-		type = front_control
-
-		tag = FRA
-
-		ratio = 0.5
-
-		priority = 200
-		ordertype = front
-		execution_type = careful
-		execute_order = yes
-	}
-	ai_strategy = {
-	 	type = front_unit_request
-		tag = FRA
-		value = 100
+		value = 500
 	}
 	ai_strategy = {
 	 	type = front_armor_score
 		id = FRA
-		value = 100
+		value = 500
 	}
 }
-SOV_front_france_3 = {
-	
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_war_with = FRA
-		#FRA = { is_ai = no }
-		has_equipment = { infantry_equipment > 10000 }
-	}
-
-	
-	ai_strategy = {
-		type = front_control
-
-		tag = FRA
-
-		ratio = 0.7
-
-		priority = 300
-		ordertype = front
-		execution_type = balanced
-		execute_order = yes
-	}
-	ai_strategy = {
-	 	type = front_unit_request
-		tag = FRA
-		value = 200
-	}
-	ai_strategy = {
-	 	type = front_armor_score
-		id = FRA
-		value = 200
-	}
-}
-
 SOV_front_germany_1 = {
 	
 	allowed = {
@@ -725,6 +624,10 @@ SOV_front_germany_1 = {
 	 	type = front_armor_score
 		id = GER
 		value = 5000
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 30000
 	}
 }
 SOV_addintelligence_agency_normal_upgrade_prio = {
@@ -2996,7 +2899,24 @@ SOV_defend_blitzkrieg  = {#Only perform careful attacks, we want to defend while
 #	}
 #
 #}
+SOV_wants_infrastructure = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+			has_war = no
+	}
 
+	abort = {
+		has_war = yes
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = infrastructure
+		value = 3000
+	}
+}
 SOV_wants_civ = {
 	allowed = {
 		original_tag = SOV
@@ -3004,11 +2924,14 @@ SOV_wants_civ = {
 	enable = {
 		date < 1939.12.1
 	}
+	abort = {
+		date > 1939.12.1
+	}
 
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 300
+		value = 500
 	}
 }
 
@@ -3017,15 +2940,11 @@ SOV_wants_armsfactory = {
 		original_tag = SOV
 	}
 	enable = {
-		or = {
-			date > 1940.7.1
-			any_enemy_country = { is_major = yes }
-			num_of_military_factories > 200
-		}
+			has_war = yes
 	}
 
 	abort = {
-		surrender_progress > 0.2
+		has_war = no
 	}
 
 	ai_strategy = {
@@ -3040,7 +2959,6 @@ SOV_wants_armsfactory_2 = {
 		original_tag = SOV
 	}
 	enable = {
-		date > 1941.1.1
 		surrender_progress > 0.2
 	}
 	abort = {
@@ -3059,6 +2977,10 @@ SOV_wants_armsfactory_2 = {
 		type = building_target
 		id = dockyard
 		value = -300
+	}
+	ai_strategy={
+		type = added_military_to_civilian_factory_ratio
+		value = 100
 	}
 }
 

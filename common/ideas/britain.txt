@@ -550,7 +550,7 @@ targeted_modifier = {
 		ENG_the_war_to_end_all_wars = {
 			
 			allowed = {
-				always = no
+				original_tag = ENG
 			}
 
 			allowed_civil_war = {
@@ -567,10 +567,10 @@ targeted_modifier = {
 			}
 		}
 		
-		stiff_upper_lip = {
+		stiff_upper_lip = {#英国斯多葛主义
 			
 			allowed = {
-				always = no
+				original_tag = ENG
 			}
 			
 			removal_cost = -1
@@ -581,8 +581,6 @@ targeted_modifier = {
 			
 			modifier = {
 				drift_defence_factor = 0.5
-				ai_desired_divisions_factor = 3
-				ai_focus_aviation_factor = 0.5
 			}
 			
 			rule = {
@@ -608,6 +606,7 @@ targeted_modifier = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
+				ai_focus_aviation_factor = 0.5
 			}
 		}
 		
@@ -785,8 +784,7 @@ targeted_modifier = {
 				planning_speed = 0.1
 				max_planning_factor = 0.1
 				command_power_gain = 0.1
-				
-
+				ai_desired_divisions_factor = 1 
 			}
 
 			picture = eng_chiefs_of_staff_committee

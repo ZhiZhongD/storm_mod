@@ -564,16 +564,16 @@ country_event = {#德国谈判-同意
 		28 = {
 			transfer_state_to = GER
 		}
-		18 = { transfer_state_to = FRA }
-		22 = { transfer_state_to = FRA }
-		20 = { transfer_state_to = FRA }
-		32 = { transfer_state_to = FRA }
-		21 = { transfer_state_to = FRA }
-		851 = { transfer_state_to = FRA }
-		17 = { transfer_state_to = FRA }
-		27 = { transfer_state_to = FRA }
-		26 = { transfer_state_to = FRA }
-		735 = { transfer_state_to = FRA }
+		every_state = {
+			limit = {
+				AND = {
+				is_core_of = FRA
+				is_on_continent = europe
+
+				}
+			}
+			transfer_state_to = FRA
+		}
 		FRA = {
 			set_capital ={
 				state = 27
