@@ -581,6 +581,8 @@ targeted_modifier = {
 			
 			modifier = {
 				drift_defence_factor = 0.5
+				ai_desired_divisions_factor = 3
+				ai_focus_aviation_factor = 0.5
 			}
 			
 			rule = {

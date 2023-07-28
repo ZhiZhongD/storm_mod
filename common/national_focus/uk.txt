@@ -883,19 +883,7 @@ focus_tree = {
 			factor = 3
 		}
 
-		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = air_focus_bypass_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-			}
-		}
+	
 
 		complete_tooltip = {
 			every_state = {

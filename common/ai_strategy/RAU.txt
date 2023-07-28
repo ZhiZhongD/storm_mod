@@ -469,6 +469,11 @@ RAU_halt_light_armor_production_in_transitioning = {
 	value = 100
 	}
 	ai_strategy = {
+		type = prepare_for_war
+		id = "BAU"
+		value = 100
+		}
+	ai_strategy = {
 	type = send_volunteers_desire
 	id = "SPR"
 	value = 100
@@ -483,3 +488,27 @@ RAU_halt_light_armor_production_in_transitioning = {
 	id = "SOV"
 	value = 100
 	}
+
+	RAU_hate_SOV = {
+		allowed = {
+			original_tag = RAU
+		}
+		enable = {
+			country_exists = SOV
+		}
+		abort = {
+			NOT = { country_exists = SOV }
+		}
+	
+		ai_strategy = {
+			type = befriend
+			id = SOV
+			value = 200
+		}
+		ai_strategy = {
+			type = alliance
+			id = SOV
+			value = 200
+		}
+	}
+	
