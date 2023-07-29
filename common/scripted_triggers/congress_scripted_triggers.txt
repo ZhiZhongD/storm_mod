@@ -13,6 +13,12 @@ stalinist_help_a = {
 		check_variable = { stalinist_help>75 }
 	}
 }
+stalinist_help_no = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_stalinist_no
+		check_variable = { stalinist_help<100 }
+	}
+}
 trotzkyist_help = {
 	custom_trigger_tooltip = {
 		tooltip = SOV_tooltip_trotzkyist
@@ -23,6 +29,12 @@ trotzkyist_help_a = {
 	custom_trigger_tooltip = {
 		tooltip = SOV_tooltip_trotzkyist_a
 		check_variable = { trotzkyist_help>75 }
+	}
+}
+trotzkyist_help_no = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_trotzkyist_no
+		check_variable = { trotzkyist_help<100 }
 	}
 }
 bukharinist_help = {
@@ -37,6 +49,12 @@ bukharinist_help_a = {
 		check_variable = { bukharinist_help>75 }
 	}
 }
+bukharinist_help_no = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_bukharinist_no
+		check_variable = { bukharinist_help<100 }
+	}
+}
 unionist_help = {
 	custom_trigger_tooltip = {
 		tooltip = SOV_tooltip_unionist
@@ -47,5 +65,11 @@ unionist_help_a = {
 	custom_trigger_tooltip = {
 		tooltip = SOV_tooltip_unionist_a
 		check_variable = { unionist_help>75 }
+	}
+}
+unionist_help_no = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_tooltip_unionist_no
+		check_variable = { unionist_help<100 }
 	}
 }

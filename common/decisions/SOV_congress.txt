@@ -5,6 +5,9 @@ SOV_factional_struggle={
 			tag=SOV
  
 		}
+		available={
+			stalinist_help_no=yes
+		}
 		icon = GFX_generic_political_discourse
 		modifier = {
 			political_power_gain = -0.3
@@ -20,6 +23,9 @@ SOV_factional_struggle={
 		visible = {
 			tag=SOV
  
+		}
+		available={
+			trotzkyist_help_no=yes
 		}
 		icon = GFX_generic_political_discourse
 		modifier = {
@@ -37,6 +43,9 @@ SOV_factional_struggle={
 			tag=SOV
  
 		}
+		available={
+			bukharinist_help_no=yes
+		}
 		icon = GFX_generic_political_discourse
 		modifier = {
 			political_power_gain = -0.3
@@ -53,14 +62,16 @@ SOV_factional_struggle={
 			tag=SOV
  
 		}
+		available={
+			unionist_help_no = yes
+		}
 		icon = GFX_generic_political_discourse
 		modifier = {
-			consumer_goods_factor = 0.02
+			political_power_gain = -0.3
 		}
         remove_effect={
 			custom_effect_tooltip=SOV_tooltip_unionist_tall
 			add_to_variable = { unionist_help = 5 }
-			add_stability=0.005
 		}
 		days_remove = 40
 	}
