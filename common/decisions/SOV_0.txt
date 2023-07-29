@@ -788,6 +788,7 @@ SOV_comintern_focus = {
 		}
 
 	}
+}
 SOV_addressing_internal_affairs_focus={
 
 	complete_SOV_nkvd_primacy={
@@ -1182,5 +1183,4 @@ SOV_central_development_plan={
 			civilian_factory_use = 6
 		}
 	}
-}
 }
