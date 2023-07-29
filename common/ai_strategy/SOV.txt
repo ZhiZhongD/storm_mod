@@ -10,6 +10,98 @@
 # protect
 # influence
 
+SOV_econ_idea0 = {
+	allowed = { tag = SOV }
+	enable = { 
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = tot_economic_mobilisation
+		id = idea
+		value = 100
+	}
+}
+
+SOV_econ_idea1 = {
+	allowed = { tag = SOV }
+	enable = { 
+		if = {
+			NOT = {
+				has_idea = tot_economic_mobilisation
+			} 
+		}	
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = war_economy
+		id = idea
+		value = 100
+	}
+}
+
+SOV_econ_idea2 = {
+	allowed = { tag = SOV }
+	enable = { 
+		if = {
+			NOT = {
+				has_idea = tot_economic_mobilisation
+			} 
+			NOT ={
+				has_idea = war_economy
+			}  
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = partial_economic_mobilisation
+		id = idea
+		value = 50
+	}
+}
+SOV_build_10M_divisions = {#苏联战前爆兵ai
+	allowed = { tag = SOV }
+	enable = { 
+		date < 1941.1.1
+		has_army_manpower = { size < 10000000 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { 
+		type = build_army 
+		id = infantry value = 500 
+	}
+	ai_strategy = { 
+		type = force_build_armies 
+		value = 300 
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 100
+	}
+}
+
+UAI_SOV_build_armor_corps = {#苏联装甲
+	allowed = { tag = SOV }
+	enable = { 
+		any_country = {
+			limit = {
+				is_major = yes
+			}
+			has_war = yes
+		}
+		}
+	abort_when_not_enabled = yes
+	ai_strategy = { 
+		type = build_army 
+		id = armor value = 500 
+	}
+	ai_strategy = { 
+		type = force_build_armies 
+		value = 300 
+	}
+}
+
 
 
 SOV_heavy_howitzer_tech = {#貌似是重视火炮科技
@@ -144,66 +236,6 @@ SOV_make_some_infrastructure = {#铺基建#由于不明原因而不生效
 		target = 229 #阿塞拜疆（巴库油田）
 		value = 5
 	}
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 252 #高尔基（莫斯科东面）
-		value = 5
-	}
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 221 #哈尔科夫
-		value = 5
-	}
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 252 #斯大林诺（哈尔科夫南面）
-		value = 5
-	}
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 527 #车里雅宾斯克
-		value = 5
-	}
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 653 #斯维尔德洛夫斯克（车里雅宾斯克北面）
-		value = 5
-	}
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 405 #塔什干
-		value = 5
-	}
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 586 #阿拉木图
-		value = 5
-	}
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 248 #雅罗斯拉夫尔
-		value = 5
-	}
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 254 #梁赞
-		value = 5
-	}
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		target = 242 #斯摩棱斯克（莫斯科门户）
-		value = 5
-	}
 }
 
 SOV_has_brain_for_industrial_plan = {#大脑升级
@@ -233,6 +265,51 @@ SOV_has_brain_for_industrial_plan = {#大脑升级
 	ai_strategy = {
 		type = factory_build_score_factor
 		target = 252 #高尔基（莫斯科东面）
+		value = 50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 254 #梁赞
+		value = 50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 253 #伊万诺沃
+		value = 50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 651 #乌法
+		value = 50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 247 #加里宁
+		value = 50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 137 #克里米亚
+		value = 50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 572 #车里雅宾斯克
+		value = 50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 408 #海参崴
+		value = 50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 405 #塔什干
+		value = 50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 242 #斯摩棱斯克（莫斯科门户）
 		value = 5
 	}
 	ai_strategy = {
@@ -247,14 +324,15 @@ SOV_has_brain_for_industrial_plan = {#大脑升级
 	}
 	ai_strategy = {
 		type = factory_build_score_factor
-		target = 254 #梁赞
+		target = 202 #基辅
 		value = 5
 	}
 	ai_strategy = {
 		type = factory_build_score_factor
-		target = 242 #斯摩棱斯克（莫斯科门户）
+		target = 239 #萨拉托夫
 		value = 5
 	}
+
 }
 
 SOV_offensive_assignments = {#苏联装甲进攻倾向
@@ -282,22 +360,22 @@ SOV_offensive_assignments = {#苏联装甲进攻倾向
 	ai_strategy = {
 		type = front_armor_score
 		id = GER
-		value = 1000
+		value = 100
 	}
 	ai_strategy = {
 		type = front_armor_score
 		id = ENG
-		value = 1000
+		value = 100
 	}
 	ai_strategy = {
 		type = front_armor_score
 		id = USA
-		value = 1000
+		value = 100
 	}
 	ai_strategy = {
 		type = front_armor_score
 		id = JAP
-		value = 1000
+		value = 100
 	}
 }
 no_access_to_SOV = {#反军通杀
@@ -362,12 +440,12 @@ SOV_front_italy_1 = {#针对意大利
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = ITA
-		value = 500
+		value = 50
 	}
 	ai_strategy = {
 	 	type = front_armor_score
 		id = ITA
-		value = 500
+		value = 50
 	}
 }
 
@@ -398,12 +476,12 @@ SOV_front_japan_1 = {#针对日本
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = JAP
-		value = 500
+		value = 50
 	}
 	ai_strategy = {
 	 	type = front_armor_score
 		id = JAP
-		value = 500
+		value = 50
 	}
 }
 
@@ -438,12 +516,12 @@ SOV_front_us_1 = {#针对美国
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = USA
-		value = 500
+		value = 50
 	}
 	ai_strategy = {
 	 	type = front_armor_score
 		id = USA
-		value = 750
+		value = 50
 	}
 }
 
@@ -474,12 +552,12 @@ SOV_front_uk_1 = {
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = ENG
-		value = 750
+		value = 50
 	}
 	ai_strategy = {
 	 	type = front_armor_score
 		id = ENG
-		value = 750
+		value = 50
 	}
 }
 
@@ -510,12 +588,12 @@ SOV_front_france_1 = {
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = FRA
-		value = 500
+		value = 50
 	}
 	ai_strategy = {
 	 	type = front_armor_score
 		id = FRA
-		value = 500
+		value = 50
 	}
 }
 SOV_front_germany_1 = {
@@ -543,16 +621,12 @@ SOV_front_germany_1 = {
 	ai_strategy = {
 	 	type = front_unit_request
 		tag = GER
-		value = 5000
+		value = 500
 	}
 	ai_strategy = {
 	 	type = front_armor_score
 		id = GER
-		value = 5000
-	}
-	ai_strategy = {
-		type = force_build_armies
-		value = 30000
+		value = 500
 	}
 }
 SOV_addintelligence_agency_normal_upgrade_prio = {
@@ -1363,7 +1437,7 @@ sov_hate_BAU = {
 	ai_strategy = {
 		type = ignore
 		id = BAU
-		value = 100
+		value = -100
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
@@ -1391,7 +1465,7 @@ sov_allies_rau= {
 	ai_strategy = {
 		type = alliance
 		id = RAU
-		value = 200
+		value = -200
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
@@ -1418,7 +1492,7 @@ sov_allies_prc = {
 	ai_strategy = {
 		type = alliance
 		id = PRC
-		value = 200
+		value = -200
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
@@ -1427,28 +1501,7 @@ sov_allies_prc = {
 	}
 }
 
-sov_allies_prc = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		country_exists = PRC
-	}
-	abort = {
-		NOT = { country_exists = PRC }
-	}
 
-	ai_strategy = {
-		type = befriend
-		id = PRC
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = PRC
-		value = 200
-	}
-}
 sov_allies_WFA = {
 	allowed = {
 		original_tag = SOV
@@ -1468,7 +1521,7 @@ sov_allies_WFA = {
 	ai_strategy = {
 		type = alliance
 		id = WFA
-		value = 200
+		value = -200
 	}
 }
 
@@ -2762,7 +2815,7 @@ SOV_boost_div_upgrades = { #lets make sure sov upgrades divs when at war
 	}
 }
 
-SOV_defend_blitzkrieg  = {#Only perform careful attacks, we want to defend while germany has buffs.
+SOV_defend_blitzkrieg = {#Only perform careful attacks, we want to defend while germany has buffs.
 	allowed = {
 		original_tag = SOV
 	}
@@ -2838,7 +2891,7 @@ SOV_wants_civ = {
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 500
+		value = 100
 	}
 }
 
@@ -2847,8 +2900,10 @@ SOV_wants_armsfactory = {
 		original_tag = SOV
 	}
 	enable = {
-		date > 1940.1.1
+		OR = {
+			date > 1940.1.1
 			has_war = yes
+		}
 	}
 
 	abort = {
