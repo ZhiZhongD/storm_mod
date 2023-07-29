@@ -1,0 +1,478 @@
+ENG_SAF_union_dec_categories = {
+	ENG_Africa_ask_land1 = {#索取殖民地
+		icon = GFX_decision_infiltrate_state
+		cost = 10
+		days_remove = 7
+		fire_only_once = no
+		allowed = {
+			has_completed_focus = uk_african_union_prepare
+		}
+		available = {
+			has_completed_focus = uk_african_union_prepare
+		}
+		visible = {
+			has_completed_focus = uk_african_union_prepare
+		}
+		ai_will_do = {
+		factor = 100
+		}
+		state_target = yes
+		on_map_mode = map_only 
+		target_trigger = {
+			FROM = {
+						is_on_continent = africa
+						OR = {
+							AND = {
+								NOT = {
+								is_core_of = FROM
+								is_owned_and_controlled_by = ENG
+								controller = {
+									is_major = yes
+								}
+								}
+							}
+						}
+						
+			}
+		}
+		remove_effect = {
+			FROM = {
+				transfer_state_to = ENG
+			}
+		}
+
+	}
+
+	ENG_Africa_ask_land2 = {#索取殖民地
+	icon = GFX_decision_infiltrate_state
+	cost = 10
+	days_remove = 7
+	fire_only_once = no
+	allowed = {
+		has_completed_focus = uk_african_union_prepare
+	}
+	available = {
+		has_completed_focus = uk_african_union_prepare
+	}
+	visible = {
+		has_completed_focus = uk_african_union_prepare
+		}
+	
+	ai_will_do = {
+	factor = 100
+	}
+	state_target = yes
+	on_map_mode = map_only 
+	target_trigger = {
+		FROM = {
+			AND = {
+				is_on_continent = africa
+				is_core_of = FROM
+			NOT = {
+				is_owned_and_controlled_by = ENG
+				controller = {
+					is_subject_of = ENG
+				}
+			}
+			}
+		}
+	}
+	remove_effect = {			
+			if = {
+				limit = {
+					FROM = {
+						NOT = {	is_subject_of = ENG }
+					}				
+				}
+				ENG = {
+					declare_war_on = {
+						target = FROM
+						type = annex_everything
+					}
+				}
+			}
+		
+	}
+}
+
+ENG_Africa_transfer_to_SAF = {#转移给南非
+icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_african_union_plan
+}
+available = {
+	has_completed_focus = uk_african_union_plan
+}
+visible = {
+	has_completed_focus = uk_african_union_plan
+	SAF = {
+		AND = {
+			exists = yes
+		is_subject_of = ENG
+		}
+	}
+	FROM = {
+		NOT = {
+			is_owned_and_controlled_by = SAF
+		}
+		is_owned_and_controlled_by = ENG
+	}
+}
+ai_will_do = {
+factor = 100
+}
+state_target = yes
+on_map_mode = decision_view_only  
+
+targets = {
+	state = 681
+	state = 719
+	state = 275
+	state = 542
+	state = 893
+	state = 544
+	state = 541
+	state = 545
+	state = 896
+	state = 895
+	state = 892
+	state = 891
+	state = 771
+	state = 770
+	state = 546
+	state = 904
+	state = 548
+	state = 890
+	state = 889
+	state = 888
+	state = 295
+	state = 796
+	state = 768
+	state = 769
+	state = 897
+	state = 540
+	state = 547
+	state = 903
+	state = 905
+
+
+	
+}
+complete_effect = {
+	FROM = {
+		transfer_state_to = SAF
+		add_core_of = SAF
+	}
+}
+
+
+}
+}
+
+ENG_CAR_union_dec_categories = { #中非
+
+
+ENG_Africa_form_to_CAR = {#成立中非联邦
+icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_african_union_plan
+}
+available = {
+	has_completed_focus = uk_african_union_plan
+}
+visible = {
+	has_completed_focus = uk_african_union_plan
+	CAR = {
+		exists = no
+	}
+	660 = {
+		is_owned_and_controlled_by = ENG
+	}
+}
+ai_will_do = {
+factor = 100
+}
+
+complete_effect = {
+	CAR = {	
+		set_cosmetic_tag = ENGCAR_democratic
+	}
+	660 = {
+		transfer_state_to = CAR
+	}
+	set_autonomy = {
+		target = CAR
+		autonomy_state = empire_freedom_state
+		end_wars = no
+		end_civil_wars = no
+	}
+}
+
+
+}
+ENG_Africa_transfer_to_CAR = {#转移给中非
+icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_african_union_plan
+}
+available = {
+	has_completed_focus = uk_african_union_plan
+}
+visible = {
+	has_completed_focus = uk_african_union_plan
+	CAR = {
+		AND = {
+			exists = yes
+		is_subject_of = ENG
+		}
+	}
+	FROM = {
+		NOT = {
+			is_owned_and_controlled_by = CAR
+		}
+		is_owned_and_controlled_by = ENG
+	}
+}
+ai_will_do = {
+factor = 100
+}
+state_target = yes
+on_map_mode = decision_view_only  
+
+targets = {
+	state = 718
+	state = 538
+	state = 772
+	state = 539
+	state = 297
+	state = 705
+	state = 773
+	state = 774
+	state = 901
+	state = 900
+	state = 902
+	state = 558
+	state = 781
+	state = 776
+	state = 775
+	state = 515
+}
+complete_effect = {
+	FROM = {
+		transfer_state_to = CAR
+		add_core_of = CAR
+	}
+}
+
+
+}
+}
+
+ENG_LIB_union_dec_categories = { #西非
+
+
+ENG_Africa_form_to_LIB = {#成立西非联邦
+icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_african_union_plan
+}
+available = {
+	has_completed_focus = uk_african_union_plan
+}
+visible = {
+	has_completed_focus = uk_african_union_plan
+	LIB = {
+		exists = no
+	}
+	298 = {
+		is_owned_and_controlled_by = ENG
+	}
+}
+ai_will_do = {
+factor = 100
+}
+
+complete_effect = {
+	LIB = {	
+		set_cosmetic_tag = ENGLIB_democratic
+	}
+	298 = {
+		transfer_state_to = LIB
+	}
+	set_autonomy = {
+		target = LIB
+		autonomy_state = empire_freedom_state
+		end_wars = no
+		end_civil_wars = no
+	}
+}
+
+
+}
+ENG_Africa_transfer_to_LIB = {#转移给西非
+icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_african_union_plan
+}
+available = {
+	has_completed_focus = uk_african_union_plan
+}
+visible = {
+	has_completed_focus = uk_african_union_plan
+	LIB = {
+		AND = {
+			exists = yes
+		is_subject_of = ENG
+		}
+	}
+	FROM = {
+		NOT = {
+			is_owned_and_controlled_by = LIB
+		}
+		is_owned_and_controlled_by = ENG
+	}
+}
+ai_will_do = {
+factor = 100
+}
+state_target = yes
+on_map_mode = decision_view_only  
+
+targets = {
+	state = 298
+	state = 779
+	state = 274
+	state = 777
+	state = 778
+	state = 898
+	state = 782
+	state = 556
+	state = 899
+	state = 780
+	state = 700
+	state = 296
+	state = 272
+	state = 701
+	state = 557
+	state = 699
+	state = 786
+}
+complete_effect = {
+	FROM = {
+		transfer_state_to = LIB
+		add_core_of = LIB
+	}
+}
+
+
+}
+}
+
+ENG_ALG_union_dec_categories = { #北非
+
+
+ENG_Africa_form_to_ALG = {#成立北非联邦
+icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_african_union_plan
+}
+available = {
+	has_completed_focus = uk_african_union_plan
+}
+visible = {
+	has_completed_focus = uk_african_union_plan
+	ALG = {
+		exists = no
+	}
+	459 = {
+		is_owned_and_controlled_by = ENG
+	}
+}
+ai_will_do = {
+factor = 100
+}
+
+complete_effect = {
+	ALG = {	
+		set_cosmetic_tag = ENGALG_democratic
+	}
+	459 = {
+		transfer_state_to = ALG
+	}
+	set_autonomy = {
+		target = ALG
+		autonomy_state = empire_freedom_state
+		end_wars = no
+		end_civil_wars = no
+	}
+}
+
+
+}
+ENG_Africa_transfer_to_ALG = {#转移给北非
+icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_african_union_plan
+}
+available = {
+	has_completed_focus = uk_african_union_plan
+}
+visible = {
+	has_completed_focus = uk_african_union_plan
+	ALG = {
+		AND = {
+			exists = yes
+		is_subject_of = ENG
+		}
+	}
+	FROM = {
+		NOT = {
+			is_owned_and_controlled_by = ALG
+		}
+		is_owned_and_controlled_by = ENG
+	}
+}
+ai_will_do = {
+factor = 100
+}
+state_target = yes
+on_map_mode = decision_view_only  
+
+targets = {
+	state = 462	
+	state = 783
+	state = 461
+	state = 290
+	state = 459
+	state = 513
+	state = 460
+	state = 458
+	state = 665
+	state = 448
+	state = 661
+	state = 449
+	state = 662
+	state = 450
+	state = 663
+	state = 451
+	state = 273
+	state = 514
+
+}
+complete_effect = {
+	FROM = {
+		transfer_state_to = ALG
+		add_core_of = ALG
+	}
+}
+
+
+}
+}

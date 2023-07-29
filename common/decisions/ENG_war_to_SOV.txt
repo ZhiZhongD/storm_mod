@@ -256,7 +256,9 @@ ENG_war_to_SOV_dec = {
                 }
                 if = {
                     limit = {
-                        has_subject = ENG
+                        any_country = {
+                            is_subject_of = ENG
+                        }
                     }
                     random_other_country = {
                         limit = {
@@ -307,7 +309,9 @@ ENG_war_to_SOV_dec = {
                 if = {
                     limit = {
                  NOT = {
-                    has_subject = ENG
+                    any_country = {
+                        is_subject_of = ENG
+                    }
                  }       
                     }
                     ENG = {

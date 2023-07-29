@@ -59,9 +59,13 @@ country_event = {#英国要求谈判-同意
 			28 = {
 				transfer_state_to = GER
 			}
+			set_cosmetic_tag = FLKFRA_fascism
 		}
 		GER = {
 			puppet = FRA
+		}
+		GER = {
+			add_to_faction = ENG
 		}
 	}
     
@@ -523,7 +527,11 @@ country_event = {#德国谈判
 				target = HOL
 			}
         }
-		
+		white_peace = GER
+		white_peace = ENG
+		GER = {
+			add_to_faction = ENG
+		}
 		
 	}
 	option = { 
@@ -550,19 +558,22 @@ country_event = {#德国谈判-同意
         ai_chance = {
             base = 10
         }
+		FRA = {
+			set_cosmetic_tag = BGDFRA_democratic
+		}
 		28 = {
 			transfer_state_to = GER
 		}
-		18 = { transfer_state_to = FRA }
-		22 = { transfer_state_to = FRA }
-		20 = { transfer_state_to = FRA }
-		32 = { transfer_state_to = FRA }
-		21 = { transfer_state_to = FRA }
-		851 = { transfer_state_to = FRA }
-		17 = { transfer_state_to = FRA }
-		27 = { transfer_state_to = FRA }
-		26 = { transfer_state_to = FRA }
-		735 = { transfer_state_to = FRA }
+		every_state = {
+			limit = {
+				AND = {
+				is_core_of = FRA
+				is_on_continent = europe
+
+				}
+			}
+			transfer_state_to = FRA
+		}
 		FRA = {
 			set_capital ={
 				state = 27
@@ -580,8 +591,8 @@ country_event = {#德国谈判-同意
 			transfer_state_to = GER
 
 		}
-		ENG = {
-			add_to_faction = GER
+		GER = {
+			add_to_faction = ENG
 		}
 
 
