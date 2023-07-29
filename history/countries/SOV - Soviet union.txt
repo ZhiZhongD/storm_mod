@@ -8,9 +8,9 @@ set_variable = { var_name = stalinist_help }
 set_variable = { var_name = trotzkyist_help }
 set_variable = { var_name = bukharinist_help }
 set_variable = { var_name = unionist_help }
-set_variable = { stalinist_help = 30 }
-set_variable = { trotzkyist_help = 60 }
-set_variable = { bukharinist_help = 30 }
+set_variable = { stalinist_help = 40 }
+set_variable = { trotzkyist_help = 55 }
+set_variable = { bukharinist_help = 40 }
 set_variable = { unionist_help = 40 }
 add_ideas={
 	SOV_the_discontent_of_workers_and_peasants
@@ -18,6 +18,7 @@ add_ideas={
 	SOV_farmer_hate
 	SOV_backward_agricultural_production_technology
 	SOV_culture_low
+	home_of_revolution_plus
 }
 add_dynamic_modifier = { modifier = SOV_Leninism }
 every_character = {

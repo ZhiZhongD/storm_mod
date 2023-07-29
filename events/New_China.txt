@@ -335,28 +335,8 @@ country_event={
 		}
 		puppet=CHI
 		hidden_effect={
-			PRC={ country_event = new_china.19 }
-			country_event={
-				id = new_china.gankrau
-				days = 30
-			}
 			news_event = { id = new_china_news.1 }
 		}
-    }
-}
-country_event={
-	id = new_china.gankrau
-	title = new_china.gankrau.t
-	desc = new_china.gankrau.d
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = new_china.gankrau.a
-		AST={
-			country_event=RAU.7
-		}
-		declare_war_on = { target = RAU type = puppet_wargoal_focus }
     }
 }
 country_event={

@@ -144,17 +144,18 @@ country_event={
 
 	trigger={
 		tag=JAP
-		create_faction = 团结协定东线
 		RAU={
 			has_war_with = AST
 		}
-		daye>1939.1.1
+		JAP={
+			is_in_faction_with = CHI
+		}
 	}
 
 
 	option = {
 		name = RAU.5.a
-		AST={country_event=RAU.6}
+		AST={country_event=RAU.7}
     }
 }
 country_event={
@@ -169,9 +170,6 @@ country_event={
 	option = {
 		name = RAU.6.a
 		
-		JAP = {
-			add_to_faction = AST
-		}
     }
 }
 country_event={
@@ -186,6 +184,9 @@ country_event={
 	option = {
 		name = RAU.7.a
 		JAP={country_event=RAU.6}
+		JAP = {
+			add_to_faction = AST
+		}
     }
 }
 country_event={
