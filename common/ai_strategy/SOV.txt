@@ -88,6 +88,7 @@ SOV_make_some_industrial_complex_on_main_place = {#铺工厂
 	}
 	enable = {
 		date < 1939.12.1
+		has_war = no
 	}
 	abort_when_not_enabled = yes
 
@@ -109,74 +110,8 @@ SOV_make_some_industrial_complex_on_main_place = {#铺工厂
 		target = 217 #斯大林格勒
 		value = 24
 	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 229 #阿塞拜疆（巴库油田）
-		value = 24
-	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 252 #高尔基（莫斯科东面）
-		value = 24
-	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 221 #哈尔科夫
-		value = 10
-	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 252 #斯大林诺（哈尔科夫南面）
-		value = 2000
-	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 527 #车里雅宾斯克
-		value = 24
-	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 653 #斯维尔德洛夫斯克（车里雅宾斯克北面）
-		value = 24
-	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 405 #塔什干
-		value = 24
-	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 586 #阿拉木图
-		value = 24
-	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 248 #雅罗斯拉夫尔
-		value = 24
-	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 254 #梁赞
-		value = 24
-	}
-	ai_strategy = {
-		type = build_building
-		id = industrial_complex
-		target = 242 #斯摩棱斯克（莫斯科门户）
-		value = 10
-	}
 }
-SOV_make_some_infrastructure = {#铺基建
+SOV_make_some_infrastructure = {#铺基建#由于不明原因而不生效
 	allowed = {
 		original_tag = SOV
 	}
@@ -297,11 +232,6 @@ SOV_has_brain_for_industrial_plan = {#大脑升级
 	}
 	ai_strategy = {
 		type = factory_build_score_factor
-		target = 229 #阿塞拜疆（巴库油田）
-		value = 10000
-	}
-	ai_strategy = {
-		type = factory_build_score_factor
 		target = 252 #高尔基（莫斯科东面）
 		value = 5
 	}
@@ -313,11 +243,6 @@ SOV_has_brain_for_industrial_plan = {#大脑升级
 	ai_strategy = {
 		type = factory_build_score_factor
 		target = 252 #斯大林诺（哈尔科夫南面）
-		value = 5
-	}
-	ai_strategy = {
-		type = factory_build_score_factor
-		target = 405 #塔什干
 		value = 5
 	}
 	ai_strategy = {
@@ -2899,24 +2824,6 @@ SOV_defend_blitzkrieg  = {#Only perform careful attacks, we want to defend while
 #	}
 #
 #}
-SOV_wants_infrastructure = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-			has_war = no
-	}
-
-	abort = {
-		has_war = yes
-	}
-
-	ai_strategy = {
-		type = building_target
-		id = infrastructure
-		value = 3000
-	}
-}
 SOV_wants_civ = {
 	allowed = {
 		original_tag = SOV
@@ -2940,6 +2847,7 @@ SOV_wants_armsfactory = {
 		original_tag = SOV
 	}
 	enable = {
+		date > 1940.1.1
 			has_war = yes
 	}
 

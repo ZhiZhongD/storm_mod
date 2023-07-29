@@ -30,7 +30,7 @@ focus_tree = {
 		icon = GFX_focus_generic_cryptologic_bomb
 		x = 0
 		y = 0
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -76,7 +76,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = crypto_bomb_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -106,7 +106,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_black_technology_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -644,7 +644,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -709,7 +709,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
@@ -878,7 +878,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 3
 		}
@@ -1120,7 +1120,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 3
 		}
@@ -1172,7 +1172,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1225,7 +1225,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1278,7 +1278,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = fighter_command_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -1296,7 +1296,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1396,7 +1396,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1430,7 +1430,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1457,7 +1457,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1467,7 +1467,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 1.0
+				bonus = 2.0
 				uses = 2
 				category = dd_tech
 			}
@@ -1481,7 +1481,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_destroyer_focus
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1495,7 +1495,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_asw_warfare
-				bonus = 1.0
+				bonus = 2.0
 				ahead_reduction = 2
 				uses = 2
 				category = asw_tech
@@ -1529,7 +1529,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_a_s_warfare
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1539,9 +1539,9 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ENG_anti_submarine_training_school
-				cost_reduction = 0.35
-				uses = 2
-				category = convoy_defense_tree
+				cost_reduction = 1
+				uses = 5
+				category = naval_doctrine
 			}
 			add_ideas = ENG_anti_submarine_training_school
 		}
@@ -1554,7 +1554,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1565,7 +1565,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = uk_waves_focus
 				cost_reduction = 0.5
-				uses = 3
+				uses = 5
 				category = naval_doctrine
 			}
 		}
@@ -1577,7 +1577,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_waves_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1588,8 +1588,8 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = uk_carrier_focus
-				bonus = 1.0
-				uses = 2
+				bonus = 3.0
+				uses = 4
 				category = cv_tech
 			}
 			
@@ -1602,7 +1602,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_waves_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1613,8 +1613,8 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = uk_battleship_focus
-				bonus = 1.0
-				uses = 2
+				bonus = 3.0
+				uses = 4
 				category = bb_tech
 			}
 		}
@@ -1626,7 +1626,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1636,13 +1636,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = uk_amphibious_focus
-				bonus = 1.0
-				uses = 1
+				bonus = 2.0
+				uses = 2
 				category = marine_tech
 			}
 			add_tech_bonus = {
 				name = uk_amphibious_focus
-				bonus = 1.0
+				bonus = 2.0
 				uses = 2
 				category = tp_tech
 			}
@@ -1656,7 +1656,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_battleship_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1673,7 +1673,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1685,15 +1685,15 @@ focus_tree = {
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
-						size > 1
+						size > 3
 						include_locked = yes
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = ENG_expand_the_repair_yards_2dockyard
@@ -1709,7 +1709,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_battleship_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1719,7 +1719,6 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1944.1.1
 			has_tech = advanced_ship_hull_heavy
 			has_full_control_of_state = 133
 			
@@ -1892,7 +1891,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 5
+		cost = 3
 		completion_reward = {
 			if = {
 				limit = {
@@ -1995,8 +1994,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_african_fortress
-		cost = 5
+		cost = 3
 		completion_reward = {
+			add_political_power = 100
 			set_autonomy = {
 				target = SAF
 				autonomy_state = empire_freedom_state
@@ -2036,6 +2036,7 @@ focus_tree = {
 		relative_position_id = uk_african_union_plan
 		cost = 5
 		completion_reward = {
+			add_political_power = 100
 			custom_effect_tooltip = uk_african_union_prepare_tooltip
 		}
 	}
@@ -2056,7 +2057,7 @@ focus_tree = {
 	}
 
 
-	focus = {#整合联邦
+	focus = {#英联邦的非洲
 		id = uk_african_federation
 		prerequisite = { focus = uk_african_develop_resources }
 		available = {
@@ -2081,7 +2082,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = uk_african_fortress
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2200,7 +2201,7 @@ focus_tree = {
 			#换国策树（如有）
 			add_ideas = ENG_asia_company_MAL1
 		}
-		add_ideas = ENG_imperial_preference
+		add_ideas = ENG_imperial_preference_1
 		set_autonomy = {
 			target = MAL
 			autonomy_state = empire_company
@@ -2409,7 +2410,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = { 
-			
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = ENG_imperial_preference_1
+				add_idea = ENG_imperial_preference_2
+			}
 		}
 	}
 	focus = {#邀请美国
@@ -2419,7 +2424,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_sure_non_member_join
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2434,14 +2439,14 @@ focus_tree = {
 			
 		}
 	}
-	focus = {#英美军事合作
+	focus = {#英美科研合作
 		id = uk_america_technology
 		prerequisite = { focus = uk_invite_america }
 		icon = GFX_focus_research
 		x = -2
 		y = 1
 		relative_position_id = uk_invite_america
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2452,6 +2457,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = uk_america_technology
+				bonus = 1.0
+				uses = 2
+				ahead_reduction = 2
+				category = industry
+			}
+			USA = {
+				add_tech_bonus = {
+				name = uk_america_technology
+				bonus = 1.0
+				uses = 2
+				ahead_reduction = 2
+				category = electronics
+				}
+			}
 		}
 	}
 	focus = {#美国军事合作
@@ -2468,10 +2489,42 @@ focus_tree = {
 		available = {
 		
 		}
-
+		cancelable = no
+		modifier = { 
+			ENG = {
+				research_speed_factor = -0.1
+			}
+			USA = {
+				research_speed_factor = -0.1
+			}
+		 }
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = uk_america_military_cooperation
+				bonus = 1.0
+				uses = 3
+				ahead_reduction = 2
+				category = infantry_weapons
+				category = naval_equipment
+				category = marine_tech
+				category = support_tech
+				category = artillery
+			}
+			USA = {
+				add_tech_bonus = {
+					name = uk_america_military_cooperation
+					bonus = 1.0
+					uses = 3
+					ahead_reduction = 2
+					category = infantry_weapons
+					category = naval_equipment
+					category = marine_tech
+					category = support_tech
+					category = artillery
+				}
+			}
 		}
 	}
 	focus = {#邀请澳大利亚
@@ -2886,16 +2939,13 @@ completion_reward = {
 		x = -1
 		y = 1
 		relative_position_id = uk_commonwealth_hegemony
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
 
 		available = {
 		
-		}
-
-		bypass = {
 		}
 
 		completion_reward = {
@@ -2918,8 +2968,6 @@ completion_reward = {
 		available = {
 		}
 
-		bypass = {
-		}
 
 		completion_reward = {
 			
@@ -2939,12 +2987,9 @@ completion_reward = {
 		}
 
 		available = {
-			OR = {
-			}
+			
 		}
 
-		bypass = {
-		}
 
 		completion_reward = {
 			
@@ -3049,12 +3094,11 @@ available = {
 	
 }
 
-bypass = {
-	#东帝汶已被东印度公司控制
-}
-
 completion_reward = {
-		
+		721 = {
+			transfer_state_to = MAL
+			add_core_of = MAL
+		}
 }
 }
 
@@ -3071,7 +3115,7 @@ completion_reward = {
 	}
 
 	available = {
-		
+		always = no
 	}
 
 	bypass = {
@@ -3103,8 +3147,8 @@ completion_reward = {
 							exists = no
 					}
 				}
+				is_ai = no
 				}
-			
 		}
 
 		icon = GFX_focus_eng_imperial_federation
@@ -3551,7 +3595,7 @@ completion_reward = {
 			is_embargoing = SOV
 		}
 
-		cost=5
+		cost= 5
 		ai_will_do={
 			factor=1
 		}
@@ -3573,7 +3617,7 @@ completion_reward = {
 
 		icon = GFX_focus_ITA_generic_fascist_workers
 
-		cost=5
+		cost= 4
 		ai_will_do={
 			factor=1
 		}
@@ -3597,7 +3641,7 @@ completion_reward = {
 
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 
-		cost=5
+		cost= 4
 		ai_will_do={
 			factor=1
 		}
@@ -3620,7 +3664,7 @@ completion_reward = {
 
 		icon = GFX_focus_prc_infiltration
 
-		cost=5
+		cost= 4
 		ai_will_do={
 			factor=1
 		}
@@ -3641,7 +3685,7 @@ completion_reward = {
 
 		icon = GFX_focus_SOV_mobilization_plan
 
-		cost=5
+		cost= 4
 		ai_will_do={
 			factor=1
 		}
@@ -3665,7 +3709,7 @@ completion_reward = {
 
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 
-		cost=5
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -3686,7 +3730,7 @@ completion_reward = {
 
 		icon = GFX_focus_generic_attack_iran
 
-		cost=5
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -3773,7 +3817,7 @@ completion_reward = {
 
 		icon = GFX_focus_generic_attack_sweden
 
-		cost=5
+		cost=3
 		ai_will_do={
 			factor=1
 		}
