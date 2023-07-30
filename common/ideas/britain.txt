@@ -38,7 +38,7 @@ ideas = {
 			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
 			army_defence_factor = -0.15
-			conscription = 0.25
+			
 
 			
 
@@ -70,7 +70,7 @@ ideas = {
 			army_attack_factor = -0.15
 			army_core_defence_factor = 0.1
 			army_defence_factor = -0.15
-			conscription = 0.25
+			
 
 			
 
@@ -102,7 +102,7 @@ ideas = {
 			army_core_defence_factor = 0.05
 			army_defence_factor = -0.05
 			army_infantry_defence_factor = 0.05
-			conscription = 0.75
+			conscription = 0.05
 
 			targeted_modifier = {
 				tag = ENG

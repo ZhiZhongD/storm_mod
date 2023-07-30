@@ -59,22 +59,50 @@ ENG_SAF_union_dec_categories = {
 		}
 	
 	ai_will_do = {
-	factor = 100
+	factor = 0
+		modifier = {
+			factor = 10
+			FROM = {
+				controller = {
+						tag = LIB
+				}
+			}
+		}
 	}
 	state_target = yes
 	on_map_mode = map_only 
 	target_trigger = {
 		FROM = {
-			AND = {
-				is_on_continent = africa
-				is_core_of = FROM
-			NOT = {
-				is_owned_and_controlled_by = ENG
-				controller = {
-					is_subject_of = ENG
+
+				AND = {
+					is_on_continent = africa
+					is_core_of = FROM
+				NOT = {
+					is_owned_and_controlled_by = ENG
+					controller = {
+						is_subject_of = ENG
+					}
 				}
-			}
-			}
+				NOT = {
+					AND = {
+						controller = {
+							tag = ETH
+						}
+						ETH = {
+							has_war_with = ITA
+						}
+					}
+					AND = {
+						controller = {
+							tag = AFA
+						}
+						ETH = {
+							has_war_with = ITA
+						}
+					}
+				}
+				}
+			
 		}
 	}
 	remove_effect = {			
@@ -153,7 +181,6 @@ targets = {
 	state = 897
 	state = 540
 	state = 547
-	state = 903
 	state = 905
 
 
@@ -470,6 +497,120 @@ complete_effect = {
 	FROM = {
 		transfer_state_to = ALG
 		add_core_of = ALG
+	}
+}
+
+
+}
+}
+
+ENG_HAR_union_dec_categories = { #东非
+
+
+ENG_Africa_form_to_HAR = {#成立东非联邦
+icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_african_union_plan
+}
+available = {
+	has_completed_focus = uk_african_union_plan
+}
+visible = {
+	has_completed_focus = uk_african_union_plan
+	HAR = {
+		exists = no
+	}
+	271 = {
+		is_owned_and_controlled_by = ENG
+	}
+}
+ai_will_do = {
+factor = 100
+}
+
+complete_effect = {
+	HAR = {	
+		set_cosmetic_tag = ENGHAR_democratic
+	}
+	271 = {
+		transfer_state_to = HAR
+		add_core_of = HAR
+	}
+	HAR = {
+		set_capital = {
+			state = 271
+			remember_old_capital = no
+		}
+		load_focus_tree = generic_focus
+
+	}
+	set_autonomy = {
+		target = HAR
+		autonomy_state = empire_freedom_state
+		end_wars = no
+		end_civil_wars = no
+	}
+}
+
+
+}
+ENG_Africa_transfer_to_HAR = {#转移给东非
+icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_african_union_plan
+}
+available = {
+	has_completed_focus = uk_african_union_plan
+}
+visible = {
+	has_completed_focus = uk_african_union_plan
+	HAR = {
+		AND = {
+			exists = yes
+		is_subject_of = ENG
+		}
+	}
+	FROM = {
+		NOT = {
+			is_owned_and_controlled_by = HAR
+		}
+		is_owned_and_controlled_by = ENG
+	}
+}
+ai_will_do = {
+factor = 100
+}
+state_target = yes
+on_map_mode = decision_view_only  
+
+targets = {
+	state = 906
+	state = 903	
+	state = 844
+	state = 559
+	state = 269
+	state = 268
+	state = 550
+	state = 842
+	state = 908
+	state = 841
+	state = 843
+	state = 835
+	state = 271
+	state = 836
+	state = 837
+	state = 838
+	state = 839
+	state = 840
+	state = 841
+
+}
+complete_effect = {
+	FROM = {
+		transfer_state_to = HAR
+		add_core_of = HAR
 	}
 }
 

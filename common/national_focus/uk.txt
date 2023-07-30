@@ -3386,10 +3386,43 @@ completion_reward = {
 
 		available = {	
 				FRA = {
-					has_war_with = GER
+					AND = {
+						OR = {
+							AND = {
+								has_war = yes
+								is_in_faction_with = ENG
+							}
+							AND = {
+								is_in_faction_with = GER
+								has_war = yes
+							}
+							has_war_with = SOV
+							has_war_with = GER
+						}
+						OR = {
+							28 = {
+								NOT = {
+									is_controlled_by = FRA
+								}
+							}
+							FRA = {
+								surrender_progress > 0.05
+							}
+						}
+					}
+
 				}
 		}
-
+		bypass = {
+			AND = {
+				FRA = {
+					is_ai = no
+				}
+				ENG = {
+					is_ai = yes
+				}
+			}
+		}
 		cost = 5
 		ai_will_do={
 			factor=10000
@@ -3485,7 +3518,7 @@ completion_reward = {
 
 		icon = GFX_focus_SOV_socialism_in_one_country
 		
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=100
 		}
@@ -3501,6 +3534,8 @@ completion_reward = {
 		search_filters={
 		}
 		completion_reward={
+			add_stability = 0.05
+			add_war_support = 0.05
 			add_popularity = {
 				ideology = communism 
 				popularity = -0.1

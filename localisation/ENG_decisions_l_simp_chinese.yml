@@ -30,3 +30,7 @@
  ENG_ALG_union_dec_categories:0 "北非联邦计划"
  ENG_Africa_form_to_ALG:0 "成立北非联邦"
  ENG_Africa_transfer_to_ALG:0 "将[FROM.GetName]并入北非"
+
+ ENG_HAR_union_dec_categories:0 "东非联邦计划"
+ ENG_Africa_form_to_HAR:0 "成立东非联邦"
+ ENG_Africa_transfer_to_HAR:0 "将[FROM.GetName]并入东非"
