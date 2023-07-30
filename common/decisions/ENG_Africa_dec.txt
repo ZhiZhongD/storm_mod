@@ -617,3 +617,38 @@ complete_effect = {
 
 }
 }
+
+ENG_AFK_colony_system = {#非洲殖民地管理
+
+	ENG_AFK_company = {}
+
+	ENG_AFK_industry_1 = {}
+	ENG_AFK_industry_2 = {}
+	ENG_AFK_industry_3 = {}
+	ENG_AFK_industry_4 = {}
+	ENG_AFK_industry_5 = {}
+
+
+	ENG_AFK_industry_transfer_1 = {}
+	ENG_AFK_industry_transfer_2 = {}
+	ENG_AFK_industry_transfer_3 = {}
+	ENG_AFK_industry_transfer_4 = {}
+	ENG_AFK_industry_transfer_5 = {}
+
+	ENG_AFK_army = {}
+
+
+	ENG_AFK_resource_1 = {}
+	ENG_AFK_resource_2 = {}
+	ENG_AFK_resource_3 = {}
+	ENG_AFK_resource_4 = {}
+	ENG_AFK_resource_5 = {}
+	ENG_AFK_resource_6 = {}
+	ENG_AFK_resource_7 = {}
+	ENG_AFK_resource_8 = {}
+
+
+
+
+
+}
