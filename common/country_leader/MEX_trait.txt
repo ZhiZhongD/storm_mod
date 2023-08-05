@@ -1,0 +1,7 @@
+leader_traits={
+    MEX_sai_di_nuo_trait_1 = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.05
+	}
+}

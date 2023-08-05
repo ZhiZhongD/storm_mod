@@ -1,0 +1,298 @@
+SOV_brain_upgrade_for_law = {#苏联经济法案大脑升级
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+	}
+
+	ai_national_focuses = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		war_economy = 10000
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SOV_brain_upgrade_for_law_when_war = {#苏联经济法案大脑升级
+
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		has_war = yes
+	}
+	abort = {
+		has_war = no
+	}
+
+	ai_national_focuses = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		tot_economic_mobilisation = 50000
+		war_economy = 10000
+	}
+	traits = {
+		
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+SOV_consultant_in_peace_before_1939 = {#前期顾问倾向
+	name = "SOV_consultant_in_peace_before_1939"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_war = no
+			date<1939.09.01
+		}
+	}
+	abort = {
+		OR = {
+			date>1939.09.01
+			has_war = yes
+		}
+	}
+
+	ai_national_focuses = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		SOV_iosif_stalin = 2000 #大林子
+		SOV_nikolay_voznesensky = 2500 #工业领袖
+		SOV_lev_trotsky = 2000 #托司机
+		SOV_ivan_smirnov = 3000 #加10建筑速度！
+		SOV_ivar_smilga = 1000 #-2生活消费品
+		SOV_mikhail_tomsky = 1000 # 右翼工会首脑
+
+	}
+	traits = {
+		
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+SOV_consultant_in_peace_after_1939 = {#中期顾问倾向
+	name = "SOV_consultant_in_peace_after_1939"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_war = no
+			date>1939.09.01
+		}
+	}
+	abort = {
+		OR = {
+			date>1941.12.31
+			has_war = yes
+		}
+	}
+
+	ai_national_focuses = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		SOV_iosif_stalin = 2000 #大林子
+		SOV_yevgeny_preobrazhensky = 2500 #加5效率上限
+		SOV_lev_trotsky = 2000 #托司机
+		SOV_ivan_smirnov = 3000 #加10建筑速度！
+		SOV_ivar_smilga = 3000 #-2生活消费品
+		SOV_mikhail_tomsky = 3000 # 右翼工会首脑
+
+	}
+	traits = {
+		
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+SOV_consultant_in_war = {#战时顾问倾向
+	name = "SOV_consultant_in_war"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+			has_war = yes
+	}
+	abort = {
+			has_war = no
+	}
+
+	ai_national_focuses = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		SOV_iosif_stalin = 2000 #大林子
+		SOV_yevgeny_preobrazhensky = 2500 #加5效率上限
+		SOV_lev_trotsky = 2000 #托司机
+		SOV_ivan_smirnov = 3000 #加10建筑速度！
+		SOV_grigory_sokolnikov = 3000 #-2生活消费品
+		SOV_mikhail_tomsky = 3000 # 右翼工会首脑
+
+	}
+	traits = {
+		
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+SOV_consultant_in_peace_after_1941 = {#后期顾问倾向
+	name = "SOV_consultant_in_peace_after_1941"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_war = no
+			date>1941.12.31
+		}
+	}
+	abort = {
+			has_war = yes
+	}
+
+	ai_national_focuses = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		SOV_iosif_stalin = 2000 #大林子
+		SOV_yevgeny_preobrazhensky = 2500 #加5效率上限
+		SOV_lev_trotsky = 2000 #托司机
+		SOV_ivan_smirnov = 3000 #加10建筑速度！
+		SOV_ivar_smilga = 3000 #-2生活消费品
+		SOV_mikhail_tomsky = 3000 # 右翼工会首脑
+
+	}
+	traits = {
+		
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+SOV_army_navy_air_spirit = {#学院精神
+	name = "SOV_army_navy_air_spirit"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+			has_war = no
+	}
+
+	ai_national_focuses = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		bold_attack_spirit = 2000
+		quick_improvisation_spirit = 1500
+		flexible_organization_spirit = 1500
+
+		instilled_aggression_spirit = 1000
+		integrated_designers_spirit = 1000
+		decisive_battle_spirit = 1000
+
+		air_crew_surveys_spirit = 1000
+		veteran_air_instructors_spirit = 900
+
+	}
+	traits = {
+		
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

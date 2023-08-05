@@ -1,0 +1,42 @@
+characters={
+	#MEX_ = {
+	#	name = SOV_lenin
+	#	portraits = {
+	#		civilian = {
+	#			large = "gfx/leaders/SOV/Portrait_Russia_Vladimir_Ilyich.dds"
+	#		}
+	#	}
+	#	country_leader = {
+	#		ideology = leninism
+	#		traits = { revolution_teacher }
+	#		expire = "1945.3.1.1"
+	#		id = -1
+	#	}
+	#}
+MEX_sai_di_nuo = {#塞迪诺
+name = MEX_sai_di_nuo
+		portraits={
+			civilian={
+				
+			}
+		}
+		advisor={
+			idea_token = MEX_sai_di_nuo
+			slot = political_advisor
+			allowed = {
+				original_tag = MEX
+			}
+			traits = {
+				MEX_sai_di_nuo_trait_1
+			}
+			available = {
+                has_completed_focus = MEX_F_18
+            }
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+}
+}

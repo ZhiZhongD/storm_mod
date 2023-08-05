@@ -1,0 +1,1032 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CHI_INFLATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+### search_filters = {FOCUS_FILTER_TFV_AUTONOMY}
+### search_filters = {FOCUS_FILTER_MEX_CHURCH_AUTHORITY}
+### search_filters = {FOCUS_FILTER_MEX_CAUDILLO_REBELLION}
+
+focus_tree = {
+	id = mexico_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MEX
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 70 y = 1100 }
+
+	focus = {#第一个国策
+		id = MEX_F_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 10
+		y = -3
+
+		cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+		ai_will_do = {#ai倾向
+			factor = 1
+		}
+
+		available = {#条件
+			
+		}
+
+		bypass = {#什么情况下跳过
+			
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {#第二排的那个什么内阁的
+		id = MEX_F_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+
+		prerequisite = { focus = MEX_F_1 }#需要完成的国策
+
+
+		x = -7
+		y = 1
+		relative_position_id = MEX_F_1 #相对位置
+
+
+		cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+		ai_will_do = {#ai倾向
+			factor = 1
+		}
+
+		available = {#条件
+			
+		}
+
+		bypass = {#什么情况下跳过
+			
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {#铭记什么什么的
+	id = MEX_F_3
+	icon = GFX_focus_hol_the_foundations_of_defense
+
+	prerequisite = { focus = MEX_F_2 }#需要完成的国策
+
+
+	x = 0
+	y = 1
+	relative_position_id = MEX_F_2 #相对位置
+
+
+	cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+	ai_will_do = {#ai倾向
+		factor = 1
+	}
+
+	available = {#条件
+		
+	}
+
+	bypass = {#什么情况下跳过
+		
+	}
+
+	completion_reward = {
+	}
+}
+
+focus = {#铭记下面那个被划掉的
+id = MEX_F_4
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { focus = MEX_F_3 }#需要完成的国策
+
+
+x = 0
+y = 1
+relative_position_id = MEX_F_3 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+
+focus = {#互斥左
+id = MEX_F_5
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { focus = MEX_F_4 }#需要完成的国策
+mutually_exclusive={ focus=MEX_F_6 }#互斥
+
+
+x = -1
+y = 1
+relative_position_id = MEX_F_4 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+
+}
+focus = {#互斥右
+id = MEX_F_6
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { focus = MEX_F_4 }#需要完成的国策
+mutually_exclusive={ focus=MEX_F_5 }#互斥
+
+x = 1
+y = 1
+relative_position_id = MEX_F_4 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+
+}
+
+focus = {#政府忠诚
+id = MEX_F_7
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_5
+	focus = MEX_F_6
+}
+
+x = 1
+y = 2
+relative_position_id = MEX_F_5 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+
+focus = {#罢工问题
+id = MEX_F_8
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_1
+}
+
+x = -2
+y = 1
+relative_position_id = MEX_F_1 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+
+focus = {#重修什么
+id = MEX_F_9
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_8
+}
+
+x = 0
+y = 1
+relative_position_id = MEX_F_8 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = {#貌似是镇压工人
+id = MEX_F_10
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_9
+}
+
+x = -1
+y = 1
+relative_position_id = MEX_F_9 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = {#友谊什么的
+id = MEX_F_11
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_10
+}
+
+x = 0
+y = 1
+relative_position_id = MEX_F_10 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = {#貌似是成立工会
+id = MEX_F_12
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_9
+}
+
+x = 1
+y = 1
+relative_position_id = MEX_F_9 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = {#貌似是相信工会
+id = MEX_F_13
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_12
+}
+
+x = 0
+y = 1
+relative_position_id = MEX_F_12 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = {#罢工分化
+id = MEX_F_14
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_13
+	focus = MEX_F_11
+}
+
+x = -1
+y = 1
+relative_position_id = MEX_F_13 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = {#缄默的工厂
+id = MEX_F_15
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_14
+}
+
+x = 0
+y = 1
+relative_position_id = MEX_F_14 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = {#缄默的工厂
+id = MEX_F_16
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_8
+	focus = MEX_F_17
+}
+
+x = 0
+y = 2
+relative_position_id = MEX_F_1 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = {#教会问题
+id = MEX_F_17
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_1
+}
+
+x = 3
+y = 1
+relative_position_id = MEX_F_1 #相对位置
+
+
+cost = 1 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {#效果
+	add_political_power = 30
+}
+}
+focus = {#邀请塞迪诺
+id = MEX_F_18
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_17
+}
+mutually_exclusive = {
+	focus = MEX_F_20
+}
+
+x = -1
+y = 1
+relative_position_id = MEX_F_17 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = {#一定的妥协
+id = MEX_F_19
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_18
+}
+
+x = 0
+y = 1
+relative_position_id = MEX_F_18 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = { #重回1925年代
+id = MEX_F_20
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_17
+}
+mutually_exclusive = {
+	focus = MEX_F_18
+}
+x = 1
+y = 1
+relative_position_id = MEX_F_17 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+	add_stability = -0.05
+}
+}
+
+focus = { #没收教会土地
+id = MEX_F_21
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_20
+}
+
+x = 0
+y = 1
+relative_position_id = MEX_F_20 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = { #叛乱不再上演
+id = MEX_F_22
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_19
+	focus = MEX_F_21
+}
+
+x = -1
+y = 3
+relative_position_id = MEX_F_21 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+	add_stability = 0.05
+}
+}
+focus = { #哥伦布
+id = MEX_F_23
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { #需要完成的国策
+	focus = MEX_F_17
+	focus = MEX_F_24
+}
+
+x = 6
+y = 2
+relative_position_id = MEX_F_1 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	OR = {
+		has_completed_focus = MEX_F_20
+	}
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = { #法西斯问题
+id = MEX_F_24
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { 
+	focus = MEX_F_1
+}
+
+x = 9
+y = 1
+relative_position_id = MEX_F_1 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = { #利用金衫军
+id = MEX_F_25
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { 
+	focus = MEX_F_24
+}
+mutually_exclusive = {
+	focus = MEX_F_28
+}
+
+x = -1
+y = 1
+relative_position_id = MEX_F_24 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+
+focus = { #利用什么下面那个
+id = MEX_F_26
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { 
+	focus = MEX_F_25
+}
+
+
+x = 0
+y = 1
+relative_position_id = MEX_F_25 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+
+focus = { #编入军队
+id = MEX_F_27
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { 
+	focus = MEX_F_26
+}
+
+
+x = 0
+y = 1
+relative_position_id = MEX_F_26 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+
+focus = { #禁止民族主义
+id = MEX_F_28
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { 
+	focus = MEX_F_24
+}
+mutually_exclusive = {
+	focus = MEX_F_25
+}
+x = 1
+y = 1
+relative_position_id = MEX_F_24 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = { #街头不再混乱
+id = MEX_F_29
+icon = GFX_focus_hol_the_foundations_of_defense
+
+prerequisite = { 
+	focus = MEX_F_27
+	focus = MEX_F_28
+}
+
+
+x = 1
+y = 2
+relative_position_id = MEX_F_27 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+
+focus = { #没写
+id = MEX_F_30
+icon = GFX_focus_hol_the_foundations_of_defense
+
+
+prerequisite = { 
+	focus = MEX_F_7
+}
+prerequisite = { 
+	focus = MEX_F_15
+}
+prerequisite = { 
+	focus = MEX_F_22
+}
+prerequisite = { 
+	focus = MEX_F_29
+}
+
+x = 0
+y = 7
+relative_position_id = MEX_F_1 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = { #暂缓土地改革
+id = MEX_F_31
+icon = GFX_focus_hol_the_foundations_of_defense
+
+
+prerequisite = { 
+	focus = MEX_F_30
+}
+
+
+x = -1
+y = 1
+relative_position_id = MEX_F_30 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+focus = { #继续土地改革
+id = MEX_F_32
+icon = GFX_focus_hol_the_foundations_of_defense
+
+
+prerequisite = { 
+	focus = MEX_F_30
+}
+
+
+x = 1
+y = 1
+relative_position_id = MEX_F_30 #相对位置
+
+
+cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+ai_will_do = {#ai倾向
+	factor = 1
+}
+
+available = {#条件
+	
+}
+
+bypass = {#什么情况下跳过
+	
+}
+
+completion_reward = {
+}
+}
+
+
+
+}
