@@ -2123,7 +2123,7 @@ characters = {
 				}
 			}
 			traits = {
-				captain_of_industry 
+				SOV_captain_of_industry 
 			}
 		}
 	}
