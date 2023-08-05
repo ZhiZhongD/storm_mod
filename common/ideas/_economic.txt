@@ -610,6 +610,13 @@ ideas = {
 					tag = ROM
 					is_in_faction_with = GER
 				}
+				modifier = {
+					add = 150000
+
+					# revert from closed_economy if we have large allies
+					tag = SOV
+					has_war = no
+				}
    			}
 		}
 
@@ -757,6 +764,13 @@ ideas = {
 					# revert from closed_economy if we have large allies
 					has_idea = closed_economy
 					has_large_ally_not_pick_closed_economy = yes
+				}
+				modifier = {
+					add = 150000
+
+					# revert from closed_economy if we have large allies
+					tag = SOV
+					has_war = yes
 				}
    			}
 		}

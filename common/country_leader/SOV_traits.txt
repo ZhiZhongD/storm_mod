@@ -1,0 +1,86 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
+
+
+leader_traits = {
+	SOV_ecomonist_publicist = {
+		random = no
+		sprite = 13
+		production_factory_max_efficiency_factor = 0.05
+		political_power_factor = 0.05
+		party_popularity_stability_factor = 0.1
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	SOV_head_directorate_of_new_buildings = {
+		random = no
+		sprite = 13
+		production_speed_buildings_factor = 0.1
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		ai_will_do = {
+			base = 2000
+		}
+	}
+	SOV_soviet_economist = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.02
+		war_support_factor = 0.05
+		production_speed_synthetic_refinery_factor = 0.15
+		subversive_activites_upkeep = -0.05
+		ai_will_do = {
+			base = -2000
+			modifier = {
+				factor = 2000
+				OR = {
+					has_war = no
+					date<1941.12.31
+				}
+			}
+		}
+	}
+	SOV_right_trade_unionist = {
+		random = no
+		sprite = 13
+		industrial_capacity_factory = 0.1
+		production_factory_max_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = -0.05
+		ai_will_do = {
+			base = 2000
+		}
+	}
+	SOV_peoples_commissar_of_finance = {
+		random = no
+		sprite = 13
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		production_speed_buildings_factor = -0.05
+		industry_repair_factor = -0.05
+		ai_will_do = {
+			factor = 2000
+			modifier = {
+				factor = -2000
+				OR = {
+					has_war = no
+					date<1941.12.31
+				}
+			}
+
+		}
+	}
+
+
+}

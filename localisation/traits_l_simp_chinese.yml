@@ -2,6 +2,12 @@
 #trait
 revolution_teacher:0"革命导师"
 steel_statesman:0"钢铁政治家"
+SOV_constant_revolutionary:0"永恒的革命者"
+SOV_ecomonist_publicist:0 "经济学家和宣传家"
+SOV_head_directorate_of_new_buildings:0 "新建筑总局首脑"
+SOV_soviet_economist:0 "苏联经济学家"
+SOV_right_trade_unionist:0 "右翼工会主义者"
+SOV_peoples_commissar_of_finance:0 "财政人民委员"
 popular_president:0"人民总统"
 revolutionary_elder:0"革命元老"
 popular_leader:0"人民领袖"

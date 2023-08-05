@@ -11,6 +11,9 @@ leader_traits={
 		industrial_capacity_factory = 0.05
 		war_support_factor = 0.1
 		stability_factor = 0.1
+		ai_will_do = {
+            base = 1000
+		}
 	}
 	popular_president = {
 		random=no
@@ -145,5 +148,8 @@ leader_traits={
 		army_core_attack_factor = 0.05
 	    army_core_defence_factor = 0.05
 		experience_gain_army_factor = 0.15
+		ai_will_do = {
+            base = 1000
+		}
 	}
 }

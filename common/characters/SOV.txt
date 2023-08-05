@@ -2556,7 +2556,7 @@ characters = {
 			available = {
 			}
 			traits = {
-				head_directorate_of_new_buildings 
+				SOV_head_directorate_of_new_buildings 
 			}
 		}
 	}
@@ -2591,7 +2591,7 @@ characters = {
 			available = {
 			}
 			traits = {
-				soviet_economist
+				SOV_soviet_economist
 			}
 		}
 	}
@@ -2685,7 +2685,7 @@ characters = {
 			available = {
 			}
 			traits = {
-				ecomonist_publicist 
+				SOV_ecomonist_publicist 
 			}
 		}
 	}
@@ -2858,7 +2858,7 @@ characters = {
 			available = {
 			}
 			traits = {
-				right_trade_unionist 
+				SOV_right_trade_unionist 
 			}
 		}
 	}
@@ -2888,7 +2888,7 @@ characters = {
 			available = {
 			}
 			traits = {
-				peoples_commissar_of_finance 
+				SOV_peoples_commissar_of_finance 
 			}
 		}
 	}

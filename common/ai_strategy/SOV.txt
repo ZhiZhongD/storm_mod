@@ -10,55 +10,8 @@
 # protect
 # influence
 
-SOV_econ_idea0 = {
-	allowed = { tag = SOV }
-	enable = { 
-		always = yes
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = tot_economic_mobilisation
-		id = idea
-		value = 100
-	}
-}
 
-SOV_econ_idea1 = {
-	allowed = { tag = SOV }
-	enable = { 
-		if = {
-			NOT = {
-				has_idea = tot_economic_mobilisation
-			} 
-		}	
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = war_economy
-		id = idea
-		value = 100
-	}
-}
 
-SOV_econ_idea2 = {
-	allowed = { tag = SOV }
-	enable = { 
-		if = {
-			NOT = {
-				has_idea = tot_economic_mobilisation
-			} 
-			NOT ={
-				has_idea = war_economy
-			}  
-		}
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = partial_economic_mobilisation
-		id = idea
-		value = 50
-	}
-}
 SOV_build_10M_divisions = {#苏联战前爆兵ai
 	allowed = { tag = SOV }
 	enable = { 
@@ -1500,7 +1453,23 @@ sov_allies_prc = {
 		value = 200
 	}
 }
+sov_volunteer_ETH = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		country_exists = ETH
+	}
+	abort = {
+		NOT = { country_exists = ETH }
+	}
 
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ETH
+		value = 200
+	}
+}
 
 sov_allies_WFA = {
 	allowed = {
@@ -1938,7 +1907,7 @@ SOV_dont_mess_with_volunteers_for_european_democratic_nations = { # Reverse stra
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = SOV
-		value = 500
+		value = -50
 	}
 }
 

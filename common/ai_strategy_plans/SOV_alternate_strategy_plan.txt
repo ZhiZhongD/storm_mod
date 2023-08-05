@@ -218,7 +218,7 @@ SOV_consultant_in_peace_after_1939 = {#中期顾问倾向
 		SOV_yevgeny_preobrazhensky = 25000 #加5效率上限
 		SOV_lev_trotsky = 20000 #托司机
 		SOV_ivan_smirnov = 30000 #加10建筑速度！
-		SOV_ivar_smilga = 30000 #-2生活消费品
+		SOV_grigory_sokolnikov = 30000 #-2生活消费品
 		SOV_mikhail_tomsky = 30000 # 右翼工会首脑
 
 	}
