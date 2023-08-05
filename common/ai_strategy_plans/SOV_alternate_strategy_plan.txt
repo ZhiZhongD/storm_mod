@@ -1,5 +1,6 @@
 SOV_brain_upgrade_for_law = {#苏联经济法案大脑升级
-
+name = "苏联经济法案大脑升级"
+desc = ""
 	allowed = {
 		original_tag = SOV
 	}
@@ -20,11 +21,39 @@ SOV_brain_upgrade_for_law = {#苏联经济法案大脑升级
 
 	ideas = {
 		war_economy = 10000
+		limited_conscription = 10000
 	}
 	traits = {
 		
 	}
-
+	SOV_brain_upgrade_for_traid_law = {#苏联贸易法案大脑升级
+	name = "苏联贸易法案大脑升级"
+	desc = ""
+		allowed = {
+			original_tag = SOV
+		}
+		enable = {
+			always = yes
+		}
+		abort = {
+			always = no
+		}
+	
+		ai_national_focuses = {
+			
+		}
+	
+		research = {
+	
+		}
+	
+		ideas = {
+			limited_exports =99999
+		}
+		traits = {
+			
+		}
+	
 	
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -38,7 +67,8 @@ SOV_brain_upgrade_for_law = {#苏联经济法案大脑升级
 }
 
 SOV_brain_upgrade_for_law_when_war = {#苏联经济法案大脑升级
-
+name = "SOV_brain_upgrade_for_law_when_war"
+desc = ""
 
 	allowed = {
 		original_tag = SOV
@@ -72,6 +102,42 @@ SOV_brain_upgrade_for_law_when_war = {#苏联经济法案大脑升级
 		}
 	}
 }
+SOV_brain_upgrade_for_law_for_mp = {#苏联征兵法案大脑升级
+
+	name = "SOV_brain_upgrade_for_law_for_mp"
+	desc = ""
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		has_manpower < 750000
+	}
+	abort = {
+		has_manpower > 750000
+	}
+
+	ai_national_focuses = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		limited_conscription = -10000
+		extensive_conscription = 10000
+	}
+	traits = {
+		
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
 SOV_consultant_in_peace_before_1939 = {#前期顾问倾向
 	name = "SOV_consultant_in_peace_before_1939"
 	desc = ""
@@ -82,12 +148,12 @@ SOV_consultant_in_peace_before_1939 = {#前期顾问倾向
 	enable = {
 		OR = {
 			has_war = no
-			date<1939.09.01
+			date<1939.9.01
 		}
 	}
 	abort = {
 		OR = {
-			date>1939.09.01
+			date>1939.9.01
 			has_war = yes
 		}
 	}
@@ -101,12 +167,12 @@ SOV_consultant_in_peace_before_1939 = {#前期顾问倾向
 	}
 
 	ideas = {
-		SOV_iosif_stalin = 2000 #大林子
-		SOV_nikolay_voznesensky = 2500 #工业领袖
-		SOV_lev_trotsky = 2000 #托司机
-		SOV_ivan_smirnov = 3000 #加10建筑速度！
-		SOV_ivar_smilga = 1000 #-2生活消费品
-		SOV_mikhail_tomsky = 1000 # 右翼工会首脑
+		SOV_iosif_stalin = 20000 #大林子
+		SOV_nikolay_voznesensky = 25000 #工业领袖
+		SOV_lev_trotsky = 20000 #托司机
+		SOV_ivan_smirnov = 30000 #加10建筑速度！
+		SOV_ivar_smilga = 10000 #-2生活消费品
+		SOV_mikhail_tomsky = 10000 # 右翼工会首脑
 
 	}
 	traits = {
@@ -129,7 +195,7 @@ SOV_consultant_in_peace_after_1939 = {#中期顾问倾向
 	enable = {
 		OR = {
 			has_war = no
-			date>1939.09.01
+			date>1939.9.01
 		}
 	}
 	abort = {
@@ -148,12 +214,12 @@ SOV_consultant_in_peace_after_1939 = {#中期顾问倾向
 	}
 
 	ideas = {
-		SOV_iosif_stalin = 2000 #大林子
-		SOV_yevgeny_preobrazhensky = 2500 #加5效率上限
-		SOV_lev_trotsky = 2000 #托司机
-		SOV_ivan_smirnov = 3000 #加10建筑速度！
-		SOV_ivar_smilga = 3000 #-2生活消费品
-		SOV_mikhail_tomsky = 3000 # 右翼工会首脑
+		SOV_iosif_stalin = 20000 #大林子
+		SOV_yevgeny_preobrazhensky = 25000 #加5效率上限
+		SOV_lev_trotsky = 20000 #托司机
+		SOV_ivan_smirnov = 30000 #加10建筑速度！
+		SOV_ivar_smilga = 30000 #-2生活消费品
+		SOV_mikhail_tomsky = 30000 # 右翼工会首脑
 
 	}
 	traits = {
@@ -189,12 +255,12 @@ SOV_consultant_in_war = {#战时顾问倾向
 	}
 
 	ideas = {
-		SOV_iosif_stalin = 2000 #大林子
-		SOV_yevgeny_preobrazhensky = 2500 #加5效率上限
-		SOV_lev_trotsky = 2000 #托司机
-		SOV_ivan_smirnov = 3000 #加10建筑速度！
-		SOV_grigory_sokolnikov = 3000 #-2生活消费品
-		SOV_mikhail_tomsky = 3000 # 右翼工会首脑
+		SOV_iosif_stalin = 20000 #大林子
+		SOV_yevgeny_preobrazhensky = 20500 #加5效率上限
+		SOV_lev_trotsky = 20000 #托司机
+		SOV_ivan_smirnov = 30000 #加10建筑速度！
+		SOV_grigory_sokolnikov = 30000 #-2生活消费品
+		SOV_mikhail_tomsky = 30000 # 右翼工会首脑
 
 	}
 	traits = {
@@ -233,12 +299,12 @@ SOV_consultant_in_peace_after_1941 = {#后期顾问倾向
 	}
 
 	ideas = {
-		SOV_iosif_stalin = 2000 #大林子
-		SOV_yevgeny_preobrazhensky = 2500 #加5效率上限
-		SOV_lev_trotsky = 2000 #托司机
-		SOV_ivan_smirnov = 3000 #加10建筑速度！
-		SOV_ivar_smilga = 3000 #-2生活消费品
-		SOV_mikhail_tomsky = 3000 # 右翼工会首脑
+		SOV_iosif_stalin = 20000 #大林子
+		SOV_yevgeny_preobrazhensky = 25000 #加5效率上限
+		SOV_lev_trotsky = 20000 #托司机
+		SOV_ivan_smirnov = 30000 #加10建筑速度！
+		SOV_ivar_smilga = 30000 #-2生活消费品
+		SOV_mikhail_tomsky = 30000 # 右翼工会首脑
 
 	}
 	traits = {
@@ -262,7 +328,7 @@ SOV_army_navy_air_spirit = {#学院精神
 		always = yes
 	}
 	abort = {
-			has_war = no
+		always = no
 	}
 
 	ai_national_focuses = {
@@ -274,16 +340,16 @@ SOV_army_navy_air_spirit = {#学院精神
 	}
 
 	ideas = {
-		bold_attack_spirit = 2000
-		quick_improvisation_spirit = 1500
-		flexible_organization_spirit = 1500
+		bold_attack_spirit = 20000
+		quick_improvisation_spirit = 15000
+		flexible_organization_spirit = 15000
 
-		instilled_aggression_spirit = 1000
-		integrated_designers_spirit = 1000
-		decisive_battle_spirit = 1000
+		instilled_aggression_spirit = 10000
+		integrated_designers_spirit = 10000
+		decisive_battle_spirit = 10000
 
-		air_crew_surveys_spirit = 1000
-		veteran_air_instructors_spirit = 900
+		air_crew_surveys_spirit = 10000
+		veteran_air_instructors_spirit = 9000
 
 	}
 	traits = {
