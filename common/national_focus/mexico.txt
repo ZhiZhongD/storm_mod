@@ -25,10 +25,35 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 70 y = 1100 }
-
 	focus = {#第一个国策
+		id = MEX_F_0
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 10
+		y = -4
+
+		cost = 5 #国策时间，{cost = 5}= 35天（简单点讲就是1*7）
+
+		ai_will_do = {#ai倾向
+			factor = 1
+		}
+
+		available = {#条件
+			
+		}
+
+		bypass = {#什么情况下跳过
+			
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {#谴责XXX
 		id = MEX_F_1
 		icon = GFX_focus_hol_the_foundations_of_defense
+
+		prerequisite = { focus = MEX_F_0 }#需要完成的国策
+
 		x = 10
 		y = -3
 
@@ -1028,5 +1053,346 @@ completion_reward = {
 }
 
 
+########################工业线####################
 
+	focus={
+		id=MEX_I_1
+		x=1
+		y=1
+		prerequisite={focus=MEX_I_0}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_2
+		x=1
+		y=2
+		prerequisite={focus=MEX_I_1}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_3
+		x=0
+		y=3
+		prerequisite={focus=MEX_I_2}
+		mutually_exclusive={focus=MEX_I_4 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_4
+		x=2
+		y=3
+		prerequisite={focus=MEX_I_2}
+		mutually_exclusive={focus=MEX_I_3 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_5
+		x=1
+		y=4
+		prerequisite={focus=MEX_I_3 focus=MEX_I_4 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_6
+		x=7
+		y=1
+		prerequisite={focus=MEX_I_0}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_7
+		x=6
+		y=2
+		prerequisite={focus=MEX_I_6}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_8
+		x=8
+		y=2
+		prerequisite={focus=MEX_I_6}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_9
+		x=7
+		y=3
+		prerequisite={focus=MEX_I_8}
+		prerequisite={focus=MEX_I_7}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_10
+		x=7
+		y=4
+		prerequisite={focus=MEX_I_9}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_11
+		x=6
+		y=5
+		prerequisite={focus=MEX_I_10}
+		prerequisite={focus=MEX_I_22}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_12
+		x=8
+		y=5
+		prerequisite={focus=MEX_I_10}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_13
+		x=7
+		y=6
+		prerequisite={focus=MEX_I_11}
+		prerequisite={focus=MEX_I_12}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_14
+		x=9
+		y=6
+		prerequisite={focus=MEX_I_12}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_15
+		x=4
+		y=7
+		prerequisite={focus=MEX_I_13}
+		prerequisite={focus=MEX_I_5}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_16
+		x=8
+		y=7
+		prerequisite={focus=MEX_I_14}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_17
+		x=10
+		y=7
+		prerequisite={focus=MEX_I_14}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_18
+		x=9
+		y=8
+		prerequisite={focus=MEX_I_17}
+		prerequisite={focus=MEX_I_16}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_19
+		x=2
+		y=8
+		prerequisite={focus=MEX_I_15}
+		mutually_exclusive={focus=MEX_I_20 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_20
+		x=6
+		y=8
+		prerequisite={focus=MEX_I_15}
+		mutually_exclusive={focus=MEX_I_19 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_21
+		x=4
+		y=9
+		prerequisite={focus=MEX_I_18}
+		prerequisite={focus=MEX_I_20 focus=MEX_I_19 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MEX_I_22
+		x=5
+		y=4
+		prerequisite={focus=MEX_I_9}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
 }

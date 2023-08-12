@@ -2038,6 +2038,17 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			custom_effect_tooltip = uk_african_union_prepare_tooltip
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					annex_country = {
+						target = LIB
+						transfer_troops = no
+					}
+				}
+			}
 		}
 	}
 	focus = {#开发非洲资源
@@ -3406,7 +3417,7 @@ completion_reward = {
 								}
 							}
 							FRA = {
-								surrender_progress > 0.05
+								surrender_progress > 0.15
 							}
 						}
 					}

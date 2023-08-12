@@ -620,33 +620,277 @@ complete_effect = {
 
 ENG_AFK_colony_system = {#非洲殖民地管理
 
-	ENG_AFK_company = {}
+	ENG_AFK_company = {#升级公司
+		
+	}
 
-	ENG_AFK_industry_1 = {}
-	ENG_AFK_industry_2 = {}
-	ENG_AFK_industry_3 = {}
-	ENG_AFK_industry_4 = {}
-	ENG_AFK_industry_5 = {}
+	ENG_AFK_industry_auto = {#读条工业
+	ai_will_do={
+		factor=100
+	}
+	activation = {
+		tag = ENG
+		has_completed_focus = uk_africa_industry
+	}
+	visible = {
+		tag = ENG
+		has_completed_focus = uk_africa_industry
+	}
+	available = {
+		always = no
+				}
+		days_mission_timeout = 30
+	icon = GFX_decision_generic_political_discourse
+	modifier = {
+	}
+	is_good = yes
+
+	timeout_effect = {
+		hidden_effect = {
+			activate_mission = ENG_AFK_industry_auto
+		}
+		random_list = {
+			1 = {
+
+				random_state = {
+					limit = {
+						AND = {
+							controller = {
+								is_subject_of = ENG
+							}	
+							is_on_continent = africa
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = -100000
+				}
+			}
+			1 = {
+
+				random_state = {
+					limit = {
+						AND = {
+							controller = {
+								is_subject_of = ENG
+							}	
+							is_on_continent = africa
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = -500000
+				}
+			}
+			1 = {
+
+				random_state = {
+					limit = {
+						AND = {
+							controller = {
+								is_subject_of = ENG
+							}	
+							is_on_continent = africa
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = -300000
+				}
+			}
+		}
+
+	}
+	}
 
 
-	ENG_AFK_industry_transfer_1 = {}
-	ENG_AFK_industry_transfer_2 = {}
-	ENG_AFK_industry_transfer_3 = {}
-	ENG_AFK_industry_transfer_4 = {}
-	ENG_AFK_industry_transfer_5 = {}
 
-	ENG_AFK_army = {}
+	ENG_AFK_industry_transfer_arm = {#军工
+	ai_will_do={
+		factor=1
+	}
+	visible = {
+		AND = {
+			tag = ENG
+		has_completed_focus = uk_african_federation
+		}
+	}
+	cost = 50
+	available={
+		any_owned_state = {
+			 arms_factory > 0
+		}
+	}
+	days_remove = 60
+	icon = GFX_decision_ger_military_buildup
+	on_map_mode = map_only
+	state_target = yes
+	modifier = {
+	}
+	target_trigger = {
+		FROM = {
+			AND = {
+				arms_factory > 0
+				is_on_continent = africa
+				OR = {
+					is_owned_and_controlled_by = ENG
+					AND = {
+						owner = {
+							is_subject_of = ENG
+						}
+						controller = {
+							is_subject_of = ENG
+						}
+					}
+	
+				}
+			}
+			
+	   }
+    }
+	remove_effect={
+		FROM = {
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		ENG = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	}
+	ENG_AFK_industry_transfer_civ = {#民工
+	ai_will_do={
+		factor=1
+	}
+	visible = {
+		AND = {
+			tag = ENG
+		has_completed_focus = uk_african_federation
+		}
+	}
+	cost = 50
+	available={
+		any_owned_state = {
+			industrial_complex > 0
+		}
+	}
+	days_remove = 60
+	icon = GFX_decision_generic_factory
+	on_map_mode = map_only
+	state_target = yes
+	modifier = {
+	}
+	target_trigger = {
+		FROM = {
+			AND = {
+				industrial_complex > 0
+				is_on_continent = africa
+				OR = {
+					is_owned_and_controlled_by = ENG
+					AND = {
+						owner = {
+							is_subject_of = ENG
+						}
+						controller = {
+							is_subject_of = ENG
+						}
+					}
+	
+				}
+			}
+	   }
+    }
+	remove_effect={
+		FROM = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		ENG = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	}
 
 
-	ENG_AFK_resource_1 = {}
-	ENG_AFK_resource_2 = {}
-	ENG_AFK_resource_3 = {}
-	ENG_AFK_resource_4 = {}
-	ENG_AFK_resource_5 = {}
-	ENG_AFK_resource_6 = {}
-	ENG_AFK_resource_7 = {}
-	ENG_AFK_resource_8 = {}
+	ENG_AFK_army = {#征募
+	ai_will_do={
+		factor=1
+	}
+	visible = {
+		AND = {
+			tag = ENG
+		has_completed_focus = uk_african_federation
+		}
+	}
+	cost = 200
+	available={
+		any_owned_state = {
+			state_population > 100000
+		}
+	}
+	days_remove = 180
+	icon = GFX_decision_generic_reorganize_irregulars
+	on_map_mode = map_only
+	state_target = yes
+	modifier = {
+	}
+	target_trigger = {
+		FROM = {
+			AND = {
+				state_population > 100000
+				is_on_continent = africa
+				OR = {
+					is_owned_and_controlled_by = ENG
+					AND = {
+						owner = {
+							is_subject_of = ENG
+						}
+						controller = {
+							is_subject_of = ENG
+						}
+					}
+	
+				}
+			}
+	   }
+    }
+	remove_effect={
+		FROM = {
+			add_manpower = -100000
 
+		}
+		ENG = {
+			add_manpower = 100000
+		}
+	}
+	}
 
 
 

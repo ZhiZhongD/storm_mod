@@ -35,5 +35,10 @@
  ENG_Africa_form_to_HAR:0 "成立东非联邦"
  ENG_Africa_transfer_to_HAR:0 "将[FROM.GetName]并入东非"
 
- ENG_AFK_colony_system_dec:0 "非洲殖民地管理"
+ ENG_AFK_colony_system:0 "非洲殖民地管理"
  ENG_AFK_colony_system_desc:0 "非洲，世界上第二大的大陆。有着丰富的自然资源，广袤的土地和巨量的人口。丰富的资源可以满足英国国内和帝国其他地区的需求。广袤的土地和丰富的劳动力将会一举成为帝国最大且最重要的经济引擎。"
+ 
+ ENG_AFK_industry_transfer_arm:0 "转移[FROM.GetName]的军用工厂"
+ ENG_AFK_industry_transfer_civ:0 "转移[FROM.GetName]的民用工厂"
+ ENG_AFK_army:0 "在[FROM.GetName]拉壮丁"
+ ENG_AFK_industry_auto:0 "在非洲进行工业建设"
