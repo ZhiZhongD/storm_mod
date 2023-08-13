@@ -2108,6 +2108,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			set_country_flag = ENG_africa_company_1_flag
 			SAF = {
 				add_ideas = ENG_africa_company_1
 			}
@@ -2134,6 +2135,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_country_flag = ENG_africa_company_2_flag
+			clr_country_flag = ENG_africa_company_1_flag
+
+			hidden_effect = {
+				activate_mission = ENG_AFK_industry_auto
+			}
+
 			SAF = {
 				swap_ideas = {
     				remove_idea = ENG_africa_company_1
@@ -2162,6 +2170,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_country_flag = ENG_africa_company_3_flag
+			clr_country_flag = ENG_africa_company_2_flag
 			SAF = {
 				swap_ideas = {
     				remove_idea = ENG_africa_company_2

@@ -37,6 +37,11 @@
 
  ENG_AFK_colony_system:0 "非洲殖民地管理"
  ENG_AFK_colony_system_desc:0 "非洲，世界上第二大的大陆。有着丰富的自然资源，广袤的土地和巨量的人口。丰富的资源可以满足英国国内和帝国其他地区的需求。广袤的土地和丰富的劳动力将会一举成为帝国最大且最重要的经济引擎。"
+
+ ENG_AFK_company_icon_desc:0 "升级非洲殖民地的公司"
+ ENG_AFK_clear_icon_desc:0 "隐藏地图上的决议"
+ ENG_AFK_transfer_icon_desc:0 "显示转移工厂决议"
+ ENG_AFK_army_icon_desc:0 "显示拉壮丁决议"
  
  ENG_AFK_industry_transfer_arm:0 "转移[FROM.GetName]的军用工厂"
  ENG_AFK_industry_transfer_civ:0 "转移[FROM.GetName]的民用工厂"

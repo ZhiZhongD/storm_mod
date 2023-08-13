@@ -1,0 +1,322 @@
+scripted_gui = {
+
+	ENG_AFK_colony_system_gui = {
+		context_type = decision_category
+		window_name = "ENG_AFK_colony_system_gui"
+		visible = {
+			tag = ENG
+		}
+		effects = {
+			ENG_AFK_company_icon_click = {
+
+				if= {
+					limit = {
+						ENG = {
+							has_country_flag = ENG_africa_company_1_flag
+						}
+					}
+					if = {
+							limit = {
+								EGY = {
+									is_subject_of = ENG
+								}
+							}
+							EGY = {
+							add_ideas =	ENG_africa_company_1
+							remove_ideas = ENG_africa_company_2
+							remove_ideas = ENG_africa_company_3
+							}
+						}
+						if = {
+							limit = {
+								SAF = {
+									is_subject_of = ENG
+								}
+							}
+							SAF = {
+								add_ideas =	ENG_africa_company_1
+								remove_ideas = ENG_africa_company_2
+								remove_ideas = ENG_africa_company_3
+								}
+						}
+						if = {
+							limit = {
+								CAR = {
+									is_subject_of = ENG
+								}
+							}
+							CAR = {
+								add_ideas =	ENG_africa_company_1
+								remove_ideas = ENG_africa_company_2
+								remove_ideas = ENG_africa_company_3
+								}
+						}
+						if = {
+							limit = {
+								LIB = {
+									is_subject_of = ENG
+								}
+							}
+							LIB = {
+								add_ideas =	ENG_africa_company_1
+								remove_ideas = ENG_africa_company_2
+								remove_ideas = ENG_africa_company_3
+								}
+						}
+						if = {
+							limit = {
+								ALG = {
+									is_subject_of = ENG
+								}
+							}
+							ALG = {
+								add_ideas =	ENG_africa_company_1
+								remove_ideas = ENG_africa_company_2
+								remove_ideas = ENG_africa_company_3
+								}
+						}
+						if = {
+							limit = {
+								HAR = {
+									is_subject_of = ENG
+								}
+							}
+							HAR = {
+								add_ideas =	ENG_africa_company_1
+								remove_ideas = ENG_africa_company_2
+								remove_ideas = ENG_africa_company_3
+								}
+						}
+				}
+				if= {
+					limit = {
+						ENG = {
+							has_country_flag = ENG_africa_company_2_flag
+						}					
+					}
+						if = {
+							limit = {
+								EGY = {
+									is_subject_of = ENG
+								}
+							}
+							EGY = {
+							add_ideas =	ENG_africa_company_2
+							remove_ideas = ENG_africa_company_1
+							remove_ideas = ENG_africa_company_3
+							}
+						}
+						if = {
+							limit = {
+								SAF = {
+									is_subject_of = ENG
+								}
+							}
+							SAF = {
+								add_ideas =	ENG_africa_company_2
+								remove_ideas = ENG_africa_company_1
+								remove_ideas = ENG_africa_company_3
+								}
+						}
+						if = {
+							limit = {
+								CAR = {
+									is_subject_of = ENG
+								}
+							}
+							CAR = {
+								add_ideas =	ENG_africa_company_2
+								remove_ideas = ENG_africa_company_1
+								remove_ideas = ENG_africa_company_3
+								}
+						}
+						if = {
+							limit = {
+								LIB = {
+									is_subject_of = ENG
+								}
+							}
+							LIB = {
+								add_ideas =	ENG_africa_company_2
+								remove_ideas = ENG_africa_company_1
+								remove_ideas = ENG_africa_company_3
+								}
+						}
+						if = {
+							limit = {
+								ALG = {
+									is_subject_of = ENG
+								}
+							}
+							ALG = {
+								add_ideas =	ENG_africa_company_2
+								remove_ideas = ENG_africa_company_1
+								remove_ideas = ENG_africa_company_3
+								}
+						}
+						if = {
+							limit = {
+								HAR = {
+									is_subject_of = ENG
+								}
+							}
+							HAR = {
+								add_ideas =	ENG_africa_company_2
+								remove_ideas = ENG_africa_company_1
+								remove_ideas = ENG_africa_company_3
+								}
+						}
+				}
+				if= {
+					limit = {
+						ENG = {
+							has_country_flag = ENG_africa_company_3_flag
+						}					
+					}
+					if = {
+							limit = {
+								EGY = {
+									is_subject_of = ENG
+								}
+							}
+							EGY = {
+							add_ideas =	ENG_africa_company_3
+							remove_ideas = ENG_africa_company_2
+							remove_ideas = ENG_africa_company_1
+							}
+						}
+						if = {
+							limit = {
+								SAF = {
+									is_subject_of = ENG
+								}
+							}
+							SAF = {
+								add_ideas =	ENG_africa_company_3
+								remove_ideas = ENG_africa_company_2
+								remove_ideas = ENG_africa_company_1
+								}
+						}
+						if = {
+							limit = {
+								CAR = {
+									is_subject_of = ENG
+								}
+							}
+							CAR = {
+								add_ideas =	ENG_africa_company_3
+								remove_ideas = ENG_africa_company_2
+								remove_ideas = ENG_africa_company_1
+								}
+						}
+						if = {
+							limit = {
+								LIB = {
+									is_subject_of = ENG
+								}
+							}
+							LIB = {
+								add_ideas =	ENG_africa_company_3
+								remove_ideas = ENG_africa_company_2
+								remove_ideas = ENG_africa_company_1
+								}
+						}
+						if = {
+							limit = {
+								ALG = {
+									is_subject_of = ENG
+								}
+							}
+							ALG = {
+								add_ideas =	ENG_africa_company_3
+								remove_ideas = ENG_africa_company_2
+								remove_ideas = ENG_africa_company_1
+								}
+						}
+						if = {
+							limit = {
+								HAR = {
+									is_subject_of = ENG
+								}
+							}
+							HAR = {
+								add_ideas =	ENG_africa_company_3
+								remove_ideas = ENG_africa_company_2
+								remove_ideas = ENG_africa_company_1
+								}
+						}
+				}
+
+		}
+			ENG_AFK_clear_icon_click = {
+				if= {
+					limit = {
+						has_country_flag = ENG_AFK_transfer_flag
+					}
+					clr_country_flag = ENG_AFK_transfer_flag
+					}
+					if= {
+						limit = {
+							has_country_flag = ENG_AFK_army_flag
+						}
+						clr_country_flag = ENG_AFK_army_flag
+					}			
+				}
+				ENG_AFK_transfer_icon_click = {	
+					if= {
+						limit = {
+							NOT = {
+								has_country_flag = ENG_AFK_transfer_flag
+							}
+						}
+						set_country_flag = ENG_AFK_transfer_flag
+					}
+					if= {
+						limit = {
+							has_country_flag = ENG_AFK_army_flag
+						}
+						clr_country_flag = ENG_AFK_army_flag
+					}
+			}
+			ENG_AFK_army_icon_click = {
+
+					if= {
+						limit = {
+							NOT = {
+								has_country_flag = ENG_AFK_army_flag
+							}
+						}
+						set_country_flag = ENG_AFK_army_flag
+					}
+					if= {
+						limit = {
+							has_country_flag = ENG_AFK_transfer_flag
+						}
+						clr_country_flag = ENG_AFK_transfer_flag
+					}
+			}
+
+			
+		}
+		triggers = {
+			ENG_AFK_company_icon_click = {
+				has_completed_focus = uk_africa_economic
+			}
+            ENG_AFK_clear_icon_icon_click = {
+				has_completed_focus = uk_african_fortress
+            }
+			ENG_AFK_transfer_icon_click = {
+				has_completed_focus = uk_african_fortress
+            }
+			ENG_AFK_army_icon_click = {
+				has_completed_focus = uk_african_fortress
+            }
+
+        }
+		
+	}
+
+}
+	
+
+

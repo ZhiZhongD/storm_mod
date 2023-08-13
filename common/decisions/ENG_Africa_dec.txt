@@ -621,7 +621,24 @@ complete_effect = {
 ENG_AFK_colony_system = {#非洲殖民地管理
 
 	ENG_AFK_company = {#升级公司
-		
+	icon = GFX_decision_infiltrate_state
+fire_only_once = no
+allowed = {
+	has_completed_focus = uk_africa_economic
+}
+available = {
+	has_completed_focus = uk_africa_economic
+}
+visible = {
+	has_completed_focus = uk_africa_economic
+}
+ai_will_do = {
+factor = 100
+}
+
+complete_effect = {
+
+}
 	}
 
 	ENG_AFK_industry_auto = {#读条工业
@@ -718,12 +735,13 @@ ENG_AFK_colony_system = {#非洲殖民地管理
 
 	ENG_AFK_industry_transfer_arm = {#军工
 	ai_will_do={
-		factor=1
+		factor=0
 	}
 	visible = {
 		AND = {
 			tag = ENG
-		has_completed_focus = uk_african_federation
+		has_completed_focus = uk_african_fortress
+		has_country_flag = ENG_AFK_transfer_flag
 		}
 	}
 	cost = 50
@@ -779,12 +797,13 @@ ENG_AFK_colony_system = {#非洲殖民地管理
 	}
 	ENG_AFK_industry_transfer_civ = {#民工
 	ai_will_do={
-		factor=1
+		factor=0
 	}
 	visible = {
 		AND = {
 			tag = ENG
-		has_completed_focus = uk_african_federation
+		has_completed_focus = uk_african_fortress
+		has_country_flag = ENG_AFK_transfer_flag
 		}
 	}
 	cost = 50
@@ -846,16 +865,17 @@ ENG_AFK_colony_system = {#非洲殖民地管理
 	visible = {
 		AND = {
 			tag = ENG
-		has_completed_focus = uk_african_federation
+		has_completed_focus = uk_african_fortress
+		has_country_flag = ENG_AFK_army_flag
 		}
 	}
-	cost = 200
+	cost = 30
 	available={
 		any_owned_state = {
 			state_population > 100000
 		}
 	}
-	days_remove = 180
+	days_remove = 60
 	icon = GFX_decision_generic_reorganize_irregulars
 	on_map_mode = map_only
 	state_target = yes
