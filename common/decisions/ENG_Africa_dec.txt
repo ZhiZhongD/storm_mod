@@ -716,6 +716,7 @@ complete_effect = {
 								is_subject_of = ENG
 							}	
 							is_on_continent = africa
+							
 						}
 					}
 					add_building_construction = {

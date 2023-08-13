@@ -43,6 +43,7 @@
  ENG_AFK_transfer_icon_desc:0 "显示转移工厂决议"
  ENG_AFK_army_icon_desc:0 "显示拉壮丁决议"
  
+ ENG_AFK_company:0 "占位符，没有效果"
  ENG_AFK_industry_transfer_arm:0 "转移[FROM.GetName]的军用工厂"
  ENG_AFK_industry_transfer_civ:0 "转移[FROM.GetName]的民用工厂"
  ENG_AFK_army:0 "在[FROM.GetName]拉壮丁"
